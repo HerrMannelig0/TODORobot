@@ -12,14 +12,31 @@ import java.util.Scanner;
  * Created by damian on 21.03.16.
  */
 public class FileLinkHandler {
-    private final String fileName = "FreeBooksAdressSite.txt";
+    private final String fileName = "src/main/resources/FreeBooksAdressSite.txt";
     private List<Link> linkList = new ArrayList<Link>();
     private List<String> urlList = new ArrayList<String>();
     private final URL freeBooksAdressSiteUrl = createUrlToFile();
 
     public FileLinkHandler() {
         createUrlToFile();
-        readLinksFromFile();
+       
+        try {
+            updateLinkList();
+            updateURLList();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void updateURLList() {
+        for(Link link : linkList){
+            urlList.add(link.getLinkAdress());
+        }
+    }
+
+    private void updateLinkList() throws FileNotFoundException {
+        linkList.addAll(readLinksFromFile(new File(fileName)));
+        
     }
 
     private URL createUrlToFile() {
@@ -27,28 +44,27 @@ public class FileLinkHandler {
         URL freeBooksAdressSiteUrl = classLoader.getResource(fileName);
         return freeBooksAdressSiteUrl;
     }
-
-    public List<Link> readLinksFromFile() {
-        try (Scanner scanner = new Scanner(new File(freeBooksAdressSiteUrl.getFile()))) {
-
-            while (scanner.hasNextLine()) {
-
-                String linkS = scanner.nextLine();
-                String[] split = linkS.split(" ");
-
-                if (split.length == 3) {
-                    Link link = new Link(split[0], split[1], split[2]);
-                    linkList.add(link);
-                    urlList.add(split[0]);
-                }
+    
+    public List<Link> readLinksFromFile(File file) throws FileNotFoundException {
+        Scanner scanner = new Scanner(file);
+        List<Link> links = new ArrayList<>();
+        
+        while(scanner.hasNextLine()){
+            String[] splittedLine = scanner.nextLine().split(" ");
+            if (doesLinkContainThreeParts(splittedLine)) {
+                Link link = new Link(splittedLine[0], splittedLine[1], splittedLine[2]);
+                links.add(link);
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         }
-
-        return linkList;
+        scanner.close();
+        return links;
     }
+    
+    
 
+    private boolean doesLinkContainThreeParts(String[] splittedLine) {
+        return splittedLine.length == 3;
+}
 
     public void writeLinksToFile(List<Link> linkList) {
         try (PrintWriter printWriter = new PrintWriter("src/main/resources/" + fileName)) {

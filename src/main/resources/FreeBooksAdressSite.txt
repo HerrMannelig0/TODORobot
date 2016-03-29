@@ -2,5 +2,3 @@ https://www.goodreads.com/genres/business class bookTitle
 http://www.bookrix.com/books.html class word-break
 https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go class title
 http://e-bookshop.pl/362-wyprzedaz tag h3
-
-
