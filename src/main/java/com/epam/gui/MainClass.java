@@ -1,5 +1,7 @@
 package com.epam.gui;
 
+import java.io.File;
+
 import com.epam.file.FileBookHandler;
 import com.epam.file.FileLinkHandler;
 import com.epam.util.UrlUtils;
@@ -23,11 +25,12 @@ import javafx.stage.Stage;
  */
 public class MainClass extends Application {
     private FileLinkHandler fileLinkHandler = new FileLinkHandler();
+    private final String fileName = "src/main/resources/FreeBooksAdressSite.txt";
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         Label label = new Label("Page adress = ");
-
+        fileLinkHandler.createListsFromFile(new File(fileName));
         final ObservableList<String> observableLinkList = FXCollections.observableArrayList(
                 fileLinkHandler.getUrlList()
         );

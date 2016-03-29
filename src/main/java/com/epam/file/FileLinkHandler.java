@@ -12,46 +12,57 @@ import java.util.Scanner;
  * Created by damian on 21.03.16.
  */
 public class FileLinkHandler {
-    private final String fileName = "FreeBooksAdressSite.txt";
-    private List<Link> linkList = new ArrayList<Link>();
-    private List<String> urlList = new ArrayList<String>();
-    private final URL freeBooksAdressSiteUrl = createUrlToFile();
-
-    public FileLinkHandler() {
-        createUrlToFile();
-        readLinksFromFile();
+  //  private final String fileName = "/home/michalr/Pulpit/NewRobot/src/main/resources/FreeBooksAdressSite.txt";
+    protected List<Link> linkList = new ArrayList<Link>();
+    protected List<String> urlList = new ArrayList<String>();
+    
+    public void createListsFromFile(File file) throws FileNotFoundException{
+    	updateLinkList(file);
+    	updateURLList();
     }
+    
+	protected void updateURLList() {
+    	for(Link link : linkList){
+    		urlList.add(link.getLinkAdress());
+    	}
+	}
+	
+	protected void clearLinkList() {
+		linkList.clear();
+	}
 
-    private URL createUrlToFile() {
-        ClassLoader classLoader = getClass().getClassLoader();
-        URL freeBooksAdressSiteUrl = classLoader.getResource(fileName);
-        return freeBooksAdressSiteUrl;
-    }
+	protected void clearURLList() {
+		urlList.clear();
+	}
+	
+	protected void updateLinkList(File file) throws FileNotFoundException {
+		linkList.addAll(readLinksFromFile(file));
+		
+	}
 
-    public List<Link> readLinksFromFile() {
-        try (Scanner scanner = new Scanner(new File(freeBooksAdressSiteUrl.getFile()))) {
-
-            while (scanner.hasNextLine()) {
-
-                String linkS = scanner.nextLine();
-                String[] split = linkS.split(" ");
-
-                if (split.length == 3) {
-                    Link link = new Link(split[0], split[1], split[2]);
-                    linkList.add(link);
-                    urlList.add(split[0]);
-                }
+	public List<Link> readLinksFromFile(File file) throws FileNotFoundException {
+		Scanner scanner = new Scanner(file);
+		List<Link> links = new ArrayList<>();
+		
+		while(scanner.hasNextLine()){
+			String[] splittedLine = scanner.nextLine().split(" ");
+			if (doesLinkContainThreeParts(splittedLine)) {
+                Link link = new Link(splittedLine[0], splittedLine[1], splittedLine[2]);
+                links.add(link);
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+		}
+		scanner.close();
+    	return links;
+    }
+    
+    
 
-        return linkList;
+    protected static boolean doesLinkContainThreeParts(String[] splittedLine) {
+    	return splittedLine.length == 3;
     }
 
-
-    public void writeLinksToFile(List<Link> linkList) {
-        try (PrintWriter printWriter = new PrintWriter("src/main/resources/" + fileName)) {
+	public void writeLinksToFile(List<Link> linkList, File file) {
+        try (PrintWriter printWriter = new PrintWriter(file)) {
             for (int i = 0; i < linkList.size(); i++) {
                 printWriter.println(linkList.get(i).toString());
             }
