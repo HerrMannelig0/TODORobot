@@ -1,11 +1,13 @@
 package com.epam.file;
 
+
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.testng.annotations.Test;
@@ -30,16 +32,17 @@ public class FileLinkHandlerTest {
     @Test
     public void testReadingLinksFromBlankFile() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
-       File file = new File("/home/michalr/Pulpit/NewRobot/src/test/resources/BLANK.txt");
+       File file = new File("src/test/resources/BLANK.txt");
        List<Link> links = fileLinkHandler.readLinksFromFile(file);
        assertThat(links.isEmpty()).isTrue();  
+
     }
     
     @Test
     public void testReadingLinksFromOneLineFile() throws FileNotFoundException {
     	int one = 1;
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
-       File file = new File("/home/michalr/Pulpit/NewRobot/src/test/resources/OneLine.txt");
+       File file = new File("src/test/resources/OneLine.txt");
        List<Link> links = fileLinkHandler.readLinksFromFile(file);
        assertThat(links.isEmpty()).isFalse();
        assertThat(links.size()).isEqualTo(one);
@@ -48,7 +51,7 @@ public class FileLinkHandlerTest {
     @Test
     public void testUpdatingLineList() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
-       File file = new File("/home/michalr/Pulpit/NewRobot/src/test/resources/OneLine.txt");
+       File file = new File("src/test/resources/OneLine.txt");
        fileLinkHandler.updateLinkList(file);
        assertThat(fileLinkHandler.getLinksList().isEmpty()).isFalse();
     }
@@ -56,7 +59,7 @@ public class FileLinkHandlerTest {
     @Test
     public void testUpdatingURLList() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
-       File file = new File("/home/michalr/Pulpit/NewRobot/src/test/resources/OneLine.txt");
+       File file = new File("src/test/resources/OneLine.txt");
        fileLinkHandler.updateLinkList(file);
        fileLinkHandler.updateURLList();
        
@@ -66,7 +69,7 @@ public class FileLinkHandlerTest {
     @Test
     public void testClearingLinkList() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
-    	File file = new File("/home/michalr/Pulpit/NewRobot/src/test/resources/OneLine.txt");
+    	File file = new File("src/test/resources/OneLine.txt");
     	fileLinkHandler.updateLinkList(file);
 
     	fileLinkHandler.clearLinkList();
@@ -77,7 +80,7 @@ public class FileLinkHandlerTest {
     @Test
     public void testClearingURLList() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
-    	File file = new File("/home/michalr/Pulpit/NewRobot/src/test/resources/OneLine.txt");
+    	File file = new File("src/test/resources/OneLine.txt");
     	fileLinkHandler.updateLinkList(file);
     	fileLinkHandler.updateURLList();
        
@@ -89,7 +92,7 @@ public class FileLinkHandlerTest {
     @Test
     public void testWritingToFile() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
-    	File file = new File("/home/michalr/Pulpit/NewRobot/src/test/resources/WritingToFileTest.txt");
+    	File file = new File("src/test/resources/WritingToFileTest.txt");
     	List<Link> list = mock(List.class);
     	Link link = mock(Link.class);
     	

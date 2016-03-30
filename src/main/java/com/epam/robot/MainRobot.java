@@ -6,6 +6,8 @@ import com.epam.file.Link;
 import com.epam.util.UrlUtils;
 import org.apache.log4j.Logger;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.List;
 
 /**
@@ -14,7 +16,11 @@ import java.util.List;
 public class MainRobot {
     private static Logger logger = Logger.getLogger("MainRobot");
 
+    
+    
     public static void main(String[] args) {
+    	
+    	PrintWriter printWriter; 
         FileLinkHandler fileLinkHandler = new FileLinkHandler();
         List<Link> linksList = fileLinkHandler.getLinksList();
         BookTitleSearch bookTitleSearch = new BookTitleSearch();
@@ -30,8 +36,15 @@ public class MainRobot {
             String bookTitles = BookTitleSearch.searchTitlesInPageAndSubPages(link.getLinkAdress(), link.getElementType(), link.getElementName());
             String fileName = UrlUtils.getFileName(link.getLinkAdress());
 
-            new FileBookHandler(fileName).writeBookTitlesToFile(bookTitles);
-            logger.info("Finished Searching titles by Tag");
+           try {
+				printWriter = new PrintWriter("src/main/resources/" + fileName);
+				new FileBookHandler(fileName).writeBookTitlesToFile(bookTitles, printWriter);
+		        logger.info("Finished Searching titles by Tag");
+			} catch (FileNotFoundException e) {
+				logger.error("File no found: " + fileName);
+			}
+           
+            
 
         }
     }

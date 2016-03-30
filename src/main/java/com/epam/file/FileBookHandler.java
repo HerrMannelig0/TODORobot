@@ -40,14 +40,17 @@ public class FileBookHandler {
         return bookTitles.toString();
     }
 
-    public void writeBookTitlesToFile(String string) {
-        try (PrintWriter printWriter = new PrintWriter("src/main/resources/" + fileName)) {
-            printWriter.print(string);
+    public void writeBookTitlesToFile(String title, PrintWriter printWriter) {
+            printWriter.print(title);
             printWriter.flush();
-        } catch (FileNotFoundException e)
-
-        {
-            e.printStackTrace();
-        }
     }
+    
+    /*public void writeBookTitlesToFile(String title) {
+        try (PrintWriter printWriter = new PrintWriter("src/main/resources/" + fileName)){
+			printWriter.print(title);
+			printWriter.flush();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+    }*/
 }

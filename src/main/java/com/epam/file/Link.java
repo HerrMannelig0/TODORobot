@@ -11,8 +11,8 @@ public class Link {
 
     public Link(String linkAdress, String typeForSearch, String nameForSearch) {
         this.linkAdress = linkAdress;
-        this.typeForSearch=typeForSearch;
-        this.nameForSearch=nameForSearch;
+        this.typeForSearch = typeForSearch;
+        this.nameForSearch = nameForSearch;
         this.fileName = createFileName();
     }
 
@@ -52,6 +52,8 @@ public class Link {
 
         Link link = (Link) o;
 
+        if(linkAdress == link.linkAdress && typeForSearch == link.typeForSearch 
+        		&& nameForSearch == link.nameForSearch) return true;
         if (!linkAdress.equals(link.linkAdress)) return false;
         if (!typeForSearch.equals(link.typeForSearch)) return false;
         return nameForSearch.equals(link.nameForSearch);

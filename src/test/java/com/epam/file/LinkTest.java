@@ -1,6 +1,6 @@
 package com.epam.file;
 
-import org.assertj.core.api.Assertions;
+import static org.assertj.core.api.Assertions.*;
 import org.testng.annotations.Test;
 
 /**
@@ -14,6 +14,41 @@ public class LinkTest {
 
         String fileNameWithOutSlashes = link.createFileName();
 
-        Assertions.assertThat(fileNameWithOutSlashes).isEqualTo("dsadsadsadadss");
+        assertThat(fileNameWithOutSlashes).isEqualTo("dsadsadsadadss");
     }
+    
+    @Test
+	public void testIfTwoDifferentLinksAreNotEqual() throws Exception {
+		Link link1 = new Link("a", null, null);
+		Link link2 = new Link("b", null, null);
+		
+		assertThat(link1.equals(link2)).isFalse();
+	}
+    
+    @Test
+   	public void testIfTwoSameLinksAreEqual() throws Exception {
+   		Link link1 = new Link("a", "a", "a");
+   		Link link2 = new Link("a", "a", "a");
+   		
+   		assertThat(link1.equals(link2)).isTrue();
+   	}
+    
+    @Test
+   	public void testIfTwoPartiallySameLinksAreNotEqual() throws Exception {
+   		Link link1 = new Link("a", "a", "a");
+   		Link link2 = new Link("a", "b", "a");
+   		
+   		assertThat(link1.equals(link2)).isFalse();
+   	}
+    
+    @Test
+	public void testSameHashCodeForSameObjects() throws Exception {
+    	Link link1 = new Link("a", "a", "a");
+   		Link link2 = new Link("a", "a", "a");
+   		
+   		int hash1 = link1.hashCode();
+   		int hash2 = link2.hashCode();
+   		
+   		assertThat(hash1 == hash2).isTrue();
+	}
 }

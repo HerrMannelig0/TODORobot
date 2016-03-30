@@ -24,17 +24,23 @@ import javafx.stage.Stage;
  * Created by damian on 20.03.16.
  */
 public class MainClass extends Application {
-    private FileLinkHandler fileLinkHandler = new FileLinkHandler();
-    private final String fileName = "src/main/resources/FreeBooksAdressSite.txt";
+    private FileLinkHandler fileLinkHandler;   
+    private String fileName = "src/main/resources/FreeBooksAdressSite.txt";
 
+    public static void main(String[] args) {
+        launch(args);
+    } 
+    
     @Override
     public void start(Stage primaryStage) throws Exception {
+    	fileLinkHandler = generateFileLinkHandler();
         Label label = new Label("Page adress = ");
         fileLinkHandler.createListsFromFile(new File(fileName));
+        
         final ObservableList<String> observableLinkList = FXCollections.observableArrayList(
                 fileLinkHandler.getUrlList()
         );
-
+        
         final ComboBox<String> linkListComboBox = new ComboBox<String>(observableLinkList);
         linkListComboBox.setPrefWidth(300D);
         linkListComboBox.setVisibleRowCount(7);
@@ -47,7 +53,7 @@ public class MainClass extends Application {
             public void handle(ActionEvent event) {
                 String urlName = linkListComboBox.getSelectionModel().getSelectedItem().toString();
                 String fileName = UrlUtils.getFileName(urlName);
-                FileBookHandler fileBookHandler=new FileBookHandler(fileName);
+                FileBookHandler fileBookHandler = new FileBookHandler(fileName);
                 freeBookTitleTextArea.appendText(fileBookHandler.readBookTitlesFromFile());
             }
         });
@@ -78,8 +84,12 @@ public class MainClass extends Application {
         primaryStage.show();
     }
 
-    public static void main(String[] args) {
-        launch(args);
+    protected FileLinkHandler generateFileLinkHandler(){
+    	return new FileLinkHandler();
+    }
+
+    public void setFileName(String newName){
+    	fileName = newName;
     }
 
 }

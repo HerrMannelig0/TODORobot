@@ -20,23 +20,6 @@ public class BookTitleSearch {
     private static StringBuilder titleBookContainer = new StringBuilder();
 
 
-    public static void main(String[] args) {
-
-
-//        System.out.println("http://www.bookrix.com/books.html");
-//        BookTitleSearch.searchTitleByClass("http://www.bookrix.com/books.html","item-title");
-//
-//        System.out.println("https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go");
-//        BookTitleSearch.searchTitleByClass("https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go","title");
-
-
-//        System.out.println("http://e-bookshop.pl.txt/362-wyprzedaz");
-//        BookTitleSearch.searchTitlesByTag("http://e-bookshop.pl/362-wyprzedaz?&p=7", "h3");
-
-//        BookTitleSearch.searchSubPagesInPageByNumber("http://e-bookshop.pl/362-wyprzedaz");
-    }
-
-
     public static String searchTitlesInPageAndSubPages(String adress, String typeOfElement, String elementName) {
         logger.info("Started searching Titles for adress =  " + adress);
         resetClassVariables();

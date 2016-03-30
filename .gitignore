@@ -1,9 +1,32 @@
- # ignore generated files,
-*.xml
-!pom.xml
-*.iml
-.idea/**
-src/main/java/com/epam/attempts/*
-target/*
-*.log
+*target*
+*.jar
+*.war
+*.ear
+*.class
 
+# eclipse specific git ignore
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+*.gif
+*.png
+*.versionsBackup
+.gitignore
+
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch

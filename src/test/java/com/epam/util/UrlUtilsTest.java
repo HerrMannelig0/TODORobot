@@ -2,6 +2,7 @@ package com.epam.util;
 
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
+import static com.epam.util.UrlUtils.*;
 
 /**
  * Created by damian on 21.03.16.
@@ -11,10 +12,9 @@ public class UrlUtilsTest {
     @Test
     public void testIfUrlIsUrl(){
         //given
-        UrlUtils urlUtils =new UrlUtils();
 
         //when
-        boolean url = urlUtils.checkIfUrl("demotywatory.pl");
+        boolean url = checkIfUrl("demotywatory.pl");
 
         //then
         Assertions.assertThat(url).isTrue();
@@ -23,10 +23,9 @@ public class UrlUtilsTest {
     @Test
     public void testIfUrlIsEmpty(){
         //given
-        UrlUtils urlUtils =new UrlUtils();
 
         //when
-        boolean url = urlUtils.checkIfUrl(null);
+        boolean url = checkIfUrl(null);
 
         //then
         Assertions.assertThat(url).isFalse();
@@ -35,10 +34,9 @@ public class UrlUtilsTest {
     @Test
     public void testIfTextIsNotUrl(){
         //given
-        UrlUtils urlUtils =new UrlUtils();
 
         //when
-        boolean url = urlUtils.checkIfUrl("sgsdrgrdg");
+        boolean url = checkIfUrl("sgsdrgrdg");
 
         //then
         Assertions.assertThat(url).isFalse();
@@ -48,10 +46,9 @@ public class UrlUtilsTest {
     @Test
     public void testIfEmptyStringIsNotUrl(){
         //given
-        UrlUtils urlUtils =new UrlUtils();
 
         //when
-        boolean url = urlUtils.checkIfUrl("");
+        boolean url = checkIfUrl("");
 
         //then
         Assertions.assertThat(url).isFalse();
@@ -60,10 +57,9 @@ public class UrlUtilsTest {
     @Test
     public void testIfUrlWithOutHttpHasHttp(){
         //given
-        UrlUtils urlUtils =new UrlUtils();
 
         //when
-        java.lang.String url = urlUtils.addHttpToBegining("www.facebook.com/");
+        java.lang.String url = addHttpToBegining("www.facebook.com/");
 
         //then
         Assertions.assertThat(url).asString().contains("https://", "https://");
@@ -73,10 +69,9 @@ public class UrlUtilsTest {
     @Test
     public void testIfUrlHttpHasHttp(){
         //given
-        UrlUtils urlUtils =new UrlUtils();
 
         //when
-        java.lang.String url = urlUtils.addHttpToBegining("https://www.facebook.com/");
+        java.lang.String url = addHttpToBegining("https://www.facebook.com/");
 
         //then
         Assertions.assertThat(url).asString().contains("https://", "https://");
