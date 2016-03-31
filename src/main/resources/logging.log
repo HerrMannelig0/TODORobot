@@ -1,0 +1,44 @@
+2016-03-31 11:06:28 INFO  MainRobot:28 - Started Main Robot
+2016-03-31 12:50:39 INFO  MainClass:36 - New program launched from MainClass
+2016-03-31 12:50:39 INFO  MainClass:42 - New GUI invocation
+2016-03-31 12:50:39 INFO  FileLinkHandler:23 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-03-31 12:50:39 INFO  FileLinkHandler:79 - New link get from file: https://www.goodreads.com/genres/business class bookTitle
+2016-03-31 12:50:39 INFO  FileLinkHandler:79 - New link get from file: http://www.bookrix.com/books.html class word-break
+2016-03-31 12:50:39 INFO  FileLinkHandler:79 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go class title
+2016-03-31 12:50:39 INFO  FileLinkHandler:79 - New link get from file: http://e-bookshop.pl/362-wyprzedaz tag h3
+2016-03-31 13:50:04 INFO  MainRobot:28 - Started Main Robot
+2016-03-31 13:50:35 INFO  MainRobot:28 - Started Main Robot
+2016-03-31 13:58:16 INFO  FileLinkHandler:23 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-03-31 13:58:16 INFO  FileLinkHandler:78 - New link get from file: https://www.goodreads.com/genres/business class bookTitle
+2016-03-31 13:58:16 INFO  FileLinkHandler:78 - New link get from file: http://www.bookrix.com/books.html class word-break
+2016-03-31 13:58:16 INFO  FileLinkHandler:78 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go class title
+2016-03-31 13:58:16 INFO  FileLinkHandler:78 - New link get from file: http://e-bookshop.pl/362-wyprzedaz tag h3
+2016-03-31 13:58:16 INFO  MainRobot:34 - Started Main Robot
+2016-03-31 13:58:16 INFO  MainRobot:37 - Iterating over links by file
+2016-03-31 13:58:16 INFO  MainRobot:41 - Started Searching titles by Tag
+2016-03-31 13:58:16 INFO  BookTitleSearch:24 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-03-31 13:58:19 INFO  BookTitleSearch:31 - Started iterating over links to search titles
+2016-03-31 13:58:19 INFO  BookTitleSearch:32 - abookTitlea
+2016-03-31 13:58:24 INFO  BookTitleSearch:40 - Finished iterating over links to search titles
+2016-03-31 13:58:24 INFO  MainRobot:48 - Finished Searching titles by Tag
+2016-03-31 13:58:24 INFO  MainRobot:37 - Iterating over links by file
+2016-03-31 13:58:24 INFO  MainRobot:41 - Started Searching titles by Tag
+2016-03-31 13:58:24 INFO  BookTitleSearch:24 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-03-31 13:58:27 INFO  BookTitleSearch:31 - Started iterating over links to search titles
+2016-03-31 13:58:27 INFO  BookTitleSearch:32 - aword-breaka
+2016-03-31 13:58:30 INFO  BookTitleSearch:40 - Finished iterating over links to search titles
+2016-03-31 13:58:30 INFO  MainRobot:48 - Finished Searching titles by Tag
+2016-03-31 13:58:30 INFO  MainRobot:37 - Iterating over links by file
+2016-03-31 13:58:30 INFO  MainRobot:41 - Started Searching titles by Tag
+2016-03-31 13:58:30 INFO  BookTitleSearch:24 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-03-31 13:58:31 INFO  BookTitleSearch:31 - Started iterating over links to search titles
+2016-03-31 13:58:31 INFO  BookTitleSearch:32 - atitlea
+2016-03-31 13:58:31 INFO  BookTitleSearch:40 - Finished iterating over links to search titles
+2016-03-31 13:58:31 INFO  MainRobot:48 - Finished Searching titles by Tag
+2016-03-31 13:58:31 INFO  MainRobot:37 - Iterating over links by file
+2016-03-31 13:58:31 INFO  MainRobot:41 - Started Searching titles by Tag
+2016-03-31 13:58:31 INFO  BookTitleSearch:24 - Started searching Titles for adress =  http://e-bookshop.pl/362-wyprzedaz
+2016-03-31 13:58:41 INFO  BookTitleSearch:31 - Started iterating over links to search titles
+2016-03-31 13:58:41 INFO  BookTitleSearch:32 - ah3a
+2016-03-31 13:58:51 INFO  BookTitleSearch:40 - Finished iterating over links to search titles
+2016-03-31 13:58:51 INFO  MainRobot:48 - Finished Searching titles by Tag

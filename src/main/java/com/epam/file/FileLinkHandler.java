@@ -7,7 +7,9 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import org.apache.log4j.Logger;
 
+import com.epam.gui.MainClass;
 /**
  * Created by damian on 21.03.16.
  */
@@ -15,8 +17,10 @@ public class FileLinkHandler {
 
     protected List<Link> linkList = new ArrayList<Link>();
     protected List<String> urlList = new ArrayList<String>();
+    private static Logger logger = Logger.getLogger(FileLinkHandler.class);
     
     public void createListsFromFile(File file) throws FileNotFoundException{
+    	logger.info("Start of creating List from File: " + file.getPath());
     	updateLinkList(file);
     	updateURLList();
     }
@@ -28,8 +32,10 @@ public class FileLinkHandler {
             }
             printWriter.flush();
         } catch (FileNotFoundException e) {
+        	logger.error("Exception occured during writing file to file (File not Found): " + file.getPath());
             e.printStackTrace();
         }
+        logger.info("Link list has been written into file");
     }
 
 
@@ -40,6 +46,10 @@ public class FileLinkHandler {
     public List<String> getUrlList() {
         return urlList;
     }
+    
+    protected void updateLinkList(File file) throws FileNotFoundException {
+		linkList.addAll(readLinksFromFile(file));
+	}
     
 	protected void updateURLList() {
     	for(Link link : linkList){
@@ -54,11 +64,6 @@ public class FileLinkHandler {
 	protected void clearURLList() {
 		urlList.clear();
 	}
-	
-	protected void updateLinkList(File file) throws FileNotFoundException {
-		linkList.addAll(readLinksFromFile(file));
-		
-	}
 
 	public List<Link> readLinksFromFile(File file) throws FileNotFoundException {
 		Scanner scanner = new Scanner(file);
@@ -69,6 +74,8 @@ public class FileLinkHandler {
 			if (doesLinkContainThreeParts(splittedLine)) {
                 Link link = new Link(splittedLine[0], splittedLine[1], splittedLine[2]);
                 links.add(link);
+                
+                logger.info("New link get from file: " + link.toString());
             }
 		}
 		scanner.close();

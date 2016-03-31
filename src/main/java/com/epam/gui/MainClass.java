@@ -5,6 +5,8 @@ import java.io.File;
 import com.epam.file.FileBookHandler;
 import com.epam.file.FileLinkHandler;
 import com.epam.util.UrlUtils;
+import com.oracle.tools.packager.Log;
+
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -19,6 +21,8 @@ import javafx.scene.control.TextArea;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+import org.apache.log4j.Logger;
+
 
 /**
  * Created by damian on 20.03.16.
@@ -26,13 +30,17 @@ import javafx.stage.Stage;
 public class MainClass extends Application {
     private FileLinkHandler fileLinkHandler;   
     private String fileName = "src/main/resources/FreeBooksAdressSite.txt";
-
+    private static Logger logger = Logger.getLogger(MainClass.class);
+    
     public static void main(String[] args) {
+    	logger.info("New program launched from MainClass");
         launch(args);
     } 
     
     @Override
     public void start(Stage primaryStage) throws Exception {
+    	logger.info("New GUI invocation");
+    	
     	fileLinkHandler = generateFileLinkHandler();
         Label label = new Label("Page adress = ");
         fileLinkHandler.createListsFromFile(new File(fileName));
@@ -55,6 +63,7 @@ public class MainClass extends Application {
                 String fileName = UrlUtils.getFileName(urlName);
                 FileBookHandler fileBookHandler = new FileBookHandler(fileName);
                 freeBookTitleTextArea.appendText(fileBookHandler.readBookTitlesFromFile());
+                Log.info("Item from ComboBox chosen: " + fileName);
             }
         });
 
