@@ -22,6 +22,7 @@ public class BookTitleSearch {
 
     public static String searchTitlesInPageAndSubPages(String adress, String typeOfElement, String elementName) {
         logger.info("Started searching Titles for adress =  " + adress);
+        
         resetClassVariables();
 
         searchSubPagesInPageByNumber(adress);
@@ -56,12 +57,15 @@ public class BookTitleSearch {
 
         Elements elements;
 
-        if (typeOfElement.equals("tag")) {
+        /*if (typeOfElement.equals("tag")) {
             elements = body.getElementsByTag(elementName);
         } else {
             elements = body.getElementsByClass(elementName);
-        }
+        }*/
 
+    	elements = body.getElementsByClass(elementName);
+        
+        
         Iterator<Element> iterator = elements.iterator();
 
         while (iterator.hasNext()) {

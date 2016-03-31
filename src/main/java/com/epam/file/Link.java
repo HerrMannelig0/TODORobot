@@ -9,8 +9,8 @@ public class Link {
     private String nameForSearch;
     private String fileName;
 
-    public Link(String linkAdress, String typeForSearch, String nameForSearch) {
-        this.linkAdress = linkAdress;
+    public Link(String bookstoreAddress, String typeForSearch, String nameForSearch) {
+        this.linkAdress = bookstoreAddress;
         this.typeForSearch = typeForSearch;
         this.nameForSearch = nameForSearch;
         this.fileName = createFileName();

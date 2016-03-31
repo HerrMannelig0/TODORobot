@@ -12,9 +12,6 @@ import java.util.List;
 
 import org.testng.annotations.Test;
 
-/**
- * Created by damian on 21.03.16.
- */
 public class FileLinkHandlerTest {
 	
     @Test

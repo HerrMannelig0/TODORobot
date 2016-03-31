@@ -29,7 +29,7 @@ import org.apache.log4j.Logger;
  */
 public class MainClass extends Application {
     private FileLinkHandler fileLinkHandler;   
-    private String fileName = "src/main/resources/FreeBooksAdressSite.txt";
+    private String fileWithLinksToBookstores = "src/main/resources/FreeBooksAdressSite.txt";
     private static Logger logger = Logger.getLogger(MainClass.class);
     
     public static void main(String[] args) {
@@ -43,7 +43,7 @@ public class MainClass extends Application {
     	
     	fileLinkHandler = generateFileLinkHandler();
         Label label = new Label("Page adress = ");
-        fileLinkHandler.createListsFromFile(new File(fileName));
+        fileLinkHandler.createListsFromFile(new File(fileWithLinksToBookstores));
         
         final ObservableList<String> observableLinkList = FXCollections.observableArrayList(
                 fileLinkHandler.getUrlList()
@@ -70,6 +70,7 @@ public class MainClass extends Application {
         Button editLinkButton = new Button("Edit Links");
         editLinkButton.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
+            	//czy tutaj by trzeba było nadpisać plik z listą księgarni..??
                 ListViewStage listViewStage = new ListViewStage(observableLinkList);
             }
         });
@@ -98,7 +99,7 @@ public class MainClass extends Application {
     }
 
     public void setFileName(String newName){
-    	fileName = newName;
+    	fileWithLinksToBookstores = newName;
     }
 
 }
