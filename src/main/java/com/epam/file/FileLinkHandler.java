@@ -11,9 +11,6 @@ import org.apache.log4j.Logger;
 
 import com.epam.gui.MainClass;
 
-/**
- * Created by damian on 21.03.16.
- */
 public class FileLinkHandler {
 
 	protected List<Link> linkList = new ArrayList<Link>();
