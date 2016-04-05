@@ -22,7 +22,8 @@ public class MainRobot {
 
 		PrintWriter printWriter;
 		FileLinkHandler fileLinkHandler = new FileLinkHandler();
-
+		BookTitleSearch bookTitleSearch = new BookTitleSearch();
+		
 		try {
 			fileLinkHandler.createListsFromFile(new File(fileName));
 		} catch (FileNotFoundException e1) {
@@ -30,28 +31,34 @@ public class MainRobot {
 		}
 
 		List<Link> linksList = fileLinkHandler.getLinksList();
-		BookTitleSearch bookTitleSearch = new BookTitleSearch();
 
 		logger.info("Started Main Robot");
-
+		System.out.println(linksList.size());
+		
 		for (int i = 0; i < linksList.size(); i++) {
 			logger.info("Iterating over links by file");
 
 			Link link = linksList.get(i);
 
 			logger.info("Started Searching titles by Tag");
+			System.out.println(link.getLinkAdress()+" "+
+					link.getElementType() +" "+ link.getTitleTag() + " "+ link.getAuthorTag() +" " + link.getPriceTag() + " "+ link.KeywordsTag());
 			String bookTitles = BookTitleSearch.searchTitlesInPageAndSubPages(link.getLinkAdress(),
-					link.getElementType(), link.getElementName());
-			String fileName = UrlUtils.getFileName(link.getLinkAdress());
-
+					link.getElementType(), link.getTitleTag(), link.getAuthorTag(), link.getPriceTag(), link.KeywordsTag());
+			String fileName = null;
 			try {
+				fileName = UrlUtils.getFileName(link.getLinkAdress());
 				printWriter = new PrintWriter("src/main/resources/" + fileName);
 				new FileBookHandler(fileName).writeBookTitlesToFile(bookTitles, printWriter);
 				logger.info("Finished Searching titles by Tag");
-			} catch (FileNotFoundException e) {
-				logger.error("File no found: " + fileName);
+			} catch (Exception exception) {
+				logger.error(exception.getClass() + "in MainRobot, problems with filename");
 			}
+			
+		BookTitleSearch.showLibrary();
 		}
+		
+		
 	}
 
 }

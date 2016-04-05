@@ -6,13 +6,19 @@ package com.epam.file;
 public class Link {
     private String linkAdress;
     private String typeForSearch;
-    private String nameForSearch;
+    private String titleTag;
     private String fileName;
+    private String authorTag;
+    private String priceTag;
+    private String keywordsTag;
 
-    public Link(String bookstoreAddress, String typeForSearch, String nameForSearch) {
+    public Link(String bookstoreAddress, String typeForSearch, String titleTag, String authorTag, String priceTag, String keywordsTag) {
         this.linkAdress = bookstoreAddress;
         this.typeForSearch = typeForSearch;
-        this.nameForSearch = nameForSearch;
+        this.titleTag = titleTag;
+        this.authorTag = authorTag;
+        this.priceTag = priceTag;
+        this.keywordsTag = keywordsTag;
         this.fileName = createFileName();
     }
 
@@ -24,26 +30,21 @@ public class Link {
         this.typeForSearch = typeForSearch;
     }
 
-    public String getElementName() {
-        return nameForSearch;
-    }
-
     public void setNameForSearch(String nameForSearch) {
-        this.nameForSearch = nameForSearch;
-    }
-
-    protected String createFileName() {
-        return linkAdress.replaceAll("/", "");
+        this.titleTag = nameForSearch;
     }
 
     public String getLinkAdress() {
         return linkAdress;
     }
 
-    public String getFileName() {
-        return fileName;
+    public String getTitleTag() {
+        return titleTag;
     }
 
+    protected String createFileName() {
+        return linkAdress.replaceAll("/", "");
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -53,10 +54,10 @@ public class Link {
         Link link = (Link) o;
 
         if(linkAdress == link.linkAdress && typeForSearch == link.typeForSearch 
-        		&& nameForSearch == link.nameForSearch) return true;
+        		&& titleTag == link.titleTag) return true;
         if (!linkAdress.equals(link.linkAdress)) return false;
         if (!typeForSearch.equals(link.typeForSearch)) return false;
-        return nameForSearch.equals(link.nameForSearch);
+        return titleTag.equals(link.titleTag);
 
     }
 
@@ -64,13 +65,26 @@ public class Link {
     public int hashCode() {
         int result = linkAdress.hashCode();
         result = 31 * result + typeForSearch.hashCode();
-        result = 31 * result + nameForSearch.hashCode();
+        result = 31 * result + titleTag.hashCode();
         return result;
     }
 
     @Override
     public String toString() {
-        return linkAdress + ' ' + typeForSearch + ' ' + nameForSearch;
+        return linkAdress + ' ' + typeForSearch + ' ' + titleTag + ' ' + authorTag + ' ' + priceTag + ' '
+        		+ keywordsTag;
     }
+
+	public String getAuthorTag() {
+		return authorTag;
+	}
+
+	public String getPriceTag() {
+		return priceTag;
+	}
+
+	public String KeywordsTag() {
+		return keywordsTag;
+	}
 
 }

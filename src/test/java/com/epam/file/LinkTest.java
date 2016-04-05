@@ -10,7 +10,7 @@ public class LinkTest {
 
     @Test
     public void ifPutUrlItRemoveSlashes(){
-        Link link=new Link("dsa///dsadsad/adss", null, null);
+        Link link=new Link("dsa///dsadsad/adss", null, null, null, null, null);
 
         String fileNameWithOutSlashes = link.createFileName();
 
@@ -19,32 +19,32 @@ public class LinkTest {
     
     @Test
 	public void testIfTwoDifferentLinksAreNotEqual() throws Exception {
-		Link link1 = new Link("a", null, null);
-		Link link2 = new Link("b", null, null);
+		Link link1 = new Link("a", null, null, null, null, null);
+		Link link2 = new Link("b", null, null, null, null, null);
 		
 		assertThat(link1.equals(link2)).isFalse();
 	}
     
     @Test
    	public void testIfTwoSameLinksAreEqual() throws Exception {
-   		Link link1 = new Link("a", "a", "a");
-   		Link link2 = new Link("a", "a", "a");
+   		Link link1 = new Link("a", "a", "a", "a", "a", "a");
+   		Link link2 = new Link("a", "a", "a", "a", "a", "a");
    		
    		assertThat(link1.equals(link2)).isTrue();
    	}
     
     @Test
    	public void testIfTwoPartiallySameLinksAreNotEqual() throws Exception {
-   		Link link1 = new Link("a", "a", "a");
-   		Link link2 = new Link("a", "b", "a");
+   		Link link1 = new Link("a", "a", "a", "a", "a", "a");
+   		Link link2 = new Link("a", "b", "a", "a", "a", "a");
    		
    		assertThat(link1.equals(link2)).isFalse();
    	}
     
     @Test
 	public void testSameHashCodeForSameObjects() throws Exception {
-    	Link link1 = new Link("a", "a", "a");
-   		Link link2 = new Link("a", "a", "a");
+    	Link link1 = new Link("a", "a", "a", "a", "a", "a");
+   		Link link2 = new Link("a", "a", "a", "a", "a", "a");
    		
    		int hash1 = link1.hashCode();
    		int hash2 = link2.hashCode();

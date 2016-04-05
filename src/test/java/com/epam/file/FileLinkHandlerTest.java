@@ -17,13 +17,13 @@ public class FileLinkHandlerTest {
     @Test
     public void testThreePartsContainigReturnsFalse() {
        String [] emptyStringsTab = {""};
-       assertThat(FileLinkHandler.doesLinkContainThreeParts(emptyStringsTab)).isEqualTo(false);
+       assertThat(FileLinkHandler.doesLinkContainsSixParts(emptyStringsTab)).isEqualTo(false);
     }
 
     @Test
     public void testThreePartsContainigReturnsTrue() {
        String [] notEmptyStringsTab = {"a", "b", "c"};
-       assertThat(FileLinkHandler.doesLinkContainThreeParts(notEmptyStringsTab)).isEqualTo(true);
+       assertThat(FileLinkHandler.doesLinkContainsSixParts(notEmptyStringsTab)).isEqualTo(true);
     }
     
     @Test

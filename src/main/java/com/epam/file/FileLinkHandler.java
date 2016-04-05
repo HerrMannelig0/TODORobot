@@ -18,6 +18,7 @@ public class FileLinkHandler {
 	private static Logger logger = Logger.getLogger(FileLinkHandler.class);
 
 	public void createListsFromFile(File fileWithLinksToBookstores) throws FileNotFoundException {
+		
 		logger.info("Start of creating List from File: " + fileWithLinksToBookstores.getPath());
 		updateLinkList(fileWithLinksToBookstores);
 		updateURLList();
@@ -71,9 +72,10 @@ public class FileLinkHandler {
 
 		while (scanner.hasNextLine()) {
 			String[] partsOfRowFromFileWithBookstores = scanner.nextLine().split(" ");
-			if (doesLinkContainThreeParts(partsOfRowFromFileWithBookstores)) {
+			if (doesLinkContainsSixParts(partsOfRowFromFileWithBookstores)) {
 				Link link = new Link(partsOfRowFromFileWithBookstores[0], partsOfRowFromFileWithBookstores[1],
-						partsOfRowFromFileWithBookstores[2]);
+						partsOfRowFromFileWithBookstores[2], partsOfRowFromFileWithBookstores[3], 
+						partsOfRowFromFileWithBookstores[4], partsOfRowFromFileWithBookstores[5]);
 				links.add(link);
 
 				logger.info("New link get from file: " + link.toString());
@@ -84,8 +86,8 @@ public class FileLinkHandler {
 
 	}
 
-	protected static boolean doesLinkContainThreeParts(String[] partsOfRowFromFileWithBookstores) {
-		return partsOfRowFromFileWithBookstores.length == 3;
+	protected static boolean doesLinkContainsSixParts(String[] partsOfRowFromFileWithBookstores) {
+		return partsOfRowFromFileWithBookstores.length == 6;
 	}
 
 }
