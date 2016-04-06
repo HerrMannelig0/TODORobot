@@ -76,7 +76,7 @@ public class BookTitleSearch {
 			
 			for(Element item : items){
 				try{
-					Elements titleElements = item.getElementsByClass("item-title");	
+					Elements titleElements = item.getElementsByClass(titleTag);	
 					Elements authorElements = item.getElementsByClass(authorTag);				
 					Elements priceElements = null;
 					Elements keywordsElements = null;
