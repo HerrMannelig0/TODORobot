@@ -75,52 +75,29 @@ public class BookTitleSearch {
 			Elements items = body.getElementsByClass(typeOfElement);
 			
 			for(Element item : items){
-				try{
-					Elements titleElements = item.getElementsByClass(titleTag);	
-					Elements authorElements = item.getElementsByClass(authorTag);				
-					Elements priceElements = null;
-					Elements keywordsElements = null;
-					
-					try{
-						priceElements = item.getElementsByClass(priceTag);
-					} catch(IllegalArgumentException e){}
-					
-					try{
-						keywordsElements = item.getElementsByClass(keywordsTag);
-					} catch(IllegalArgumentException e)  {}
-					
-					
-					String title = titleElements.text();
-					String author = authorElements.text();
-					String price = null;
-					String keywordsAsStringFromSite = null;
-					
-					if(priceElements != null){
-						price = priceElements.text();
-					} else{
-						price = "not inclued";
-					}
-					
-					if(keywordsElements != null){
-						keywordsAsStringFromSite = keywordsElements.get(0).text();
-					} else{
-						keywordsAsStringFromSite = "";
-					}
-					
+				
+					String title = extractElementFromSite(item, titleTag); 
+					String author = extractElementFromSite(item, authorTag);
+					String price = extractElementFromSite(item, priceTag);
+					String keywordsAsStringFromSite = extractElementFromSite(item, keywordsTag);
+
 					if(BookTitleSearch.areKeywords(keywordsAsStringFromSite)){
 						Keywords keywords = new Keywords(BookTitleSearch.extractKeywords(keywordsAsStringFromSite));
 						library.add(new Book(title, author, price, keywords, new URL(bookstoreAddressFromTextfile)));
 					} else{
 						library.add(new Book(title, author, price, new URL(bookstoreAddressFromTextfile)));
 					}
-				} catch(Exception e){
-					logger.error(e.getClass() + " " + "Exception while site parsing: " + bookstoreAddressFromTextfile);
-				}
-				
-				
 			}
 	}
 
+	
+	static String extractElementFromSite(Element item, String tag){
+		Elements elements = null;
+		try{
+			elements = item.getElementsByClass(tag);
+		} catch(IllegalArgumentException e){}
+		return elements.text();
+	}
 
 	public static void searchLinksToNextPages(String bookstoreAddressFromTextfile) {
 

@@ -37,6 +37,7 @@ public class Temp {
 		BookTitleSearch.searchTitlesInPageAndSubPages(link.getLinkAdress(),
 				link.getElementType(), link.getTitleTag(), link.getAuthorTag(), link.getPriceTag(), link.KeywordsTag());
 		BookTitleSearch.showLibrary();
+		
 	}
 
 }
