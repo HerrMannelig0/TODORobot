@@ -119,62 +119,8 @@ public class BookTitleSearch {
 				
 				
 			}
-		
-		
-		}
-
-	public static void searchTitlesInBookrixTypeSite(String bookstoreAddressFromTextfile, String typeOfElement, String elementName) throws MalformedURLException {
-		Document document = parseHTMLtoDoc(bookstoreAddressFromTextfile);
-
-		Element body = document.body();
-		
-		Elements items = body.getElementsByClass("item");
-		
-		for(Element item : items){
-			Elements titleElements = item.getElementsByClass("item-title");
-			Elements authorElements = item.getElementsByClass("item-author");
-			Elements priceElements = item.getElementsByClass("item-price");
-			Elements keywordsElements = item.getElementsByClass("item-keywords");
-			
-			String title = titleElements.get(0).text();
-			String author = authorElements.get(0).text();
-			String price = priceElements.get(0).text();
-			
-			String keywordsAsStringFromSite = keywordsElements.get(0).text();
-			
-			if(BookTitleSearch.areKeywords(keywordsAsStringFromSite)){
-				Keywords keywords = new Keywords(BookTitleSearch.extractKeywords(keywordsAsStringFromSite));
-				library.add(new Book(title, author, price, keywords, new URL(bookstoreAddressFromTextfile)));
-			} else{
-				library.add(new Book(title, author, price, new URL(bookstoreAddressFromTextfile)));
-			}
-			
-		}
-		
-		/*
-		 * if (typeOfElement.equals("tag")) { elements =
-		 * body.getElementsByTag(elementName); } else { elements =
-		 * body.getElementsByClass(elementName); }
-		 */
-
-		/*elements = body.getElementsByClass(elementName);
-
-		Iterator<Element> iterator = elements.iterator();
-
-		while (iterator.hasNext()) {
-			Element next = iterator.next();
-			String valueFromSite = next.text();
-			
-			if(areKeywords(valueFromSite)){
-				String[] keywordsTable = extractKeywords(valueFromSite);
-				Keywords keywords = new Keywords(keywordsTable);
-				System.err.println(Arrays.toString(keywordsTable));
-			}
-			
-			System.out.println(next.text());
-			titleBookContainer.append(next.text() + "\n");
-		}*/
 	}
+
 
 	public static void searchLinksToNextPages(String bookstoreAddressFromTextfile) {
 
