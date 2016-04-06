@@ -9,13 +9,11 @@ import java.util.List;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
 
+//End-to-end test for BookTitleSearch
 public class Temp {
 
 	public static void main(String[] args) throws MalformedURLException {
-		//BookTitleSearch.searchTitles("https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go", "booklink", "title", "subtitle", "", "");
-		//BookTitleSearch.searchTitles("http://www.bookrix.com/books.html", "item", "item-title", "item-author", "item-price", "item-keywords");
-		//BookTitleSearch.searchTitlesInPageAndSubPages("http://www.bookrix.com/books.html", "item", "item-title", "item-author", "item-price", "item-keywords");
-		//BookTitleSearch.showLibrary();
+		
 		String fileName = "src/main/resources/FreeBooksAdressSite.txt";
 		FileLinkHandler fileLinkHandler = new FileLinkHandler();
 		BookTitleSearch bookTitleSearch = new BookTitleSearch();
