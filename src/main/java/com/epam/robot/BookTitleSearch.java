@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 
 import org.apache.commons.lang3.math.NumberUtils;
 import org.apache.log4j.Logger;
@@ -18,21 +19,29 @@ import org.jsoup.select.Elements;
 public class BookTitleSearch {
 	private static Logger logger = Logger.getLogger("BookTitleSearch");
 	private static StringBuilder titleBookContainer = new StringBuilder();
-	static private HashSet<String> addressHashSet = new HashSet<String>();
-	
+	static private Set<String> addressHashSet = new HashSet<String>();
+
 	public static void main(String[] args) {
 		BookTitleSearch obj = new BookTitleSearch();
 		HowItWorks test = obj.new HowItWorks();
-		test.testSearchLinksToNextPages();
+		test.testOfSearchBooks();
 	}
 
+	/*
+	 * creates String containing titles from all pages from bookstore web site
+	 * 
+	 * @param bookstoreAddressFromTextfile the main bookstore address
+	 * typeOfElement elementName a specified tag name to search for
+	 * 
+	 * @return String object with book titles and keywords (if they exist)
+	 */
 	public static String searchTitlesInPageAndSubPages(String bookstoreAddressFromTextfile, String typeOfElement,
 			String elementName) {
 		logger.info("Started searching Titles for adress =  " + bookstoreAddressFromTextfile);
 
 		resetClassVariables();
 
-		searchLinksToNextPages(bookstoreAddressFromTextfile); 
+		searchLinksToNextPages(bookstoreAddressFromTextfile);
 
 		final Iterator<String> iterator = addressHashSet.iterator();
 
@@ -50,23 +59,27 @@ public class BookTitleSearch {
 		return titleBookContainer.toString();
 	}
 
-	private static void resetClassVariables() {
-		titleBookContainer = new StringBuilder();
-		addressHashSet = new HashSet<>();
-	}
-
+	/*
+	 * searches for book titles and tags, if available
+	 * 
+	 * @param bookstoreAddressFromTextfile the main bookstore address
+	 * typeOfElement type of element to be searched elementName a specified tag
+	 * name to search for
+	 * 
+	 */
 	public static void searchTitles(String bookstoreAddressFromTextfile, String typeOfElement, String elementName) {
+
 		Document document = parseHTMLtoDoc(bookstoreAddressFromTextfile);
 
 		Element body = document.body();
 
 		Elements elements;
 
-		/*
-		 * if (typeOfElement.equals("tag")) { elements =
-		 * body.getElementsByTag(elementName); } else { elements =
-		 * body.getElementsByClass(elementName); }
-		 */
+		if (typeOfElement.equals("tag")) {
+			elements = body.getElementsByTag(elementName);
+		} else {
+			elements = body.getElementsByClass(elementName);
+		}
 
 		elements = body.getElementsByClass(elementName);
 
@@ -79,14 +92,20 @@ public class BookTitleSearch {
 		}
 	}
 
+	/*
+	 * searches for sub - pages and puts found links into set
+	 * 
+	 * @param bookstoreAddressFromTextfile the main bookstore address
+	 * 
+	 */
 	public static void searchLinksToNextPages(String bookstoreAddressFromTextfile) {
 
 		Document websiteContent = parseHTMLtoDoc(bookstoreAddressFromTextfile);
 
-		Elements links = websiteContent.select("a[abs:href]");
-		Iterator<Element> iterator = links.iterator();
 		addressHashSet.add(bookstoreAddressFromTextfile);
 
+		Elements links = websiteContent.select("a[abs:href]");
+		Iterator<Element> iterator = links.iterator();
 		while (iterator.hasNext()) {
 			Element tag = iterator.next();
 
@@ -94,6 +113,11 @@ public class BookTitleSearch {
 				addLinkToSetAndSearchInLinkForPages(tag.attr("abs:href"));
 			}
 		}
+	}
+
+	private static void resetClassVariables() {
+		titleBookContainer = new StringBuilder();
+		addressHashSet = new HashSet<>();
 	}
 
 	private static boolean tagContainsNumberAndWasNotFoundBefore(Element element) {
@@ -118,22 +142,53 @@ public class BookTitleSearch {
 	}
 
 	class HowItWorks {
-		
+
 		public void testSearchLinksToNextPages() {
-			
-			HashSet <String> initial = new HashSet <>();
+
+			HashSet<String> initial = new HashSet<>();
 			String bookstore = "http://www.bookrix.com/books.html";
 			initial.add(bookstore);
 			Document websiteContent = parseHTMLtoDoc(bookstore);
 			Elements links = websiteContent.select("a[abs:href]");
+			System.out.println(links.size());
 			Iterator<Element> iterator = links.iterator();
 			while (iterator.hasNext()) {
 				Element tag = iterator.next();
-				if (tagContainsNumberAndWasNotFoundBefore(tag))
-				System.out.println(tag.toString());
-				
+				if (tagContainsNumberAndWasNotFoundBefore(tag)) {
+					addLinkToSetAndSearchInLinkForPages(tag.attr("abs:href"));
+					System.out.println(tag.toString());
+				}
+
 			}
-			
+
 		}
+
+		public void testOfSearchBooks() {
+			String typeOfElement = "class";
+			String elementName = "word-break";
+			StringBuilder titleBookContainer = new StringBuilder();
+			Document document = parseHTMLtoDoc("http://www.bookrix.com/books;page:2.html");
+
+			Element body = document.body();
+
+			Elements elements;
+
+			if (typeOfElement.equals("tag")) {
+				elements = body.getElementsByTag(elementName);
+			} else {
+				elements = body.getElementsByClass(elementName);
+			}
+
+			elements = body.getElementsByClass(elementName);
+
+			Iterator<Element> iterator = elements.iterator();
+
+			while (iterator.hasNext()) {
+				Element next = iterator.next();
+				System.out.println(next.text());
+				titleBookContainer.append(next.text() + "\n");
+			}
+		}
+
 	}
 }
