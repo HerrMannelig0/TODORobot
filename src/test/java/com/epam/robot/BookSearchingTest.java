@@ -67,4 +67,5 @@ public class BookSearchingTest {
 		BookTitleSearch.searchTitlesInPageAndSubPages(urlString, tags[0], tags[1], tags[2], tags[3], tags[4]);
 		assertThat(BookTitleSearch.library.size()).isGreaterThan(0);	
 	}
+
 }

@@ -41,10 +41,13 @@ public class MainRobot {
 			Link link = linksList.get(i);
 
 			logger.info("Started Searching titles by Tag");
+			
 			System.out.println(link.getLinkAdress()+" "+
 					link.getElementType() +" "+ link.getTitleTag() + " "+ link.getAuthorTag() +" " + link.getPriceTag() + " "+ link.KeywordsTag());
+		
 			String bookTitles = BookTitleSearch.searchTitlesInPageAndSubPages(link.getLinkAdress(),
 					link.getElementType(), link.getTitleTag(), link.getAuthorTag(), link.getPriceTag(), link.KeywordsTag());
+			
 			String fileName = null;
 			try {
 				fileName = UrlUtils.getFileName(link.getLinkAdress());

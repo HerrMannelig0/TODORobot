@@ -9,7 +9,6 @@ public class Book {
 	private String price;
 	protected Keywords keywords;
 	private URL url;
-
 	
 	Book(String title, String author, String price, Keywords keywords, URL url){
 		this.title = title;
@@ -32,25 +31,27 @@ public class Book {
 		this.keywords = keywords;
 	}
 	
-	public String assignCategory() {
-		return null;
+	public String assignCategory(Category[] categories) {
+		String resultCategory = "No category";
+		for (Category category : categories) {
+			if(resultCategory.equals("No category")){
+				resultCategory = checkCategory(category);
+			}
+			else break;
+		}
+		return resultCategory;
 	}
-	
 
-	
 	public String checkCategory(Category category){
 		if(keywords.contains(category.getKeywords())) 
 				return category.getCategory();
 		return "No category";
-	}
-	
+	}	
 	
 	@Override
 	public String toString() {
 		if(url == null)
 			return "[" + author + ", " + title + " (price: " + price + ") "  + keywords + "]" ;
 		return "[" + author + ", " + title + " (price: " + price + ") "  + keywords + " " + url.toString() + "]" ;	
-	}
-
-	
+	}	
 }
