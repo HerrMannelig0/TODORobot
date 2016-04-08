@@ -95,7 +95,6 @@ public class BookTest {
 		Book book = new Book("title", "author", new Keywords(new String[]{"other"}));
 		Category category = mock(Category.class);
 		
-		
 		HashSet<String> romanceSet = new HashSet<>();
 		romanceSet.add("love");
 		
