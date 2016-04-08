@@ -1,5 +1,6 @@
 package com.epam.robot;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -21,11 +22,11 @@ public class BookTest {
 		Category romanceCategory = mock(Category.class);
 		
 		when(romanceCategory.getKeywords()).thenReturn(set);
-		when(romanceCategory.getCategory()).thenReturn("Romance Category");
+		when(romanceCategory.getCategory()).thenReturn("Romance");
 		String realCategory = book.checkCategory(romanceCategory);
 		
 		verify(romanceCategory).getCategory();
-		assertThat(realCategory).isEqualTo("Romance Category");
+		assertThat(realCategory).isEqualTo("Romance");
 	}
 	
 	@Test
@@ -36,10 +37,13 @@ public class BookTest {
 		Category romanceCategory = mock(Category.class);
 		
 		when(romanceCategory.getKeywords()).thenReturn(set);
-		when(romanceCategory.getCategory()).thenReturn("Romance Category");
+		when(romanceCategory.getCategory()).thenReturn("Romance");
 		String realCategory = book.checkCategory(romanceCategory);
 		
 		verify(romanceCategory, times(0)).getCategory();
-		assertThat(realCategory).isEqualTo("");
+		assertThat(realCategory).isEqualTo("No category");
 	}
+	
+
+	
 }

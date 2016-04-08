@@ -24,16 +24,9 @@ public class BookTitleSearch {
 	private static Logger logger = Logger.getLogger("BookTitleSearch");
 	private static StringBuilder titleBookContainer = new StringBuilder();
 
-	private static List<Book> library = new ArrayList<>();
+	protected static List<Book> library = new ArrayList<>();
 	
 	static private Set<String> addressHashSet = new HashSet<String>();
-
-
-	public static void main(String[] args) {
-		BookTitleSearch obj = new BookTitleSearch();
-		HowItWorks test = obj.new HowItWorks();
-		test.testOfSearchBooks();
-	}
 
 	/*
 	 * creates String containing titles from all pages from bookstore web site
@@ -86,20 +79,29 @@ public class BookTitleSearch {
 			for(Element item : items){
 				
 					String title = extractElementFromSite(item, titleTag); 
-					String author = extractElementFromSite(item, authorTag);
+					String author = omitByInAuthor(extractElementFromSite(item, authorTag));
 					String price = extractElementFromSite(item, priceTag);
 					String keywordsAsStringFromSite = extractElementFromSite(item, keywordsTag);
 
+					
+					
 					if(BookTitleSearch.areKeywords(keywordsAsStringFromSite)){
 						Keywords keywords = new Keywords(BookTitleSearch.extractKeywords(keywordsAsStringFromSite));
 						library.add(new Book(title, author, price, keywords, new URL(bookstoreAddressFromTextfile)));
 					} else{
-						library.add(new Book(title, author, price, new URL(bookstoreAddressFromTextfile)));
+						library.add(new Book(title, author, price, new URL(bookstoreAddressFromTextfile)));		
 					}
 			}
 	}
 
 	
+	protected static String omitByInAuthor(String extractElementFromSite) {
+		if(extractElementFromSite.length() < 3) return extractElementFromSite;
+		if(extractElementFromSite.startsWith("By:"))
+			return extractElementFromSite.substring(extractElementFromSite.indexOf(" ")+1);
+		return extractElementFromSite;
+	}
+
 	static String extractElementFromSite(Element item, String tag){
 		Elements elements = null;
 		try{
@@ -139,6 +141,7 @@ public class BookTitleSearch {
 			Element next = iterator.next();
 			System.out.println(next.text());
 			titleBookContainer.append(next.text() + "\n");
+			
 		}
 	}
 

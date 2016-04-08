@@ -14,6 +14,8 @@ public class Temp {
 
 	public static void main(String[] args) throws MalformedURLException {
 		
+		
+		
 		String fileName = "src/main/resources/FreeBooksAdressSite.txt";
 		FileLinkHandler fileLinkHandler = new FileLinkHandler();
 		BookTitleSearch bookTitleSearch = new BookTitleSearch();
@@ -37,7 +39,6 @@ public class Temp {
 		BookTitleSearch.searchTitlesInPageAndSubPages(link.getLinkAdress(),
 				link.getElementType(), link.getTitleTag(), link.getAuthorTag(), link.getPriceTag(), link.KeywordsTag());
 		BookTitleSearch.showLibrary();
-		
 	}
 
 }

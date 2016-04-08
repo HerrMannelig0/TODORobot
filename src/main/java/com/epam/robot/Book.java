@@ -32,11 +32,18 @@ public class Book {
 		this.keywords = keywords;
 	}
 	
+	public String assignCategory() {
+		return null;
+	}
+	
+
+	
 	public String checkCategory(Category category){
 		if(keywords.contains(category.getKeywords())) 
 				return category.getCategory();
 		return "No category";
 	}
+	
 	
 	@Override
 	public String toString() {
@@ -44,4 +51,6 @@ public class Book {
 			return "[" + author + ", " + title + " (price: " + price + ") "  + keywords + "]" ;
 		return "[" + author + ", " + title + " (price: " + price + ") "  + keywords + " " + url.toString() + "]" ;	
 	}
+
+	
 }
