@@ -22,7 +22,7 @@ public class FileLinkHandlerTest {
 
     @Test
     public void testThreePartsContainigReturnsTrue() {
-       String [] notEmptyStringsTab = {"a", "b", "c"};
+       String [] notEmptyStringsTab = {"a", "b", "c", "d", "e", "f"};
        assertThat(FileLinkHandler.doesLinkContainsSixParts(notEmptyStringsTab)).isEqualTo(true);
     }
     

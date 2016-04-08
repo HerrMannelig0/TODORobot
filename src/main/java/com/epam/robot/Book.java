@@ -2,13 +2,14 @@ package com.epam.robot;
 
 import java.net.URL;
 
+import com.epam.file.Category;
+
 public class Book {
 	private String title, author;
 	private String price;
-	private Keywords keywords;
+	protected Keywords keywords;
 	private URL url;
-	
-	
+
 	
 	Book(String title, String author, String price, Keywords keywords, URL url){
 		this.title = title;
@@ -18,8 +19,6 @@ public class Book {
 		this.url = url;
 	}
 
-
-
 	Book(String title, String author, String price, URL url) {
 		this.title = title;
 		this.author = author;
@@ -27,10 +26,22 @@ public class Book {
 		this.url = url;
 	}
 	
-	@Override
-	public String toString() {
-		return "[" + author + ", " + title + " (price: " + price + ") "  + keywords + " " + url.toString() + "]" ;
-		
+	Book(String title, String author, Keywords keywords){
+		this.title = title;
+		this.author = author;
+		this.keywords = keywords;
 	}
 	
+	public String checkCategory(Category category){
+		if(keywords.contains(category.getKeywords())) 
+				return category.getCategory();
+		return "No category";
+	}
+	
+	@Override
+	public String toString() {
+		if(url == null)
+			return "[" + author + ", " + title + " (price: " + price + ") "  + keywords + "]" ;
+		return "[" + author + ", " + title + " (price: " + price + ") "  + keywords + " " + url.toString() + "]" ;	
+	}
 }

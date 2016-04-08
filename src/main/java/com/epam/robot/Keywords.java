@@ -1,15 +1,25 @@
 package com.epam.robot;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Keywords {
-	private List <String> keywords;
+	private Set <String> keywords;
 	
 	public Keywords(String [] keywordsTable){
-		keywords = new ArrayList<>(Arrays.asList(keywordsTable));
+		keywords = new HashSet<>(Arrays.asList(keywordsTable));
 	}
+	
+	public boolean contains(Set<String> keywordsToCheck){
+		for(String keyword : keywords){
+			for (String keywordToCheck : keywordsToCheck) {
+				if(keyword.equals(keywordToCheck)) return true;
+			}
+		}
+		return false;
+	}
+	
 	
 	@Override
 	public String toString() {

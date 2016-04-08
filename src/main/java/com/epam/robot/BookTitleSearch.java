@@ -24,7 +24,6 @@ public class BookTitleSearch {
 	private static Logger logger = Logger.getLogger("BookTitleSearch");
 	private static StringBuilder titleBookContainer = new StringBuilder();
 
-	static private HashSet<String> addressHashSet = new HashSet<String>();
 	private static List<Book> library = new ArrayList<>();
 	
 	static private Set<String> addressHashSet = new HashSet<String>();
@@ -76,11 +75,6 @@ public class BookTitleSearch {
 		return titleBookContainer.toString();
 	}
 
-	private static void resetClassVariables() {
-		titleBookContainer = new StringBuilder();
-		addressHashSet = new HashSet<>();
-	}
-	
 	public static void searchTitles(String bookstoreAddressFromTextfile, String typeOfElement,
 			String titleTag, String authorTag, String priceTag, String keywordsTag) throws MalformedURLException {
 			
