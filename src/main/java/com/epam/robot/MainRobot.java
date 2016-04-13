@@ -22,7 +22,6 @@ public class MainRobot {
 
 		PrintWriter printWriter;
 		FileLinkHandler fileLinkHandler = new FileLinkHandler();
-		BookTitleSearch bookTitleSearch = new BookTitleSearch();
 		
 		try {
 			fileLinkHandler.createListsFromFile(new File(fileName));

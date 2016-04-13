@@ -44,13 +44,4 @@ public class FileBookHandler {
             printWriter.print(title);
             printWriter.flush();
     }
-    
-    /*public void writeBookTitlesToFile(String title) {
-        try (PrintWriter printWriter = new PrintWriter("src/main/resources/" + fileName)){
-			printWriter.print(title);
-			printWriter.flush();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-    }*/
 }

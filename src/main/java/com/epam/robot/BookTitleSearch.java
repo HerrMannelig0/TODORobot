@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
@@ -41,7 +40,6 @@ public class BookTitleSearch {
 		logger.info("Started searching Titles for adress =  " + bookstoreAddressFromTextfile);
 
 		resetClassVariables();
-
 
 		//creates addressHashSet
 		searchLinksToNextPages(bookstoreAddressFromTextfile); 
@@ -125,12 +123,6 @@ public class BookTitleSearch {
 
 		Elements elements;
 
-		if (typeOfElement.equals("tag")) {
-			elements = body.getElementsByTag(elementName);
-		} else {
-			elements = body.getElementsByClass(elementName);
-		}
-
 		elements = body.getElementsByClass(elementName);
 
 		Iterator<Element> iterator = elements.iterator();
@@ -144,7 +136,7 @@ public class BookTitleSearch {
 	}
 
 	/*
-	 * searches for sub - pages and puts found links into set
+	 * searches for sub-pages and puts found links into set
 	 * 
 	 * @param bookstoreAddressFromTextfile the main bookstore address
 	 * 
@@ -178,7 +170,6 @@ public class BookTitleSearch {
 	}
 
 	private static void addLinkToSetAndSearchInLinkForPages(String linkToSubPage) {
-		System.out.println(linkToSubPage);
 		addressHashSet.add(linkToSubPage);
 		searchLinksToNextPages(linkToSubPage);
 	}
@@ -191,57 +182,6 @@ public class BookTitleSearch {
 			e.printStackTrace();
 		}
 		return document;
-	}
-
-	class HowItWorks {
-
-		public void testSearchLinksToNextPages() {
-
-			HashSet<String> initial = new HashSet<>();
-			String bookstore = "http://www.bookrix.com/books.html";
-			initial.add(bookstore);
-			Document websiteContent = parseHTMLtoDoc(bookstore);
-			Elements links = websiteContent.select("a[abs:href]");
-			System.out.println(links.size());
-			Iterator<Element> iterator = links.iterator();
-			while (iterator.hasNext()) {
-				Element tag = iterator.next();
-				if (tagContainsNumberAndWasNotFoundBefore(tag)) {
-					addLinkToSetAndSearchInLinkForPages(tag.attr("abs:href"));
-					System.out.println(tag.toString());
-				}
-
-			}
-
-		}
-
-		public void testOfSearchBooks() {
-			String typeOfElement = "class";
-			String elementName = "word-break";
-			StringBuilder titleBookContainer = new StringBuilder();
-			Document document = parseHTMLtoDoc("http://www.bookrix.com/books;page:2.html");
-
-			Element body = document.body();
-
-			Elements elements;
-
-			if (typeOfElement.equals("tag")) {
-				elements = body.getElementsByTag(elementName);
-			} else {
-				elements = body.getElementsByClass(elementName);
-			}
-
-			elements = body.getElementsByClass(elementName);
-
-			Iterator<Element> iterator = elements.iterator();
-
-			while (iterator.hasNext()) {
-				Element next = iterator.next();
-				System.out.println(next.text());
-				titleBookContainer.append(next.text() + "\n");
-			}
-		}
-
 	}
 
 	protected static String[] extractKeywords(String valueFromSite) {
