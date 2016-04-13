@@ -1,57 +1,39 @@
 package com.epam.DAO;
 
-import java.util.ArrayList;
-
-import javax.persistence.*;
-import static javax.persistence.GenerationType.IDENTITY;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
-@Table (name = "book")
-public class Book implements java.io.Serializable {
+@Table(name = "BOOK")
+public class Book {
 
-	// not sure if book should have unique id
-	private int id;
-	private int bookstoreId;
 	private String author;
 	private String title;
-	private int price;
-	private ArrayList<String> taglist;
-	private Bookstore bookstore;
 
-	public Book() {
-	}
-
-	public Book(String author, String title, int price) {
-
-		this.setAuthor(author);
-		this.setTitle(title);
-		this.setPrice(price);
-
-	}
-	
-	
-	@Id
-	@GeneratedValue(strategy = IDENTITY)
-	@Column(name = "BOOKSTORE_ID", unique = true, nullable = false)
-	public Integer getBookstoreId() {
-		return this.bookstoreId;
-	}
-
-	public void setBookstoreId(int bookstoreId) {
-		this.bookstoreId = bookstoreId;
-	}
-	
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "BOOK_ID", nullable = false)
-	public Bookstore getBookstore() {
-		return this.bookstore;
+	@JoinColumn(name = "BOOKSTORE_ID")
+	private Bookstore bookstore;
+	
+	private int bookId;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "BOOK_ID", unique = true, nullable = false, precision = 5, scale = 0)
+	public int getBookId() {
+		return bookId;
 	}
 
-	public void setBookstore(Bookstore bookstore) {
-		this.bookstore = bookstore;
+	public void setBookId(int bookId) {
+		this.bookId = bookId;
 	}
-	
-	
+
 	@Column(name = "AUTHOR")
 	public String getAuthor() {
 		return author;
@@ -70,18 +52,12 @@ public class Book implements java.io.Serializable {
 		this.title = title;
 	}
 
-	@Column(name = "PRICE")
-	public int getPrice() {
-		return price;
+	public Bookstore getBookstore() {
+		return bookstore;
 	}
 
-	public void setPrice(int price) {
-		this.price = price;
-	}
-	
-	@Override
-	public String toString() {
-		return author + " " + title;
+	public void setBookstore(Bookstore bookstore) {
+		this.bookstore = bookstore;
 	}
 
 }

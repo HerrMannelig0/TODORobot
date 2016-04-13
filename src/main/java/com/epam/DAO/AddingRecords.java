@@ -5,28 +5,25 @@ import org.hibernate.Session;
 public class AddingRecords {
 
 	public static void main(String[] args) {
-
-		System.out.println("Hibernate one to many (Annotation)");
+		System.out.println("Maven + Hibernate + Oracle");
 		Session session = HibernateUtil.getSessionFactory().openSession();
 
 		session.beginTransaction();
-		Book grzedowicz = new Book("Jarosław Grzędowicz", "Popiół i kurz", 49);
-		System.out.println(grzedowicz);
-		session.save(grzedowicz);
-		
-		Book lukajenko = new Book("Siergiej Łukajenko", "Czystopis", 49);
-		session.save(lukajenko);
+		Bookstore bookstore = new Bookstore();
 
-		Bookstore empik = new Bookstore("empik", "http://");
-		/*
-		 * grzedowicz.setBookstore(empik);
-		 * empik.getBookRecords().add(lukajenko);
-		 */
+		bookstore.setBookstorename("empik");
+		bookstore.setURL("www.empik.com");
 
-		session.save(empik);
+		Book grzedowicz = new Book();
+		grzedowicz.setAuthor("Jarosław Grzędowicz");
+		grzedowicz.setTitle("Popiół i kurz");
+		grzedowicz.setBookstore(bookstore);
 
+		session.save(bookstore);
 		session.getTransaction().commit();
-		System.out.println("Done");
+		session.beginTransaction();
+		session.save(grzedowicz);
+		session.getTransaction().commit();
 	}
 
 }

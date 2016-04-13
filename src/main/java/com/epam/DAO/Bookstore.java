@@ -1,74 +1,61 @@
 package com.epam.DAO;
 
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-@Table (name = "bookstore")
-public class Bookstore implements java.io.Serializable{
+@Table(name = "BOOKSTORE")
+public class Bookstore implements java.io.Serializable {
 
-private static final long serialVersionUID = -3960396761249882840L;
-	
-	private int bookstoreId;
-	private String bookstoreName;
+
+	private static final long serialVersionUID = 1L;
+	private int bookId;
+	private String bookstorename;
 	private String url;
-
-	private Set<Book> bookRecords = new HashSet <>();
 
 	public Bookstore() {
 	}
 
-	public Bookstore(String boosktoreName, String url) {
-		this.bookstoreName = boosktoreName;
-		this.url = url;
-	}	
-
-	public Bookstore(String boosktoreName, String url, Set<Book> bookRecords) {
-		this.bookstoreName = boosktoreName;
-		this.url = url;
-		this.bookRecords = bookRecords;
+	public Bookstore(int userId, String username, String createdBy) {
+		this.bookId = userId;
+		this.bookstorename = username;
+		this.url = createdBy;
 	}
 
-	
-	@Id  
-	@GeneratedValue(strategy=GenerationType.IDENTITY)  
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "BOOKSTORE_ID", unique = true, nullable = false, precision = 5, scale = 0)
 	public int getBookstoreId() {
-		return this.bookstoreId;
+		return this.bookId;
 	}
 
-	public void setBookstoreId(int userId) {
-		this.bookstoreId = userId;
+	public void setBookstoreId(int bookstoreId) {
+		this.bookId = bookstoreId;
 	}
 
-	@Column(name = "BOOKSTORENAME", nullable = false, length = 20)
+	@Column(name = "BOOKSTORE_NAME", nullable = false)
 	public String getBookstorename() {
-		return this.bookstoreName;
+		return this.bookstorename;
 	}
 
-	public void setBookstorename(String username) {
-		this.bookstoreName = username;
+	public void setBookstorename(String bookstorename) {
+		this.bookstorename = bookstorename;
 	}
 
-	@Column(name = "URL", nullable = false, length = 20)
+	@Column(name = "URL", nullable = false)
 	public String getURL() {
 		return this.url;
 	}
 
-	public void setURL(String createdBy) {
-		this.url = createdBy;
+	public void setURL(String URL) {
+		this.url = URL;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "bookstore")
-	public Set<Book> getBookRecords() {
-		return this.bookRecords;
-	}
 
-	public void setBookRecords(Set<Book> bookRecords) {
-		this.bookRecords = bookRecords;
-	}
-	
+
 }
