@@ -111,3 +111,662 @@
 2016-03-31 16:03:56 INFO  FileLinkHandler:82 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go class title
 2016-03-31 16:03:56 INFO  FileLinkHandler:82 - New link get from file: http://e-bookshop.pl/362-wyprzedaz tag h3
 2016-03-31 16:03:56 INFO  FileLinkHandler:82 - New link get from file: http://www.nexto.pl class title
+2016-04-07 12:00:46 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-07 12:01:19 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-07 12:01:52 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-07 12:03:04 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-07 12:03:12 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-07 12:03:13 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-07 12:03:13 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-07 12:03:13 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-07 12:03:13 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-07 12:03:13 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-07 12:11:08 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-07 12:11:08 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-07 12:11:08 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-07 12:11:08 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-07 12:11:11 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-07 12:11:11 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-07 12:11:17 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-07 12:13:16 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-07 12:13:16 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-07 12:13:16 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-07 12:13:16 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-07 12:13:21 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-07 12:13:21 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-07 12:13:24 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 11:54:07 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 11:54:07 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 11:54:07 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 11:54:07 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 11:54:07 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 11:54:07 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 11:59:05 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 11:59:05 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 11:59:05 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 11:59:05 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 11:59:05 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 11:59:05 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 12:02:25 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:25 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:25 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:25 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:25 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:25 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 12:02:48 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:48 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:48 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:48 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:48 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:48 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 12:02:58 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:58 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:58 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:58 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:58 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:02:58 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 12:11:59 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:11:59 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:11:59 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:11:59 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:11:59 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:11:59 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 12:16:13 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:16:13 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:16:13 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:16:13 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:16:13 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:16:13 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 12:28:24 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:28:24 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:28:24 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:28:24 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:28:24 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:28:24 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 12:30:58 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:30:58 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:30:58 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:30:58 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:30:58 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:30:58 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 12:55:28 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:55:28 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:55:28 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:55:28 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:55:28 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:55:28 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 12:56:56 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:56:56 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:56:56 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:56:56 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:56:56 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:56:56 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 12:58:53 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:58:53 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:58:53 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:58:53 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:58:53 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:58:53 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 12:59:14 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:59:14 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:59:14 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:59:14 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:59:14 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 12:59:14 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 12:59:34 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 12:59:34 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 12:59:34 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 12:59:34 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 12:59:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 12:59:34 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 12:59:34 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 12:59:34 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 12:59:34 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 12:59:34 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 12:59:35 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 13:01:46 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 13:01:46 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 13:01:46 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 13:01:46 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 13:01:47 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 13:01:47 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 13:01:47 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 13:01:47 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 13:01:47 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 13:01:47 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 13:01:47 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 13:03:29 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 13:03:29 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 13:03:29 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 13:03:29 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 13:03:30 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 13:03:30 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 13:03:30 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 13:03:30 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 13:03:30 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 13:03:30 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 13:03:30 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 13:05:25 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 13:05:25 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 13:05:25 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 13:05:25 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 13:05:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 13:05:25 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 13:05:25 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 13:05:25 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 13:05:25 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 13:05:25 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 13:05:25 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 13:07:25 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 13:07:25 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 13:07:25 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 13:07:25 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 13:07:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 13:07:25 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 13:07:25 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 13:07:25 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 13:07:25 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 13:07:25 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 13:07:25 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 13:08:07 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 13:08:07 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 13:08:07 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 13:08:07 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 13:08:08 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 13:08:08 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 13:08:08 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 13:08:08 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 13:08:08 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 13:08:08 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 13:08:08 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 13:16:04 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:16:04 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:16:04 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:16:04 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:16:04 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:16:04 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 13:16:29 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 13:16:29 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 13:16:29 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 13:16:29 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 13:16:30 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 13:16:30 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 13:16:30 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 13:16:30 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 13:16:30 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 13:16:30 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 13:16:30 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 13:17:35 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:17:35 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:17:35 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:17:35 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:17:35 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:17:35 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 13:17:50 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 13:17:50 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 13:17:50 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 13:17:50 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 13:17:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 13:17:51 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 13:17:51 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 13:17:51 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 13:17:51 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 13:17:51 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 13:17:51 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 13:18:24 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 13:18:24 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 13:18:24 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 13:18:24 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 13:18:24 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 13:18:24 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 13:18:24 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 13:18:24 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 13:18:24 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 13:18:24 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 13:18:24 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 13:18:42 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 13:18:42 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 13:18:42 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 13:18:42 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 13:18:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 13:18:42 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 13:18:42 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 13:18:42 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 13:18:42 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 13:18:42 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 13:18:42 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 13:22:27 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 13:22:27 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 13:22:27 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 13:22:27 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 13:22:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 13:22:27 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 13:22:27 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 13:22:27 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 13:22:27 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 13:22:27 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 13:22:28 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 13:22:57 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:22:57 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:22:57 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:22:57 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:22:57 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 13:22:57 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 13:23:21 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 13:23:21 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 13:23:21 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 13:23:21 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 13:23:21 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 13:23:21 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 13:23:21 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 13:23:21 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 13:23:21 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 13:23:21 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 13:23:21 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 13:23:22 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: Books
+2016-04-08 13:23:22 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: Books
+2016-04-08 13:23:22 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 14:32:51 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:32:51 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:32:51 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:32:51 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:32:51 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:32:51 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 14:34:00 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:34:00 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:34:00 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:34:00 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:34:00 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:34:00 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 14:34:38 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:34:38 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:34:38 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:34:38 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:34:38 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 14:34:39 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 14:51:45 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-08 14:51:45 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-08 14:51:45 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-08 14:51:45 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-08 14:51:45 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-08 14:51:48 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 14:51:48 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-08 14:51:51 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:00:29 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-08 15:00:29 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-08 15:00:29 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-08 15:00:29 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-08 15:00:29 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-08 15:00:33 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:00:33 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-08 15:00:59 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:16:01 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-08 15:16:01 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-08 15:16:01 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-08 15:16:01 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-08 15:16:01 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-08 15:16:05 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:16:05 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-08 15:16:08 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:16:11 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-08 15:16:11 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-08 15:16:11 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-08 15:16:11 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-08 15:16:11 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-08 15:16:14 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:16:14 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-08 15:16:16 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:16:59 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-08 15:16:59 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-08 15:16:59 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-08 15:16:59 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-08 15:16:59 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-08 15:17:01 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:17:01 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-08 15:17:04 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:17:26 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-08 15:17:26 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-08 15:17:26 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-08 15:17:56 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:17:56 INFO  BookTitleSearch:61 - aentry-titlea
+2016-04-08 15:18:23 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:19:10 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-08 15:19:10 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-08 15:19:10 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-08 15:19:10 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-08 15:19:10 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-08 15:19:15 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:19:15 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-08 15:19:18 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:20:05 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-08 15:20:05 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-08 15:20:05 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-08 15:20:05 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-08 15:20:05 INFO  MainRobot:35 - Started Main Robot
+2016-04-08 15:20:05 INFO  MainRobot:39 - Iterating over links by file
+2016-04-08 15:20:05 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-04-08 15:20:05 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-08 15:20:10 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:20:10 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-08 15:20:15 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:20:15 INFO  MainRobot:53 - Finished Searching titles by Tag
+2016-04-08 15:20:15 INFO  MainRobot:39 - Iterating over links by file
+2016-04-08 15:20:15 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-04-08 15:20:15 INFO  BookTitleSearch:48 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-08 15:20:17 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:20:17 INFO  BookTitleSearch:61 - atitlea
+2016-04-08 15:20:17 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:20:17 INFO  MainRobot:53 - Finished Searching titles by Tag
+2016-04-08 15:20:17 INFO  MainRobot:39 - Iterating over links by file
+2016-04-08 15:20:17 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-04-08 15:20:17 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-08 15:20:44 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:20:44 INFO  BookTitleSearch:61 - aentry-titlea
+2016-04-08 15:21:13 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:21:13 ERROR MainRobot:55 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-08 15:31:27 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-08 15:31:27 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-08 15:31:27 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-08 15:31:27 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-08 15:31:27 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-08 15:31:56 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:31:56 INFO  BookTitleSearch:61 - aentry-titlea
+2016-04-08 15:32:26 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:32:41 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:32:41 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:32:41 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:32:41 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:32:41 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:32:41 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 15:34:55 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-08 15:34:55 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-08 15:34:55 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-08 15:34:55 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-08 15:34:55 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-08 15:34:58 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:34:58 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-08 15:35:01 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:49:15 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-08 15:49:17 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:49:17 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-08 15:49:20 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:49:42 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-08 15:49:45 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:49:45 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-08 15:49:48 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:49:48 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:49:48 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:49:48 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:49:48 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:49:48 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:49:48 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 15:50:30 INFO  BookTitleSearch:48 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-08 15:50:32 INFO  BookTitleSearch:60 - Started iterating over links to search titles
+2016-04-08 15:50:32 INFO  BookTitleSearch:61 - aitem-titlea
+2016-04-08 15:50:35 INFO  BookTitleSearch:73 - Finished iterating over links to search titles
+2016-04-08 15:50:35 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:50:35 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:50:35 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:50:35 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:50:35 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:50:35 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 15:51:12 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-08 15:51:15 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-08 15:51:15 INFO  BookTitleSearch:54 - aitem-titlea
+2016-04-08 15:51:17 INFO  BookTitleSearch:66 - Finished iterating over links to search titles
+2016-04-08 15:51:17 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:51:17 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:51:17 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:51:17 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:51:17 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 15:51:17 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 16:40:11 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-08 16:40:15 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-08 16:40:15 INFO  BookTitleSearch:54 - aitem-titlea
+2016-04-08 16:40:17 INFO  BookTitleSearch:66 - Finished iterating over links to search titles
+2016-04-08 16:40:17 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:40:17 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:40:17 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:40:17 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:40:17 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:40:17 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 16:41:03 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-08 16:41:08 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-08 16:41:08 INFO  BookTitleSearch:54 - aitem-titlea
+2016-04-08 16:41:11 INFO  BookTitleSearch:66 - Finished iterating over links to search titles
+2016-04-08 16:41:11 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:41:11 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:41:11 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:41:11 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:41:11 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:41:11 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 16:44:09 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-08 16:44:12 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-08 16:44:12 INFO  BookTitleSearch:54 - aitem-titlea
+2016-04-08 16:44:15 INFO  BookTitleSearch:66 - Finished iterating over links to search titles
+2016-04-08 16:44:15 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:44:15 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:44:15 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:44:15 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:44:15 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:44:15 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 16:52:24 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-08 16:52:27 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-08 16:52:27 INFO  BookTitleSearch:54 - aitem-titlea
+2016-04-08 16:52:29 INFO  BookTitleSearch:66 - Finished iterating over links to search titles
+2016-04-08 16:52:29 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:52:29 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:52:29 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:52:29 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:52:29 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-08 16:52:29 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-08 16:56:36 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 16:56:36 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 16:56:36 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 16:56:36 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 16:56:36 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 16:56:36 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 16:56:36 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 16:56:36 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 16:56:36 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 16:56:36 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 16:56:36 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 16:58:46 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 16:58:46 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 16:58:46 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 16:58:46 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 16:58:47 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 16:58:47 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 16:58:47 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 16:58:47 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 16:58:47 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 16:58:47 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 16:58:47 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 17:01:45 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 17:01:45 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 17:01:45 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 17:01:45 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 17:01:45 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 17:01:45 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 17:01:45 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 17:01:45 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 17:01:45 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 17:01:45 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 17:01:46 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 17:02:31 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 17:02:31 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 17:02:31 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 17:02:31 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 17:02:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 17:02:32 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 17:02:32 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 17:02:32 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 17:02:32 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 17:02:32 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 17:02:32 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 17:06:48 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 17:06:48 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 17:06:48 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 17:06:48 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 17:06:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 17:06:49 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 17:06:49 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 17:06:49 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 17:06:49 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 17:06:49 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 17:06:49 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 17:06:49 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: book
+2016-04-08 17:06:49 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: book
+2016-04-08 17:06:49 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: bookstore
+2016-04-08 17:06:49 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: bookstore
+2016-04-08 17:12:37 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 17:12:37 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 17:12:37 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 17:12:37 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 17:12:37 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 17:12:37 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 17:12:37 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 17:12:37 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 17:12:37 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 17:12:37 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 17:12:37 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 17:13:06 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 17:13:06 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 17:13:06 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 17:13:06 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 17:13:07 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 17:13:07 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 17:13:07 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 17:13:07 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 17:13:07 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 17:13:07 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 17:13:07 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 17:13:48 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 17:13:48 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 17:13:48 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 17:13:48 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 17:13:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 17:13:48 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 17:13:48 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 17:13:48 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 17:13:48 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 17:13:48 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 17:13:48 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 17:14:11 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 17:14:11 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 17:14:11 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 17:14:11 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 17:14:11 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 17:14:11 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 17:14:11 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 17:14:11 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 17:14:11 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 17:14:11 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 17:14:11 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 17:16:54 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 17:16:54 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 17:16:54 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 17:16:54 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 17:16:54 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 17:16:54 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 17:16:54 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 17:16:54 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 17:16:54 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 17:16:54 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 17:16:55 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 17:17:08 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 17:17:08 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 17:17:08 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 17:17:08 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 17:17:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 17:17:09 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 17:17:09 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 17:17:09 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 17:17:09 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 17:17:09 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 17:17:09 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 17:17:53 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 17:17:53 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 17:17:53 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 17:17:53 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 17:17:53 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 17:17:53 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 17:17:53 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 17:17:53 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 17:17:53 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 17:17:53 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 17:17:53 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 17:24:43 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 17:24:43 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 17:24:43 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 17:24:43 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 17:24:43 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 17:24:43 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 17:24:43 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 17:24:43 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 17:24:43 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 17:24:43 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 17:24:43 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-08 17:24:44 WARN  SqlExceptionHelper:129 - SQL Error: 1048, SQLState: 23000
+2016-04-08 17:24:44 ERROR SqlExceptionHelper:131 - Column 'BOOK_ID' cannot be null
+2016-04-08 17:25:17 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-08 17:25:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-08 17:25:17 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-08 17:25:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-08 17:25:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-08 17:25:17 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-08 17:25:17 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-08 17:25:17 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-08 17:25:17 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-08 17:25:17 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-08 17:25:17 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-13 09:23:07 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 09:23:11 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 09:23:11 INFO  BookTitleSearch:54 - aitem-titlea
+2016-04-13 09:23:14 INFO  BookTitleSearch:66 - Finished iterating over links to search titles
+2016-04-13 09:23:14 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:23:14 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:23:14 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:23:14 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:23:14 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:23:14 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 09:25:41 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 09:25:45 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 09:25:45 INFO  BookTitleSearch:54 - aitem-titlea
+2016-04-13 09:25:47 INFO  BookTitleSearch:66 - Finished iterating over links to search titles
+2016-04-13 09:28:59 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 09:29:01 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 09:29:05 INFO  BookTitleSearch:65 - Finished iterating over links to search titles
+2016-04-13 09:29:05 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:29:05 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:29:05 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:29:05 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:29:05 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:29:05 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 09:30:30 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 09:30:34 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 09:30:37 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 09:30:37 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:30:37 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:30:37 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:30:37 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:30:37 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:30:37 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 09:31:30 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 09:31:33 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 09:31:36 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 09:31:36 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:31:36 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:31:36 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:31:36 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:31:36 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:31:36 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 09:32:35 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 09:32:39 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 09:32:42 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 09:32:42 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:32:42 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:32:42 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:32:42 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:32:42 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 09:32:42 INFO  FileLinkHandler:40 - Link list has been written into file

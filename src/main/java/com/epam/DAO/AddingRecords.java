@@ -11,7 +11,9 @@ public class AddingRecords {
 
 		session.beginTransaction();
 		Book grzedowicz = new Book("Jarosław Grzędowicz", "Popiół i kurz", 49);
+		System.out.println(grzedowicz);
 		session.save(grzedowicz);
+		
 		Book lukajenko = new Book("Siergiej Łukajenko", "Czystopis", 49);
 		session.save(lukajenko);
 

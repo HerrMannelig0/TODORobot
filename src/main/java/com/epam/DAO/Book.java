@@ -9,8 +9,8 @@ import static javax.persistence.GenerationType.IDENTITY;
 @Table (name = "book")
 public class Book implements java.io.Serializable {
 
-	private static final long serialVersionUID = 7666260047157736352L;
 	// not sure if book should have unique id
+	private int id;
 	private int bookstoreId;
 	private String author;
 	private String title;
@@ -28,7 +28,8 @@ public class Book implements java.io.Serializable {
 		this.setPrice(price);
 
 	}
-
+	
+	
 	@Id
 	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "BOOKSTORE_ID", unique = true, nullable = false)
@@ -78,6 +79,9 @@ public class Book implements java.io.Serializable {
 		this.price = price;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return author + " " + title;
+	}
 
 }

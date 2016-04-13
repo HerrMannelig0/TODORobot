@@ -51,11 +51,9 @@ public class BookTitleSearch {
 		final Iterator<String> iterator = addressHashSet.iterator();
 
 		logger.info("Started iterating over links to search titles");
-		logger.info("a" + titleTag + "a");
 
 		while (iterator.hasNext()) {
 			final String next = iterator.next();
-			System.out.println(next);
 			try {
 				BookTitleSearch.searchTitles(next, typeOfElement, titleTag, authorTag, priceTag, keywordsTag);
 			} catch (Exception e) {

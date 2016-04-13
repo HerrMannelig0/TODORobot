@@ -13,7 +13,6 @@ public class Bookstore implements java.io.Serializable{
 private static final long serialVersionUID = -3960396761249882840L;
 	
 	private int bookstoreId;
-	
 	private String bookstoreName;
 	private String url;
 
