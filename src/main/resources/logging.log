@@ -770,3 +770,38 @@
 2016-04-13 09:32:42 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
 2016-04-13 09:32:42 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
 2016-04-13 09:32:42 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 15:41:40 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 15:41:44 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 15:41:48 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 15:41:48 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 15:43:18 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 15:43:22 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 15:43:25 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 15:43:25 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 15:52:52 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 15:52:57 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 15:53:02 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 15:53:02 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 15:54:36 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 15:54:41 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 15:54:45 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 15:54:45 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 15:59:26 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 16:01:05 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 16:01:56 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 16:02:45 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 16:04:30 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:04:30 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:04:30 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:04:30 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:04:30 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:04:30 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 16:04:55 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 16:04:59 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 16:05:03 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 16:05:03 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:05:03 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:05:03 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:05:03 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:05:03 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:05:03 INFO  FileLinkHandler:40 - Link list has been written into file

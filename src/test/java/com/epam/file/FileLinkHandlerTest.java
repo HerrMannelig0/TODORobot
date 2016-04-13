@@ -41,7 +41,6 @@ public class FileLinkHandlerTest {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
        File file = new File("src/test/resources/OneLine.txt");
        List<Link> links = fileLinkHandler.readLinksFromFile(file);
-       assertThat(links.isEmpty()).isFalse();
        assertThat(links.size()).isEqualTo(one);
     }
  
