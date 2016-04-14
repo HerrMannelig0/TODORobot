@@ -805,3 +805,1129 @@
 2016-04-13 16:05:03 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
 2016-04-13 16:05:03 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
 2016-04-13 16:05:03 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 16:09:02 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 16:09:05 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 16:09:08 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 16:09:08 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:09:08 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:09:08 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:09:08 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:09:08 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:09:08 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 16:09:26 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-13 16:09:26 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-13 16:09:26 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-13 16:09:26 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-13 16:09:26 INFO  MainRobot:35 - Started Main Robot
+2016-04-13 16:09:26 INFO  MainRobot:39 - Iterating over links by file
+2016-04-13 16:09:26 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-04-13 16:09:26 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-13 16:09:30 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 16:09:33 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 16:09:33 INFO  MainRobot:56 - Finished Searching titles by Tag
+2016-04-13 16:09:33 INFO  MainRobot:39 - Iterating over links by file
+2016-04-13 16:09:33 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-04-13 16:09:33 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-13 16:09:34 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 16:09:35 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 16:09:35 INFO  MainRobot:56 - Finished Searching titles by Tag
+2016-04-13 16:09:35 INFO  MainRobot:39 - Iterating over links by file
+2016-04-13 16:09:35 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-04-13 16:09:35 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-13 16:10:05 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 16:10:41 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 16:10:41 ERROR MainRobot:58 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-13 16:16:29 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-13 16:16:31 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-13 16:16:34 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-13 16:16:34 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:16:34 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:16:34 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:16:34 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:16:34 INFO  FileLinkHandler:81 - New link get from file: kotek 1 2 3 4 5
+2016-04-13 16:16:34 INFO  FileLinkHandler:40 - Link list has been written into file
+2016-04-13 16:32:59 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-13 16:32:59 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-13 16:32:59 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-13 16:32:59 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-13 16:32:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-13 16:32:59 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-13 16:34:58 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-13 16:34:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-13 16:34:58 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-13 16:34:58 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-13 16:34:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-13 16:34:58 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-13 16:38:00 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-13 16:38:00 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-13 16:38:00 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-13 16:38:00 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-13 16:38:00 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-13 16:38:00 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-13 16:38:00 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-13 16:38:00 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-13 16:38:00 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-13 16:38:00 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-13 16:38:34 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-13 16:38:34 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-13 16:38:34 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-13 16:38:34 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-13 16:38:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-13 16:38:35 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-13 16:38:35 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-13 16:38:35 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-13 16:38:35 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-13 16:38:35 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-13 16:38:35 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-13 16:38:35 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOK
+2016-04-13 16:38:35 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOK
+2016-04-13 16:38:35 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: hibernate_sequence
+2016-04-13 16:38:35 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: hibernate_sequence
+2016-04-13 16:40:06 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-13 16:40:06 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-13 16:40:06 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-13 16:40:06 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-13 16:40:06 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-13 16:40:06 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-13 16:40:06 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-13 16:40:06 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-13 16:40:06 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-13 16:40:06 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-13 16:40:06 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-13 16:40:07 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOKSTORE
+2016-04-13 16:40:07 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOKSTORE
+2016-04-14 09:03:58 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 09:03:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 09:03:58 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 09:03:58 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 09:03:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 09:03:58 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 09:03:58 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 09:03:58 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 09:03:58 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 09:03:58 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 09:03:59 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 09:06:29 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 09:06:30 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 09:06:30 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 09:06:30 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 09:06:30 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 09:06:30 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 09:06:30 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 09:06:30 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 09:06:30 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 09:06:30 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 09:06:30 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 09:06:31 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOK
+2016-04-14 09:06:31 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOK
+2016-04-14 09:06:31 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOKSTORE
+2016-04-14 09:06:31 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOKSTORE
+2016-04-14 09:06:31 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: hibernate_sequence
+2016-04-14 09:06:31 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: hibernate_sequence
+2016-04-14 09:10:23 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 09:10:23 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 09:10:23 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 09:10:23 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 09:10:24 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 09:10:24 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 09:10:24 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 09:10:24 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 09:10:24 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 09:10:24 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 09:10:24 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 09:12:11 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 09:12:11 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 09:12:11 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 09:12:11 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 09:12:11 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 09:12:12 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 09:12:12 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 09:12:12 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 09:12:12 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 09:12:12 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 09:12:12 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 09:18:31 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 09:18:31 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 09:18:31 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 09:18:31 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 09:18:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 09:18:32 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 09:18:32 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 09:18:32 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 09:18:32 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 09:18:32 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 09:18:32 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:01:16 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:01:16 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:01:16 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:01:16 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:01:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:01:16 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:01:16 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:01:16 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:01:16 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:01:16 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:01:17 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:07:09 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:07:09 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:07:09 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:07:09 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:07:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:07:09 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:07:09 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:07:09 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:07:09 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:07:09 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:07:09 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:09:13 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:09:13 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:09:13 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:09:13 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:09:13 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:09:13 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:09:13 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:09:13 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:09:13 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:09:13 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:09:13 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:22:14 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:22:14 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:22:14 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:22:14 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:22:14 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:22:14 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:22:14 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:22:14 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:22:14 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:22:15 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:22:15 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:23:27 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:23:27 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:23:27 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:23:27 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:23:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:23:27 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:23:27 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:23:27 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:23:27 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:23:27 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:23:27 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:24:17 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:24:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:24:17 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:24:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:24:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:24:17 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:24:17 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:24:17 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:24:17 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:24:17 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:24:18 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:28:56 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:28:56 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:28:56 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:28:56 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:28:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:28:57 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:28:57 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:28:57 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:28:57 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:28:57 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:28:57 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:29:48 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:29:48 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:29:48 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:29:48 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:29:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:29:48 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:29:48 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:29:48 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:29:48 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:29:48 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:29:49 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:30:39 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:30:39 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:30:39 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:30:39 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:30:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:30:40 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:30:40 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:30:40 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:30:40 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:30:40 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:30:40 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:31:42 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:31:42 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:31:42 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:31:42 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:31:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:31:42 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:31:42 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:31:42 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:31:42 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:31:42 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:31:42 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:32:17 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:32:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:32:17 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:32:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:32:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:32:18 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:32:18 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:32:18 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:32:18 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:32:18 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:32:18 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:35:07 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:35:07 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:35:07 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:35:07 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:35:07 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:35:07 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:35:07 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:35:07 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:35:07 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:35:07 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:35:08 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:35:08 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOK
+2016-04-14 10:35:08 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOK
+2016-04-14 10:35:08 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOKSTORE
+2016-04-14 10:35:08 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOKSTORE
+2016-04-14 10:35:08 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: hibernate_sequence
+2016-04-14 10:35:08 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: hibernate_sequence
+2016-04-14 10:35:34 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:35:34 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:35:34 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:35:34 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:35:35 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:35:35 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:35:35 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:35:35 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:35:35 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:35:35 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:35:35 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:35:35 WARN  SqlExceptionHelper:129 - SQL Error: 1406, SQLState: 22001
+2016-04-14 10:35:35 ERROR SqlExceptionHelper:131 - Data truncation: Data too long for column 'books' at row 1
+2016-04-14 10:35:35 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 10:35:35 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 10:36:11 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:36:11 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:36:11 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:36:11 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:36:11 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:36:11 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:36:11 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:36:11 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:36:11 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:36:11 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:36:12 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:36:12 WARN  SqlExceptionHelper:129 - SQL Error: 1406, SQLState: 22001
+2016-04-14 10:36:12 ERROR SqlExceptionHelper:131 - Data truncation: Data too long for column 'books' at row 1
+2016-04-14 10:36:12 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 10:36:12 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 10:39:19 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:39:19 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:39:19 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:39:19 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:39:19 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:39:19 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:39:19 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:39:19 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:39:19 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:39:19 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:39:19 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:39:33 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:39:33 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:39:33 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:39:33 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:39:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:39:34 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:39:34 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:39:34 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:39:34 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:39:34 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:39:34 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:40:18 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:40:18 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:40:18 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:40:18 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:40:19 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:40:19 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:40:19 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:40:19 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:40:19 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:40:19 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:40:19 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:43:17 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:43:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:43:17 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:43:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:43:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:43:17 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:43:17 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:43:17 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:43:17 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:43:17 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:43:18 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:44:59 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:44:59 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:44:59 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:44:59 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:44:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:44:59 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:44:59 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:44:59 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:44:59 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:44:59 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:45:00 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:45:16 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:45:16 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:45:16 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:45:16 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:45:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:45:16 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:45:16 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:45:16 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:45:16 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:45:16 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:45:16 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:45:26 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:45:26 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:45:26 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:45:26 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:45:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:45:27 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:45:27 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:45:27 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:45:27 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:45:27 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:45:27 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:45:37 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:45:37 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:45:37 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:45:37 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:45:37 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:45:37 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:45:37 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:45:37 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:45:37 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:45:37 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:45:37 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:46:12 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:46:12 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:46:12 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:46:12 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:46:13 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:46:13 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:46:13 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:46:13 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:46:13 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:46:13 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:46:13 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:46:22 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:46:22 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:46:22 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:46:22 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:46:22 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:46:22 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:46:22 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:46:22 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:46:22 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:46:22 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:46:23 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:49:17 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:49:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:49:17 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:49:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:49:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:49:18 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:49:18 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:49:18 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:49:18 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:49:18 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:49:18 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:50:33 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:50:33 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:50:33 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:50:33 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:50:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:50:33 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:50:33 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:50:33 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:50:33 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:50:33 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:50:33 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:52:26 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:52:26 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:52:26 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:52:26 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:52:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:52:26 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:52:26 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:52:26 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:52:26 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:52:26 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:52:27 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:53:09 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 10:53:10 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 10:53:10 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 10:53:10 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 10:53:10 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 10:53:10 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 10:53:10 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 10:53:10 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 10:53:10 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 10:53:10 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 10:53:10 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 10:53:11 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table BOOK add constraint FKfla8v56ga4s9fj1k4vg2trjd3 foreign key (BOOK_ID) references BOOKSTORE (bookstoreId)]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table BOOK add constraint FKfla8v56ga4s9fj1k4vg2trjd3 foreign key (BOOK_ID) references BOOKSTORE (bookstoreId)]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlString(SchemaMigratorImpl.java:567)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlStrings(SchemaMigratorImpl.java:551)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applyForeignKeys(SchemaMigratorImpl.java:510)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.performMigration(SchemaMigratorImpl.java:309)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:137)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:110)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:176)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DAO.AddingRecords.main(AddingRecords.java:12)
+Caused by: java.sql.SQLException: Can't create table 'BookRobot.#sql-f8a_8d' (errno: 150)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:840)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:740)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 15 more
+2016-04-14 10:53:11 WARN  SqlExceptionHelper:129 - SQL Error: 1364, SQLState: HY000
+2016-04-14 10:53:11 ERROR SqlExceptionHelper:131 - Field 'BOOKSTORE_ID' doesn't have a default value
+2016-04-14 10:53:11 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 10:53:11 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 11:30:19 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:30:19 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:30:19 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:30:19 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:30:19 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:30:19 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:30:19 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:30:19 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:30:19 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:30:19 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:30:20 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:30:20 WARN  SqlExceptionHelper:129 - SQL Error: 1364, SQLState: HY000
+2016-04-14 11:30:20 ERROR SqlExceptionHelper:131 - Field 'BOOKSTORE_NAME' doesn't have a default value
+2016-04-14 11:30:20 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 11:30:20 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 11:31:15 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:31:15 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:31:15 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:31:15 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:31:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:31:16 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:31:16 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:31:16 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:31:16 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:31:16 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:31:16 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:31:17 WARN  SqlExceptionHelper:129 - SQL Error: 1364, SQLState: HY000
+2016-04-14 11:31:17 ERROR SqlExceptionHelper:131 - Field 'BOOKSTORE_NAME' doesn't have a default value
+2016-04-14 11:31:17 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 11:31:17 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 11:34:47 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:34:47 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:34:47 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:34:47 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:34:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:34:48 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:34:48 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:34:48 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:34:48 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:34:48 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:34:48 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:34:49 WARN  SqlExceptionHelper:129 - SQL Error: 1364, SQLState: HY000
+2016-04-14 11:34:49 ERROR SqlExceptionHelper:131 - Field 'BOOKSTORE_NAME' doesn't have a default value
+2016-04-14 11:34:49 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 11:34:49 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 11:35:44 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:35:44 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:35:44 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:35:44 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:35:44 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:35:44 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:35:44 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:35:44 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:35:44 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:35:44 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:35:44 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:35:45 WARN  SqlExceptionHelper:129 - SQL Error: 1364, SQLState: HY000
+2016-04-14 11:35:45 ERROR SqlExceptionHelper:131 - Field 'bookstoreId' doesn't have a default value
+2016-04-14 11:35:45 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 11:35:45 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 11:36:27 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:36:27 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:36:27 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:36:27 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:36:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:36:27 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:36:27 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:36:27 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:36:27 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:36:27 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:36:27 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:36:28 WARN  SqlExceptionHelper:129 - SQL Error: 1364, SQLState: HY000
+2016-04-14 11:36:28 ERROR SqlExceptionHelper:131 - Field 'BOOKSTORE_ID' doesn't have a default value
+2016-04-14 11:40:58 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:40:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:40:58 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:40:58 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:40:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:40:58 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:40:58 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:40:58 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:40:58 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:40:58 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:40:58 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:40:59 WARN  SqlExceptionHelper:129 - SQL Error: 1364, SQLState: HY000
+2016-04-14 11:40:59 ERROR SqlExceptionHelper:131 - Field 'bookstoreId' doesn't have a default value
+2016-04-14 11:40:59 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 11:40:59 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 11:41:33 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:41:33 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:41:33 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:41:33 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:41:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:41:34 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:41:34 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:41:34 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:41:34 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:41:34 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:41:34 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:41:35 WARN  SqlExceptionHelper:129 - SQL Error: 1364, SQLState: HY000
+2016-04-14 11:41:35 ERROR SqlExceptionHelper:131 - Field 'bookstoreId' doesn't have a default value
+2016-04-14 11:41:35 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 11:41:35 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 11:43:45 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:43:45 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:43:45 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:43:45 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:43:46 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:43:46 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:43:46 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:43:46 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:43:46 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:43:46 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:43:47 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:43:47 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOK
+2016-04-14 11:43:47 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOK
+2016-04-14 11:43:47 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOKSTORE
+2016-04-14 11:43:47 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: BOOKSTORE
+2016-04-14 11:43:47 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: hibernate_sequence
+2016-04-14 11:43:47 INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: hibernate_sequence
+2016-04-14 11:43:48 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2016-04-14 11:44:27 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:44:27 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:44:27 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:44:27 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:44:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:44:28 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:44:28 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:44:28 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:44:28 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:44:28 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:44:28 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:44:29 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2016-04-14 11:46:24 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:46:24 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:46:24 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:46:24 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:46:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:46:25 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:46:25 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:46:25 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:46:25 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:46:25 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:46:25 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:46:26 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2016-04-14 11:47:33 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:47:33 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:47:33 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:47:33 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:47:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:47:33 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:47:33 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:47:33 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:47:33 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:47:33 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:47:34 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:47:34 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2016-04-14 11:50:56 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:50:56 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:50:56 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:50:56 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:50:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:50:56 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:50:56 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:50:56 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:50:56 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:50:56 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:50:57 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:50:57 WARN  SqlExceptionHelper:129 - SQL Error: 1452, SQLState: 23000
+2016-04-14 11:50:57 ERROR SqlExceptionHelper:131 - Cannot add or update a child row: a foreign key constraint fails (`BookRobot`.`BOOK`, CONSTRAINT `FKfla8v56ga4s9fj1k4vg2trjd3` FOREIGN KEY (`BOOK_ID`) REFERENCES `BOOKSTORE` (`BOOKSTORE_ID`))
+2016-04-14 11:50:57 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 11:50:57 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 11:52:10 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:52:10 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:52:10 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:52:10 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:52:11 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:52:11 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:52:11 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:52:11 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:52:11 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:52:11 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:52:11 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:52:12 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2016-04-14 11:52:29 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:52:29 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:52:29 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:52:29 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:52:29 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:52:29 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:52:29 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:52:29 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:52:29 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:52:29 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:52:29 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:52:30 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2016-04-14 11:53:48 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:53:48 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:53:48 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:53:48 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:53:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:53:49 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:53:49 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:53:49 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:53:49 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:53:49 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:53:49 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:53:50 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2016-04-14 11:56:16 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:56:16 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:56:16 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:56:16 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:56:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:56:16 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:56:16 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:56:16 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:56:16 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:56:16 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:56:17 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:56:17 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2016-04-14 11:56:32 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:56:32 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:56:32 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:56:32 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:56:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:56:33 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:56:33 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:56:33 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:56:33 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:56:33 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:56:33 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:56:33 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2016-04-14 11:58:56 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 11:58:56 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 11:58:56 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 11:58:56 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 11:58:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 11:58:56 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 11:58:56 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 11:58:56 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 11:58:56 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 11:58:56 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 11:58:56 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 11:58:57 WARN  SqlExceptionHelper:129 - SQL Error: 1452, SQLState: 23000
+2016-04-14 11:58:57 ERROR SqlExceptionHelper:131 - Cannot add or update a child row: a foreign key constraint fails (`BookRobot`.`BOOK`, CONSTRAINT `FKfla8v56ga4s9fj1k4vg2trjd3` FOREIGN KEY (`BOOK_ID`) REFERENCES `BOOKSTORE` (`BOOKSTORE_ID`))
+2016-04-14 11:58:57 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 11:58:57 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:02:45 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:02:45 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:02:45 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:02:45 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:02:45 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:02:45 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:02:45 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:02:45 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:02:45 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:02:45 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:02:45 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:02:46 WARN  SqlExceptionHelper:129 - SQL Error: 1452, SQLState: 23000
+2016-04-14 12:02:46 ERROR SqlExceptionHelper:131 - Cannot add or update a child row: a foreign key constraint fails (`BookRobot`.`BOOK`, CONSTRAINT `FKfla8v56ga4s9fj1k4vg2trjd3` FOREIGN KEY (`BOOK_ID`) REFERENCES `BOOKSTORE` (`BOOKSTORE_ID`))
+2016-04-14 12:02:46 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:02:46 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:03:36 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:03:36 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:03:36 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:03:36 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:03:36 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:03:37 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:03:37 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:03:37 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:03:37 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:03:37 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:03:37 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:03:38 WARN  SqlExceptionHelper:129 - SQL Error: 1452, SQLState: 23000
+2016-04-14 12:03:38 ERROR SqlExceptionHelper:131 - Cannot add or update a child row: a foreign key constraint fails (`BookRobot`.`BOOK`, CONSTRAINT `FKfla8v56ga4s9fj1k4vg2trjd3` FOREIGN KEY (`BOOK_ID`) REFERENCES `BOOKSTORE` (`BOOKSTORE_ID`))
+2016-04-14 12:03:38 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:03:38 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:04:05 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:04:05 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:04:05 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:04:05 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:04:06 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:04:06 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:04:06 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:04:06 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:04:06 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:04:06 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:04:06 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:04:07 WARN  SqlExceptionHelper:129 - SQL Error: 1452, SQLState: 23000
+2016-04-14 12:04:07 ERROR SqlExceptionHelper:131 - Cannot add or update a child row: a foreign key constraint fails (`BookRobot`.`BOOK`, CONSTRAINT `FKfla8v56ga4s9fj1k4vg2trjd3` FOREIGN KEY (`BOOK_ID`) REFERENCES `BOOKSTORE` (`BOOKSTORE_ID`))
+2016-04-14 12:04:07 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:04:07 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:04:26 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:04:26 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:04:26 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:04:26 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:04:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:04:27 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:04:27 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:04:27 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:04:27 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:04:27 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:04:27 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:04:28 WARN  SqlExceptionHelper:129 - SQL Error: 1452, SQLState: 23000
+2016-04-14 12:04:28 ERROR SqlExceptionHelper:131 - Cannot add or update a child row: a foreign key constraint fails (`BookRobot`.`BOOK`, CONSTRAINT `FKfla8v56ga4s9fj1k4vg2trjd3` FOREIGN KEY (`BOOK_ID`) REFERENCES `BOOKSTORE` (`BOOKSTORE_ID`))
+2016-04-14 12:04:28 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:04:28 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:04:51 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:04:51 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:04:51 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:04:51 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:04:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:04:51 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:04:51 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:04:51 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:04:51 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:04:51 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:04:52 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:04:52 WARN  SqlExceptionHelper:129 - SQL Error: 1452, SQLState: 23000
+2016-04-14 12:04:52 ERROR SqlExceptionHelper:131 - Cannot add or update a child row: a foreign key constraint fails (`BookRobot`.`BOOK`, CONSTRAINT `FKfla8v56ga4s9fj1k4vg2trjd3` FOREIGN KEY (`BOOK_ID`) REFERENCES `BOOKSTORE` (`BOOKSTORE_ID`))
+2016-04-14 12:04:52 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:04:52 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:07:27 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:07:27 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:07:27 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:07:27 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:07:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:07:28 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:07:28 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:07:28 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:07:28 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:07:28 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:07:28 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:07:29 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2016-04-14 12:07:47 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:07:47 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:07:47 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:07:47 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:07:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:07:48 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:07:48 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:07:48 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:07:48 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:07:48 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:07:48 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:07:49 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2016-04-14 12:08:17 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:08:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:08:17 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:08:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:08:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:08:18 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:08:18 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:08:18 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:08:18 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:08:18 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:08:18 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:08:19 WARN  SqlExceptionHelper:129 - SQL Error: 1452, SQLState: 23000
+2016-04-14 12:08:19 ERROR SqlExceptionHelper:131 - Cannot add or update a child row: a foreign key constraint fails (`BookRobot`.`BOOK`, CONSTRAINT `FKfla8v56ga4s9fj1k4vg2trjd3` FOREIGN KEY (`BOOK_ID`) REFERENCES `BOOKSTORE` (`BOOKSTORE_ID`))
+2016-04-14 12:08:19 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:08:19 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:18:04 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:18:04 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:18:04 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:18:04 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:18:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:18:05 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:18:05 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:18:05 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:18:05 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:18:05 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:18:05 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:18:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table BOOK add constraint FKdvof04khd9d7qc7vfcq63r5j6 foreign key (owner_id) references BOOKSTORE (bookstoreId)]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table BOOK add constraint FKdvof04khd9d7qc7vfcq63r5j6 foreign key (owner_id) references BOOKSTORE (bookstoreId)]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlString(SchemaMigratorImpl.java:567)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlStrings(SchemaMigratorImpl.java:551)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applyForeignKeys(SchemaMigratorImpl.java:510)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.performMigration(SchemaMigratorImpl.java:309)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:137)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:110)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:176)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DAO.AddingRecords.main(AddingRecords.java:12)
+Caused by: java.sql.SQLException: Can't create table 'BookRobot.#sql-f8a_c0' (errno: 150)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:840)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:740)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 15 more
+2016-04-14 12:18:06 WARN  SqlExceptionHelper:129 - SQL Error: 1364, SQLState: HY000
+2016-04-14 12:18:06 ERROR SqlExceptionHelper:131 - Field 'BOOKSTORE_ID' doesn't have a default value
+2016-04-14 12:18:06 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:18:06 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:27:23 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:27:23 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:27:23 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:27:23 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:27:24 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:27:24 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:27:24 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:27:24 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:27:24 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:27:24 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:27:24 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:27:25 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table BOOK drop foreign key FKdvof04khd9d7qc7vfcq63r5j6]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table BOOK drop foreign key FKdvof04khd9d7qc7vfcq63r5j6]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DAO.AddingRecords.main(AddingRecords.java:12)
+Caused by: java.sql.SQLException: Error on rename of './BookRobot/BOOK' to './BookRobot/#sql2-f8a-c2' (errno: 152)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:840)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:740)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+2016-04-14 12:27:25 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@ace400'
+2016-04-14 12:30:54 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:30:54 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:30:54 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:30:54 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:30:55 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:30:55 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:30:55 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-14 12:30:55 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:30:55 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:30:55 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:30:55 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:30:56 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f1d75'
+2016-04-14 12:30:56 WARN  SqlExceptionHelper:129 - SQL Error: 1366, SQLState: HY000
+2016-04-14 12:30:56 ERROR SqlExceptionHelper:131 - Incorrect string value: '\xC5\x82aw G...' for column 'author' at row 1
+2016-04-14 12:30:56 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:30:56 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:31:20 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:31:20 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:31:20 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:31:20 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:31:21 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:31:21 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:31:21 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:31:21 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:31:21 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:31:21 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:31:21 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:31:22 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f1d75'
+2016-04-14 12:31:39 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:31:39 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:31:39 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:31:39 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:31:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:31:40 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:31:40 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-14 12:31:40 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:31:40 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:31:40 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:31:40 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:31:40 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f1d75'
+2016-04-14 12:31:41 WARN  SqlExceptionHelper:129 - SQL Error: 1366, SQLState: HY000
+2016-04-14 12:31:41 ERROR SqlExceptionHelper:131 - Incorrect string value: '\xC5\x82aw G...' for column 'author' at row 1
+2016-04-14 12:31:41 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:31:41 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:34:47 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:34:47 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:34:47 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:34:47 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:34:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:34:48 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:34:48 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-14 12:34:48 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:34:48 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:34:48 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:34:48 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:34:48 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f1d75'
+2016-04-14 12:34:48 WARN  SqlExceptionHelper:129 - SQL Error: 1366, SQLState: HY000
+2016-04-14 12:34:48 ERROR SqlExceptionHelper:131 - Incorrect string value: '\xC5\x82aw G...' for column 'author' at row 1
+2016-04-14 12:34:48 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:34:48 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:35:46 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:35:46 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:35:46 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:35:46 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:35:47 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:35:47 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:35:47 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-14 12:35:47 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-14 12:35:47 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:35:47 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:35:47 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:35:47 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f1d75'
+2016-04-14 12:35:48 WARN  SqlExceptionHelper:129 - SQL Error: 1366, SQLState: HY000
+2016-04-14 12:35:48 ERROR SqlExceptionHelper:131 - Incorrect string value: '\xC5\x82aw G...' for column 'author' at row 1
+2016-04-14 12:35:48 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:35:48 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:36:25 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:36:25 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:36:25 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:36:25 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:36:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:36:26 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:36:26 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-14 12:36:26 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, characterEncoding=UTF-8}
+2016-04-14 12:36:26 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:36:26 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:36:26 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:36:27 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f1d75'
+2016-04-14 12:36:27 WARN  SqlExceptionHelper:129 - SQL Error: 1366, SQLState: HY000
+2016-04-14 12:36:27 ERROR SqlExceptionHelper:131 - Incorrect string value: '\xC5\x82aw G...' for column 'author' at row 1
+2016-04-14 12:36:27 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:36:27 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:49:19 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:49:19 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:49:19 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:49:19 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:49:19 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:49:19 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:49:19 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:49:19 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, characterEncoding=UTF-8}
+2016-04-14 12:49:19 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:49:19 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:49:19 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:49:20 WARN  SessionFactoryBuilderImpl:671 - Unrecognized hbm2ddl_auto value : l.  Supported values include create, create-drop, update, and validate.  Ignoring
+2016-04-14 12:50:38 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:50:38 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:50:38 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:50:38 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:50:38 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:50:38 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:50:38 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:50:38 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, characterEncoding=UTF-8}
+2016-04-14 12:50:38 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:50:38 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:50:39 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:50:39 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table BOOK drop foreign key FKdvof04khd9d7qc7vfcq63r5j6]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table BOOK drop foreign key FKdvof04khd9d7qc7vfcq63r5j6]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DAO.AddingRecords.main(AddingRecords.java:12)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BookRobot.BOOK' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:840)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:740)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+2016-04-14 12:50:39 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5f7627'
+2016-04-14 12:50:39 WARN  SqlExceptionHelper:129 - SQL Error: 1366, SQLState: HY000
+2016-04-14 12:50:39 ERROR SqlExceptionHelper:131 - Incorrect string value: '\xC5\x82aw G...' for column 'author' at row 1
+2016-04-14 12:50:39 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-04-14 12:50:39 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [could not execute statement]
+2016-04-14 12:51:19 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 12:51:19 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 12:51:19 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 12:51:20 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 12:51:20 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 12:51:20 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 12:51:20 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 12:51:20 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 12:51:20 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 12:51:20 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 12:51:20 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 12:51:21 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f1d75'
