@@ -7,10 +7,9 @@ import java.util.Scanner;
 
 import com.epam.DAO.Book;
 
-/**
- * Created by damian on 23.03.16.
- */
+
 public class FileBookHandler {
+
 
 	private String fileName;
 	private File freeBooksTitlesUrl;
