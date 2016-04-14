@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
@@ -20,9 +21,8 @@ public class MainRobot {
 
 	public static void main(String[] args) {
 
-		PrintWriter printWriter;
+		PrintWriter printWriter = null;
 		FileLinkHandler fileLinkHandler = new FileLinkHandler();
-		BookTitleSearch bookTitleSearch = new BookTitleSearch();
 		
 		try {
 			fileLinkHandler.createListsFromFile(new File(fileName));
@@ -49,14 +49,29 @@ public class MainRobot {
 					link.getElementType(), link.getTitleTag(), link.getAuthorTag(), link.getPriceTag(), link.KeywordsTag());
 			
 			String fileName = null;
-			try {
+			
 				fileName = UrlUtils.getFileName(link.getLinkAdress());
-				printWriter = new PrintWriter("src/main/resources/" + fileName);
-				new FileBookHandler(fileName).writeBookTitlesToFile(bookTitles, printWriter);
+				try {
+					printWriter = new PrintWriter("src/main/resources/" + fileName);
+				} catch (FileNotFoundException e) {
+					logger.error(e.getClass() + " in MainRobot, problems with filename");
+				}
+				List<Book> library = BookTitleSearch.library;
+	
+				for (Book book : library) {
+				
+					try {
+						book.assignCategory(book.createCategoryList(new File("src/main/resources/Keywords/Categories.txt")));
+
+					} catch (Exception e) {
+						logger.error(e.getClass() + " in MainRobot, problems with category assignment");
+					} 
+					new FileBookHandler(fileName);
+					FileBookHandler.writeBookToFile(book, printWriter);
+					printWriter.println("");
+				}
+				
 				logger.info("Finished Searching titles by Tag");
-			} catch (Exception exception) {
-				logger.error(exception.getClass() + "in MainRobot, problems with filename");
-			}
 			
 		BookTitleSearch.showLibrary();
 		}

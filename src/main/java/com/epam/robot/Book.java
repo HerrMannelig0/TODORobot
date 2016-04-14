@@ -1,6 +1,12 @@
 package com.epam.robot;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 import com.epam.file.Category;
 
@@ -9,6 +15,9 @@ public class Book {
 	private String price;
 	protected Keywords keywords;
 	private URL url;
+	String bookCategory;
+	
+	
 	
 	Book(String title, String author, String price, Keywords keywords, URL url){
 		this.title = title;
@@ -31,27 +40,43 @@ public class Book {
 		this.keywords = keywords;
 	}
 	
-	public String assignCategory(Category[] categories) {
+	public String assignCategory(List<Category> categories) {
 		String resultCategory = "No category";
 		for (Category category : categories) {
+			System.out.println(category);
 			if(resultCategory.equals("No category")){
 				resultCategory = checkCategory(category);
 			}
 			else break;
 		}
+		bookCategory = resultCategory;
 		return resultCategory;
 	}
 
 	public String checkCategory(Category category){
-		if(keywords.contains(category.getKeywords())) 
-				return category.getCategory();
+		if(keywords.contains(category.getKeywords())){ 
+				return category.getCategory();}
 		return "No category";
 	}	
+	
+	List<Category> createCategoryList(File file) throws IOException{
+		Scanner scanner = new Scanner(file);
+		List<Category> categories = new ArrayList<>();
+		while(scanner.hasNextLine()){
+			String nextCategory = scanner.nextLine();
+			String filepath = "src/main/resources/Keywords/" + nextCategory +".txt";
+			Category category = new Category(nextCategory, filepath);
+			category.create();
+			categories.add(category);
+		}
+		return categories;
+		
+	}
 	
 	@Override
 	public String toString() {
 		if(url == null)
-			return "[" + author + ", " + title + " (price: " + price + ") "  + keywords + "]" ;
-		return "[" + author + ", " + title + " (price: " + price + ") "  + keywords + " " + url.toString() + "]" ;	
+			return "[" + author + "; " + title + " (price: " + price + ") "  + keywords + " : " + bookCategory +"]" ;
+		return "[" + author + ";" + title + " (price: " + price + ") "  + keywords + " " + url.toString() + " : " + bookCategory + "]" ;	
 	}	
 }

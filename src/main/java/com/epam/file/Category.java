@@ -10,21 +10,25 @@ import java.util.HashSet;
 public class Category  {
 	
 	protected HashSet<String> keywords;
-	private String filePath = "src/main/resources/Keywords/RomanceKeywords.txt";
+	private String name;
+	private String filePath;
 	private String category;
 	
-	public Category() {
+	public Category(String name, String filepath) {
+		this.name = name;
+		this.filePath = filepath;
 		keywords = new HashSet<>();
 	}
 	
 	public HashSet<String> create() throws IOException{
 		File file = new File(filePath);
-		Category romanceCategory = new Category();
+		Category romanceCategory = new Category(name, filePath);
 		BufferedReader reader = new BufferedReader(new FileReader(file));
 		
 		category = reader.readLine();
 		
 		HashSet<String> set = new HashSet<>();
+		
 		String nextKeyword = null;
 		while((nextKeyword = reader.readLine()) != null){
 			romanceCategory.addKeyword(nextKeyword);
@@ -50,11 +54,16 @@ public class Category  {
 		keywords.addAll(Arrays.asList(category));		
 	}
 
-	public String toString() {
+	@Override
+	public String toString(){
+		return name;
+	}
+	
+	/*public String toString() {
 		String result = "";
 		for (String keyword : keywords) {
 			result += (" " + keyword); 
 		}
 		return result;
-	}
+	}*/
 }

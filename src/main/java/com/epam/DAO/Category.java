@@ -12,37 +12,27 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "BOOKSTORE")
-public class Bookstore {
+@Table(name = "CATEGORY")
+public class Category {
 	
 	@Id
 	@GeneratedValue
-	private int bookstoreId;
+	private int categoryId;
 	
 	
-	@Column(name = "BOOKSTORE_NAME")
-	private String bookstorename;
-	private String url;
+	@Column(name = "CATEGORY_NAME")
+	private String catName;
 
 	@OneToMany  
-	@JoinColumn(name = "bookstore_id")
+	@JoinColumn(name = "category_id")
 	private List<Book> books;
 
-	public String getBookstorename() {
-		return this.bookstorename;
+	public String getCategoryName() {
+		return this.catName;
 	}
 
-	public void setBookstorename(String bookstorename) {
-		this.bookstorename = bookstorename;
-	}
-
-	@Column(name = "URL")
-	public String getURL() {
-		return this.url;
-	}
-
-	public void setURL(String URL) {
-		this.url = URL;
+	public void setCategoryName(String catName) {
+		this.catName = catName;
 	}
 
 	public List<Book> getBooks() {

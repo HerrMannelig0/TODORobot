@@ -1931,3 +1931,495 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'Boo
 2016-04-14 12:51:20 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
 2016-04-14 12:51:20 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
 2016-04-14 12:51:21 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f1d75'
+2016-04-14 13:01:34 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 13:01:34 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 13:01:34 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 13:01:34 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 13:01:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 13:01:34 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 13:01:34 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot]
+2016-04-14 13:01:34 INFO  connections:136 - HHH10001001: Connection properties: {user=root, password=****}
+2016-04-14 13:01:34 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 13:01:34 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 13:01:34 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 13:01:35 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table BOOK drop foreign key FKdvof04khd9d7qc7vfcq63r5j6]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table BOOK drop foreign key FKdvof04khd9d7qc7vfcq63r5j6]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DAO.AddingRecords.main(AddingRecords.java:12)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BookRobot.BOOK' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:840)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:740)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+2016-04-14 13:01:35 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5f7627'
+2016-04-14 13:04:20 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 13:04:20 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 13:04:20 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 13:04:20 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 13:04:21 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 13:04:21 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 13:04:21 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-14 13:04:21 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-14 13:04:21 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 13:04:21 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 13:04:21 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 13:04:21 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f1d75'
+2016-04-14 13:10:47 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 13:10:47 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 13:10:47 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 13:10:47 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 13:10:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 13:10:48 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 13:10:48 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-14 13:10:48 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-14 13:10:48 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 13:10:48 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 13:10:48 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 13:10:48 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@fe48d7'
+2016-04-14 13:36:17 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 13:36:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 13:36:17 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 13:36:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 13:36:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 13:36:17 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 13:36:17 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-14 13:36:17 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-14 13:36:17 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 13:36:17 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 13:36:18 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 13:36:19 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table BOOK drop foreign key FKd7j6m59ovirstes3h3mb0ru8o]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table BOOK drop foreign key FKd7j6m59ovirstes3h3mb0ru8o]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DAO.AddingRecords.main(AddingRecords.java:12)
+Caused by: java.sql.SQLException: Error on rename of './BookRobot/BOOK' to './BookRobot/#sql2-f8a-dc' (errno: 152)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:840)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:740)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+2016-04-14 13:36:19 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1b66b08'
+2016-04-14 13:37:11 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 13:37:11 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 13:37:11 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 13:37:11 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 13:37:11 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 13:37:11 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 13:37:11 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-14 13:37:11 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-14 13:37:11 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 13:37:11 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 13:37:12 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 13:37:13 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f1d75'
+2016-04-14 13:37:49 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 13:37:49 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 13:37:49 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 13:37:49 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 13:37:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 13:37:50 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 13:37:50 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-14 13:37:50 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-14 13:37:50 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 13:37:50 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 13:37:50 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 13:37:51 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table BOOK drop foreign key FK6ka4eok7e6vfm2qu8u5dtnfg9]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table BOOK drop foreign key FK6ka4eok7e6vfm2qu8u5dtnfg9]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DAO.AddingRecords.main(AddingRecords.java:12)
+Caused by: java.sql.SQLException: Error on rename of './BookRobot/BOOK' to './BookRobot/#sql2-f8a-e0' (errno: 152)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:840)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:740)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+2016-04-14 13:37:51 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@227100'
+2016-04-14 14:04:32 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-14 14:04:32 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-14 14:04:32 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-14 14:04:32 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-14 14:04:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-14 14:04:33 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-14 14:04:33 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-14 14:04:33 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-14 14:04:33 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-14 14:04:33 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-14 14:04:33 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-14 14:04:33 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7d1932'
+2016-04-14 14:04:42 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 14:04:42 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 14:04:42 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 14:04:42 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 14:04:42 INFO  MainRobot:34 - Started Main Robot
+2016-04-14 14:04:42 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 14:04:42 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 14:04:42 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 14:04:46 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 14:04:48 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 14:04:48 INFO  MainRobot:55 - Finished Searching titles by Tag
+2016-04-14 14:04:48 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 14:04:48 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 14:04:48 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 14:04:50 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 14:04:50 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 14:04:50 INFO  MainRobot:55 - Finished Searching titles by Tag
+2016-04-14 14:04:50 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 14:04:50 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 14:04:50 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 14:05:17 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 14:05:43 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 14:05:43 INFO  MainRobot:55 - Finished Searching titles by Tag
+2016-04-14 14:29:43 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 14:29:43 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 14:29:43 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 14:29:43 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 14:29:43 INFO  MainRobot:34 - Started Main Robot
+2016-04-14 14:29:43 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 14:29:43 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 14:29:43 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 14:29:47 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 14:29:51 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 14:29:51 INFO  MainRobot:59 - Finished Searching titles by Tag
+2016-04-14 14:29:51 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 14:29:51 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 14:29:51 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 14:29:53 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 14:29:53 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 14:29:53 INFO  MainRobot:59 - Finished Searching titles by Tag
+2016-04-14 14:29:53 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 14:29:53 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 14:29:53 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 14:30:24 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 14:30:51 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 14:30:51 INFO  MainRobot:59 - Finished Searching titles by Tag
+2016-04-14 14:33:17 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 14:33:17 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 14:33:17 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 14:33:17 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 14:33:17 INFO  MainRobot:34 - Started Main Robot
+2016-04-14 14:33:17 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 14:33:17 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 14:33:17 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 14:33:22 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 14:33:26 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 14:33:26 INFO  MainRobot:60 - Finished Searching titles by Tag
+2016-04-14 14:33:26 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 14:33:26 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 14:33:26 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 14:33:28 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 14:33:28 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 14:33:28 INFO  MainRobot:60 - Finished Searching titles by Tag
+2016-04-14 14:33:28 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 14:33:28 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 14:33:28 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 14:33:57 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 14:34:23 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 14:34:23 INFO  MainRobot:60 - Finished Searching titles by Tag
+2016-04-14 15:08:00 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 15:08:00 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 15:08:00 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 15:08:00 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 15:08:00 INFO  MainRobot:34 - Started Main Robot
+2016-04-14 15:08:00 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:08:00 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:08:00 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 15:08:04 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:08:07 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:08:07 ERROR MainRobot:64 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:08:07 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:08:07 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:08:07 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 15:08:09 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:08:09 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:08:09 ERROR MainRobot:64 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:08:09 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:08:09 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:08:09 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 15:08:37 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:09:03 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:09:03 ERROR MainRobot:64 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:39:05 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 15:39:05 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 15:39:05 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 15:39:05 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 15:39:05 INFO  MainRobot:34 - Started Main Robot
+2016-04-14 15:39:05 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:39:05 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:39:05 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 15:39:08 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:39:12 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:39:12 ERROR MainRobot:64 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:39:12 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:39:12 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:39:12 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 15:39:13 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:39:14 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:39:14 ERROR MainRobot:64 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:39:14 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:39:14 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:39:14 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 15:39:41 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:40:08 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:40:08 ERROR MainRobot:64 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:40:49 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 15:40:49 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 15:40:49 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 15:40:49 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 15:40:49 INFO  MainRobot:34 - Started Main Robot
+2016-04-14 15:40:49 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:40:49 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:40:49 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 15:40:58 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:41:01 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:41:01 ERROR MainRobot:64 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:41:01 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:41:01 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:41:01 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 15:41:02 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:41:02 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:41:02 ERROR MainRobot:64 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:41:02 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:41:02 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:41:02 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 15:41:31 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:41:58 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:41:58 ERROR MainRobot:64 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:42:09 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 15:42:09 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 15:42:09 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 15:42:09 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 15:42:09 INFO  MainRobot:34 - Started Main Robot
+2016-04-14 15:42:09 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:42:09 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:42:09 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 15:42:14 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:42:17 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:42:17 ERROR MainRobot:64 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:42:17 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:42:17 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:42:17 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 15:42:19 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:42:19 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:42:19 ERROR MainRobot:64 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:42:19 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:42:19 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:42:19 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 15:42:47 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:43:16 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:43:16 ERROR MainRobot:64 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:45:52 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 15:45:52 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 15:45:52 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 15:45:52 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 15:45:52 INFO  MainRobot:34 - Started Main Robot
+2016-04-14 15:45:52 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:45:52 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:45:52 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 15:45:57 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:46:00 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:46:00 ERROR MainRobot:65 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:46:00 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:46:00 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:46:00 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 15:46:02 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:46:03 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:46:03 ERROR MainRobot:65 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:46:03 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:46:03 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:46:03 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 15:46:31 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:46:58 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:46:58 ERROR MainRobot:65 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:48:10 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 15:48:10 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 15:48:10 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 15:48:10 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 15:48:10 INFO  MainRobot:34 - Started Main Robot
+2016-04-14 15:48:10 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:48:10 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:48:10 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 15:48:15 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:48:20 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:48:20 INFO  MainRobot:63 - Finished Searching titles by Tag
+2016-04-14 15:48:20 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:48:20 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:48:20 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 15:48:22 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:48:22 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:48:22 INFO  MainRobot:63 - Finished Searching titles by Tag
+2016-04-14 15:48:22 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:48:22 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:48:22 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 15:48:48 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:49:15 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:49:15 INFO  MainRobot:63 - Finished Searching titles by Tag
+2016-04-14 15:50:15 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 15:50:15 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 15:50:15 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 15:50:15 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 15:50:15 INFO  MainRobot:34 - Started Main Robot
+2016-04-14 15:50:15 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:50:15 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:50:15 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 15:50:18 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:50:22 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:50:22 ERROR MainRobot:66 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:50:22 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:50:22 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:50:22 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 15:50:24 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:50:25 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:50:25 ERROR MainRobot:66 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:50:25 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:50:25 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:50:25 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 15:50:52 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:51:19 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:51:19 ERROR MainRobot:66 - class java.lang.NullPointerExceptionin MainRobot, problems with filename
+2016-04-14 15:52:54 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 15:52:54 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 15:52:54 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 15:52:54 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 15:52:54 INFO  MainRobot:34 - Started Main Robot
+2016-04-14 15:52:54 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:52:54 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:52:54 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 15:52:59 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:53:02 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:53:02 ERROR MainRobot:67 - class java.lang.NullPointerException in MainRobot, problems with filename
+2016-04-14 15:53:02 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:53:02 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:53:02 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 15:53:05 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:53:06 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:53:06 ERROR MainRobot:67 - class java.lang.NullPointerException in MainRobot, problems with filename
+2016-04-14 15:53:06 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:53:06 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:53:06 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 15:53:36 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:54:02 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:54:02 ERROR MainRobot:67 - class java.lang.NullPointerException in MainRobot, problems with filename
+2016-04-14 15:55:04 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 15:55:04 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 15:55:04 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 15:55:04 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 15:55:04 INFO  MainRobot:34 - Started Main Robot
+2016-04-14 15:55:04 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:55:04 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:55:04 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 15:55:09 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:55:14 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:55:14 ERROR MainRobot:67 - class java.lang.NullPointerException in MainRobot, problems with filename
+2016-04-14 15:55:14 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:55:14 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:55:14 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 15:55:17 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:55:17 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:55:17 ERROR MainRobot:67 - class java.lang.NullPointerException in MainRobot, problems with filename
+2016-04-14 15:55:17 INFO  MainRobot:38 - Iterating over links by file
+2016-04-14 15:55:17 INFO  MainRobot:42 - Started Searching titles by Tag
+2016-04-14 15:55:17 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 15:55:49 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:56:14 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:56:14 ERROR MainRobot:67 - class java.lang.NullPointerException in MainRobot, problems with filename
+2016-04-14 15:57:22 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 15:57:22 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 15:57:22 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 15:57:22 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 15:57:22 INFO  MainRobot:35 - Started Main Robot
+2016-04-14 15:57:22 INFO  MainRobot:39 - Iterating over links by file
+2016-04-14 15:57:22 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-04-14 15:57:22 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 15:57:27 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:57:29 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:58:51 INFO  FileLinkHandler:22 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-14 15:58:51 INFO  FileLinkHandler:81 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-14 15:58:51 INFO  FileLinkHandler:81 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-14 15:58:51 INFO  FileLinkHandler:81 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-14 15:58:51 INFO  MainRobot:35 - Started Main Robot
+2016-04-14 15:58:51 INFO  MainRobot:39 - Iterating over links by file
+2016-04-14 15:58:51 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-04-14 15:58:51 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-04-14 15:58:54 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:59:00 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:59:00 INFO  MainRobot:78 - Finished Searching titles by Tag
+2016-04-14 15:59:00 INFO  MainRobot:39 - Iterating over links by file
+2016-04-14 15:59:00 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-04-14 15:59:00 INFO  BookTitleSearch:41 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-04-14 15:59:03 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:59:04 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:59:04 INFO  MainRobot:78 - Finished Searching titles by Tag
+2016-04-14 15:59:04 INFO  MainRobot:39 - Iterating over links by file
+2016-04-14 15:59:04 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-04-14 15:59:04 INFO  BookTitleSearch:41 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-04-14 15:59:31 INFO  BookTitleSearch:53 - Started iterating over links to search titles
+2016-04-14 15:59:58 INFO  BookTitleSearch:64 - Finished iterating over links to search titles
+2016-04-14 15:59:59 INFO  MainRobot:78 - Finished Searching titles by Tag

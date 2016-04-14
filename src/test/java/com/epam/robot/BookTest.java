@@ -5,9 +5,9 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import java.util.ArrayList;
+import java.io.File;
+import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 
 import org.testng.annotations.Test;
@@ -84,7 +84,7 @@ public class BookTest {
 		when(categories[3].getKeywords()).thenReturn(horrorSet);
 		when(categories[3].getCategory()).thenReturn("Horror");
 		
-		String resultCategory = book.assignCategory(categories);
+		String resultCategory = book.assignCategory(Arrays.asList(categories));
 		String expectedCategory = "Romance";
 		
 		assertThat(resultCategory).isEqualTo(expectedCategory);
@@ -127,10 +127,30 @@ public class BookTest {
 		when(categories[3].getKeywords()).thenReturn(horrorSet);
 		when(categories[3].getCategory()).thenReturn("Horror");
 		
-		String resultCategory = book.assignCategory(categories);
+		
+		
+		String resultCategory = book.assignCategory(Arrays.asList(categories));
 		String expectedCategory = "No category";
 		
 		assertThat(resultCategory).isEqualTo(expectedCategory);
+	}
+	
+	@Test
+	public void testCategoriesListCreator() throws Exception {
+		Book book = new Book("anyTile", "anyAuthor", new Keywords(new String[]{"vamipre"}));
+		
+		File file = new File("src/main/resources/Keywords/Categories.txt");
+		
+		List<Category> categories = book.createCategoryList(file);
+		assertThat(categories.size()).isGreaterThan(0);
+	}
+	
+	@Test
+	public void testAssignCategoryToBook() throws Exception {
+		Book book = new Book("anyTile", "anyAuthor", new Keywords(new String[]{"vampire"}));
+		File file = new File("src/main/resources/Keywords/Categories.txt");
+		String category = book.assignCategory(book.createCategoryList(file));
+		assertThat(category).isEqualTo("Fantasy");
 	}
 	
 }
