@@ -20,14 +20,126 @@ import org.jsoup.select.Elements;
  * Created by damian on 22.03.16.
  */
 public class BookTitleSearch {
-	private static Logger logger = Logger.getLogger("BookTitleSearch");
-	private static StringBuilder titleBookContainer = new StringBuilder();
-
 	protected static List<Book> library = new ArrayList<>();
-	
 	static private Set<String> addressHashSet = new HashSet<String>();
 
-	/*
+	private static Logger logger = Logger.getLogger("BookTitleSearch");
+	
+	private static StringBuilder titleBookContainer = new StringBuilder();
+
+	/**
+	 * Finds out if given string starts with "Keywords: " phrase.
+	 * @param String, that should contains keywords of book.
+	 * @return True if given string starts with "Keywords: ", else otherwise. 
+	 */
+	public static boolean areKeywords(String valueFromSite) {
+		return valueFromSite.startsWith("Keywords:");
+	}
+
+	/**
+	 * Parsing website and searchnig for links there.
+	 * @param bookstoreAddressFromTextfile
+	 * @return nothing
+	 */
+	public static void searchLinksToNextPages(String bookstoreAddressFromTextfile) {
+
+		try {
+			Document websiteContent  = null;
+			try {
+				websiteContent = parseHTMLtoDoc(bookstoreAddressFromTextfile);
+			} catch (Exception e) {
+				logger.error("Cannot parse HTMP to DOC: " + bookstoreAddressFromTextfile);
+			}
+
+			addressHashSet.add(bookstoreAddressFromTextfile);
+
+			Elements links = null;
+			try {
+				links = websiteContent.select("a[abs:href]");
+			} catch (Exception e) {
+				logger.error("Cannot select link from site: " + bookstoreAddressFromTextfile);
+			}
+			Iterator<Element> iterator = links.iterator();
+			while (iterator.hasNext()) {
+				Element tag = iterator.next();
+
+				if (tagContainsNumberAndWasNotFoundBefore(tag)) {
+					addLinkToSetAndSearchInLinkForPages(tag.attr("abs:href"));
+				}
+			}
+		} catch (Exception e) {
+			
+		}
+	}
+
+	
+	/**
+	 * searches for book titles and tags, if available
+	 * 
+	 * @param bookstoreAddressFromTextfile the main bookstore address
+	 * typeOfElement type of element to be searched elementName a specified tag
+	 * name to search for
+	 * 
+	 */
+	public static void searchTitles(String bookstoreAddressFromTextfile, String typeOfElement, String elementName) {
+
+		Document document = parseHTMLtoDoc(bookstoreAddressFromTextfile);
+
+		Element body = document.body();
+
+		Elements elements;
+
+		elements = body.getElementsByClass(elementName);
+
+		Iterator<Element> iterator = elements.iterator();
+
+		while (iterator.hasNext()) {
+			Element next = iterator.next();
+			System.out.println(next.text());
+			titleBookContainer.append(next.text() + "\n");
+			
+		}
+	}
+
+	/**
+	 * Searches for book titles and tags, if available
+	 *
+	 * @param Bookstore address
+	 * @param type of element
+	 * @param tag for title
+	 * @param tag for author
+	 * @param tag for price
+	 * @param tag for keywords
+	 * @throws MalformedURLException
+	 */
+	public static void searchTitles(String bookstoreAddressFromTextfile, String typeOfElement,
+			String titleTag, String authorTag, String priceTag, String keywordsTag) throws MalformedURLException {
+			
+			Document document = parseHTMLtoDoc(bookstoreAddressFromTextfile);
+
+			Element body = document.body();
+			Elements items = body.getElementsByClass(typeOfElement);
+			
+			for(Element item : items){
+				
+					String title = extractElementFromSite(item, titleTag); 
+					String author = omitByInAuthor(extractElementFromSite(item, authorTag));
+					String price = extractElementFromSite(item, priceTag);
+					String keywordsAsStringFromSite = extractElementFromSite(item, keywordsTag);
+
+					
+					
+					if(BookTitleSearch.areKeywords(keywordsAsStringFromSite)){
+						Keywords keywords = new Keywords(BookTitleSearch.extractKeywords(keywordsAsStringFromSite));
+						library.add(new Book(title, author, price, keywords, new URL(bookstoreAddressFromTextfile)));
+					} else{
+						library.add(new Book(title, author, price, new URL(bookstoreAddressFromTextfile)));		
+					}
+			}
+	}
+
+
+	/**
 	 * creates String containing titles from all pages from bookstore web site
 	 * 
 	 * @param bookstoreAddressFromTextfile the main bookstore address
@@ -64,33 +176,34 @@ public class BookTitleSearch {
 		return titleBookContainer.toString();
 	}
 
-	public static void searchTitles(String bookstoreAddressFromTextfile, String typeOfElement,
-			String titleTag, String authorTag, String priceTag, String keywordsTag) throws MalformedURLException {
-			
-			Document document = parseHTMLtoDoc(bookstoreAddressFromTextfile);
-
-			Element body = document.body();
-			Elements items = body.getElementsByClass(typeOfElement);
-			
-			for(Element item : items){
-				
-					String title = extractElementFromSite(item, titleTag); 
-					String author = omitByInAuthor(extractElementFromSite(item, authorTag));
-					String price = extractElementFromSite(item, priceTag);
-					String keywordsAsStringFromSite = extractElementFromSite(item, keywordsTag);
-
-					
-					
-					if(BookTitleSearch.areKeywords(keywordsAsStringFromSite)){
-						Keywords keywords = new Keywords(BookTitleSearch.extractKeywords(keywordsAsStringFromSite));
-						library.add(new Book(title, author, price, keywords, new URL(bookstoreAddressFromTextfile)));
-					} else{
-						library.add(new Book(title, author, price, new URL(bookstoreAddressFromTextfile)));		
-					}
-			}
+	/**
+	 * Printing library to standard output.
+	 * @param nothing
+	 * @return nothing
+	 */
+	public static void showLibrary(){
+		System.out.println("Library size: " + library.size());
+		for(Book book : library){
+			System.out.println(book);
+		}
 	}
 
-	
+	/**
+	 * Parse string from site to array of keywords.
+	 * @param keywords as a string
+	 * @return Array of keywords
+	 */
+	protected static String[] extractKeywords(String valueFromSite) {
+		int indexOfStart = valueFromSite.indexOf(':') + 2;
+		String [] keywords = valueFromSite.substring(indexOfStart).toLowerCase().split(", ");
+		return keywords;
+	}
+
+	/**
+	 * Delete "By: " in the author's element from site.
+	 * @param extractElementFromSite
+	 * @return Author without "By: "
+	 */
 	protected static String omitByInAuthor(String extractElementFromSite) {
 		if(extractElementFromSite.length() < 3) return extractElementFromSite;
 		if(extractElementFromSite.startsWith("By:"))
@@ -98,6 +211,12 @@ public class BookTitleSearch {
 		return extractElementFromSite;
 	}
 
+	/**
+	 * Extracting information from Element.
+	 * @param item to search on a site
+	 * @param tag connected with element and searching phrase
+	 * @return extracted element as a string
+	 */
 	static String extractElementFromSite(Element item, String tag){
 		Elements elements = null;
 		try{
@@ -106,74 +225,20 @@ public class BookTitleSearch {
 		return elements.text();
 	}
 
-
-	/*
-	 * searches for book titles and tags, if available
-	 * 
-	 * @param bookstoreAddressFromTextfile the main bookstore address
-	 * typeOfElement type of element to be searched elementName a specified tag
-	 * name to search for
-	 * 
+	/**
+	 * Adding link to HashSet
+	 * @param link to Sub-page
 	 */
-	public static void searchTitles(String bookstoreAddressFromTextfile, String typeOfElement, String elementName) {
-
-		Document document = parseHTMLtoDoc(bookstoreAddressFromTextfile);
-
-		Element body = document.body();
-
-		Elements elements;
-
-		elements = body.getElementsByClass(elementName);
-
-		Iterator<Element> iterator = elements.iterator();
-
-		while (iterator.hasNext()) {
-			Element next = iterator.next();
-			System.out.println(next.text());
-			titleBookContainer.append(next.text() + "\n");
-			
-		}
-	}
-
-	/*
-	 * searches for sub-pages and puts found links into set
-	 * 
-	 * @param bookstoreAddressFromTextfile the main bookstore address
-	 * 
-	 */
-
-	public static void searchLinksToNextPages(String bookstoreAddressFromTextfile) {
-
-		Document websiteContent = parseHTMLtoDoc(bookstoreAddressFromTextfile);
-
-		addressHashSet.add(bookstoreAddressFromTextfile);
-
-		Elements links = websiteContent.select("a[abs:href]");
-		Iterator<Element> iterator = links.iterator();
-		while (iterator.hasNext()) {
-			Element tag = iterator.next();
-
-			if (tagContainsNumberAndWasNotFoundBefore(tag)) {
-				addLinkToSetAndSearchInLinkForPages(tag.attr("abs:href"));
-			}
-		}
-	}
-
-	private static void resetClassVariables() {
-		titleBookContainer = new StringBuilder();
-		addressHashSet = new HashSet<>();
-	}
-
-	private static boolean tagContainsNumberAndWasNotFoundBefore(Element element) {
-		return NumberUtils.isNumber(element.text()) && !addressHashSet.contains(element.attr("abs:href"))
-				&& (addressHashSet.size() < 30);
-	}
-
 	private static void addLinkToSetAndSearchInLinkForPages(String linkToSubPage) {
 		addressHashSet.add(linkToSubPage);
 		searchLinksToNextPages(linkToSubPage);
 	}
 
+	/**
+	 * Parsing site to document.
+	 * @param Site address as a string.
+	 * @return Document parsed from site.
+	 */
 	private static Document parseHTMLtoDoc(String adress) {
 		Document document = null;
 		try {
@@ -183,21 +248,22 @@ public class BookTitleSearch {
 		}
 		return document;
 	}
-
-	protected static String[] extractKeywords(String valueFromSite) {
-		int indexOfStart = valueFromSite.indexOf(':') + 2;
-		String [] keywords = valueFromSite.substring(indexOfStart).toLowerCase().split(", ");
-		return keywords;
-	}
-
-	public static boolean areKeywords(String valueFromSite) {
-		return valueFromSite.startsWith("Keywords:");
+	
+	/**
+	 * Set private variables to new objects.
+	 */
+	private static void resetClassVariables() {
+		titleBookContainer = new StringBuilder();
+		addressHashSet = new HashSet<>();
 	}
 	
-	public static void showLibrary(){
-		System.out.println("Library size: " + library.size());
-		for(Book book : library){
-			System.out.println(book);
-		}
+	/**
+	 * Finds out if given tag contains number.
+	 * @param Element to check
+	 * @return True, if tag contains number, false otherwise. 
+	 */
+	private static boolean tagContainsNumberAndWasNotFoundBefore(Element element) {
+		return NumberUtils.isNumber(element.text()) && !addressHashSet.contains(element.attr("abs:href"))
+				&& (addressHashSet.size() < 30);
 	}
 }

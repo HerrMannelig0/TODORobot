@@ -10,6 +10,11 @@ import java.util.Scanner;
 
 import com.epam.file.Category;
 
+/**
+ * Class contains book definitons. 
+ * Contains title, author, price, keywords and url of bookstore. 
+ * @see Keywords
+ */
 public class Book {
 	private String title, author;
 	private String price;
@@ -40,6 +45,13 @@ public class Book {
 		this.keywords = keywords;
 	}
 	
+	/**
+	 * Assigning category from table with keywords.
+	 * @param Categories to assing to keywords.
+	 * @return Assigned category as string. If no category has been found it returns "No category".
+	 * 
+	 * @see Category
+	 */
 	public String assignCategory(List<Category> categories) {
 		String resultCategory = "No category";
 		for (Category category : categories) {
@@ -53,12 +65,23 @@ public class Book {
 		return resultCategory;
 	}
 
+	/**
+	 * Checking if given category math to keywords.
+	 * @param Category to check 
+	 * @return Found category as string. If no category has been found it returns "No category".
+	 */
 	public String checkCategory(Category category){
 		if(keywords.contains(category.getKeywords())){ 
 				return category.getCategory();}
 		return "No category";
 	}	
 	
+	/**
+	 * Create list of categories, reads them from given file.
+	 * @param File contains list of categories
+	 * @return List of categories
+	 * @throws IOException
+	 */
 	List<Category> createCategoryList(File file) throws IOException{
 		Scanner scanner = new Scanner(file);
 		List<Category> categories = new ArrayList<>();
@@ -69,6 +92,7 @@ public class Book {
 			category.create();
 			categories.add(category);
 		}
+		scanner.close();
 		return categories;
 		
 	}

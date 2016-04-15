@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Scanner;
 import org.apache.log4j.Logger;
 
-import com.epam.gui.MainClass;
+
 
 public class FileLinkHandler {
 

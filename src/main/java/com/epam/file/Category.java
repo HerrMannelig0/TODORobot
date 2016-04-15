@@ -7,6 +7,11 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
 
+/**
+ * Class {@code Category} represents category of the book.
+ * @see Book
+ * @see Keywords
+ */
 public class Category  {
 	
 	protected HashSet<String> keywords;
@@ -14,12 +19,19 @@ public class Category  {
 	private String filePath;
 	private String category;
 	
+	public Category() {}
+	
 	public Category(String name, String filepath) {
 		this.name = name;
 		this.filePath = filepath;
 		keywords = new HashSet<>();
 	}
 	
+	/**
+	 * Creating new category from file.
+	 * @return Set of keywords
+	 * @throws IOException
+	 */
 	public HashSet<String> create() throws IOException{
 		File file = new File(filePath);
 		Category romanceCategory = new Category(name, filePath);
