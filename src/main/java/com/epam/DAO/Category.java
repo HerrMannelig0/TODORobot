@@ -32,7 +32,7 @@ public class Category {
 
 	@OneToMany  
 	@JoinColumn(name = "category_id")
-	private List<Book> books;
+	private List<BookDAO> books;
 
 	public String getCategoryName() {
 		return this.catName;
@@ -42,11 +42,11 @@ public class Category {
 		this.catName = catName;
 	}
 
-	public List<Book> getBooks() {
+	public List<BookDAO> getBooks() {
 		return books;
 	}
 
-	public void setBooks(List<Book> books) {
+	public void setBooks(List<BookDAO> books) {
 		this.books = books;
 	}
 

@@ -9,7 +9,7 @@ import java.util.HashSet;
 
 /**
  * Class {@code Category} represents category of the book.
- * @see Book
+ * @see BookDAO
  * @see Keywords
  */
 public class Category  {

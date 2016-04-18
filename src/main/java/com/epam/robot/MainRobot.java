@@ -48,8 +48,7 @@ public class MainRobot {
 			System.out.println(link.getLinkAdress()+" "+
 					link.getElementType() +" "+ link.getTitleTag() + " "+ link.getAuthorTag() +" " + link.getPriceTag() + " "+ link.KeywordsTag());
 		
-			String bookTitles = BookTitleSearch.searchTitlesInPageAndSubPages(link.getLinkAdress(),
-					link.getElementType(), link.getTitleTag(), link.getAuthorTag(), link.getPriceTag(), link.KeywordsTag());
+		
 			
 			String fileName = null;
 			

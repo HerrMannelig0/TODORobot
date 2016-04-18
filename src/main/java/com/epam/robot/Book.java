@@ -23,7 +23,7 @@ public class Book {
 	String bookCategory;
 	
 	
-	
+
 	Book(String title, String author, String price, Keywords keywords, URL url){
 		this.title = title;
 		this.author = author;
@@ -103,4 +103,20 @@ public class Book {
 			return "[" + author + "; " + title + " (price: " + price + ") "  + keywords + " : " + bookCategory +"]" ;
 		return "[" + author + ";" + title + " (price: " + price + ") "  + keywords + " " + url.toString() + " : " + bookCategory + "]" ;	
 	}	
+	
+	public String getTitle() {
+		return title;
+	}
+	
+	public String getAuthor() {
+		return author;
+	}
+	
+	public URL getUrl() {
+		return url;
+	}
+	
+	public String getBookCategory() {
+		return bookCategory;
+	}
 }

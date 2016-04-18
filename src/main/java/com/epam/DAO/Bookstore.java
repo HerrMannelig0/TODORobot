@@ -32,7 +32,7 @@ public class Bookstore {
 
 	@OneToMany  
 	@JoinColumn(name = "bookstore_id")
-	private List<Book> books;
+	private List<BookDAO> books;
 
 	public String getBookstorename() {
 		return this.bookstorename;
@@ -51,11 +51,11 @@ public class Bookstore {
 		this.url = URL;
 	}
 
-	public List<Book> getBooks() {
+	public List<BookDAO> getBooks() {
 		return books;
 	}
 
-	public void setBooks(List<Book> books) {
+	public void setBooks(List<BookDAO> books) {
 		this.books = books;
 	}
 

@@ -3,9 +3,16 @@ package com.epam.file;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-import com.epam.DAO.Book;
+import org.hibernate.Session;
+
+import com.epam.DAO.BookDAO;
+import com.epam.DAO.Bookstore;
+import com.epam.DAO.HibernateUtil;
+import com.epam.robot.Book;
 
 
 public class FileBookHandler {
@@ -53,10 +60,31 @@ public class FileBookHandler {
 	 * @param book
 	 * @param printWriter
 	 */
-	public static void writeBookToFile(com.epam.robot.Book book, PrintWriter printWriter) {
-	
+	public static void writeBookToFile(Book book, PrintWriter printWriter) {
+		
 		printWriter.print(book);
 		printWriter.flush();
+		
+		Bookstore bookstore = new Bookstore();
+		
+		bookstore.setBookstorename(book.getUrl().toString());
+		bookstore.setURL("www.empik.com");
+		BookDAO bookToDB = new BookDAO();
+		bookToDB.setAuthor(book.getAuthor());
+		bookToDB.setTitle(book.getTitle());
+
+		List<BookDAO> booksInBookstore = new ArrayList<>();
+		booksInBookstore.add(bookToDB);
+	
+		bookstore.setBooks(booksInBookstore);
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		session.beginTransaction();
+		
+		session.save(bookstore); //saving bookstore
+		session.save(bookToDB); //three below: saving books
+		
+		session.getTransaction().commit();
+		session.close();
 	}
 
 }
