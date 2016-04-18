@@ -1,16 +1,17 @@
 package com.epam.robot;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.net.URL;
+import java.util.List;
+
+import org.apache.log4j.Logger;
+
 import com.epam.file.FileBookHandler;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
 import com.epam.util.UrlUtils;
-import org.apache.log4j.Logger;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
 
 /**
  * Program to search free books in the internet bookstores.
@@ -24,6 +25,12 @@ public class MainRobot {
 	 */
 	public static void main(String[] args) {
 
+		try {
+			BookTitleSearch.generateBookstoreSet(new File(fileName));
+		} catch (FileNotFoundException e1) {
+			logger.error("File with bookstores cannot be opened");
+		}
+		
 		PrintWriter printWriter = null;
 		FileLinkHandler fileLinkHandler = new FileLinkHandler();
 		
@@ -36,7 +43,6 @@ public class MainRobot {
 		List<Link> linksList = fileLinkHandler.getLinksList();
 
 		logger.info("Started Main Robot");
-		System.out.println(linksList.size());
 		
 		for (int i = 0; i < linksList.size(); i++) {
 			logger.info("Iterating over links by file");
@@ -58,8 +64,11 @@ public class MainRobot {
 				} catch (FileNotFoundException e) {
 					logger.error(e.getClass() + " in MainRobot, problems with filename");
 				}
+				
 				List<Book> library = BookTitleSearch.library;
-	
+				
+				
+				
 				for (Book book : library) {
 				
 					try {

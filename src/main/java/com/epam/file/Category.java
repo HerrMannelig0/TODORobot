@@ -70,12 +70,4 @@ public class Category  {
 	public String toString(){
 		return name;
 	}
-	
-	/*public String toString() {
-		String result = "";
-		for (String keyword : keywords) {
-			result += (" " + keyword); 
-		}
-		return result;
-	}*/
 }

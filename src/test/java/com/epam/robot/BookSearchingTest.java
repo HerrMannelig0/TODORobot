@@ -1,6 +1,15 @@
 package com.epam.robot;
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.io.File;
+import java.net.URL;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.Test;
+
+import com.epam.DAO.Bookstore;
 
 public class BookSearchingTest {
 
@@ -68,4 +77,54 @@ public class BookSearchingTest {
 		assertThat(BookTitleSearch.library.size()).isGreaterThan(0);	
 	}
 
+	@Test
+	public void testExtractingBookstoreName() throws Exception {
+		String url = "https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go";
+		String expected = "gutenberg";
+		String result = BookTitleSearch.extractBookstoreName(url);
+		assertThat(result).isEqualTo(expected);
+	}
+	
+	@Test
+	public void testGettingBookstoreFrmBookstoresSet() throws Exception {
+		Set<Bookstore> set = new HashSet<>();
+		set.add(new Bookstore("other"));
+		set.add(new Bookstore("gutenberg"));
+		set.add(new Bookstore("different"));
+		Bookstore result = BookTitleSearch.getBookstoreFromSet("gutenberg", set);
+		assertThat(result.getBookstorename()).isEqualTo("gutenberg");
+	}
+	
+	@Test
+	public void testAddingBookToBookstoreInBookstoresList() throws Exception {
+		Bookstore gutenberg = new Bookstore("gutenberg");
+		Bookstore next = new Bookstore("next");
+		gutenberg.init();
+		next.init();
+		BookTitleSearch.bookstores.add(gutenberg);
+		BookTitleSearch.bookstores.add(next);
+		
+		String url = "https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go";
+		String bookstoreName = BookTitleSearch.extractBookstoreName(url);
+		Book book = new Book("title", "author", "Free", new Keywords(new String[]{"love"}), new URL(url));
+		BookTitleSearch.addBookToBookstoreInBookstoresList(url, book);
+		SoftAssertions soft = new SoftAssertions();
+		soft.assertThat(BookTitleSearch.bookstores.size()).isGreaterThan(0);
+		
+		for (Bookstore bookstore : BookTitleSearch.bookstores) {
+			boolean result = bookstore.contains(book.convertToBookDAO());
+			if(bookstore.getBookstorename() == bookstoreName) soft.assertThat(result).isTrue();
+		}
+		soft.assertAll();
+	}
+	
+	@Test
+	public void testGeneratingBookstoreListFromFile() throws Exception {
+		File file = new File("src/main/resources/FreeBooksAdressSite.txt");
+		Set<Bookstore> set = BookTitleSearch.generateBookstoreSet(file);
+		for (Bookstore bookstore : set) {
+			System.out.println(bookstore.getBookstorename());
+		}
+		assertThat(set.size()).isGreaterThan(0);
+	}
 }

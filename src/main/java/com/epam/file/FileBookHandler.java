@@ -66,8 +66,9 @@ public class FileBookHandler {
 		printWriter.flush();
 		
 		Bookstore bookstore = new Bookstore();
-		
+		bookstore.init();
 		bookstore.setBookstorename(book.getUrl().toString());
+		System.out.println(bookstore);
 		bookstore.setURL("www.empik.com");
 		BookDAO bookToDB = new BookDAO();
 		bookToDB.setAuthor(book.getAuthor());

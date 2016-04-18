@@ -3,10 +3,12 @@ package com.epam.file;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
+
 import org.apache.log4j.Logger;
 
 
@@ -66,9 +68,9 @@ public class FileLinkHandler {
 		urlList.clear();
 	}
 
-	public List<Link> readLinksFromFile(File fileWithLinksToBookstores) throws FileNotFoundException {
+	public Set<Link> readLinksFromFile(File fileWithLinksToBookstores) throws FileNotFoundException {
 		Scanner scanner = new Scanner(fileWithLinksToBookstores);
-		List<Link> links = new ArrayList<>();
+		Set<Link> links = new HashSet<>();
 
 		while (scanner.hasNextLine()) {
 			String[] partsOfRowFromFileWithBookstores = scanner.nextLine().split(" ");

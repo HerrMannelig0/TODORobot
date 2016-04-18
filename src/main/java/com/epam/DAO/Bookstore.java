@@ -1,5 +1,6 @@
 package com.epam.DAO;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -20,6 +21,14 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "BOOKSTORE")
 public class Bookstore {
+	
+	
+	public Bookstore() {
+	}
+	
+	public Bookstore(String bookstorename){
+		this.bookstorename = bookstorename;
+	}
 	
 	@Id
 	@GeneratedValue
@@ -59,4 +68,20 @@ public class Bookstore {
 		this.books = books;
 	}
 
+	public void init(){
+		if(books == null) books = new ArrayList<>();
+	}
+	
+	public void addBookDAO(BookDAO bookDAO){
+		books.add(bookDAO);
+	}
+	
+	public boolean contains(BookDAO bookDAO){
+		return books.contains(bookDAO);
+	}
+	
+	@Override
+	public String toString() {
+		return "[" + bookstorename + " books: " + books + "]";
+	}
 }

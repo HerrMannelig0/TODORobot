@@ -9,6 +9,7 @@ import static org.mockito.Mockito.when;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
+import java.util.Set;
 
 import org.testng.annotations.Test;
 
@@ -30,7 +31,7 @@ public class FileLinkHandlerTest {
     public void testReadingLinksFromBlankFile() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
        File file = new File("src/test/resources/BLANK.txt");
-       List<Link> links = fileLinkHandler.readLinksFromFile(file);
+       Set<Link> links = fileLinkHandler.readLinksFromFile(file);
        assertThat(links.isEmpty()).isTrue();  
 
     }
@@ -40,7 +41,7 @@ public class FileLinkHandlerTest {
     	int one = 1;
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
        File file = new File("src/test/resources/OneLine.txt");
-       List<Link> links = fileLinkHandler.readLinksFromFile(file);
+       Set<Link> links = fileLinkHandler.readLinksFromFile(file);
        assertThat(links.size()).isEqualTo(one);
     }
  

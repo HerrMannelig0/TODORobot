@@ -61,5 +61,10 @@ public class BookDAO {
 		this.title = title;
 	}
 
+	@Override
+	public String toString() {
+		return "<author=" + author + ", title=" + title + ", category=" + category + ">";
+	}
 
+	
 }

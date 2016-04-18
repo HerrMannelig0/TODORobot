@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import com.epam.DAO.BookDAO;
 import com.epam.file.Category;
 
 /**
@@ -94,7 +95,14 @@ public class Book {
 		}
 		scanner.close();
 		return categories;
-		
+	}
+	
+	public BookDAO convertToBookDAO(){
+		BookDAO bookDAO = new BookDAO();
+		bookDAO.setTitle(title);
+		bookDAO.setAuthor(author);
+		bookDAO.setCategory(bookCategory);
+		return bookDAO;
 	}
 	
 	@Override

@@ -11,7 +11,9 @@ import java.util.HashSet;
 import java.util.List;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
+import com.epam.DAO.BookDAO;
 import com.epam.file.Category;
 
 public class BookTest {
@@ -151,6 +153,21 @@ public class BookTest {
 		File file = new File("src/main/resources/Keywords/Categories.txt");
 		String category = book.assignCategory(book.createCategoryList(file));
 		assertThat(category).isEqualTo("Fantasy");
+	}
+	
+	@Test
+	public void testConvertingToBookDAO() throws Exception {
+		String title = "anyTile";
+		String author = "anyAuthor";
+		Book book = new Book(title, author, new Keywords(new String[]{"vampire"}));
+		File file = new File("src/main/resources/Keywords/Categories.txt");
+		String category = book.assignCategory(book.createCategoryList(file));
+		BookDAO bookDAO = book.convertToBookDAO();
+		SoftAssert softAssert = new SoftAssert();
+		softAssert.assertEquals(bookDAO.getTitle(), title);
+		softAssert.assertEquals(bookDAO.getAuthor(), author);
+		softAssert.assertEquals(bookDAO.getCategory(), category);
+		softAssert.assertAll();
 	}
 	
 }

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class AddingCategoriesTest {
 	ArrayList <String> expected = new ArrayList<>();
-
+/*
 	@Test
 	public void ifListContainsCategoriesFromFile() throws FileNotFoundException, IOException {
 
@@ -25,5 +25,5 @@ public class AddingCategoriesTest {
 		expected.add("IT");
 		expected.add("Fantasy");
 	}
-	
+	*/
 }

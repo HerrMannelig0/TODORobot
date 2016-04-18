@@ -1,5 +1,7 @@
 package com.epam.robot;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -7,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Scanner;
 import java.util.Set;
 
 import org.apache.commons.lang3.math.NumberUtils;
@@ -16,26 +19,22 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.epam.DAO.Bookstore;
+import com.epam.file.FileLinkHandler;
+import com.epam.file.Link;
+
 
 public class BookTitleSearch {
 	protected static List<Book> library = new ArrayList<>();
-	static private Set<String> addressHashSet = new HashSet<String>();
-
+	static private Set<String> addressHashSet = new HashSet<>();
+	static Set<Bookstore> bookstores = new HashSet<>();
+	
 	private static Logger logger = Logger.getLogger("BookTitleSearch");
 	
 	private static StringBuilder titleBookContainer = new StringBuilder();
 
 	/**
-	 * Finds out if given string starts with "Keywords: " phrase.
-	 * @param String, that should contains keywords of book.
-	 * @return True if given string starts with "Keywords: ", else otherwise. 
-	 */
-	public static boolean areKeywords(String valueFromSite) {
-		return valueFromSite.startsWith("Keywords:");
-	}
-
-	/**
-	 * Parsing website and searchnig for links there.
+	 * Parsing website and searching for links there.
 	 * @param bookstoreAddressFromTextfile
 	 * @return nothing
 	 */
@@ -69,10 +68,9 @@ public class BookTitleSearch {
 			
 		}
 	}
-
 	
 	/**
-	 * searches for book titles and tags, if available
+	 * Searches for book titles and tags, if available.
 	 * 
 	 * @param bookstoreAddressFromTextfile the main bookstore address
 	 * typeOfElement type of element to be searched elementName a specified tag
@@ -95,7 +93,6 @@ public class BookTitleSearch {
 			Element next = iterator.next();
 			System.out.println(next.text());
 			titleBookContainer.append(next.text() + "\n");
-			
 		}
 	}
 
@@ -127,13 +124,52 @@ public class BookTitleSearch {
 										
 					if(BookTitleSearch.areKeywords(keywordsAsStringFromSite)){
 						Keywords keywords = new Keywords(BookTitleSearch.extractKeywords(keywordsAsStringFromSite));
-						library.add(new Book(title, author, price, keywords, new URL(bookstoreAddressFromTextfile)));
+						Book book = new Book(title, author, price, keywords, new URL(bookstoreAddressFromTextfile));
+						library.add(book);
+						addBookToBookstoreInBookstoresList(bookstoreAddressFromTextfile, book);
 					} else{
-						library.add(new Book(title, author, price, new URL(bookstoreAddressFromTextfile)));		
+						Book book = new Book(title, author, price, new URL(bookstoreAddressFromTextfile));
+						library.add(book);
+						addBookToBookstoreInBookstoresList(bookstoreAddressFromTextfile, book);
 					}
 			}
 	}
 
+	static Set<Bookstore> generateBookstoreSet(File file) throws FileNotFoundException{
+		
+		Set<Bookstore> resultBokstores = new HashSet<>();
+		FileLinkHandler fileLinkHandler = new FileLinkHandler();
+		Set<Link> linksWithTags = fileLinkHandler.readLinksFromFile(file);
+		for (Link link : linksWithTags) {
+			String address = link.getLinkAdress();
+			Bookstore bookstore = new Bookstore(BookTitleSearch.extractBookstoreName(address));
+			bookstore.init();
+			resultBokstores.add(bookstore);
+		}
+		return resultBokstores;
+		
+	}
+	
+
+	static void addBookToBookstoreInBookstoresList(String url, Book book) {
+		String bookstoreName = extractBookstoreName(url);
+		Bookstore bookstore = getBookstoreFromSet(bookstoreName, bookstores);	
+		if(bookstore == null) logger.error("There is no such Bookstore: " + bookstoreName);
+		else bookstore.addBookDAO(book.convertToBookDAO());
+	}
+
+	static Bookstore getBookstoreFromSet(String bookstoreName, Set<Bookstore> set) {
+		for (Bookstore bookstore : set) {
+			if(bookstoreName == bookstore.getBookstorename()) return bookstore;
+		}
+		return null;
+	}
+
+
+	static String extractBookstoreName(String url) {
+		int indexOFFirstDotAppearance = url.indexOf('.');
+		return url.substring(indexOFFirstDotAppearance+1, url.indexOf('.', indexOFFirstDotAppearance+1));
+	}
 
 	/**
 	 * creates String containing titles from all pages from bookstore web site
@@ -148,7 +184,8 @@ public class BookTitleSearch {
 		logger.info("Started searching Titles for adress =  " + bookstoreAddressFromTextfile);
 
 		resetClassVariables();
-
+		
+		
 		//creates addressHashSet
 		searchLinksToNextPages(bookstoreAddressFromTextfile); 
 
@@ -170,6 +207,15 @@ public class BookTitleSearch {
 		logger.info("Finished iterating over links to search titles");
 
 		return titleBookContainer.toString();
+	}
+	
+	/**
+	 * Finds out if given string starts with "Keywords: " phrase.
+	 * @param String, that should contains keywords of book.
+	 * @return True if given string starts with "Keywords: ", else otherwise. 
+	 */
+	public static boolean areKeywords(String valueFromSite) {
+		return valueFromSite.startsWith("Keywords:");
 	}
 
 	/**
