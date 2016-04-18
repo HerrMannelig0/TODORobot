@@ -2,3 +2,6 @@ IT
 Computer
 Software
 Hardware
+coding
+web
+internet
