@@ -13,12 +13,15 @@ import java.io.PrintWriter;
 import java.util.List;
 
 /**
- * Created by damian on 23.03.16.
+ * Program to search free books in the internet bookstores.
  */
 public class MainRobot {
 	private static Logger logger = Logger.getLogger("MainRobot");
 	private static String fileName = "src/main/resources/FreeBooksAdressSite.txt";
 
+	/**
+	 * Main method of crawler.
+	 */
 	public static void main(String[] args) {
 
 		PrintWriter printWriter = null;
@@ -75,8 +78,6 @@ public class MainRobot {
 			
 		BookTitleSearch.showLibrary();
 		}
-		
-		
 	}
 
 }
