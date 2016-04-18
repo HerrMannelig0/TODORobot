@@ -11,6 +11,12 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+/**
+ * 
+ * Entity of Bookstore for DB. Contains name of bookstore and its URL and list of books
+ *
+ */
+
 @Entity
 @Table(name = "BOOKSTORE")
 public class Bookstore {

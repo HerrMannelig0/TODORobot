@@ -65,7 +65,7 @@ public class MainRobot {
 				
 					try {
 						book.assignCategory(book.createCategoryList(new File("src/main/resources/Keywords/Categories.txt")));
-
+						//add category to book, filename is a bookstore, book has all fields to be put in DB
 					} catch (Exception e) {
 						logger.error(e.getClass() + " in MainRobot, problems with category assignment");
 					} 

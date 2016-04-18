@@ -11,7 +11,10 @@ public class AddingCategories {
 
 	private static List<String> categories;
 
-	static List<String> keywordFetcher() {
+	/**
+	 * @return returns list of categories from file.
+	 */
+	static List<String> categoriesFetcher() {
 		String fileName = "src/main/resources/Keywords/Categories.txt";
 
 		try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
@@ -20,6 +23,7 @@ public class AddingCategories {
 
 		} catch (IOException e) {
 			e.printStackTrace();
+			
 		}
 		return categories;
 	}

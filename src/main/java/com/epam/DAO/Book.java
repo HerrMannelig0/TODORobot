@@ -6,6 +6,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * 
+ * Entity of Book for DB. Contains author, title.
+ *
+ */
+
 @Entity
 @Table(name = "BOOK")
 public class Book {

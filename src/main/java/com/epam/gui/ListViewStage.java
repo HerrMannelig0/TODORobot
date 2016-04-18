@@ -47,8 +47,9 @@ public class ListViewStage {
     }
 
 
-    private void createButtons() {
-        Button addLineButton = new Button(ADD_BUTTON_LABEL);
+    @SuppressWarnings("restriction")
+	private void createButtons() {
+		Button addLineButton = new Button(ADD_BUTTON_LABEL);
         addLineButton.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
                 observableLinkList.add(MESSAGE_WHEN_LINE_ADDED);

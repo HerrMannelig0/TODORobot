@@ -11,7 +11,7 @@ import java.util.Scanner;
 import com.epam.file.Category;
 
 /**
- * Class contains book definitons. 
+ * Class contains book definiton. 
  * Contains title, author, price, keywords and url of bookstore. 
  * @see Keywords
  */
@@ -66,7 +66,7 @@ public class Book {
 	}
 
 	/**
-	 * Checking if given category math to keywords.
+	 * Checking if given category match to keywords.
 	 * @param Category to check 
 	 * @return Found category as string. If no category has been found it returns "No category".
 	 */

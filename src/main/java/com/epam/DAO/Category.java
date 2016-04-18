@@ -11,6 +11,13 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+/**
+ * 
+ * Entity of Category for DB
+ *
+ */
+
+
 @Entity
 @Table(name = "CATEGORY")
 public class Category {

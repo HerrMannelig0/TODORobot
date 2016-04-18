@@ -52,11 +52,13 @@ public class AddingRecords {
 		session.close();*/
 
 	}
-
+/**
+ * method using categories @see AddingCategories.categoriesFetcher to put them into DB
+ */
 	private static void setCategories() {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		
-		ArrayList <String> listOfCategories = (ArrayList<String>)AddingCategories.keywordFetcher();
+		ArrayList <String> listOfCategories = (ArrayList<String>)AddingCategories.categoriesFetcher();
 		for (String string : listOfCategories) {
 			Category category = new Category();
 			category.setCategoryName(string);

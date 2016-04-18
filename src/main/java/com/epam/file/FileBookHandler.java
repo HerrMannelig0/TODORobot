@@ -23,12 +23,18 @@ public class FileBookHandler {
 		readBookTitlesFromFile();
 	}
 
+	/**
+	 * method providing a file to put into it books later.
+	 */
 	private void loadFile() {
 		ClassLoader classLoader = getClass().getClassLoader();
 		freeBooksTitlesUrl = new File(classLoader.getResource(fileName).getFile());
 		
 	}
 
+	/**
+	 * @return title of book
+	 */
 	public String readBookTitlesFromFile() {
 		try (Scanner scanner = new Scanner(freeBooksTitlesUrl)) {
 
@@ -42,6 +48,11 @@ public class FileBookHandler {
 		return bookTitles.toString();
 	}
 
+	/**
+	 * puts Books fields into a textfile.
+	 * @param book
+	 * @param printWriter
+	 */
 	public static void writeBookToFile(com.epam.robot.Book book, PrintWriter printWriter) {
 	
 		printWriter.print(book);

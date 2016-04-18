@@ -16,9 +16,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-/**
- * Created by damian on 22.03.16.
- */
+
 public class BookTitleSearch {
 	protected static List<Book> library = new ArrayList<>();
 	static private Set<String> addressHashSet = new HashSet<String>();
@@ -126,9 +124,7 @@ public class BookTitleSearch {
 					String author = omitByInAuthor(extractElementFromSite(item, authorTag));
 					String price = extractElementFromSite(item, priceTag);
 					String keywordsAsStringFromSite = extractElementFromSite(item, keywordsTag);
-
-					
-					
+										
 					if(BookTitleSearch.areKeywords(keywordsAsStringFromSite)){
 						Keywords keywords = new Keywords(BookTitleSearch.extractKeywords(keywordsAsStringFromSite));
 						library.add(new Book(title, author, price, keywords, new URL(bookstoreAddressFromTextfile)));

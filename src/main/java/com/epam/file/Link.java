@@ -7,7 +7,6 @@ public class Link {
     private String linkAdress;
     private String typeForSearch;
     private String titleTag;
-    private String fileName;
     private String authorTag;
     private String priceTag;
     private String keywordsTag;
@@ -19,7 +18,7 @@ public class Link {
         this.authorTag = authorTag;
         this.priceTag = priceTag;
         this.keywordsTag = keywordsTag;
-        this.fileName = createFileName();
+        createFileName();
     }
 
     public String getElementType() {
