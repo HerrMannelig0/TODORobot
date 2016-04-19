@@ -27,7 +27,7 @@ import com.epam.file.Link;
 public class BookTitleSearch {
 	protected static List<Book> library = new ArrayList<>();
 	static private Set<String> addressHashSet = new HashSet<>();
-	static Set<Bookstore> bookstores = new HashSet<>();
+	public static Set<Bookstore> bookstores = new HashSet<>();
 	
 	private static Logger logger = Logger.getLogger("BookTitleSearch");
 	
@@ -135,7 +135,13 @@ public class BookTitleSearch {
 			}
 	}
 
-	static Set<Bookstore> generateBookstoreSet(File file) throws FileNotFoundException{
+	/**
+	 * Generating bookstores' set from file with links.
+	 * @param File with bookstores' links
+	 * @return Set of Bookstores
+	 * @throws FileNotFoundException
+	 */
+	public static Set<Bookstore> generateBookstoreSet(File file) throws FileNotFoundException{
 		
 		Set<Bookstore> resultBokstores = new HashSet<>();
 		FileLinkHandler fileLinkHandler = new FileLinkHandler();
@@ -146,11 +152,16 @@ public class BookTitleSearch {
 			bookstore.init();
 			resultBokstores.add(bookstore);
 		}
+		bookstores = resultBokstores;
 		return resultBokstores;
 		
 	}
 	
-
+	/**
+	 * Adds Book to bookstores' list.
+	 * @param URL to bookstore
+	 * @param book
+	 */
 	static void addBookToBookstoreInBookstoresList(String url, Book book) {
 		String bookstoreName = extractBookstoreName(url);
 		Bookstore bookstore = getBookstoreFromSet(bookstoreName, bookstores);	
@@ -158,14 +169,33 @@ public class BookTitleSearch {
 		else bookstore.addBookDAO(book.convertToBookDAO());
 	}
 
-	static Bookstore getBookstoreFromSet(String bookstoreName, Set<Bookstore> set) {
+	/**
+	 * Searching Bookstore in given set.
+	 * @param Name of Bookstore
+	 * @param Set of Bookstores
+	 * @return Bookstore
+	 */
+	public static Bookstore getBookstoreFromSet(String bookstoreName, Set<Bookstore> set) {
 		for (Bookstore bookstore : set) {
-			if(bookstoreName == bookstore.getBookstorename()) return bookstore;
+			if(bookstoreName.equals(bookstore.getBookstorename())) return bookstore;
 		}
 		return null;
 	}
 
-
+	/**
+	 * Getting bookstore name from book.
+	 * @param Book
+	 * @return Bookstore's name as string
+	 */
+	public static String extractBookstoreName(Book book) {
+		return extractBookstoreName(book.getUrl().toString());
+	}
+	
+	/**
+	 * Extracting Bookstore's name from URL.
+	 * @param URL
+	 * @return Bookstore's name as string
+	 */
 	static String extractBookstoreName(String url) {
 		int indexOFFirstDotAppearance = url.indexOf('.');
 		return url.substring(indexOFFirstDotAppearance+1, url.indexOf('.', indexOFFirstDotAppearance+1));

@@ -56,7 +56,6 @@ public class Book {
 	public String assignCategory(List<Category> categories) {
 		String resultCategory = "No category";
 		for (Category category : categories) {
-			System.out.println(category);
 			if(resultCategory.equals("No category")){
 				resultCategory = checkCategory(category);
 			}
@@ -127,4 +126,9 @@ public class Book {
 	public String getBookCategory() {
 		return bookCategory;
 	}
+	
+	public void setBookCategory(String category) {
+		this.bookCategory = category;
+	}
+	
 }

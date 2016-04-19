@@ -8,6 +8,10 @@ import java.util.Set;
 
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.Test;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 import com.epam.DAO.Bookstore;
 
@@ -126,5 +130,14 @@ public class BookSearchingTest {
 			System.out.println(bookstore.getBookstorename());
 		}
 		assertThat(set.size()).isGreaterThan(0);
+	}
+	
+	@Test
+	public void testBookstoreGettingFromBook() throws Exception {
+		Book book = mock(Book.class);
+		when(book.getUrl()).thenReturn(new URL("http://www.gutenberg.com"));
+		String result = BookTitleSearch.extractBookstoreName(book);
+		assertThat(result).isEqualTo("gutenberg");
+		
 	}
 }

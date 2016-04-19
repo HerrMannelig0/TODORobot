@@ -19,6 +19,12 @@ public class Category  {
 	private String filePath;
 	private String category;
 		
+	public Category(String name) {
+		this.name = name;
+		this.filePath = "src/main/resources/Keywords/" + name + ".txt";
+		keywords = new HashSet<>();
+	}
+	
 	public Category(String name, String filepath) {
 		this.name = name;
 		this.filePath = filepath;

@@ -22,8 +22,9 @@ public class MainRobot {
 
 	/**
 	 * Main method of crawler.
+	 * @throws FileNotFoundException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 
 		try {
 			BookTitleSearch.generateBookstoreSet(new File(fileName));
@@ -78,7 +79,7 @@ public class MainRobot {
 						logger.error(e.getClass() + " in MainRobot, problems with category assignment");
 					} 
 					new FileBookHandler(fileName);
-					FileBookHandler.writeBookToDatabase(book, printWriter);
+					FileBookHandler.writeBookToDatabase(book);
 					printWriter.println("");
 				}
 				

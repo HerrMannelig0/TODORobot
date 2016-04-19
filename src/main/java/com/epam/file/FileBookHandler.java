@@ -2,10 +2,10 @@ package com.epam.file;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 
 import org.hibernate.Session;
 
@@ -13,10 +13,9 @@ import com.epam.DAO.BookDAO;
 import com.epam.DAO.Bookstore;
 import com.epam.DAO.HibernateUtil;
 import com.epam.robot.Book;
-
+import com.epam.robot.BookTitleSearch;
 
 public class FileBookHandler {
-
 
 	private String fileName;
 	private File freeBooksTitlesUrl;
@@ -36,7 +35,7 @@ public class FileBookHandler {
 	private void loadFile() {
 		ClassLoader classLoader = getClass().getClassLoader();
 		freeBooksTitlesUrl = new File(classLoader.getResource(fileName).getFile());
-		
+
 	}
 
 	/**
@@ -57,37 +56,42 @@ public class FileBookHandler {
 
 	/**
 	 * Puts book into database.
+	 * 
 	 * @param book
-	 * @param printWriter
+	 * @throws FileNotFoundException 
 	 */
-	public static void writeBookToDatabase(Book book, PrintWriter printWriter) {
-		
-		Bookstore bookstore = new Bookstore();
-		bookstore.init();
-		
-		
-		
-		bookstore.setBookstorename(book.getUrl().toString());
-		bookstore.setURL("www.empik.com");
-		
-		BookDAO bookToDB = new BookDAO();
-		bookToDB.setAuthor(book.getAuthor());
-		bookToDB.setTitle(book.getTitle());
+	public static void writeBookToDatabase(Book book) throws FileNotFoundException {
 
+		Bookstore bookstore = getBookstoreFromBook(book);
+
+		BookDAO bookToDB = book.convertToBookDAO();
+		
 		List<BookDAO> booksInBookstore = new ArrayList<>();
 		booksInBookstore.add(bookToDB);
-	
+		
 		bookstore.setBooks(booksInBookstore);
-		
-		
+
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
-		
-		session.save(bookstore); //saving bookstore
-		session.save(bookToDB); //three below: saving books
-		
-		session.getTransaction().commit(); 
+
+		session.save(bookstore); // saving bookstore
+		session.save(bookToDB); // three below: saving books
+
+		session.getTransaction().commit();
 		session.close();
+	}
+
+	/**
+	 * Method to finding information about bookstore in book.
+	 * @param Book
+	 * @return Bookstore that contains given book.
+	 * @throws FileNotFoundException 
+	 */
+	private static Bookstore getBookstoreFromBook(Book book) throws FileNotFoundException {
+		Set<Bookstore> set = BookTitleSearch.generateBookstoreSet(new File("src/main/resources/FreeBooksAdressSite.txt"));
+		String bookstoreName = BookTitleSearch.extractBookstoreName(book);
+		Bookstore bookstore = BookTitleSearch.getBookstoreFromSet(bookstoreName, set);
+		return bookstore;
 	}
 
 }
