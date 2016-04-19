@@ -56,20 +56,20 @@ public class FileBookHandler {
 	}
 
 	/**
-	 * puts Books fields into a textfile.
+	 * Puts book into database.
 	 * @param book
 	 * @param printWriter
 	 */
-	public static void writeBookToFile(Book book, PrintWriter printWriter) {
-		
-		printWriter.print(book);
-		printWriter.flush();
+	public static void writeBookToDatabase(Book book, PrintWriter printWriter) {
 		
 		Bookstore bookstore = new Bookstore();
 		bookstore.init();
+		
+		
+		
 		bookstore.setBookstorename(book.getUrl().toString());
-		System.out.println(bookstore);
 		bookstore.setURL("www.empik.com");
+		
 		BookDAO bookToDB = new BookDAO();
 		bookToDB.setAuthor(book.getAuthor());
 		bookToDB.setTitle(book.getTitle());
@@ -78,13 +78,15 @@ public class FileBookHandler {
 		booksInBookstore.add(bookToDB);
 	
 		bookstore.setBooks(booksInBookstore);
+		
+		
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 		
 		session.save(bookstore); //saving bookstore
 		session.save(bookToDB); //three below: saving books
 		
-		session.getTransaction().commit();
+		session.getTransaction().commit(); 
 		session.close();
 	}
 

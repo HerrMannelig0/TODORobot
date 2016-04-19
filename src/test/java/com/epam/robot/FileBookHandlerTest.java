@@ -14,13 +14,10 @@ import com.epam.file.FileBookHandler;
 public class FileBookHandlerTest {
 
 	@Test
-	public void testWritingToFile() throws Exception {
+	public void testWritingToDatabase() throws Exception {
 		String filename = "src/main/resources/WritingTest.txt";
-		FileBookHandler.writeBookToFile(new Book("anyTitle", "AnyAuthor", "Free", new Keywords(new String[]{"keyword"}), new URL("https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go")), new PrintWriter(new File(filename)));
+		FileBookHandler.writeBookToDatabase(new Book("anyTitle", "AnyAuthor", "Free", new Keywords(new String[]{"keyword"}), new URL("https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go")), new PrintWriter(new File(filename)));
 		
-		Scanner s = new Scanner(filename);
-		assertThat(s.hasNext()).isTrue();
-		s.close();
 	}
 	
 	

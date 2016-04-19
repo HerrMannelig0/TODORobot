@@ -30,7 +30,7 @@ public class Category {
 	@Column(name = "CATEGORY_NAME")
 	private String catName;
 
-	@OneToMany  
+	@OneToMany(targetEntity=com.epam.DAO.BookDAO.class)
 	@JoinColumn(name = "category_id")
 	private List<BookDAO> books;
 

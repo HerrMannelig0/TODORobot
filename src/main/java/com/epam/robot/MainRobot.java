@@ -78,7 +78,7 @@ public class MainRobot {
 						logger.error(e.getClass() + " in MainRobot, problems with category assignment");
 					} 
 					new FileBookHandler(fileName);
-					FileBookHandler.writeBookToFile(book, printWriter);
+					FileBookHandler.writeBookToDatabase(book, printWriter);
 					printWriter.println("");
 				}
 				
