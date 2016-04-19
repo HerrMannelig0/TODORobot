@@ -18,9 +18,7 @@ public class Category  {
 	private String name;
 	private String filePath;
 	private String category;
-	
-	public Category() {}
-	
+		
 	public Category(String name, String filepath) {
 		this.name = name;
 		this.filePath = filepath;

@@ -23,7 +23,7 @@ public class CategoryTest {
 	
 	@Test
 	public void testRomanceCategoryCreation() throws Exception {
-		Category romanceCategory = new Category("Romance", "a");
+		Category romanceCategory = new Category("Romance", "src/main/resources/Keywords/Romance.txt");
 		romanceCategory.create();
 		String keywordToCheck = "love";
 		
@@ -34,7 +34,7 @@ public class CategoryTest {
 	
 	@Test
 	public void testRomanceCategoryCreationNotContainsFalseKeyword() throws Exception {
-		Category romanceCategory = new Category("Romance", "a");
+		Category romanceCategory = new Category("Romance", "src/main/resources/Keywords/Romance.txt");
 		romanceCategory.create();
 		String keywordToCheck = "randomKeyword";
 		
