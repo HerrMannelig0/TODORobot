@@ -18,16 +18,10 @@ public class AddingCategories {
 		String fileName = "src/main/resources/Keywords/Categories.txt";
 
 		try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
-
 			categories = stream.collect(Collectors.toList());
-
 		} catch (IOException e) {
 			e.printStackTrace();
-			
 		}
 		return categories;
 	}
-	
-	
-
 }

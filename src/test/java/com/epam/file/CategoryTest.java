@@ -1,8 +1,6 @@
 package com.epam.file;
 
-import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.*;
 
 import org.testng.annotations.Test;
 

@@ -51,21 +51,39 @@ public class Category  {
 			set.add(nextKeyword);
 			keywords.add(nextKeyword);
 		}
+		reader.close();
 		return set;
 	}
 
+	/**
+	 * Check if given keyword matches to category's keywords.
+	 * @param keywordToCheck
+	 * @return boolean
+	 */
 	public boolean containsKeyword(String keywordToCheck) {
 		return keywords.contains(keywordToCheck);
 	}
 	
+	/**
+	 * Category's name getter.
+	 * @return category
+	 */
 	public String getCategory() {
 		return category;
 	}
 
+	/**
+	 * Keywords getter.
+	 * @return keywords
+	 */
 	public HashSet<String> getKeywords(){
 		return keywords;
 	}
 	
+	/**
+	 * Adding new keyword(s) to category.
+	 * @param category
+	 */
 	public void addKeyword(String... category) {
 		keywords.addAll(Arrays.asList(category));		
 	}

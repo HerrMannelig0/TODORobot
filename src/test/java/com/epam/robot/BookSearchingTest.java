@@ -1,5 +1,7 @@
 package com.epam.robot;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import java.io.File;
 import java.net.URL;
@@ -8,10 +10,6 @@ import java.util.Set;
 
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.Test;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 import com.epam.DAO.Bookstore;
 

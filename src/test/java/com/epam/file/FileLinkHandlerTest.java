@@ -90,7 +90,8 @@ public class FileLinkHandlerTest {
     public void testWritingToFile() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
     	File file = new File("src/test/resources/WritingToFileTest.txt");
-    	List<Link> list = mock(List.class);
+    	@SuppressWarnings("unchecked")
+		List<Link> list = mock(List.class);
     	Link link = mock(Link.class);
     	
     	when(link.toString()).thenReturn("a");

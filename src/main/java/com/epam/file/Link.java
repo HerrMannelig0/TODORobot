@@ -1,7 +1,8 @@
 package com.epam.file;
 
 /**
- * Created by damian on 21.03.16.
+ * Class {@code Link} defines elements of expanded bookstore's link, 
+ * and contains link address and tags, that are used to find a book.
  */
 public class Link {
     private String linkAdress;
@@ -11,6 +12,15 @@ public class Link {
     private String priceTag;
     private String keywordsTag;
 
+    /**
+     * Link constructor.
+     * @param bookstoreAddress
+     * @param typeForSearch
+     * @param titleTag
+     * @param authorTag
+     * @param priceTag
+     * @param keywordsTag
+     */
     public Link(String bookstoreAddress, String typeForSearch, String titleTag, String authorTag, String priceTag, String keywordsTag) {
         this.linkAdress = bookstoreAddress;
         this.typeForSearch = typeForSearch;
@@ -82,7 +92,7 @@ public class Link {
 		return priceTag;
 	}
 
-	public String KeywordsTag() {
+	public String getKeywordsTag() {
 		return keywordsTag;
 	}
 

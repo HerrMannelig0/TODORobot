@@ -26,6 +26,7 @@ public class FileBookHandlerTest {
 		session.beginTransaction();
 		
 		Query query = session.createQuery("from BookDAO");
+		@SuppressWarnings("unchecked")
 		List<String> list = query.list();
 		assertThat(list.size()).isGreaterThan(0);
 		session.getTransaction().commit();

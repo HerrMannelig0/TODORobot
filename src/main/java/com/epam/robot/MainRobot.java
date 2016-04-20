@@ -3,7 +3,6 @@ package com.epam.robot;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.net.URL;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -53,7 +52,7 @@ public class MainRobot {
 			logger.info("Started Searching titles by Tag");
 			
 			System.out.println(link.getLinkAdress()+" "+
-					link.getElementType() +" "+ link.getTitleTag() + " "+ link.getAuthorTag() +" " + link.getPriceTag() + " "+ link.KeywordsTag());
+					link.getElementType() +" "+ link.getTitleTag() + " "+ link.getAuthorTag() +" " + link.getPriceTag() + " "+ link.getKeywordsTag());
 		
 		
 			

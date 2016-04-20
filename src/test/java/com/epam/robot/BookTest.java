@@ -51,9 +51,6 @@ public class BookTest {
 	@Test
 	public void testAssigningProperCategory() {
 		Book book = new Book("title", "author", new Keywords(new String[]{"love"}));
-		Category category = mock(Category.class);
-		
-		
 		HashSet<String> romanceSet = new HashSet<>();
 		romanceSet.add("love");
 		
@@ -95,8 +92,6 @@ public class BookTest {
 	@Test
 	public void testAssigningNoCategory() {
 		Book book = new Book("title", "author", new Keywords(new String[]{"other"}));
-		Category category = mock(Category.class);
-		
 		HashSet<String> romanceSet = new HashSet<>();
 		romanceSet.add("love");
 		
