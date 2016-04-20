@@ -26,7 +26,7 @@ public class Bookstore {
 	}
 	
 	public Bookstore(String bookstorename){
-		this.bookstorename = bookstorename;
+		this.bookstoreName = bookstorename;
 	}
 	
 	@Id
@@ -35,7 +35,7 @@ public class Bookstore {
 	
 	
 	@Column(name = "BOOKSTORE_NAME")
-	private String bookstorename;
+	private String bookstoreName;
 	private String url;
 
 	@OneToMany  
@@ -43,11 +43,11 @@ public class Bookstore {
 	private List<BookDAO> books;
 
 	public String getBookstorename() {
-		return this.bookstorename;
+		return this.bookstoreName;
 	}
 
 	public void setBookstorename(String bookstorename) {
-		this.bookstorename = bookstorename;
+		this.bookstoreName = bookstorename;
 	}
 
 	@Column(name = "URL")
@@ -81,6 +81,6 @@ public class Bookstore {
 	
 	@Override
 	public String toString() {
-		return "[" + bookstorename + " books: " + books + "]";
+		return "[" + bookstoreName + " books: " + books + "]";
 	}
 }

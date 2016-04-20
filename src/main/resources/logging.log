@@ -4968,3 +4968,456 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'Boo
 2016-04-19 11:53:18 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
 2016-04-19 11:53:18 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
 2016-04-19 11:53:18 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 09:51:19 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 09:51:19 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 09:51:19 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 09:51:19 INFO  BookTitleSearch:214 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 09:51:22 INFO  BookTitleSearch:226 - Started iterating over links to search titles
+2016-04-20 09:51:24 INFO  BookTitleSearch:237 - Finished iterating over links to search titles
+2016-04-20 09:51:24 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 09:51:24 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 09:51:24 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 09:51:25 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 09:51:25 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 09:51:25 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 09:51:25 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 09:51:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 09:51:25 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 09:51:25 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 09:51:25 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 09:51:25 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 09:51:25 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 09:51:25 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-20 09:51:26 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4aac85fa'
+2016-04-20 09:51:26 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-04-20 09:51:26 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 09:51:26 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 09:51:26 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 09:51:26 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 09:51:26 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 09:51:26 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 10:00:20 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 10:00:20 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 10:00:20 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 10:00:20 INFO  BookTitleSearch:214 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 10:00:24 INFO  BookTitleSearch:226 - Started iterating over links to search titles
+2016-04-20 10:00:27 INFO  BookTitleSearch:237 - Finished iterating over links to search titles
+2016-04-20 10:00:27 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 10:00:27 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 10:00:27 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 10:00:27 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 10:00:27 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 10:00:27 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 10:00:27 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 10:00:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 10:00:27 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 10:00:27 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 10:00:27 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 10:00:27 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 10:00:27 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 10:00:27 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-20 10:00:28 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@66bfd864'
+2016-04-20 10:00:28 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-04-20 10:00:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:00:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:00:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:00:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:00:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:00:28 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 10:31:38 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 10:31:38 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 10:31:38 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 10:31:38 INFO  BookTitleSearch:214 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 10:31:42 INFO  BookTitleSearch:226 - Started iterating over links to search titles
+2016-04-20 10:31:45 INFO  BookTitleSearch:237 - Finished iterating over links to search titles
+2016-04-20 10:31:45 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 10:31:45 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 10:31:45 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 10:31:45 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 10:31:45 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 10:31:45 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 10:31:45 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 10:31:46 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 10:31:46 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 10:31:46 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 10:31:46 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 10:31:46 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 10:31:46 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 10:31:46 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:31:46 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:31:46 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:31:46 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:31:46 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:31:46 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 10:32:25 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 10:32:25 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 10:32:25 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 10:32:26 INFO  BookTitleSearch:214 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 10:32:30 INFO  BookTitleSearch:226 - Started iterating over links to search titles
+2016-04-20 10:32:33 INFO  BookTitleSearch:237 - Finished iterating over links to search titles
+2016-04-20 10:32:33 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 10:32:33 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 10:32:33 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 10:32:33 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 10:32:33 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 10:32:33 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 10:32:33 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 10:32:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 10:32:33 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 10:32:33 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 10:32:33 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 10:32:33 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 10:32:33 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 10:32:33 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:32:33 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:32:33 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:32:33 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:32:33 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:32:33 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 10:34:22 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 10:34:22 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 10:34:22 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 10:34:23 INFO  BookTitleSearch:214 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 10:34:25 INFO  BookTitleSearch:226 - Started iterating over links to search titles
+2016-04-20 10:34:28 INFO  BookTitleSearch:237 - Finished iterating over links to search titles
+2016-04-20 10:34:28 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 10:34:28 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 10:34:28 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 10:34:28 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 10:34:28 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 10:34:28 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 10:34:28 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 10:34:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 10:34:28 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 10:34:28 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 10:34:28 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 10:34:28 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 10:34:28 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 10:34:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:34:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:34:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:34:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:34:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:34:28 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 10:40:45 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 10:40:45 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 10:40:45 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 10:40:45 INFO  BookTitleSearch:214 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 10:40:50 INFO  BookTitleSearch:226 - Started iterating over links to search titles
+2016-04-20 10:40:55 INFO  BookTitleSearch:237 - Finished iterating over links to search titles
+2016-04-20 10:40:55 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 10:40:55 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 10:40:55 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 10:40:55 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 10:40:55 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 10:40:55 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 10:40:55 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 10:40:55 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 10:40:55 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 10:40:55 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 10:40:55 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 10:40:55 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 10:40:55 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 10:40:55 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:40:55 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:40:55 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:40:55 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:40:55 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:40:55 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 10:41:13 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 10:41:13 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 10:41:13 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 10:41:14 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 10:41:14 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 10:41:14 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 10:41:14 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 10:41:15 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 10:41:15 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 10:41:15 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 10:41:15 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 10:41:15 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 10:41:15 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 10:41:16 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-20 10:41:18 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@73e802be'
+2016-04-20 10:41:19 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-04-20 10:41:20 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 10:41:20 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 10:41:20 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 10:41:21 INFO  BookTitleSearch:214 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 10:41:25 INFO  BookTitleSearch:226 - Started iterating over links to search titles
+2016-04-20 10:41:29 INFO  BookTitleSearch:237 - Finished iterating over links to search titles
+2016-04-20 10:41:29 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:41:29 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:41:29 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:41:29 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:41:29 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 10:41:29 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 11:16:07 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 11:16:07 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 11:16:07 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 11:16:07 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 11:16:07 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 11:16:07 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 11:16:07 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 11:16:08 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 11:16:08 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 11:16:08 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 11:16:08 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 11:16:08 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 11:16:08 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 11:16:08 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-20 11:16:09 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@248e6496'
+2016-04-20 11:16:09 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-04-20 11:16:10 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 11:16:10 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 11:16:10 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 11:16:11 INFO  BookTitleSearch:213 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 11:16:16 INFO  BookTitleSearch:225 - Started iterating over links to search titles
+2016-04-20 11:16:19 INFO  BookTitleSearch:236 - Finished iterating over links to search titles
+2016-04-20 11:16:19 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 11:16:19 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 11:16:19 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 11:16:19 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 11:16:19 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 11:16:19 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 12:39:05 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 12:39:05 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 12:39:05 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 12:42:24 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 12:42:24 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 12:42:24 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 12:42:57 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 12:42:57 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 12:42:57 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 12:42:57 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 12:42:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 12:42:57 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 12:42:57 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 12:42:57 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 12:42:57 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 12:42:57 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 12:42:58 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-20 12:42:59 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1683d77d'
+2016-04-20 12:42:59 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-04-20 12:42:59 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 12:42:59 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 12:42:59 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 12:42:59 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 12:42:59 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 12:43:00 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 12:43:00 INFO  BookTitleSearch:105 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 12:43:04 INFO  BookTitleSearch:117 - Started iterating over links to search titles
+2016-04-20 12:43:04 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:17.html
+2016-04-20 12:43:04 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:14.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:28.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:7.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:11.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:22.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:25.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:30.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:26.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:8.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:23.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:29.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:12.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:15.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:20.html
+2016-04-20 12:43:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:4.html
+2016-04-20 12:43:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:18.html
+2016-04-20 12:43:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:3.html
+2016-04-20 12:43:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:24.html
+2016-04-20 12:43:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:6.html
+2016-04-20 12:43:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:27.html
+2016-04-20 12:43:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:5.html
+2016-04-20 12:43:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:19.html
+2016-04-20 12:43:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:16.html
+2016-04-20 12:43:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:2.html
+2016-04-20 12:43:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:10.html
+2016-04-20 12:43:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:9.html
+2016-04-20 12:43:07 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:13.html
+2016-04-20 12:43:07 INFO  BookTitleSearch:128 - Finished iterating over links to search titles
+2016-04-20 12:43:07 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 12:43:07 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 12:43:07 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 12:52:58 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 12:52:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 12:52:58 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 12:52:58 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 12:52:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 12:52:59 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 12:52:59 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 12:52:59 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 12:52:59 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 12:52:59 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 12:52:59 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-20 12:53:00 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@56dbd054'
+2016-04-20 12:53:00 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-04-20 12:53:01 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 12:53:01 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 12:53:01 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 12:53:01 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 12:53:01 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 12:53:01 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 12:53:01 INFO  BookTitleSearch:105 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 12:53:04 INFO  BookTitleSearch:117 - Started iterating over links to search titles
+2016-04-20 12:53:04 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:17.html
+2016-04-20 12:53:04 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:14.html
+2016-04-20 12:53:04 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:28.html
+2016-04-20 12:53:04 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:7.html
+2016-04-20 12:53:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:11.html
+2016-04-20 12:53:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:22.html
+2016-04-20 12:53:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:25.html
+2016-04-20 12:53:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:30.html
+2016-04-20 12:53:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:26.html
+2016-04-20 12:53:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:8.html
+2016-04-20 12:53:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:23.html
+2016-04-20 12:53:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:29.html
+2016-04-20 12:53:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:12.html
+2016-04-20 12:53:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:15.html
+2016-04-20 12:53:05 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:20.html
+2016-04-20 12:53:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:4.html
+2016-04-20 12:53:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:18.html
+2016-04-20 12:53:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:3.html
+2016-04-20 12:53:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:24.html
+2016-04-20 12:53:06 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:6.html
+2016-04-20 12:53:07 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:27.html
+2016-04-20 12:53:07 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:5.html
+2016-04-20 12:53:07 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:19.html
+2016-04-20 12:53:07 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:16.html
+2016-04-20 12:53:07 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:2.html
+2016-04-20 12:53:07 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:10.html
+2016-04-20 12:53:07 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:9.html
+2016-04-20 12:53:07 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:13.html
+2016-04-20 12:53:07 INFO  BookTitleSearch:128 - Finished iterating over links to search titles
+2016-04-20 12:53:08 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 12:53:08 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 12:53:08 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 14:05:11 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 14:05:11 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 14:05:11 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 14:05:11 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 14:05:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 14:05:12 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 14:05:12 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 14:05:12 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 14:05:12 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 14:05:12 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 14:05:12 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-20 14:05:14 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@56dbd054'
+2016-04-20 14:05:14 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-04-20 14:05:15 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:05:15 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:05:15 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:05:15 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:05:15 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:05:15 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 14:05:16 INFO  BookTitleSearch:105 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 14:05:19 INFO  BookTitleSearch:117 - Started iterating over links to search titles
+2016-04-20 14:05:19 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:17.html
+2016-04-20 14:05:19 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:14.html
+2016-04-20 14:05:19 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:28.html
+2016-04-20 14:05:19 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:7.html
+2016-04-20 14:05:19 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:11.html
+2016-04-20 14:05:19 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:22.html
+2016-04-20 14:05:19 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:25.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:30.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:26.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:8.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:23.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:29.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:12.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:15.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:20.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:4.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:18.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:3.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:24.html
+2016-04-20 14:05:20 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:6.html
+2016-04-20 14:05:21 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:27.html
+2016-04-20 14:05:21 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:5.html
+2016-04-20 14:05:21 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:19.html
+2016-04-20 14:05:21 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:16.html
+2016-04-20 14:05:22 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:2.html
+2016-04-20 14:05:22 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:10.html
+2016-04-20 14:05:22 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:9.html
+2016-04-20 14:05:22 ERROR BookTitleSearch:124 - class java.lang.StringIndexOutOfBoundsException http://www.bookrix.com/books;page:13.html
+2016-04-20 14:05:22 INFO  BookTitleSearch:128 - Finished iterating over links to search titles
+2016-04-20 14:05:22 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 14:05:22 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 14:05:22 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 14:11:45 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 14:11:45 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 14:11:45 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 14:11:45 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 14:11:46 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 14:11:46 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 14:11:46 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 14:11:46 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 14:11:46 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 14:11:46 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 14:11:47 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-20 14:11:48 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5e9c61cd'
+2016-04-20 14:11:48 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-04-20 14:11:48 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:11:48 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:11:48 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:11:48 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:11:48 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:11:49 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 14:11:49 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 14:11:52 INFO  BookTitleSearch:118 - Started iterating over links to search titles
+2016-04-20 14:11:54 INFO  BookTitleSearch:129 - Finished iterating over links to search titles
+2016-04-20 14:11:55 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 14:11:55 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 14:11:55 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 14:12:17 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 14:12:21 INFO  BookTitleSearch:118 - Started iterating over links to search titles
+2016-04-20 14:12:23 INFO  BookTitleSearch:129 - Finished iterating over links to search titles
+2016-04-20 14:16:34 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 14:16:38 INFO  BookTitleSearch:117 - Started iterating over links to search titles
+2016-04-20 14:16:41 INFO  BookTitleSearch:128 - Finished iterating over links to search titles
+2016-04-20 14:25:20 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 14:25:22 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-04-20 14:25:25 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-04-20 14:26:00 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-20 14:26:00 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-20 14:26:00 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-20 14:26:00 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-20 14:26:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-20 14:26:01 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-20 14:26:01 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-20 14:26:01 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-20 14:26:01 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-20 14:26:01 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-20 14:26:01 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-20 14:26:02 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@56dbd054'
+2016-04-20 14:26:02 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-04-20 14:26:03 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:26:03 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:26:03 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:26:03 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:26:03 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-04-20 14:26:03 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-04-20 14:26:03 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-04-20 14:26:07 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-04-20 14:26:09 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-04-20 14:26:10 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 14:26:10 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 14:26:10 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 14:26:29 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 14:26:29 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 14:26:29 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 14:26:29 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-04-20 14:26:29 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-04-20 14:26:29 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-04-20 14:26:29 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-04-20 14:26:29 INFO  MainRobot:44 - Started Main Robot
+2016-04-20 14:26:29 INFO  MainRobot:47 - Iterating over links by file
+2016-04-20 14:26:29 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-04-20 14:26:29 INFO  MainRobot:79 - Finished Searching titles by Tag
+2016-04-20 14:26:29 INFO  MainRobot:47 - Iterating over links by file
+2016-04-20 14:26:29 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-04-20 14:26:29 INFO  MainRobot:79 - Finished Searching titles by Tag
+2016-04-20 14:26:29 INFO  MainRobot:47 - Iterating over links by file
+2016-04-20 14:26:29 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-04-20 14:26:29 INFO  MainRobot:79 - Finished Searching titles by Tag

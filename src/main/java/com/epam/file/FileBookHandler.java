@@ -62,7 +62,7 @@ public class FileBookHandler {
 	 */
 	public static void writeBookToDatabase(Book book) throws FileNotFoundException {
 
-		Bookstore bookstore = getBookstoreFromBook(book);
+		Bookstore bookstore = book.extractBookstoreFromURL();
 
 		BookDAO bookToDB = book.convertToBookDAO();
 		
@@ -81,17 +81,6 @@ public class FileBookHandler {
 		session.close();
 	}
 
-	/**
-	 * Method to finding information about bookstore in book.
-	 * @param Book
-	 * @return Bookstore that contains given book.
-	 * @throws FileNotFoundException 
-	 */
-	private static Bookstore getBookstoreFromBook(Book book) throws FileNotFoundException {
-		Set<Bookstore> set = BookTitleSearch.generateBookstoreSet(new File("src/main/resources/FreeBooksAdressSite.txt"));
-		String bookstoreName = BookTitleSearch.extractBookstoreName(book);
-		Bookstore bookstore = BookTitleSearch.getBookstoreFromSet(bookstoreName, set);
-		return bookstore;
-	}
+	
 
 }

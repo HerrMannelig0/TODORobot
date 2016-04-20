@@ -25,11 +25,10 @@ public class MainRobot {
 	 */
 	public static void main(String[] args) throws FileNotFoundException {
 
-		try {
-			BookTitleSearch.generateBookstoreSet(new File(fileName));
-		} catch (FileNotFoundException e1) {
-			logger.error("File with bookstores cannot be opened");
-		}
+		Library library = new Library();
+		Bookstores bookstores = new Bookstores();
+		bookstores.generateBookstoreSet(new File(fileName));
+		
 		
 		PrintWriter printWriter = null;
 		FileLinkHandler fileLinkHandler = new FileLinkHandler();
@@ -53,8 +52,6 @@ public class MainRobot {
 			
 			System.out.println(link.getLinkAdress()+" "+
 					link.getElementType() +" "+ link.getTitleTag() + " "+ link.getAuthorTag() +" " + link.getPriceTag() + " "+ link.getKeywordsTag());
-		
-		
 			
 			String fileName = null;
 			
@@ -65,10 +62,7 @@ public class MainRobot {
 					logger.error(e.getClass() + " in MainRobot, problems with filename");
 				}
 				
-				List<Book> library = BookTitleSearch.library;
-				
-				
-				
+	
 				for (Book book : library) {
 				
 					try {
@@ -84,7 +78,6 @@ public class MainRobot {
 				
 				logger.info("Finished Searching titles by Tag");
 			
-		BookTitleSearch.showLibrary();
 		}
 	}
 

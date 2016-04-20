@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.epam.DAO.BookDAO;
+import com.epam.DAO.Bookstore;
 import com.epam.file.Category;
 
 /**
@@ -21,8 +22,6 @@ public class Book {
 	protected Keywords keywords;
 	private URL url;
 	String bookCategory;
-	
-	
 
 	Book(String title, String author, String price, Keywords keywords, URL url){
 		this.title = title;
@@ -95,6 +94,10 @@ public class Book {
 		return categories;
 	}
 	
+	/**
+	 * This method converts Book object into BookDAO
+	 * @return BookDAO
+	 */
 	public BookDAO convertToBookDAO(){
 		BookDAO bookDAO = new BookDAO();
 		bookDAO.setTitle(title);
@@ -103,12 +106,25 @@ public class Book {
 		return bookDAO;
 	}
 	
+	/**
+	 * Extracting Bookstore from book's URL.
+	 * @return Bookstore
+	 */
+	public Bookstore extractBookstoreFromURL(){
+		String urlPath = url.toString();
+		int indexOFFirstDotAppearance = urlPath.indexOf('.');
+		String bookstoreName = urlPath.substring(indexOFFirstDotAppearance+1, urlPath.indexOf('.', indexOFFirstDotAppearance+1));
+		return new Bookstore(bookstoreName);
+	}
+	
 	@Override
 	public String toString() {
 		if(url == null)
 			return "[" + author + "; " + title + " (price: " + price + ") "  + keywords + " : " + bookCategory +"]" ;
 		return "[" + author + ";" + title + " (price: " + price + ") "  + keywords + " " + url.toString() + " : " + bookCategory + "]" ;	
 	}	
+	
+	
 	
 	public String getTitle() {
 		return title;
