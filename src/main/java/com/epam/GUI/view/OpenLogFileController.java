@@ -19,7 +19,7 @@ public class OpenLogFileController {
 
     private String readLogs() {
         String result = "";
-        String fileName = "resources/logs.log";
+        String fileName = "logging.log";
 
         //read file into stream, try-with-resources
         try (Stream<String> stream = Files.lines(Paths.get(fileName))) {

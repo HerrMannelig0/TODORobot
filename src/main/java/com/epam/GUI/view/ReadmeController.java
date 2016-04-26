@@ -17,9 +17,16 @@ public class ReadmeController {
 
     private StringBuilder readmeFile = new StringBuilder();
 
+    /**
+     * Maybe not Deprecated, but I wanted to keep that method. It results with weird exception:
+     * java.nio.file.NoSuchFileException: README.md
+     * It is not thrown at my home computer (Win7). Need to examine that.
+     * @return
+     */
+    @Deprecated
     private String readReadme() {
         String result = "";
-        String fileName = "resources/README.md";
+        String fileName = "README.md";
 
         //read file into stream, try-with-resources
         try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
@@ -34,10 +41,16 @@ public class ReadmeController {
         return result;
     }
 
+    private String readReadmeImper (){
+        String result = "kotek";
+
+        return result;
+    }
+
     @FXML
     void initialize() {
         ReadmeController initReadme = new ReadmeController();
-        String readmeContent = initReadme.readReadme();
+        String readmeContent = initReadme.readReadmeImper();
         readme.setWrapText(true);
         System.out.println(readmeFile);
         readme.setText(readmeContent);

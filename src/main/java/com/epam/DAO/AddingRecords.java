@@ -6,67 +6,46 @@ import org.hibernate.Session;
 
 public class AddingRecords {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		setCategories();
+        setCategories();
+        setBookstores();
 
-		
-		
-/*		Bookstore bookstore = new Bookstore();
-		
-		bookstore.setBookstorename("empik");
-		bookstore.setURL("www.empik.com");
-		Book grzedowicz = new Book();
-		grzedowicz.setAuthor("Jarosław Grzędowicz");
-		grzedowicz.setTitle("Popiół i kurz");
+    }
 
-		Book lukajenko = new Book();
-		lukajenko.setAuthor("Siergiej Lukajenko");
-		lukajenko.setTitle("Czystiopis");
+    /**
+     * method using categories @see AddingCategories.categoriesFetcher to put them into DB
+     */
+    private static void setCategories() {
+        Session session = HibernateUtil.getSessionFactory().openSession();
 
-		Book witcher = new Book();
-		witcher.setAuthor("Andrzej Sapkowski");
-		witcher.setTitle("Ostatnie Życzenie");
-		
-		List<Book> booksInEmpik = new ArrayList<>();
-		booksInEmpik.add(lukajenko);
-		booksInEmpik.add(grzedowicz);
-	
-		bookstore.setBooks(booksInEmpik);
+        ArrayList<String> listOfCategories = (ArrayList<String>) AddingCategories.categoriesFetcher();
+        for (String string : listOfCategories) {
+            Category category = new Category();
+            category.setCategoryName(string);
 
-		List <Book> fantasyBooks = new ArrayList<>();
-		fantasyBooks.add(grzedowicz);
-		fantasyBooks.add(witcher);
-		
-		
-		session.beginTransaction();
-		
-		session.save(bookstore); //saving bookstore
-		session.save(grzedowicz); //three below: saving books
-		session.save(lukajenko);
-		session.save(witcher);
-		
-		session.getTransaction().commit();
+            session.beginTransaction();
+            session.save(category);
+            session.getTransaction().commit();
+        }
+        session.close();
+    }
 
-		session.close();*/
+    /**
+     * method using categories @see AddingCategories.categoriesFetcher to put them into DB
+     */
+    private static void setBookstores() {
+        Session session = HibernateUtil.getSessionFactory().openSession();
 
-	}
-/**
- * method using categories @see AddingCategories.categoriesFetcher to put them into DB
- */
-	private static void setCategories() {
-		Session session = HibernateUtil.getSessionFactory().openSession();
-		
-		ArrayList <String> listOfCategories = (ArrayList<String>)AddingCategories.categoriesFetcher();
-		for (String string : listOfCategories) {
-			Category category = new Category();
-			category.setCategoryName(string);
-			
-			session.beginTransaction();
-			session.save(category);
-			session.getTransaction().commit();
-		}
-		session.close();
-	}
+        ArrayList<String> listOfCategories = (ArrayList<String>) AddingBookstores.bookstoresFetcher();
+        for (String string : listOfCategories) {
+            Bookstore bookstore = new Bookstore();
+            bookstore.setBookstorename(string);
 
+            session.beginTransaction();
+            session.save(bookstore);
+            session.getTransaction().commit();
+        }
+        session.close();
+    }
 }

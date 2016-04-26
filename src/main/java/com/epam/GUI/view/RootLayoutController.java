@@ -29,7 +29,7 @@ public class RootLayoutController {
     private void handleReadme(final ActionEvent event) {
         try {
             // Load root layout from fxml file.
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Readme.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Readme.fxml"));
             Parent root1 = (Parent) loader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
@@ -49,7 +49,7 @@ public class RootLayoutController {
     private void handleOpenLogFile(final ActionEvent event) {
         try {
             // Load root layout from fxml file.
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("OpenLogFile.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/OpenLogFile.fxml"));
             Parent root2 = (Parent) loader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root2));

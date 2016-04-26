@@ -15,7 +15,7 @@ public class AddingCategories {
 	 * @return returns list of categories from file.
 	 */
 	static List<String> categoriesFetcher() {
-		String fileName = "src/main/resources/Keywords/Categories.txt";
+		String fileName = "resources/Keywords/Categories.txt";
 
 		try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
 			categories = stream.collect(Collectors.toList());

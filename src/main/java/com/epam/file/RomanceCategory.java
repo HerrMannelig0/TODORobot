@@ -3,7 +3,7 @@ package com.epam.file;
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class RomanceCategory implements Category {
+public class RomanceCategory  {
 	
 	static HashSet<String> keywords;
 	
@@ -20,7 +20,6 @@ public class RomanceCategory implements Category {
 		return keywords.contains(keywordToCheck);
 	}
 
-	@Override
 	public void addKeyword(String... category) {
 		keywords.addAll(Arrays.asList(category));		
 	}

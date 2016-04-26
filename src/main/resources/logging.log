@@ -5421,3 +5421,33 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'Boo
 2016-04-20 14:26:29 INFO  MainRobot:47 - Iterating over links by file
 2016-04-20 14:26:29 INFO  MainRobot:51 - Started Searching titles by Tag
 2016-04-20 14:26:29 INFO  MainRobot:79 - Finished Searching titles by Tag
+2016-04-26 09:22:59 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-26 09:22:59 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-26 09:22:59 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-26 09:22:59 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-26 09:23:00 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-26 09:23:00 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-26 09:23:00 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-26 09:23:00 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-26 09:23:00 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-26 09:23:00 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-26 09:49:25 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-26 09:49:25 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-26 09:49:25 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-26 09:49:25 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-26 09:49:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-26 09:49:26 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-26 09:49:26 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-26 09:49:26 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-26 09:49:26 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-26 09:49:26 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-26 10:02:14 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-26 10:02:14 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-26 10:02:14 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-26 10:02:14 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-26 10:02:15 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-26 10:02:16 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-26 10:02:16 INFO  connections:127 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-26 10:02:16 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-26 10:02:16 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-26 10:02:16 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
