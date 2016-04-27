@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import org.hibernate.Session;
 
-public class AddingRecords {
+public class MainClassForAddingRecords {
 
     public static void main(String[] args) {
 
@@ -37,7 +37,7 @@ public class AddingRecords {
     private static void setBookstores() {
         Session session = HibernateUtil.getSessionFactory().openSession();
 
-        ArrayList<String> listOfCategories = (ArrayList<String>) AddingBookstores.bookstoresFetcher();
+        ArrayList <String> listOfCategories = (ArrayList<String>)DealingBookstores.bookstoresFetcher();
         for (String string : listOfCategories) {
             Bookstore bookstore = new Bookstore();
             bookstore.setBookstorename(string);

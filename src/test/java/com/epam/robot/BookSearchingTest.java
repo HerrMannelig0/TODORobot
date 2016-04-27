@@ -1,24 +1,13 @@
 package com.epam.robot;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
-import java.io.File;
-import java.net.URL;
+import org.testng.annotations.Test;
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-import org.assertj.core.api.SoftAssertions;
-import org.hibernate.mapping.Collection;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
-import com.epam.DAO.Bookstore;
 
 public class BookSearchingTest {
 
