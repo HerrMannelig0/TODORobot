@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import com.epam.file.FileBookHandler;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
+import com.epam.util.CategoryUtil;
 import com.epam.util.UrlUtils;
 
 /**
@@ -19,27 +20,23 @@ public class MainRobot {
 	private static Logger logger = Logger.getLogger("MainRobot");
 	private static String fileName = "src/main/resources/FreeBooksAdressSite.txt";
 
+
+		static Library library = new Library();
+		static Bookstores bookstores = new Bookstores();
+		static PrintWriter printWriter = null;
+		static FileLinkHandler fileLinkHandler = new FileLinkHandler();
+		static LibrariesMap map = new LibrariesMap();
+	
+	
 	/**
 	 * Main method of crawler.
 	 * @throws FileNotFoundException 
 	 */
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) {
 
-		Library library = new Library();
-		Bookstores bookstores = new Bookstores();
-		bookstores.generateBookstoreSet(new File(fileName));
-		
-		
-		PrintWriter printWriter = null;
-		FileLinkHandler fileLinkHandler = new FileLinkHandler();
-		
-		try {
-			fileLinkHandler.createListsFromFile(new File(fileName));
-		} catch (FileNotFoundException e1) {
-			e1.printStackTrace();
-		}
+		prepareBookstores(bookstores);
 
-		List<Link> linksList = fileLinkHandler.getLinksList();
+		List<Link> linksList = createListOfLinks();
 
 		logger.info("Started Main Robot");
 		
@@ -52,6 +49,7 @@ public class MainRobot {
 			
 			System.out.println(link.getLinkAdress()+" "+
 					link.getElementType() +" "+ link.getTitleTag() + " "+ link.getAuthorTag() +" " + link.getPriceTag() + " "+ link.getKeywordsTag());
+			
 			
 			String fileName = null;
 			
@@ -71,13 +69,46 @@ public class MainRobot {
 					} catch (Exception e) {
 						logger.error(e.getClass() + " in MainRobot, problems with category assignment");
 					} 
-					new FileBookHandler(fileName);
-					FileBookHandler.writeBookToDatabase(book);
+					
+					
+					FileBookHandler fileBookHandler = new FileBookHandler(fileName);
+					
+					try {
+						FileBookHandler.writeBookToDatabase(book);
+					} catch (FileNotFoundException e) {
+						logger.error("Cannot write into databse: " + book);
+					}
 					printWriter.println("");
 				}
 				
-				logger.info("Finished Searching titles by Tag");
+				//Creating map of categories and libraries
+				CategoryUtil.generateLibrariesMapfromLibrary(library);
+				
+				logger.info("Finished searching titles by Tag");
 			
+		}
+	}
+
+
+
+	private static List<Link> createListOfLinks() {
+		try {
+			fileLinkHandler.createListsFromFile(new File(fileName));
+		} catch (FileNotFoundException e) {
+			logger.error("Cannot find file: " + fileName);
+		}
+		
+		List<Link> linksList = fileLinkHandler.getLinksList();
+		return linksList;
+	}
+
+
+
+	private static void prepareBookstores(Bookstores bookstores){
+		try {
+			bookstores.generateBookstoreSet(new File(fileName));
+		} catch (FileNotFoundException e) {
+			logger.error("Cannot find file: " + fileName);
 		}
 	}
 
