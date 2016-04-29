@@ -26,7 +26,7 @@ public class FileLinkHandler {
 		updateURLList();
 	}
 
-	// not used anywhere (for now, important method, update list of bookstores
+	// not used anywhere (for now, important method, update list of bookstoreDBs
 	// in file)
 	public void writeLinksToFile(List<Link> linkList, File fileWithLinksToBookstores) {
 		try (PrintWriter printWriter = new PrintWriter(fileWithLinksToBookstores)) {

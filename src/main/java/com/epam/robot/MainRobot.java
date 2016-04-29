@@ -14,7 +14,7 @@ import com.epam.util.CategoryUtil;
 import com.epam.util.UrlUtils;
 
 /**
- * Program to search free books in the internet bookstores.
+ * Program to search free books in the internet bookstoreDBs.
  */
 public class MainRobot {
 	private static Logger logger = Logger.getLogger("MainRobot");
@@ -103,7 +103,10 @@ public class MainRobot {
 	}
 
 
-
+	/**
+	 * you totally need to check that!! Dont know usage of this, not to mention mocked, empty method @generateBookstoreSet !
+	 * @param bookstores
+     */
 	private static void prepareBookstores(Bookstores bookstores){
 		try {
 			bookstores.generateBookstoreSet(new File(fileName));

@@ -9,10 +9,9 @@ import java.net.URL;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.epam.DB.entities.BookstoreDB;
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.Test;
-
-import com.epam.DB.entities.Bookstore;
 
 public class BookstoresTest {
 
@@ -29,18 +28,18 @@ public class BookstoresTest {
 	
 	@Test
 	public void testGettingBookstoreFrmBookstoresSet() throws Exception {
-		Set<Bookstore> set = new HashSet<>();
-		set.add(new Bookstore("other"));
-		set.add(new Bookstore("gutenberg"));
-		set.add(new Bookstore("different"));
-		Bookstore result = bookstores.getBookstoreFromSet("gutenberg", set);
-		assertThat(result.getBookstorename()).isEqualTo("gutenberg");
+		Set<BookstoreDB> set = new HashSet<>();
+		set.add(new BookstoreDB("other"));
+		set.add(new BookstoreDB("gutenberg"));
+		set.add(new BookstoreDB("different"));
+		BookstoreDB result = bookstores.getBookstoreFromSet("gutenberg", set);
+		assertThat(result.getName()).isEqualTo("gutenberg");
 	}
 	
 	@Test
 	public void testAddingBookToBookstoreInBookstoresList() throws Exception {
-		Bookstore gutenberg = new Bookstore("gutenberg");
-		Bookstore next = new Bookstore("next");
+		BookstoreDB gutenberg = new BookstoreDB("gutenberg");
+		BookstoreDB next = new BookstoreDB("next");
 		gutenberg.init();
 		next.init();
 		bookstores.add(gutenberg);
@@ -53,9 +52,9 @@ public class BookstoresTest {
 		SoftAssertions soft = new SoftAssertions();
 		soft.assertThat(bookstores.bookstores.size()).isGreaterThan(0);
 		
-		for (Bookstore bookstore : bookstores) {
-			boolean result = bookstore.contains(book.convertToBookDAO());
-			if(bookstore.getBookstorename() == bookstoreName) soft.assertThat(result).isTrue();
+		for (BookstoreDB bookstoreDB : bookstores) {
+			boolean result = bookstoreDB.contains(book.convertToBookDAO());
+			if(bookstoreDB.getName() == bookstoreName) soft.assertThat(result).isTrue();
 		}
 		soft.assertAll();
 	}
@@ -63,9 +62,9 @@ public class BookstoresTest {
 	@Test
 	public void testGeneratingBookstoreListFromFile() throws Exception {
 		File file = new File("src/main/resources/FreeBooksAdressSite.txt");
-		Set<Bookstore> set = bookstores.generateBookstoreSet(file);
-		for (Bookstore bookstore : set) {
-			System.out.println(bookstore.getBookstorename());
+		Set<BookstoreDB> set = bookstores.generateBookstoreSet(file);
+		for (BookstoreDB bookstoreDB : set) {
+			System.out.println(bookstoreDB.getName());
 		}
 		assertThat(set.size()).isGreaterThan(0);
 	}

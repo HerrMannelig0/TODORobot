@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import com.epam.DB.entities.BookstoreDB;
 import org.hibernate.Session;
 
-import com.epam.DB.entities.BookDAO;
-import com.epam.DB.entities.Bookstore;
+import com.epam.DB.entities.BookDB;
 import com.epam.DB.HibernateUtil;
 import com.epam.robot.Book;
 
@@ -60,19 +60,19 @@ public class FileBookHandler {
 	 */
 	public static void writeBookToDatabase(Book book) throws FileNotFoundException {
 
-		Bookstore bookstore = book.extractBookstoreFromURL();
+		BookstoreDB bookstoreDB = book.extractBookstoreFromURL();
 
-		BookDAO bookToDB = book.convertToBookDAO();
+		BookDB bookToDB = book.convertToBookDAO();
 		
-		List<BookDAO> booksInBookstore = new ArrayList<>();
+		ArrayList<BookDB> booksInBookstore = new ArrayList<>();
 		booksInBookstore.add(bookToDB);
 		
-		bookstore.setBooks(booksInBookstore);
+		bookstoreDB.setListOfBooks(booksInBookstore);
 
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 
-		session.save(bookstore); // saving bookstore
+		session.save(bookstoreDB); // saving bookstoreDB
 		session.save(bookToDB); // three below: saving books
 
 		session.getTransaction().commit();

@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import com.epam.file.Category;
+import com.epam.file.CategoryDB;
 
 *//**
  * This map contains category as key and library of books, that should match to

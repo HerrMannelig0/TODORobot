@@ -13,7 +13,7 @@ import java.util.List;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.epam.DB.entities.BookDAO;
+import com.epam.DB.entities.BookDB;
 import com.epam.file.Category;
 
 public class BookTest {
@@ -157,11 +157,11 @@ public class BookTest {
 		Book book = new Book(title, author, new Keywords(new String[]{"vampire"}));
 		File file = new File("src/main/resources/Keywords/Categories.txt");
 		String category = book.assignCategory(book.createCategoryList(file));
-		BookDAO bookDAO = book.convertToBookDAO();
+		BookDB bookDB = book.convertToBookDAO();
 		SoftAssert softAssert = new SoftAssert();
-		softAssert.assertEquals(bookDAO.getTitle(), title);
-		softAssert.assertEquals(bookDAO.getAuthor(), author);
-		softAssert.assertEquals(bookDAO.getCategory(), category);
+		softAssert.assertEquals(bookDB.getTitle(), title);
+		softAssert.assertEquals(bookDB.getAuthor(), author);
+		softAssert.assertEquals(bookDB.getCategory(), category);
 		softAssert.assertAll();
 	}
 	

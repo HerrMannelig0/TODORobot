@@ -25,7 +25,7 @@ public class BookstoreOverviewController {
     @FXML
     private CheckBox fantasyCat;
 
-    @FXML // fx:id="bookstores"
+    @FXML // fx:id="bookstoreDBs"
     private ListView<String> bookstores; // Value injected by FXMLLoader
     private ObservableList<String> listViewBookstores = FXCollections.observableArrayList(data.initBookstoreList);
 

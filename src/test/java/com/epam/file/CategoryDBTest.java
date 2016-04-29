@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.testng.annotations.Test;
 
 
-public class CategoryTest {
+public class CategoryDBTest {
 	
 	@Test
 	public void testAddingKeywordToRomanceCategory() throws Exception {

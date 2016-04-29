@@ -7,80 +7,59 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+import com.epam.DB.entities.BookstoreDB;
 import org.apache.log4j.Logger;
 
-import com.epam.DB.entities.Bookstore;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
 
-public class Bookstores extends AbstractSet<Bookstore>{
-	public Set<Bookstore> bookstores;
+public class Bookstores extends AbstractSet<BookstoreDB>{
+	public Set<BookstoreDB> bookstores;
 	
 	public Bookstores(){
 		 bookstores = new HashSet<>();
 	}
 	
 	private static Logger logger = Logger.getLogger("Bookstores");
+
 	/**
-	 * Generating bookstores' set from file with links.
-	 * @param File with bookstores' links
-	 * @return Set of Bookstores
-	 * @throws FileNotFoundException
-	 */
-	public Set<Bookstore> generateBookstoreSet(File file) throws FileNotFoundException{
-		
-		Set<Bookstore> resultBokstores = new HashSet<>();
-		FileLinkHandler fileLinkHandler = new FileLinkHandler();
-		Set<Link> linksWithTags = fileLinkHandler.readLinksFromFile(file);
-		
-		for (Link link : linksWithTags) {
-			String address = link.getLinkAdress();
-			Bookstore bookstore = new Bookstore(extractBookstoreName(address));
-			bookstore.init();
-			resultBokstores.add(bookstore);
-		}
-		bookstores = resultBokstores;
-		return resultBokstores;
-	}
-	
-	/**
-	 * Adds Book to bookstores' list.
-	 * @param URL to bookstore
+	 * Adds Book to bookstoreDBs' list.
+	 * @param url to bookstore
 	 * @param book
 	 */
 	 void addBookToBookstoreInBookstoresList(String url, Book book) {
 		String bookstoreName = extractBookstoreName(url);
-		Bookstore bookstore = getBookstoreFromSet(bookstoreName, bookstores);	
-		if(bookstore == null) logger.error("There is no such Bookstore: " + bookstoreName);
-		else bookstore.addBookDAO(book.convertToBookDAO());
+		BookstoreDB bookstoreDB = getBookstoreFromSet(bookstoreName, bookstores);
+		if(bookstoreDB == null) logger.error("There is no such BookstoreDB: " + bookstoreName);
+		else bookstoreDB.addBook(book.convertToBookDAO());
 	}
 	
 	/**
-	 * Searching Bookstore in given set.
-	 * @param Name of Bookstore
-	 * @param Set of Bookstores
-	 * @return Bookstore
+	 * Searching BookstoreDB in given set.
+	 * @param bookstoreName of BookstoreDB
+	 * @param set of Bookstores
+	 * @return BookstoreDB
 	 */
-	public Bookstore getBookstoreFromSet(String bookstoreName, Set<Bookstore> set) {
-		for (Bookstore bookstore : set) {
-			if(bookstoreName.equals(bookstore.getBookstorename())) return bookstore;
+	public BookstoreDB getBookstoreFromSet(String bookstoreName, Set<BookstoreDB> set) {
+		for (BookstoreDB bookstoreDB : set) {
+			if(bookstoreName.equals(bookstoreDB.getName())) return bookstoreDB;
 		}
 		return null;
 	}
 	
 	/**
 	 * Getting bookstore name from book.
-	 * @param Book
-	 * @return Bookstore's name as string
+	 * @param book
+	 * @return BookstoreDB's name as string
 	 */
 	public String extractBookstoreName(Book book) {
 		return extractBookstoreName(book.getUrl().toString());
 	}
 	
 	/**
-	 * Extracting Bookstore's name from URL.
-	 * @param URL
-	 * @return Bookstore's name as string
+	 * Extracting BookstoreDB's name from URL.
+	 * @param url
+	 * @return BookstoreDB's name as string
 	 */
 	String extractBookstoreName(String url) {
 		int indexOFFirstDotAppearance = url.indexOf('.');
@@ -88,7 +67,7 @@ public class Bookstores extends AbstractSet<Bookstore>{
 	}
 
 	@Override
-	public Iterator<Bookstore> iterator() {
+	public Iterator<BookstoreDB> iterator() {
 		return bookstores.iterator();
 	}
 
@@ -98,7 +77,30 @@ public class Bookstores extends AbstractSet<Bookstore>{
 	}
 	
 	@Override
-	public boolean add(Bookstore bookstore) {
-		return bookstores.add(bookstore);
+	public boolean add(BookstoreDB bookstoreDB) {
+		return bookstores.add(bookstoreDB);
+	}
+
+
+	/**
+	 * Generating bookstoreDBs' set from file with links.
+	 * @param file with bookstoreDBs' links
+	 * @return Set of Bookstores
+	 * @throws FileNotFoundException
+	 */
+	public Set<BookstoreDB> generateBookstoreSet(File file) throws FileNotFoundException{
+
+		Set<BookstoreDB> resultBokstores = new HashSet<>();
+		FileLinkHandler fileLinkHandler = new FileLinkHandler();
+		Set<Link> linksWithTags = fileLinkHandler.readLinksFromFile(file);
+
+		for (Link link : linksWithTags) {
+			String address = link.getLinkAdress();
+			BookstoreDB bookstore = new BookstoreDB(extractBookstoreName(address));
+			bookstore.init();
+			resultBokstores.add(bookstore);
+		}
+		bookstores = resultBokstores;
+		return resultBokstores;
 	}
 }

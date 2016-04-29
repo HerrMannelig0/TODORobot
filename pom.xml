@@ -16,10 +16,16 @@
 	</properties>
 
 	<dependencies>
+		<!-- ORACLE JDBC driver, need install yourself -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId> mysql-connector-java</artifactId>
+			<version>6.0.2</version>
+		</dependency>
 		<dependency>
 			<groupId>org.hibernate.javax.persistence</groupId>
 			<artifactId>hibernate-jpa-2.1-api</artifactId>
-			<version>1.0.0.Draft-16</version>
+			<version>1.0.0.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -31,16 +37,14 @@
 			<artifactId>jboss-logging</artifactId>
 			<version>3.3.0.Final</version>
 		</dependency>
+
+
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-		<dependency>
-			<groupId>javax.transaction</groupId>
-			<artifactId>jta</artifactId>
-			<version>1.1</version>
-		</dependency>
+
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -82,11 +86,7 @@
 			<artifactId>assertj-core</artifactId>
 			<version>3.4.1</version>
 		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>6.0.2</version>
-		</dependency>
+
 	</dependencies>
 
 	<build>

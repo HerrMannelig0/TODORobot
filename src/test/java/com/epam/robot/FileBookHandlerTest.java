@@ -25,7 +25,7 @@ public class FileBookHandlerTest {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 		
-		Query query = session.createQuery("from BookDAO");
+		Query query = session.createQuery("from BookDB");
 		@SuppressWarnings("unchecked")
 		List<String> list = query.list();
 		assertThat(list.size()).isGreaterThan(0);

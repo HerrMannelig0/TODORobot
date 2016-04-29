@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.epam.DB.entities.BookDAO;
-import com.epam.DB.entities.Bookstore;
+import com.epam.DB.entities.BookDB;
+import com.epam.DB.entities.BookstoreDB;
 import com.epam.file.Category;
 
 /**
@@ -46,7 +46,7 @@ public class Book {
 	
 	/**
 	 * Assigning category from table with keywords.
-	 * @param Categories to assing to keywords.
+	 * @param categories to assing to keywords.
 	 * @return Assigned category as string. If no category has been found it returns "No category".
 	 * 
 	 * @see Category
@@ -65,7 +65,7 @@ public class Book {
 
 	/**
 	 * Checking if given category match to keywords.
-	 * @param Category to check 
+	 * @param category to check
 	 * @return Found category as string. If no category has been found it returns "No category".
 	 */
 	public String checkCategory(Category category){
@@ -76,7 +76,7 @@ public class Book {
 	
 	/**
 	 * Create list of categories, reads them from given file.
-	 * @param File contains list of categories
+	 * @param file contains list of categories
 	 * @return List of categories
 	 * @throws IOException
 	 */
@@ -95,26 +95,26 @@ public class Book {
 	}
 	
 	/**
-	 * This method converts Book object into BookDAO
-	 * @return BookDAO
+	 * This method converts Book object into BookDB
+	 * @return BookDB
 	 */
-	public BookDAO convertToBookDAO(){
-		BookDAO bookDAO = new BookDAO();
-		bookDAO.setTitle(title);
-		bookDAO.setAuthor(author);
-		bookDAO.setCategory(bookCategory);
-		return bookDAO;
+	public BookDB convertToBookDAO(){
+		BookDB bookDB = new BookDB();
+		bookDB.setTitle(title);
+		bookDB.setAuthor(author);
+		bookDB.setCategory(bookCategory);
+		return bookDB;
 	}
 	
 	/**
-	 * Extracting Bookstore from book's URL.
-	 * @return Bookstore
+	 * Extracting BookstoreDB from book's URL.
+	 * @return BookstoreDB
 	 */
-	public Bookstore extractBookstoreFromURL(){
+	public BookstoreDB extractBookstoreFromURL(){
 		String urlPath = url.toString();
 		int indexOFFirstDotAppearance = urlPath.indexOf('.');
 		String bookstoreName = urlPath.substring(indexOFFirstDotAppearance+1, urlPath.indexOf('.', indexOFFirstDotAppearance+1));
-		return new Bookstore(bookstoreName);
+		return new BookstoreDB(bookstoreName);
 	}
 	
 	@Override

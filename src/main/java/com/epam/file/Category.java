@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 /**
- * Class {@code Category} represents category of the book.
+ * Class {@code CategoryDB} represents category of the book.
  * @see BookDAO
  * @see Keywords
  */
@@ -65,7 +65,7 @@ public class Category  {
 	}
 	
 	/**
-	 * Category's name getter.
+	 * CategoryDB's name getter.
 	 * @return category
 	 */
 	public String getCategory() {

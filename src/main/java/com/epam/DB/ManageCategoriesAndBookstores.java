@@ -1,7 +1,7 @@
 package com.epam.DB;
 
-import com.epam.DB.entities.Bookstore;
-import com.epam.DB.entities.Category;
+import com.epam.DB.entities.BookstoreDB;
+import com.epam.DB.entities.CategoryDB;
 import org.hibernate.Session;
 
 import java.io.IOException;
@@ -18,15 +18,15 @@ import java.util.stream.Stream;
 public class ManageCategoriesAndBookstores {
 
 
-
-    private static String categoriesPath = "src/Keywords/categories";
-    private static String bookstoresPath = "src/Keywords/bookstores";
+    private static String categoriesPath = "src/Categories.txt";
+    private static String bookstoresPath = "src/FreeBooksAdressSite.txt";
 
     public static void main(String[] args) {
         setDatabase();
     }
     /**
-     * method using categories to put them into DB @see entriesFetcher
+     * method using categories and bookstores to put them into DB @see entriesFetcher, it is the first thing done after running program.
+     * DB is dropped (data could be outdated), injects categories and bookstores from files within project.
      */
     private static void setDatabase() {
         Session session = HibernateUtil.getSessionFactory().openSession();
@@ -35,19 +35,19 @@ public class ManageCategoriesAndBookstores {
         ArrayList<String> listOfBookstores = (ArrayList<String>) entriesFetcher(bookstoresPath);
 
         for (String string : listOfCategories) {
-            Category category = new Category();
-            category.setCategoryName(string);
+            CategoryDB category = new CategoryDB();
+            category.setName(string);
 
             session.beginTransaction();
             session.save(category);
             session.getTransaction().commit();
         }
         for (String string : listOfBookstores) {
-            Bookstore bookstore = new Bookstore();
-            bookstore.setBookstorename(string);
+            BookstoreDB bookstoreDB = new BookstoreDB();
+            bookstoreDB.setName(string);
 
             session.beginTransaction();
-            session.save(bookstore);
+            session.save(bookstoreDB);
             session.getTransaction().commit();
         }
         session.close();
