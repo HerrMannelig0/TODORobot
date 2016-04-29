@@ -1,11 +1,7 @@
-package com.epam.DAO;
+package com.epam.DB;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.ArrayList;
 import static org.assertj.core.api.Assertions.assertThat;
-import org.assertj.core.api.Assertions;
-import org.testng.annotations.Test;
 
 public class AddingCategoriesTest {
 	ArrayList <String> expected = new ArrayList<>();

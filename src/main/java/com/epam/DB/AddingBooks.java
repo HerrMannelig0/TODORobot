@@ -1,4 +1,4 @@
-package com.epam.DAO;
+package com.epam.DB;
 
 public class AddingBooks {
 

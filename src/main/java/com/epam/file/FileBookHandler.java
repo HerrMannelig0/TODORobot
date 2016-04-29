@@ -5,15 +5,13 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.Set;
 
 import org.hibernate.Session;
 
-import com.epam.DAO.BookDAO;
-import com.epam.DAO.Bookstore;
-import com.epam.DAO.HibernateUtil;
+import com.epam.DB.entities.BookDAO;
+import com.epam.DB.entities.Bookstore;
+import com.epam.DB.HibernateUtil;
 import com.epam.robot.Book;
-import com.epam.robot.BookTitleSearch;
 
 public class FileBookHandler {
 

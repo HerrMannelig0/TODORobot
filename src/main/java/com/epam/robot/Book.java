@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.epam.DAO.BookDAO;
-import com.epam.DAO.Bookstore;
+import com.epam.DB.entities.BookDAO;
+import com.epam.DB.entities.Bookstore;
 import com.epam.file.Category;
 
 /**

@@ -13,7 +13,7 @@ import java.util.List;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.epam.DAO.BookDAO;
+import com.epam.DB.entities.BookDAO;
 import com.epam.file.Category;
 
 public class BookTest {

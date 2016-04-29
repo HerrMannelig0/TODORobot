@@ -9,7 +9,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.testng.annotations.Test;
 
-import com.epam.DAO.HibernateUtil;
+import com.epam.DB.HibernateUtil;
 import com.epam.file.FileBookHandler;
 
 public class FileBookHandlerTest {

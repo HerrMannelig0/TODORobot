@@ -1294,9 +1294,9 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute comm
 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
-	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
-	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
-	at com.epam.DAO.MainClassForAddingRecords.main(AddingRecords.java:12)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.MainClassForAddingRecords.main(AddingRecords.java:12)
 Caused by: java.sql.SQLException: Can't create table 'BookRobot.#sql-f8a_8d' (errno: 150)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
@@ -1700,9 +1700,9 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute comm
 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
-	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
-	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
-	at com.epam.DAO.MainClassForAddingRecords.main(AddingRecords.java:12)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.MainClassForAddingRecords.main(AddingRecords.java:12)
 Caused by: java.sql.SQLException: Can't create table 'BookRobot.#sql-f8a_c0' (errno: 150)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
@@ -1746,9 +1746,9 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute comm
 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
-	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
-	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
-	at com.epam.DAO.MainClassForAddingRecords.main(AddingRecords.java:12)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.MainClassForAddingRecords.main(AddingRecords.java:12)
 Caused by: java.sql.SQLException: Error on rename of './BookRobot/BOOK' to './BookRobot/#sql2-f8a-c2' (errno: 152)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
@@ -1893,9 +1893,9 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute comm
 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
-	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
-	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
-	at com.epam.DAO.MainClassForAddingRecords.main(AddingRecords.java:12)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.MainClassForAddingRecords.main(AddingRecords.java:12)
 Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BookRobot.BOOK' doesn't exist
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1958,9 +1958,9 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute comm
 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
-	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
-	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
-	at com.epam.DAO.MainClassForAddingRecords.main(AddingRecords.java:12)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.MainClassForAddingRecords.main(AddingRecords.java:12)
 Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BookRobot.BOOK' doesn't exist
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -2031,9 +2031,9 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute comm
 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
-	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
-	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
-	at com.epam.DAO.MainClassForAddingRecords.main(AddingRecords.java:12)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.MainClassForAddingRecords.main(AddingRecords.java:12)
 Caused by: java.sql.SQLException: Error on rename of './BookRobot/BOOK' to './BookRobot/#sql2-f8a-dc' (errno: 152)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
@@ -2086,9 +2086,9 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute comm
 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
-	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
-	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
-	at com.epam.DAO.MainClassForAddingRecords.main(AddingRecords.java:12)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.MainClassForAddingRecords.main(AddingRecords.java:12)
 Caused by: java.sql.SQLException: Error on rename of './BookRobot/BOOK' to './BookRobot/#sql2-f8a-e0' (errno: 152)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
@@ -4615,8 +4615,8 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute comm
 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
-	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
-	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
 	at com.epam.file.FileBookHandler.writeBookToFile(FileBookHandler.java:84)
 	at com.epam.robot.FileBookHandlerTest.testWritingToFile(FileBookHandlerTest.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -4677,8 +4677,8 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute comm
 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
-	at com.epam.DAO.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
-	at com.epam.DAO.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
 	at com.epam.file.FileBookHandler.writeBookToFile(FileBookHandler.java:84)
 	at com.epam.robot.FileBookHandlerTest.testWritingToFile(FileBookHandlerTest.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -5471,3 +5471,73 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'Boo
 2016-04-26 10:45:12 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
 2016-04-26 10:45:12 INFO  connections:141 - HHH10001003: Autocommit mode: false
 2016-04-26 10:45:12 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-29 09:13:23 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-29 09:13:23 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-29 09:13:23 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-29 09:13:23 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-29 09:13:24 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-29 09:13:25 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-29 09:13:25 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-29 09:13:25 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-29 09:13:25 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-29 09:13:25 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-29 09:13:51 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-29 09:13:51 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-29 09:13:51 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-29 09:13:52 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-29 09:13:53 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-29 09:13:54 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-29 09:13:54 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-29 09:13:54 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-29 09:13:54 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-29 09:13:54 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-29 09:26:22 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-29 09:26:22 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-29 09:26:22 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-29 09:26:22 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-29 09:26:23 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-29 09:26:23 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-29 09:26:23 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-29 09:26:23 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-29 09:26:23 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-29 09:26:23 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-29 09:55:50 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-29 09:55:50 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-29 09:55:50 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-29 09:55:50 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-29 09:55:50 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-29 09:55:50 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-29 09:55:50 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-29 09:55:50 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-29 09:55:50 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-29 09:55:50 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-29 10:00:49 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-29 10:00:49 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-29 10:00:49 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-29 10:00:49 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-29 10:00:50 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-29 10:00:50 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-29 10:00:50 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-29 10:00:50 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-29 10:00:50 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-29 10:00:50 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-29 10:03:15 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-29 10:03:15 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-29 10:03:15 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-29 10:03:16 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-29 10:03:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-29 10:03:16 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-29 10:03:16 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/bookDB??useUnicode=true&characterEncoding=utf8]
+2016-04-29 10:03:16 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-29 10:03:16 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-29 10:03:16 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-29 10:04:15 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-29 10:04:15 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-29 10:04:15 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-29 10:04:16 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-29 10:04:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-29 10:04:16 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-29 10:04:16 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8]
+2016-04-29 10:04:16 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-29 10:04:16 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-29 10:04:16 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)

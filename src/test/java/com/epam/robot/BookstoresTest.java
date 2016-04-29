@@ -12,7 +12,7 @@ import java.util.Set;
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.Test;
 
-import com.epam.DAO.Bookstore;
+import com.epam.DB.entities.Bookstore;
 
 public class BookstoresTest {
 

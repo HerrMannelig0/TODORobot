@@ -1,6 +1,6 @@
 package com.epam.GUI.model;
 
-import com.epam.DAO.DealingBookstores;
+import com.epam.DB.ManageCategoriesAndBookstores;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class Bookstore {
     private static ArrayList<String> bookstores = new ArrayList<>();
     public static ObservableList<String> initBookstoreList = FXCollections.observableList(bookstores);
-    DealingBookstores prepareListOfBookstores = new DealingBookstores();
+    ManageCategoriesAndBookstores prepareListOfBookstores = new ManageCategoriesAndBookstores();
 
 
     public Bookstore(){
@@ -25,14 +25,16 @@ public class Bookstore {
      */
     ArrayList<String> initBookstores() {
 
-        return (ArrayList<String>) prepareListOfBookstores.bookstores;
+        //return (ArrayList<String>) prepareListOfBookstores.bookstores;
+        return null;
     }
 
     /**
-     * deletes bookstore from bookstore list in DealingBookstores class and updates list of
+     * deletes bookstore from bookstore list in ManageCategoriesAndBookstores class and updates list of
      * @param bookstoreName
      */
     public void deleteBookstoreFromDAO(String bookstoreName){
-        prepareListOfBookstores.deleteBookstore(bookstoreName);
+
+      //  prepareListOfBookstores.deleteBookstore(bookstoreName);
     }
 }

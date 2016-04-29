@@ -9,7 +9,7 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
-import com.epam.DAO.Bookstore;
+import com.epam.DB.entities.Bookstore;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
 

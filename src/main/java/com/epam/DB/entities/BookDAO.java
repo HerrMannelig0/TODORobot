@@ -1,4 +1,4 @@
-package com.epam.DAO;
+package com.epam.DB.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

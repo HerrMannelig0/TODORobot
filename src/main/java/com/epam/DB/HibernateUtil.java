@@ -1,4 +1,4 @@
-package com.epam.DAO;
+package com.epam.DB;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

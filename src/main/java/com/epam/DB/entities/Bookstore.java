@@ -1,4 +1,6 @@
-package com.epam.DAO;
+package com.epam.DB.entities;
+
+import com.epam.DB.entities.BookDAO;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,6 @@
-package com.epam.DAO;
+package com.epam.DB.entities;
+
+import com.epam.DB.entities.BookDAO;
 
 import java.util.List;
 
@@ -29,7 +31,7 @@ public class Category {
 	@Column(name = "CATEGORY_NAME")
 	private String catName;
 
-	@OneToMany(targetEntity=com.epam.DAO.BookDAO.class)
+	@OneToMany(targetEntity=BookDAO.class)
 	@JoinColumn(name = "category_id")
 	private List<BookDAO> books;
 
