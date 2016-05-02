@@ -17136,3 +17136,1891 @@ Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
 2016-04-29 19:04:57 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@dafeed'
 2016-04-29 19:04:57 WARN  SqlExceptionHelper:129 - SQL Error: 1062, SQLState: 23000
 2016-04-29 19:04:57 ERROR SqlExceptionHelper:131 - Duplicate entry 'Romance' for key 'UK_oo4xayr0g0mkbajn7n2m3918u'
+2016-04-29 19:10:58 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-29 19:10:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-29 19:10:58 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-29 19:10:58 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-29 19:10:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-29 19:10:59 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-29 19:10:59 INFO  connections:127 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-04-29 19:10:59 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-29 19:10:59 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-29 19:10:59 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-29 19:10:59 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-29 19:11:00 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists books]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists books]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:11:00 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists bookstoreDB]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists bookstoreDB]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:11:00 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists category]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists category]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:11:00 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:11:00 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table bookstoreDB (id integer not null auto_increment, books tinyblob, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table bookstoreDB (id integer not null auto_increment, books tinyblob, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:11:00 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:11:00 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:11:00 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@dafeed'
+2016-04-29 19:11:00 WARN  SqlExceptionHelper:129 - SQL Error: 1146, SQLState: 42S02
+2016-04-29 19:11:00 ERROR SqlExceptionHelper:131 - Table 'BookRobot.category' doesn't exist
+2016-04-29 19:13:04 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-04-29 19:13:04 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-04-29 19:13:04 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-04-29 19:13:04 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-04-29 19:13:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-04-29 19:13:05 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-04-29 19:13:05 INFO  connections:127 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-04-29 19:13:05 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-04-29 19:13:05 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-04-29 19:13:05 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-04-29 19:13:05 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-04-29 19:13:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists books]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists books]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:13:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists bookstoreDB]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists bookstoreDB]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:13:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists category]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists category]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:13:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:13:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table bookstoreDB (id integer not null auto_increment, books tinyblob, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table bookstoreDB (id integer not null auto_increment, books tinyblob, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:13:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:13:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-04-29 19:13:06 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@dafeed'
+2016-04-29 19:13:06 WARN  SqlExceptionHelper:129 - SQL Error: 1146, SQLState: 42S02
+2016-04-29 19:13:06 ERROR SqlExceptionHelper:131 - Table 'BookRobot.category' doesn't exist
+2016-05-02 13:42:09 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 13:42:09 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 13:42:09 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 13:42:09 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 13:42:10 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 13:42:10 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 13:42:10 INFO  connections:127 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 13:42:10 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 13:42:10 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 13:42:10 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 13:42:10 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 13:42:11 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists books]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists books]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 13:42:11 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists bookstoreDB]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists bookstoreDB]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 13:42:11 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists category]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists category]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 13:42:11 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 13:42:11 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table bookstoreDB (id integer not null auto_increment, books tinyblob, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table bookstoreDB (id integer not null auto_increment, books tinyblob, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 13:42:11 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 13:42:11 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 13:42:11 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@dafeed'
+2016-05-02 13:42:11 WARN  SqlExceptionHelper:129 - SQL Error: 1146, SQLState: 42S02
+2016-05-02 13:42:11 ERROR SqlExceptionHelper:131 - Table 'BookRobot.category' doesn't exist
+2016-05-02 14:29:20 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 14:29:20 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 14:29:20 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 14:29:20 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 14:29:20 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 14:29:20 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 14:29:21 INFO  connections:127 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 14:29:21 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 14:29:21 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 14:29:21 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 14:29:21 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 14:29:22 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists books]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists books]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:29:22 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists bookstoreDB]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists bookstoreDB]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:29:22 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists category]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists category]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:29:22 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:29:22 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table bookstoreDB (id integer not null auto_increment, books tinyblob, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table bookstoreDB (id integer not null auto_increment, books tinyblob, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:29:22 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:29:22 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:29:22 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@dafeed'
+2016-05-02 14:29:22 WARN  SqlExceptionHelper:129 - SQL Error: 1146, SQLState: 42S02
+2016-05-02 14:29:22 ERROR SqlExceptionHelper:131 - Table 'BookRobot.category' doesn't exist
+2016-05-02 14:32:35 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 14:32:35 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 14:32:35 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 14:32:35 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 14:32:36 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 14:32:36 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 14:32:36 INFO  connections:127 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 14:32:36 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 14:32:36 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 14:32:36 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 14:32:36 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 14:32:37 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists books]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists books]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:32:37 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists bookstoreDB]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists bookstoreDB]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:32:37 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists category]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists category]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:32:37 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:32:37 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table bookstoreDB (id integer not null auto_increment, books tinyblob, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table bookstoreDB (id integer not null auto_increment, books tinyblob, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:32:37 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:32:37 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:32)
+	at com.epam.DB.ManageCategoriesAndBookstores.main(ManageCategoriesAndBookstores.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 21 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 25 more
+2016-05-02 14:32:37 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@dafeed'
+2016-05-02 14:32:37 WARN  SqlExceptionHelper:129 - SQL Error: 1146, SQLState: 42S02
+2016-05-02 14:32:37 ERROR SqlExceptionHelper:131 - Table 'books.category' doesn't exist
+2016-05-02 14:37:05 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 14:37:05 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 14:37:05 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 14:37:06 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 14:37:06 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 14:37:07 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 14:37:44 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 14:37:44 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 14:37:44 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 14:37:44 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 14:37:45 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 14:37:45 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 14:37:45 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 14:37:45 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 14:37:45 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 14:37:45 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 14:37:46 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 14:37:46 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@398c80'
+2016-05-02 14:52:04 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 14:52:04 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 14:52:04 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 14:52:04 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 14:52:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 14:52:05 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 14:52:05 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 14:52:05 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 14:52:05 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 14:52:05 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 14:52:06 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 14:52:07 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@398c80'
+2016-05-02 14:57:56 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 14:57:56 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 14:57:56 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 14:57:56 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 14:57:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 14:57:58 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 14:57:58 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 14:57:58 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 14:57:58 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 14:57:58 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 14:57:58 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 14:57:59 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@398c80'
+2016-05-02 14:58:48 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 14:58:48 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 14:58:48 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 14:58:48 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 14:58:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 14:58:49 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 14:58:49 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 14:58:49 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 14:58:49 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 14:58:49 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 14:58:50 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 14:58:51 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@398c80'
+2016-05-02 15:00:00 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 15:00:00 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 15:00:00 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 15:00:00 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 15:00:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 15:00:01 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 15:00:01 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 15:00:01 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 15:00:01 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 15:00:01 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 15:00:02 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 15:00:03 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@398c80'
+2016-05-02 15:01:11 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 15:01:11 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 15:01:11 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 15:01:11 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 15:01:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 15:01:12 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 15:01:12 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 15:01:12 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 15:01:12 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 15:01:12 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 15:01:13 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 15:01:14 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@398c80'
+2016-05-02 15:03:26 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 15:03:26 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 15:03:26 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 15:03:26 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 15:03:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 15:03:28 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 15:03:28 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 15:03:28 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 15:03:28 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 15:03:28 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 15:03:28 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 15:03:29 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@398c80'
+2016-05-02 15:03:29 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-02 15:03:29 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-02 15:03:29 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-02 15:03:48 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 15:03:48 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 15:03:48 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 15:03:48 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 15:03:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 15:03:50 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 15:03:50 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 15:03:50 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 15:03:50 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 15:03:50 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 15:03:50 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 15:03:51 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@398c80'
+2016-05-02 15:03:51 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-02 15:03:51 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-02 15:03:51 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-02 15:07:42 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 15:07:42 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 15:07:42 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 15:07:42 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 15:07:43 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 15:07:43 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 15:07:43 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 15:07:43 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 15:07:43 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 15:07:43 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 15:07:44 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 15:07:45 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@398c80'
+2016-05-02 15:07:45 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-02 15:07:45 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-02 15:07:45 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-02 15:08:10 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-02 15:08:10 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-02 15:08:10 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-02 15:08:10 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-02 15:08:11 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-02 15:08:11 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-02 15:08:11 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-02 15:08:11 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-02 15:08:11 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-02 15:08:11 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-02 15:08:12 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-02 15:08:13 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@398c80'
+2016-05-02 15:08:13 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-02 15:08:13 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-02 15:08:13 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -

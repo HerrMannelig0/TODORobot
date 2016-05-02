@@ -8,71 +8,74 @@ import java.util.ArrayList;
  * Created by aga on 27.04.16.
  */
 @Entity
-@Table (name = "bookstoreDB")
-public class BookstoreDB implements Serializable{
+@Table(name = "bookstoreDB")
+public class BookstoreDB implements Serializable {
 
-	@Id
-	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Integer id;
 
-	@Column(name = "bookstoreDB")
-	String name;
+    @Column(name = "bookstoreDB")
+    String name;
 
-	@Column (name = "address")
-	String urlAddress;
+    @Column(name = "address")
+    String urlAddress;
 
-	@Column (name = "books")
-	ArrayList<BookDB> listOfBooks;
+    @Column(name = "books")
+    @Transient
+    ArrayList<BookDB> listOfBooks;
 
-	public BookstoreDB(String bookstoreName) {
-		this.name = bookstoreName;
-	}
-	public BookstoreDB(){}
+    public BookstoreDB(String bookstoreName) {
+        this.name = bookstoreName;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public BookstoreDB() {
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public Integer getId() {
-		return id;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public String getUrlAddress() {
-		return urlAddress;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setUrlAddress(String urlAddress) {
-		this.urlAddress = urlAddress;
-	}
+    public String getUrlAddress() {
+        return urlAddress;
+    }
 
-	@OneToMany
-	@JoinColumn (name = "books_store")
-	public ArrayList<BookDB> getListOfBooks() {
-		return listOfBooks;
-	}
+    public void setUrlAddress(String urlAddress) {
+        this.urlAddress = urlAddress;
+    }
 
-	public void setListOfBooks(ArrayList<BookDB> listOfBooks) {
-		this.listOfBooks = listOfBooks;
-	}
+    @OneToMany
+    @JoinColumn(name = "books_store")
+    public ArrayList<BookDB> getListOfBooks() {
+        return listOfBooks;
+    }
 
-	public void addBook(BookDB bookDB) {
-	}
+    public void setListOfBooks(ArrayList<BookDB> listOfBooks) {
+        this.listOfBooks = listOfBooks;
+    }
+
+    public void addBook(BookDB bookDB) {
+    }
 
 
-	public void init() {
+    public void init() {
 
-		if(listOfBooks == null) listOfBooks = new ArrayList<>();
-	}
+        if (listOfBooks == null) listOfBooks = new ArrayList<>();
+    }
 
-	public boolean contains(BookDB bookDB) {
-		return listOfBooks.contains(bookDB);
-	}
+    public boolean contains(BookDB bookDB) {
+        return listOfBooks.contains(bookDB);
+    }
 }

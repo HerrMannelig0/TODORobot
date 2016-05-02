@@ -5,15 +5,14 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
-		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="hibernate.connection.useUnicode">yes</property>
 		<property name="hibernate.connection.characterEncoding">UTF-8</property>
-		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/books??useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password"></property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="show_sql">true</property>
-		<property name="hibernate.show_comment">true</property>
 		<property name="hibernate.hbm2ddl.auto">create</property>
         <mapping class="com.epam.DB.entities.BookDB"/>
 		<mapping class="com.epam.DB.entities.BookstoreDB"/>

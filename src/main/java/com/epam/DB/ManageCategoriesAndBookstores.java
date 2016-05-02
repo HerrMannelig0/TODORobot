@@ -2,13 +2,18 @@ package com.epam.DB;
 
 import com.epam.DB.entities.BookstoreDB;
 import com.epam.DB.entities.CategoryDB;
+import com.epam.robot.Bookstores;
+import org.apache.log4j.Logger;
 import org.hibernate.Session;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -16,6 +21,8 @@ import java.util.stream.Stream;
  * Created by aga on 27.04.16.
  */
 public class ManageCategoriesAndBookstores {
+
+    private static Logger logger = Logger.getLogger("ManageCategoriesAndBookstores");
 
 
     private static String categoriesPath = "src/Categories.txt";
@@ -30,27 +37,28 @@ public class ManageCategoriesAndBookstores {
      */
     private static void setDatabase() {
         Session session = HibernateUtil.getSessionFactory().openSession();
-
         ArrayList<String> listOfCategories = (ArrayList<String>) entriesFetcher(categoriesPath);
-        ArrayList<String> listOfBookstores = (ArrayList<String>) entriesFetcher(bookstoresPath);
+        Bookstores bookstores = new Bookstores();
+        try {
+            Set<BookstoreDB> listOfBookstores = (bookstores.generateBookstoreSet(new File(bookstoresPath)));
+            for (String string : listOfCategories) {
+                CategoryDB category = new CategoryDB();
+                category.setName(string);
 
-        for (String string : listOfCategories) {
-            CategoryDB category = new CategoryDB();
-            category.setName(string);
-
-            session.beginTransaction();
-            session.save(category);
-            session.getTransaction().commit();
+                session.beginTransaction();
+                session.save(category);
+                session.getTransaction().commit();
+            }
+            for (BookstoreDB bookstoreDB : listOfBookstores) {
+                session.beginTransaction();
+                session.save(bookstoreDB);
+                session.getTransaction().commit();
+            }
+            session.close();
+        } catch (FileNotFoundException e) {
+            logger.error("Cannot find file with bookstores");
         }
-        for (String string : listOfBookstores) {
-            BookstoreDB bookstoreDB = new BookstoreDB();
-            bookstoreDB.setName(string);
 
-            session.beginTransaction();
-            session.save(bookstoreDB);
-            session.getTransaction().commit();
-        }
-        session.close();
     }
 
     private static List<String> entriesFetcher(String fileName) {
