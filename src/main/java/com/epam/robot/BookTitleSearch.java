@@ -7,12 +7,17 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+import javax.xml.ws.http.HTTPException;
+
 import org.apache.commons.lang3.math.NumberUtils;
 import org.apache.log4j.Logger;
+import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import com.sun.corba.se.pept.transport.Connection;
 
 
 public class BookTitleSearch {
@@ -189,12 +194,20 @@ public class BookTitleSearch {
 	 * @param Site address as a string.
 	 * @return Document parsed from site.
 	 */
-	private Document parseHTMLtoDoc(String adress) {
+	private Document parseHTMLtoDoc(String address) {
 		Document document = null;
+		
+		
 		try {
-			document = Jsoup.parse(new URL(adress), 100000);
+			document = Jsoup.parse(new URL(address), 100000);
+		} catch(HttpStatusException e){
+			logger.error(e.getClass() + " HTTP error fetching URL. Status=403 on site: " + address);
+		
+		} catch(HTTPException e){
+			logger.error(e.getClass() + " Problem with access to the page: " + address);
+		
 		} catch (IOException e) {
-			e.printStackTrace();
+			logger.error(e.getClass() + " Other problem with parsing page to Document");
 		}
 		return document;
 	}

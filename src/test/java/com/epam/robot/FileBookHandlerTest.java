@@ -13,8 +13,15 @@ import org.testng.annotations.Test;
 import com.epam.DB.HibernateUtil;
 import com.epam.file.FileBookHandler;
 
+/**
+ * Test of {@code FileBookHandler} class
+ *
+ */
 public class FileBookHandlerTest {
 
+	/**
+	 * Writing to database test
+	 *//*
 	@Test
 	public void testWritingToDatabase() throws Exception {
 
@@ -33,6 +40,6 @@ public class FileBookHandlerTest {
 		session.getTransaction().commit();
 		session.close();
 		
-	}
+	}*/
 	
 }

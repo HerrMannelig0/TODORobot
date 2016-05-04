@@ -1,19 +1,16 @@
 		package com.epam.robot;
 
-		import java.io.File;
-		import java.io.FileNotFoundException;
-		import java.io.PrintWriter;
-		import java.util.List;
+        import com.epam.DB.ManageCategoriesAndBookstores;
+        import com.epam.file.FileLinkHandler;
+        import com.epam.file.Link;
+        import com.epam.util.CategoryUtil;
+        import com.epam.util.UrlUtils;
+        import org.apache.log4j.Logger;
 
-		import com.epam.DB.DAO;
-		import com.epam.DB.ManageCategoriesAndBookstores;
-		import org.apache.log4j.Logger;
-
-		import com.epam.file.FileBookHandler;
-		import com.epam.file.FileLinkHandler;
-		import com.epam.file.Link;
-		import com.epam.util.CategoryUtil;
-		import com.epam.util.UrlUtils;
+        import java.io.File;
+        import java.io.FileNotFoundException;
+        import java.io.PrintWriter;
+        import java.util.List;
 
 /**
  * Program to search free books in the internet bookstoreDBs.
@@ -72,7 +69,6 @@ public class MainRobot {
 				}
 
 
-
 			}
 
 			//Creating map of categories and libraries
@@ -81,7 +77,10 @@ public class MainRobot {
 
 			logger.info("Finished searching titles by Tag");
 
+
 		}
+		logger.info("Robot has finished his work");
+
 	}
 
 

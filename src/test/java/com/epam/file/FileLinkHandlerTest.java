@@ -13,20 +13,34 @@ import java.util.Set;
 
 import org.testng.annotations.Test;
 
+/**
+ * Tests of {@code FileLinkHandler} class
+ *
+ */
 public class FileLinkHandlerTest {
 	
+    /**
+     * Test if {@code doesLinkContainsSixParts()} returns false if given object does not contain six parts
+     */
     @Test
-    public void testThreePartsContainigReturnsFalse() {
+    public void testSixPartsContainigReturnsFalse() {
        String [] emptyStringsTab = {""};
        assertThat(FileLinkHandler.doesLinkContainsSixParts(emptyStringsTab)).isEqualTo(false);
     }
 
+    /**
+     * Test if {@code doesLinkContainsSixParts()} returns true if given object contains six parts
+     */
     @Test
-    public void testThreePartsContainigReturnsTrue() {
+    public void testSixPartsContainigReturnsTrue() {
        String [] notEmptyStringsTab = {"a", "b", "c", "d", "e", "f"};
        assertThat(FileLinkHandler.doesLinkContainsSixParts(notEmptyStringsTab)).isEqualTo(true);
     }
     
+    /**
+     * Test reading from blank file
+     * @throws FileNotFoundException
+     */
     @Test
     public void testReadingLinksFromBlankFile() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
@@ -36,6 +50,10 @@ public class FileLinkHandlerTest {
 
     }
     
+    /**
+     * Test reading from non-empty file
+     * @throws FileNotFoundException
+     */
     @Test
     public void testReadingLinksFromOneLineFile() throws FileNotFoundException {
     	int one = 1;
@@ -45,6 +63,10 @@ public class FileLinkHandlerTest {
        assertThat(links.size()).isEqualTo(one);
     }
  
+    /**
+     * Test of putting new item from file to LinkList
+     * @throws FileNotFoundException
+     */
     @Test
     public void testUpdatingLineList() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
@@ -53,6 +75,10 @@ public class FileLinkHandlerTest {
        assertThat(fileLinkHandler.getLinksList().isEmpty()).isFalse();
     }
     
+    /**
+     * Test of updating list of URLs
+     * @throws FileNotFoundException
+     */
     @Test
     public void testUpdatingURLList() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
@@ -63,6 +89,10 @@ public class FileLinkHandlerTest {
        assertThat(fileLinkHandler.getUrlList().isEmpty()).isFalse();
     }
     
+    /**
+     * Test of clearing the list of links
+     * @throws FileNotFoundException
+     */
     @Test
     public void testClearingLinkList() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
@@ -74,6 +104,10 @@ public class FileLinkHandlerTest {
     	assertThat(fileLinkHandler.getLinksList().isEmpty()).isTrue();
     }
     
+    /**
+     * Test of clearing the list of links
+     * @throws FileNotFoundException
+     */
     @Test
     public void testClearingURLList() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();
@@ -86,6 +120,10 @@ public class FileLinkHandlerTest {
     	assertThat(fileLinkHandler.getUrlList().isEmpty()).isTrue();
     }
 
+    /**
+     * Test of writing given list to file
+     * @throws FileNotFoundException
+     */
     @Test
     public void testWritingToFile() throws FileNotFoundException {
     	FileLinkHandler fileLinkHandler = new FileLinkHandler();

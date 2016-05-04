@@ -16,8 +16,15 @@ import org.testng.asserts.SoftAssert;
 import com.epam.DB.entities.BookDB;
 import com.epam.file.Category;
 
+/**
+ * Tests of Book class
+ *
+ */
 public class BookTest {
 
+	/**
+	 * Test of category checking. It should returns a proper category because a proper keyword is passing
+	 */
 	@Test
 	public void testCategoryCheckingGivesRealCategory() throws Exception {
 		Book book = new Book("title", "author", new Keywords(new String[]{"love"}));
@@ -33,6 +40,9 @@ public class BookTest {
 		assertThat(realCategory).isEqualTo("Romance");
 	}
 	
+	/**
+	 * Test of category checking. It should returns a proper category because a proper keyword is passing
+	 */
 	@Test
 	public void testCategoryCheckingGivesFalseCategory() throws Exception {
 		Book book = new Book("title", "author", new Keywords(new String[]{"love"}));
@@ -48,6 +58,9 @@ public class BookTest {
 		assertThat(realCategory).isEqualTo("No category");
 	}
 	
+	/**
+	 * Test of assigning category to a book.
+	 */
 	@Test
 	public void testAssigningProperCategory() {
 		Book book = new Book("title", "author", new Keywords(new String[]{"love"}));
@@ -89,6 +102,9 @@ public class BookTest {
 		assertThat(resultCategory).isEqualTo(expectedCategory);
 	}
 	
+	/**
+	 * Test of assigning no category to a book
+	 */
 	@Test
 	public void testAssigningNoCategory() {
 		Book book = new Book("title", "author", new Keywords(new String[]{"other"}));
@@ -132,6 +148,9 @@ public class BookTest {
 		assertThat(resultCategory).isEqualTo(expectedCategory);
 	}
 	
+	/**
+	 * Test of creating list of categories
+	 */
 	@Test
 	public void testCategoriesListCreator() throws Exception {
 		Book book = new Book("anyTile", "anyAuthor", new Keywords(new String[]{"vamipre"}));
@@ -142,6 +161,9 @@ public class BookTest {
 		assertThat(categories.size()).isGreaterThan(0);
 	}
 	
+	/**
+	 * Test of assigning category from list to a book
+	 */
 	@Test
 	public void testAssignCategoryToBook() throws Exception {
 		Book book = new Book("anyTile", "anyAuthor", new Keywords(new String[]{"vampire"}));
@@ -150,6 +172,9 @@ public class BookTest {
 		assertThat(category).isEqualTo("Fantasy");
 	}
 	
+	/**
+	 * Test of converting book to bookDAO
+	 */
 	@Test
 	public void testConvertingToBookDAO() throws Exception {
 		String title = "anyTile";
