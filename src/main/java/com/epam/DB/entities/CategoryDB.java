@@ -20,8 +20,12 @@ public class CategoryDB implements Serializable {
 	String name;
 
 	@Column (name = "books")
-			@ElementCollection
+	@ElementCollection
 	List<BookDB> listOfBooks;
+
+	public CategoryDB(String name) {
+		this.name = name;
+	}
 
 
 	public String getName() {

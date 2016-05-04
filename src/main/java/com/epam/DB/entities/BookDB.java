@@ -26,6 +26,10 @@ public class BookDB implements Serializable {
 	CategoryDB category;
 
 	public BookDB() {
+		author = "unknown";
+		title = "unknown";
+		bookstoreDB = new BookstoreDB("unknown");
+		category = new CategoryDB("unknown");
 	}
 
 	public BookDB(String author, String title, BookstoreDB bookstoreDB, CategoryDB category) {

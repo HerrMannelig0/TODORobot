@@ -55,7 +55,7 @@ public class ManageCategoriesAndBookstores {
             session.beginTransaction();
             session.save(categoryDB);
             session.getTransaction().commit();
-            logger.info("database entries: List<BookDAO> for Categories and Categories.");
+            logger.info("database entries: List<BookDAO> for Categories and Categories itself.");
 
             session.close();
         }

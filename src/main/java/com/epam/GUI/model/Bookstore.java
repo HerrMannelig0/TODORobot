@@ -1,5 +1,6 @@
 package com.epam.GUI.model;
 
+import com.epam.DB.DAO;
 import com.epam.DB.ManageCategoriesAndBookstores;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -14,20 +15,19 @@ public class Bookstore {
     public static ObservableList<String> initBookstoreList = FXCollections.observableList(bookstores);
 
 
-    public Bookstore(){
+    public Bookstore() {
         bookstores.addAll(initBookstores());
     }
 
     /**
      * it returns list of available bookstoreDBs in "src/resources/FreeBooksAddressSites.txt"
+     *
      * @return
      */
     ArrayList<String> initBookstores() {
-
-        //return (ArrayList<String>) prepareListOfBookstores.bookstoreDBs;
-        return null;
+        DAO dao = new DAO();
+        return (ArrayList<String>) dao.listOfBookstoresForGUI();
     }
-
 
 
 }

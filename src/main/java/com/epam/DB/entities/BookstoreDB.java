@@ -22,7 +22,7 @@ public class BookstoreDB implements Serializable {
     String urlAddress;
 
     @Column(name = "books")
-    @Transient
+    @ElementCollection
     ArrayList<BookDB> listOfBooks;
 
     public BookstoreDB(String bookstoreName) {

@@ -21525,3 +21525,215 @@ Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
 2016-05-04 14:55:13 INFO  MainRobot:46 - Started Searching titles by Tag
 2016-05-04 14:55:13 INFO  MainRobot:78 - Finished searching titles by Tag
 2016-05-04 14:55:13 INFO  MainRobot:82 - Robot has finished his work
+2016-05-04 15:28:52 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:28:52 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 15:28:52 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:28:52 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 15:28:52 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:28:52 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 15:28:52 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:28:52 INFO  MainRobot:39 - Started Main Robot
+2016-05-04 15:28:52 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:28:52 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:28:53 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 15:28:53 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 15:28:53 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 15:28:53 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 15:28:53 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 15:28:54 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 15:28:54 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 15:28:54 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 15:28:54 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 15:28:54 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 15:28:54 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-04 15:28:55 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f7880'
+2016-05-04 15:28:55 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:28:55 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:28:55 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:28:55 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:28:55 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:28:55 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:28:55 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:28:55 INFO  MainRobot:82 - Robot has finished his work
+2016-05-04 15:30:52 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:30:52 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 15:30:52 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:30:52 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 15:30:52 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:30:52 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 15:30:52 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:30:52 INFO  MainRobot:39 - Started Main Robot
+2016-05-04 15:30:52 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:30:52 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:30:53 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 15:30:53 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 15:30:53 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 15:30:53 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 15:30:54 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 15:30:54 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 15:30:54 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 15:30:54 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 15:30:54 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 15:30:54 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 15:30:55 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-04 15:30:56 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f7880'
+2016-05-04 15:30:56 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:30:56 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:30:56 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:30:56 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:30:56 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:30:56 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:30:56 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:30:56 INFO  MainRobot:82 - Robot has finished his work
+2016-05-04 15:37:22 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:37:22 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:37:22 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 15:37:22 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 15:37:22 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:37:22 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:37:22 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 15:37:22 INFO  MainRobot:39 - Started Main Robot
+2016-05-04 15:37:22 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:37:22 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:37:23 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 15:37:23 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 15:37:23 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 15:37:23 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 15:37:24 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 15:37:24 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 15:37:24 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 15:37:24 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 15:37:24 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 15:37:24 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 15:37:25 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-04 15:37:25 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@13f7880'
+2016-05-04 15:37:25 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:37:25 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:37:25 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:37:25 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:37:25 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:37:25 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:37:25 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:37:25 INFO  MainRobot:82 - Robot has finished his work
+2016-05-04 15:41:27 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:41:27 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:41:27 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 15:41:27 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:41:27 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:41:27 INFO  MainRobot:39 - Started Main Robot
+2016-05-04 15:41:27 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:41:27 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:41:28 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 15:41:28 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 15:41:28 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 15:41:28 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 15:41:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 15:41:29 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 15:41:29 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 15:41:29 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 15:41:29 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 15:41:29 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 15:41:29 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-04 15:41:30 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1a4798f'
+2016-05-04 15:41:30 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:41:30 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:41:30 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:41:30 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:41:30 INFO  MainRobot:82 - Robot has finished his work
+2016-05-04 15:43:09 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:43:09 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:43:09 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 15:43:09 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:43:09 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:43:09 INFO  MainRobot:39 - Started Main Robot
+2016-05-04 15:43:09 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:43:09 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:43:10 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 15:43:10 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 15:43:10 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 15:43:10 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 15:43:11 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 15:43:11 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 15:43:11 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 15:43:11 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 15:43:11 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 15:43:11 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 15:43:11 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-04 15:43:12 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1a4798f'
+2016-05-04 15:43:12 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:43:12 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:43:12 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:43:12 INFO  MainRobot:78 - Finished searching titles by Tag
+2016-05-04 15:43:12 INFO  MainRobot:82 - Robot has finished his work
+2016-05-04 15:49:46 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:49:46 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:49:46 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 15:49:46 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:49:46 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:49:46 INFO  MainRobot:39 - Started Main Robot
+2016-05-04 15:49:46 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:49:46 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:49:47 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 15:49:47 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 15:49:47 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 15:49:47 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 15:49:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 15:49:48 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 15:49:48 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 15:49:48 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 15:49:48 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 15:49:48 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 15:49:48 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-04 15:49:50 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1a4798f'
+2016-05-04 15:49:50 INFO  MainRobot:78 - Finished searching titles by Tag. Found 0 books.
+2016-05-04 15:49:50 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:49:50 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:49:50 INFO  MainRobot:78 - Finished searching titles by Tag. Found 0 books.
+2016-05-04 15:49:50 INFO  MainRobot:82 - Robot has finished his work
+2016-05-04 15:58:02 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:58:02 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-04 15:58:02 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:58:02 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-04 15:58:02 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 15:58:02 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 15:58:02 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-04 15:58:02 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 15:58:02 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-04 15:58:02 INFO  MainRobot:39 - Started Main Robot
+2016-05-04 15:58:02 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:58:02 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:58:02 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 15:58:02 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 15:58:02 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 15:58:02 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 15:58:03 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 15:58:03 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 15:58:03 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 15:58:03 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 15:58:03 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 15:58:03 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 15:58:04 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-04 15:58:04 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@78452d'
+2016-05-04 15:58:05 INFO  MainRobot:78 - Finished searching titles by Tag. Found 0 books.
+2016-05-04 15:58:05 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:58:05 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:58:05 INFO  MainRobot:78 - Finished searching titles by Tag. Found 0 books.
+2016-05-04 15:58:05 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:58:05 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:58:05 INFO  MainRobot:78 - Finished searching titles by Tag. Found 0 books.
+2016-05-04 15:58:05 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 15:58:05 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 15:58:05 INFO  MainRobot:78 - Finished searching titles by Tag. Found 0 books.
+2016-05-04 15:58:05 INFO  MainRobot:82 - Robot has finished his work
+2016-05-04 16:26:34 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 16:26:34 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 16:26:34 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 16:26:34 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 16:26:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 16:26:34 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 16:26:34 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 16:26:34 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 16:26:34 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 16:26:34 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 16:26:34 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-04 16:26:35 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@181913'

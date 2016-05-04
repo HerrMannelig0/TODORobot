@@ -75,7 +75,7 @@ public class MainRobot {
 			ManageCategoriesAndBookstores fillDB = new ManageCategoriesAndBookstores();
 			fillDB.setDatabase(CategoryUtil.generateLibrariesMapfromLibrary(library));
 
-			logger.info("Finished searching titles by Tag");
+			logger.info("Finished searching titles by Tag. Found "+library.size()+" books.");
 
 
 		}
@@ -98,7 +98,7 @@ public class MainRobot {
 
 
 	/**
-	 * you totally need to check that!! Dont know usage of this, not to mention mocked, empty method @generateBookstoreSet !
+	 * you totally need to check that!! Don't know usage of this, not to mention mocked, empty method @generateBookstoreSet !
 	 * @param bookstores
 	 */
 	private static void prepareBookstores(Bookstores bookstores){

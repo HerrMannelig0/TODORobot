@@ -19,13 +19,12 @@ import java.util.Map;
  * Created by aga on 02.05.16.
  */
 public class DAO {
-    private final Map<Category, Library> librariesMap;
+    private Map<Category, Library> librariesMap;
 
     public DAO(LibrariesMap librariesMap) {
         this.librariesMap = librariesMap.getMap();
     }
-
-
+    public DAO(){}
     /**
      * list of categories
      */

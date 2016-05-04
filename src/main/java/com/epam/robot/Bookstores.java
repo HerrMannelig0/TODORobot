@@ -101,7 +101,7 @@ public class Bookstores extends AbstractSet<BookstoreDB>{
 			resultBokstores.add(bookstore);
 		}
 		bookstores = resultBokstores;
-		return resultBokstores;
+		return bookstores;
 	}
 
 
