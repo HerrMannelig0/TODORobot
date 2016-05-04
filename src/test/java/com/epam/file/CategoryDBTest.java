@@ -5,8 +5,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.testng.annotations.Test;
 
 
+/**
+ * Tests of {@code CategoryBD} class
+ *
+ */
 public class CategoryDBTest {
 	
+	/**
+	 * Test of adding keyword to category
+	 */
 	@Test
 	public void testAddingKeywordToRomanceCategory() throws Exception {
 		Category romanceCategory = new Category("Romance", "a");
@@ -19,6 +26,9 @@ public class CategoryDBTest {
 		assertThat(result).isTrue();
 	}
 	
+	/**
+	 * Test of crating new category
+	 */
 	@Test
 	public void testRomanceCategoryCreation() throws Exception {
 		Category romanceCategory = new Category("Romance", "src/main/resources/Keywords/Romance.txt");
@@ -30,6 +40,9 @@ public class CategoryDBTest {
 		assertThat(result).isTrue();
 	}
 	
+	/**
+	 * Test if created category does not contains wrong keywords
+	 */
 	@Test
 	public void testRomanceCategoryCreationNotContainsFalseKeyword() throws Exception {
 		Category romanceCategory = new Category("Romance", "src/main/resources/Keywords/Romance.txt");

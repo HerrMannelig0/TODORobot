@@ -5,79 +5,68 @@ import org.testng.annotations.Test;
 import static com.epam.util.UrlUtils.*;
 
 /**
- * Created by damian on 21.03.16.
+ * Tests of IRlUtilsClass
  */
 public class UrlUtilsTest {
 
+    /**
+     * Testing {@code checkIfUrl} method - optimistic path
+     */
     @Test
     public void testIfUrlIsUrl(){
-        //given
-
-        //when
         boolean url = checkIfUrl("demotywatory.pl");
-
-        //then
         Assertions.assertThat(url).isTrue();
     }
 
+    /**
+     * Testing {@code checkIfUrl} method - passing null as parameter
+     */
     @Test
     public void testIfUrlIsEmpty(){
-        //given
-
-        //when
         boolean url = checkIfUrl(null);
-
-        //then
         Assertions.assertThat(url).isFalse();
     }
 
+    /**
+     * Testing {@code checkIfUrl} method - pessimistic path
+     */
     @Test
     public void testIfTextIsNotUrl(){
-        //given
-
-        //when
         boolean url = checkIfUrl("sgsdrgrdg");
-
-        //then
         Assertions.assertThat(url).isFalse();
     }
 
 
+    /**
+     * Testing {@code checkIfUrl} method - empty sting as parameter
+     */
     @Test
     public void testIfEmptyStringIsNotUrl(){
-        //given
-
-        //when
         boolean url = checkIfUrl("");
-
-        //then
         Assertions.assertThat(url).isFalse();
     }
 
+    /**
+     * Test of adding http to path's beginning, when there is no http already
+     */
     @Test
     public void testIfUrlWithOutHttpHasHttp(){
-        //given
-
-        //when
         java.lang.String url = addHttpToBegining("www.facebook.com/");
-
-        //then
-        Assertions.assertThat(url).asString().contains("https://", "https://");
         Assertions.assertThat(url).asString().contains("https://", "https://");
     }
 
+    /**
+     * Test of adding http to path's beginning, when there is http already
+     */
     @Test
     public void testIfUrlHttpHasHttp(){
-        //given
-
-        //when
         java.lang.String url = addHttpToBegining("https://www.facebook.com/");
-
-        //then
-        Assertions.assertThat(url).asString().contains("https://", "https://");
         Assertions.assertThat(url).asString().contains("https://", "https://");
     }
 
+    /**
+     * Test of removing slashes from URL
+     */
     @Test
     public void ifPutUrlItRemoveSlashes(){
         String url="http://e-bookshop.pl.txt/362-wyprzedaz";
