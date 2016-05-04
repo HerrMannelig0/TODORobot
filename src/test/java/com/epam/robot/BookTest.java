@@ -26,10 +26,10 @@ public class BookTest {
 		Category romanceCategory = mock(Category.class);
 		
 		when(romanceCategory.getKeywords()).thenReturn(set);
-		when(romanceCategory.getCategory()).thenReturn("Romance");
-		String realCategory = book.checkCategory(romanceCategory);
+		when(romanceCategory.getName()).thenReturn("Romance");
+		Category realCategory = book.checkCategory(romanceCategory);
 		
-		verify(romanceCategory).getCategory();
+		verify(romanceCategory).getName();
 		assertThat(realCategory).isEqualTo("Romance");
 	}
 	
@@ -41,10 +41,10 @@ public class BookTest {
 		Category romanceCategory = mock(Category.class);
 		
 		when(romanceCategory.getKeywords()).thenReturn(set);
-		when(romanceCategory.getCategory()).thenReturn("Romance");
-		String realCategory = book.checkCategory(romanceCategory);
+		when(romanceCategory.getName()).thenReturn("Romance");
+		Category realCategory = book.checkCategory(romanceCategory);
 		
-		verify(romanceCategory, times(0)).getCategory();
+		verify(romanceCategory, times(0)).getName();
 		assertThat(realCategory).isEqualTo("No category");
 	}
 	
@@ -72,18 +72,18 @@ public class BookTest {
 		}
 					
 		when(categories[0].getKeywords()).thenReturn(itSet);
-		when(categories[0].getCategory()).thenReturn("IT");
+		when(categories[0].getName()).thenReturn("IT");
 		
 		when(categories[1].getKeywords()).thenReturn(comedySet);
-		when(categories[1].getCategory()).thenReturn("Comedy");
+		when(categories[1].getName()).thenReturn("Comedy");
 		
 		when(categories[2].getKeywords()).thenReturn(romanceSet);
-		when(categories[2].getCategory()).thenReturn("Romance");
+		when(categories[2].getName()).thenReturn("Romance");
 		
 		when(categories[3].getKeywords()).thenReturn(horrorSet);
-		when(categories[3].getCategory()).thenReturn("Horror");
+		when(categories[3].getName()).thenReturn("Horror");
 		
-		String resultCategory = book.assignCategory(Arrays.asList(categories));
+		Category resultCategory = book.assignCategory(Arrays.asList(categories));
 		String expectedCategory = "Romance";
 		
 		assertThat(resultCategory).isEqualTo(expectedCategory);
@@ -111,23 +111,23 @@ public class BookTest {
 		for(int i=0; i<names.length; i++){
 			categories[i] = mock(Category.class);
 		}
-					
+
 		when(categories[0].getKeywords()).thenReturn(itSet);
-		when(categories[0].getCategory()).thenReturn("IT");
-		
+		when(categories[0].getName()).thenReturn("IT");
+
 		when(categories[1].getKeywords()).thenReturn(comedySet);
-		when(categories[1].getCategory()).thenReturn("Comedy");
-		
+		when(categories[1].getName()).thenReturn("Comedy");
+
 		when(categories[2].getKeywords()).thenReturn(romanceSet);
-		when(categories[2].getCategory()).thenReturn("Romance");
-		
+		when(categories[2].getName()).thenReturn("Romance");
+
 		when(categories[3].getKeywords()).thenReturn(horrorSet);
-		when(categories[3].getCategory()).thenReturn("Horror");
+		when(categories[3].getName()).thenReturn("Horror");
 		
 		
 		
-		String resultCategory = book.assignCategory(Arrays.asList(categories));
-		String expectedCategory = "No category";
+		Category resultCategory = book.assignCategory(Arrays.asList(categories));
+		Category expectedCategory = new Category("No category");
 		
 		assertThat(resultCategory).isEqualTo(expectedCategory);
 	}
@@ -146,7 +146,7 @@ public class BookTest {
 	public void testAssignCategoryToBook() throws Exception {
 		Book book = new Book("anyTile", "anyAuthor", new Keywords(new String[]{"vampire"}));
 		File file = new File("src/main/resources/Keywords/Categories.txt");
-		String category = book.assignCategory(book.createCategoryList(file));
+		Category category = book.assignCategory(book.createCategoryList(file));
 		assertThat(category).isEqualTo("Fantasy");
 	}
 	
@@ -156,8 +156,8 @@ public class BookTest {
 		String author = "anyAuthor";
 		Book book = new Book(title, author, new Keywords(new String[]{"vampire"}));
 		File file = new File("src/main/resources/Keywords/Categories.txt");
-		String category = book.assignCategory(book.createCategoryList(file));
-		BookDB bookDB = book.convertToBookDAO();
+		Category category = book.assignCategory(book.createCategoryList(file));
+		BookDB bookDB = book.convertToBookDB();
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals(bookDB.getTitle(), title);
 		softAssert.assertEquals(bookDB.getAuthor(), author);

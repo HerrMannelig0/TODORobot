@@ -23,6 +23,10 @@ import com.epam.file.CategoryDB;
  */
 public class LibrariesMap implements Map<Category, Library> {
 
+	public Map<Category, Library> getMap() {
+		return map;
+	}
+
 	private Map<Category, Library> map;
 
 	public LibrariesMap() {
@@ -34,10 +38,10 @@ public class LibrariesMap implements Map<Category, Library> {
 	 * @param Map with String as key and List of Books as value
 	 * @return this
 	 */
-	public static LibrariesMap generateFrom(Map<String, List<Book>> map) {
+	public static LibrariesMap generateFrom(Map<Category, List<Book>> map) {
 		LibrariesMap librariesMap = new LibrariesMap();
-		for (Map.Entry<String, List<Book>> entry : map.entrySet()) {
-			Category category = new Category(entry.getKey());
+		for (Map.Entry<Category, List<Book>> entry : map.entrySet()) {
+			Category category = entry.getKey();
 			Library library = new Library(entry.getValue());
 			librariesMap.put(category, library);
 		}

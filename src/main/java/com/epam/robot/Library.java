@@ -1,5 +1,7 @@
 package com.epam.robot;
 
+import com.epam.DB.entities.BookDB;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -16,7 +18,15 @@ public class Library implements List<Book> {
 	public Library(List<Book> library){
 		this.library = library;
 	}
-	
+
+	public List<BookDB> convertToDBList(){
+		List<BookDB> dbList = new ArrayList<>();
+		for(Book book : library){
+			dbList.add(book.convertToBookDB());
+		}
+		return dbList;
+	}
+
 	@Override
 	public boolean add(Book book) {
 		return library.add(book);

@@ -1,5 +1,7 @@
 package com.epam.file;
 
+import com.epam.DB.entities.CategoryDB;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -17,7 +19,7 @@ public class Category  {
 	protected HashSet<String> keywords;
 	private String name;
 	private String filePath;
-	private String category;
+	//private Category category;
 		
 	public Category(String name) {
 		this.name = name;
@@ -41,7 +43,7 @@ public class Category  {
 		Category romanceCategory = new Category(name, filePath);
 		BufferedReader reader = new BufferedReader(new FileReader(file));
 		
-		category = reader.readLine();
+		name = reader.readLine();
 		
 		HashSet<String> set = new HashSet<>();
 		
@@ -68,8 +70,8 @@ public class Category  {
 	 * CategoryDB's name getter.
 	 * @return category
 	 */
-	public String getCategory() {
-		return category;
+	public String getName() {
+		return name;
 	}
 
 	/**
@@ -91,5 +93,11 @@ public class Category  {
 	@Override
 	public String toString(){
 		return name;
+	}
+
+	public CategoryDB convertToDbCategory(){
+		CategoryDB categoryDB = new CategoryDB();
+		categoryDB.setName(name);
+		return categoryDB;
 	}
 }

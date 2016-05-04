@@ -31,7 +31,7 @@ public class Bookstores extends AbstractSet<BookstoreDB>{
 		String bookstoreName = extractBookstoreName(url);
 		BookstoreDB bookstoreDB = getBookstoreFromSet(bookstoreName, bookstores);
 		if(bookstoreDB == null) logger.error("There is no such BookstoreDB: " + bookstoreName);
-		else bookstoreDB.addBook(book.convertToBookDAO());
+		else bookstoreDB.addBook(book.convertToBookDB());
 	}
 	
 	/**
@@ -101,7 +101,7 @@ public class Bookstores extends AbstractSet<BookstoreDB>{
 			resultBokstores.add(bookstore);
 		}
 		bookstores = resultBokstores;
-		return bookstores;
+		return resultBokstores;
 	}
 
 

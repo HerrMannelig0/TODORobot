@@ -23,6 +23,18 @@ public class HibernateUtil {
 		return sessionFactory;
 	}
 
+	/**
+	 * @param pathToHibernateCfgXml path to where hibernate.test.cfg.xml is located
+	 *        if file is in /my/dir/with/my.cfg.xml, where name of config file is my.cfg.xml
+	 *        then all all path with files name must be provided as parameter.
+	 * @return Hibernate session factory.
+	 */
+	public static SessionFactory newSessionFactory(final String pathToHibernateCfgXml) {
+		Configuration hibernateConfiguration = new Configuration();
+		hibernateConfiguration.configure(pathToHibernateCfgXml);
+		return hibernateConfiguration.buildSessionFactory();
+	}
+
 	public static void shutdown() {
 		// Close caches and connection pools
 		getSessionFactory().close();

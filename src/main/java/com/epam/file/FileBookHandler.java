@@ -62,7 +62,7 @@ public class FileBookHandler {
 
 		BookstoreDB bookstoreDB = book.extractBookstoreFromURL();
 
-		BookDB bookToDB = book.convertToBookDAO();
+		BookDB bookToDB = book.convertToBookDB();
 		
 		ArrayList<BookDB> booksInBookstore = new ArrayList<>();
 		booksInBookstore.add(bookToDB);

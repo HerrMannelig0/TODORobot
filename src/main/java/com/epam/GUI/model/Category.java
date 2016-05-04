@@ -14,9 +14,9 @@ public class Category {
     public ObservableList<String> initCategories = FXCollections.observableList(categories);
 
     public Category(){
-        categories.add("Helion");
-        categories.add("Fantastyka");
-        categories.add("Świat Dysku");
+        categories.add("IT");
+        categories.add("Fantasy");
+        categories.add("Romance");
 
     }
 }

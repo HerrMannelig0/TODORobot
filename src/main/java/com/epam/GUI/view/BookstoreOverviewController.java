@@ -106,6 +106,8 @@ public class BookstoreOverviewController {
         bookstores.setItems(listViewBookstores);
         activeLibraries.setItems(listViewActiveBookstores);
         romanceCat.setOnAction(e -> handleCheckBox(e));
+        itCat.setOnAction(e -> handleCheckBox(e));
+        fantasyCat.setOnAction(e -> handleCheckBox(e));
     }
 
 }

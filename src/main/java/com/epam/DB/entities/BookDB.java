@@ -1,5 +1,7 @@
 package com.epam.DB.entities;
 
+import com.epam.file.Category;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -21,12 +23,12 @@ public class BookDB implements Serializable {
 	BookstoreDB bookstoreDB;
 
 	@Column(name = "CategoryDB")
-	String category;
+	CategoryDB category;
 
 	public BookDB() {
 	}
 
-	public BookDB(String author, String title, BookstoreDB bookstoreDB, String category) {
+	public BookDB(String author, String title, BookstoreDB bookstoreDB, CategoryDB category) {
 		this.author = author;
 		this.title = title;
 		this.bookstoreDB = bookstoreDB;
@@ -69,11 +71,11 @@ public class BookDB implements Serializable {
 
 	@ManyToOne
 	@Column(name = "books_cat")
-	public String getCategory() {
+	public CategoryDB getCategory() {
 		return category;
 	}
 
-	public void setCategory(String category) {
+	public void setCategory(CategoryDB category) {
 		this.category = category;
 	}
 

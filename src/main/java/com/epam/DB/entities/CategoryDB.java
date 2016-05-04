@@ -3,6 +3,7 @@ package com.epam.DB.entities;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by aga on 27.04.16.
@@ -19,7 +20,8 @@ public class CategoryDB implements Serializable {
 	String name;
 
 	@Column (name = "books")
-	ArrayList <BookDB> listOfBooks;
+			@ElementCollection
+	List<BookDB> listOfBooks;
 
 
 	public String getName() {
@@ -40,11 +42,11 @@ public class CategoryDB implements Serializable {
 
 	@OneToMany
 	@JoinColumn (name = "books_cat")
-	public ArrayList<BookDB> getListOfBooks() {
+	public List<BookDB> getListOfBooks() {
 		return listOfBooks;
 	}
 
-	public void setListOfBooks(ArrayList<BookDB> listOfBooks) {
+	public void setListOfBooks(List<BookDB> listOfBooks) {
 		this.listOfBooks = listOfBooks;
 	}
 }

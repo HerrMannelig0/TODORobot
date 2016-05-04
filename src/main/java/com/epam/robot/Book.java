@@ -21,7 +21,7 @@ public class Book {
 	private String price;
 	protected Keywords keywords;
 	private URL url;
-	String bookCategory;
+	Category bookCategory;
 
 	Book(String title, String author, String price, Keywords keywords, URL url){
 		this.title = title;
@@ -51,8 +51,8 @@ public class Book {
 	 * 
 	 * @see Category
 	 */
-	public String assignCategory(List<Category> categories) {
-		String resultCategory = "No category";
+	public Category assignCategory(List<Category> categories) {
+		Category resultCategory = new Category("No category");
 		for (Category category : categories) {
 			if(resultCategory.equals("No category")){
 				resultCategory = checkCategory(category);
@@ -68,10 +68,10 @@ public class Book {
 	 * @param category to check
 	 * @return Found category as string. If no category has been found it returns "No category".
 	 */
-	public String checkCategory(Category category){
+	public Category checkCategory(Category category){
 		if(keywords.contains(category.getKeywords())){ 
-				return category.getCategory();}
-		return "No category";
+				return category;}
+		return new Category("No category");
 	}	
 	
 	/**
@@ -98,11 +98,11 @@ public class Book {
 	 * This method converts Book object into BookDB
 	 * @return BookDB
 	 */
-	public BookDB convertToBookDAO(){
+	public BookDB convertToBookDB(){
 		BookDB bookDB = new BookDB();
 		bookDB.setTitle(title);
 		bookDB.setAuthor(author);
-		bookDB.setCategory(bookCategory);
+		bookDB.setCategory(bookCategory.convertToDbCategory());
 		return bookDB;
 	}
 	
@@ -138,12 +138,13 @@ public class Book {
 		return url;
 	}
 	
-	public String getBookCategory() {
+	public Category getBookCategory() {
 		return bookCategory;
 	}
 	
-	public void setBookCategory(String category) {
+	public void setBookCategory(Category category) {
 		this.bookCategory = category;
 	}
-	
+
+
 }

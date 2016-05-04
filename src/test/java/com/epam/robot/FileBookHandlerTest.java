@@ -5,6 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.net.URL;
 import java.util.List;
 
+import com.epam.file.Category;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.testng.annotations.Test;
@@ -18,7 +19,7 @@ public class FileBookHandlerTest {
 	public void testWritingToDatabase() throws Exception {
 
 		Book book = new Book("anyTitle", "AnyAuthor", "Free", new Keywords(new String[]{"vampire"}), new URL("https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go"));
-		book.setBookCategory("Fantasy");
+		book.setBookCategory(new Category("Fantasy"));
 		
 		FileBookHandler.writeBookToDatabase(book);
 		

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <tests/>
+  <bookstoreDB id="1" bookstoreDB="gutenberg"/>
+  <bookstoreDB id="2" bookstoreDB="bookrix"/>
+  <bookstoreDB id="3" bookstoreDB="allitebooks"/>
+  <category id="1" category="Romance"/>
+  <category id="2" category="IT"/>
+  <category id="3" category="Fantasy"/>
+</dataset>

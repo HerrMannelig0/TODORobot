@@ -53,7 +53,7 @@ public class BookstoresTest {
 		soft.assertThat(bookstores.bookstores.size()).isGreaterThan(0);
 		
 		for (BookstoreDB bookstoreDB : bookstores) {
-			boolean result = bookstoreDB.contains(book.convertToBookDAO());
+			boolean result = bookstoreDB.contains(book.convertToBookDB());
 			if(bookstoreDB.getName() == bookstoreName) soft.assertThat(result).isTrue();
 		}
 		soft.assertAll();

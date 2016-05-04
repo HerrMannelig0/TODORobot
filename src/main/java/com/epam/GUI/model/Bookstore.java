@@ -12,7 +12,6 @@ import java.util.ArrayList;
 public class Bookstore {
     private static ArrayList<String> bookstores = new ArrayList<>();
     public static ObservableList<String> initBookstoreList = FXCollections.observableList(bookstores);
-    ManageCategoriesAndBookstores prepareListOfBookstores = new ManageCategoriesAndBookstores();
 
 
     public Bookstore(){
@@ -29,12 +28,6 @@ public class Bookstore {
         return null;
     }
 
-    /**
-     * deletes bookstore from bookstore list in ManageCategoriesAndBookstores class and updates list of
-     * @param bookstoreName
-     */
-    public void deleteBookstoreFromDAO(String bookstoreName){
 
-      //  prepareListOfBookstores.deleteBookstore(bookstoreName);
-    }
+
 }

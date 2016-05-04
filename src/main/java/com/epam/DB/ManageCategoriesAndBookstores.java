@@ -1,8 +1,13 @@
 package com.epam.DB;
 
+import com.epam.DB.entities.BookDB;
 import com.epam.DB.entities.BookstoreDB;
 import com.epam.DB.entities.CategoryDB;
+import com.epam.file.Category;
 import com.epam.robot.Bookstores;
+import com.epam.robot.LibrariesMap;
+import com.epam.robot.Library;
+import com.epam.robot.MainRobot;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 
@@ -13,6 +18,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -28,35 +34,30 @@ public class ManageCategoriesAndBookstores {
     private static String categoriesPath = "src/Categories.txt";
     private static String bookstoresPath = "src/FreeBooksAdressSite.txt";
 
-    public static void main(String[] args) {
-        setDatabase();
-    }
+
     /**
      * method using categories and bookstores to put them into DB @see entriesFetcher, it is the first thing done after running program.
      * DB is dropped (data could be outdated), injects categories and bookstores from files within project.
      */
-    private static void setDatabase() {
+    public static void setDatabase(LibrariesMap mapCatLibrary) {
         Session session = HibernateUtil.getSessionFactory().openSession();
-        ArrayList<String> listOfCategories = (ArrayList<String>) entriesFetcher(categoriesPath);
-        Bookstores bookstores = new Bookstores();
-        try {
-            Set<BookstoreDB> listOfBookstores = (bookstores.generateBookstoreSet(new File(bookstoresPath)));
-            for (String string : listOfCategories) {
-                CategoryDB category = new CategoryDB();
-                category.setName(string);
 
-                session.beginTransaction();
-                session.save(category);
-                session.getTransaction().commit();
-            }
-            for (BookstoreDB bookstoreDB : listOfBookstores) {
-                session.beginTransaction();
-                session.save(bookstoreDB);
-                session.getTransaction().commit();
-            }
+        for (Map.Entry<Category, Library> entry : mapCatLibrary.entrySet()) {
+
+            Category category = entry.getKey();
+            Library lib = entry.getValue();
+
+            CategoryDB categoryDB = new CategoryDB();
+            categoryDB.setName(category.getName());
+            ArrayList<BookDB> bookDBList = (ArrayList<BookDB>) lib.convertToDBList();
+            categoryDB.setListOfBooks(bookDBList);
+
+            session.beginTransaction();
+            session.save(categoryDB);
+            session.getTransaction().commit();
+            logger.info("database entries: List<BookDAO> for Categories and Categories.");
+
             session.close();
-        } catch (FileNotFoundException e) {
-            logger.error("Cannot find file with bookstores");
         }
 
     }
