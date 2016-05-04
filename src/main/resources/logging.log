@@ -21737,3 +21737,59 @@ Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
 2016-05-04 16:26:34 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
 2016-05-04 16:26:34 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
 2016-05-04 16:26:35 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@181913'
+2016-05-04 17:46:05 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 17:46:05 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-04 17:46:05 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 17:46:05 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-04 17:46:05 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 17:46:05 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 17:46:05 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-04 17:46:05 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 17:46:05 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-04 17:46:05 INFO  MainRobot:38 - Started Main Robot
+2016-05-04 17:46:05 INFO  MainRobot:40 - Iterating over links by file
+2016-05-04 17:46:05 INFO  MainRobot:44 - Started Searching titles by Tag
+2016-05-04 17:46:05 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-05-04 17:46:08 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 17:46:10 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-04 17:46:10 INFO  MainRobot:70 - Finished searching titles by Tag
+2016-05-04 17:46:10 INFO  MainRobot:40 - Iterating over links by file
+2016-05-04 17:46:10 INFO  MainRobot:44 - Started Searching titles by Tag
+2016-05-04 17:46:10 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 17:46:41 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 17:47:07 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-04 17:47:07 INFO  MainRobot:70 - Finished searching titles by Tag
+2016-05-04 17:47:07 INFO  MainRobot:40 - Iterating over links by file
+2016-05-04 17:47:07 INFO  MainRobot:44 - Started Searching titles by Tag
+2016-05-04 17:47:07 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 17:47:10 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 17:47:13 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-04 17:47:13 INFO  MainRobot:70 - Finished searching titles by Tag
+2016-05-04 17:47:13 INFO  MainRobot:40 - Iterating over links by file
+2016-05-04 17:47:13 INFO  MainRobot:44 - Started Searching titles by Tag
+2016-05-04 17:47:13 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters
+2016-05-04 17:47:29 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 17:47:32 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-04 17:47:32 INFO  MainRobot:70 - Finished searching titles by Tag
+2016-05-04 17:47:32 INFO  MainRobot:73 - Robot has finished his work
+2016-05-04 17:49:54 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 17:49:54 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-04 17:49:54 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 17:49:54 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-04 17:49:54 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 17:49:54 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 17:49:54 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-04 17:49:54 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 17:49:54 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-04 17:49:54 INFO  MainRobot:40 - Started Main Robot
+2016-05-04 17:49:54 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 17:49:54 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 17:49:54 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-05-04 17:49:57 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 17:49:59 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-04 17:49:59 INFO  MainRobot:74 - Finished searching titles by Tag
+2016-05-04 17:49:59 INFO  MainRobot:42 - Iterating over links by file
+2016-05-04 17:49:59 INFO  MainRobot:46 - Started Searching titles by Tag
+2016-05-04 17:49:59 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 17:50:28 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 17:50:55 INFO  BookTitleSearch:130 - Finished iterating over links to search titles

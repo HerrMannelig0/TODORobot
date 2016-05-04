@@ -26,7 +26,7 @@ public class CategoryDB implements Serializable {
 	public CategoryDB(String name) {
 		this.name = name;
 	}
-
+	public CategoryDB(){}
 
 	public String getName() {
 		return name;
