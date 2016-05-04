@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
+import com.epam.file.Category;
 import com.epam.file.FileBookHandler;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
@@ -26,6 +27,7 @@ public class MainRobot {
 		static PrintWriter printWriter = null;
 		static FileLinkHandler fileLinkHandler = new FileLinkHandler();
 		static LibrariesMap map = new LibrariesMap();
+		static BookTitleSearch bookTitleSearch = new BookTitleSearch();
 	
 	
 	/**
@@ -35,7 +37,7 @@ public class MainRobot {
 	public static void main(String[] args) {
 
 		prepareBookstores(bookstores);
-
+		
 		List<Link> linksList = createListOfLinks();
 
 		logger.info("Started Main Robot");
@@ -53,6 +55,7 @@ public class MainRobot {
 			
 			String fileName = null;
 			
+			
 				fileName = UrlUtils.getFileName(link.getLinkAdress());
 				try {
 					printWriter = new PrintWriter("src/main/resources/" + fileName);
@@ -60,6 +63,9 @@ public class MainRobot {
 					logger.error(e.getClass() + " in MainRobot, problems with filename");
 				}
 				
+				library.addAll(bookTitleSearch.searchTitlesInPageAndSubPages(link.getLinkAdress(), 
+						link.getElementType(), link.getTitleTag(), link.getAuthorTag(), link.getPriceTag(), 
+						link.getKeywordsTag()));
 	
 				for (Book book : library) {
 				
@@ -67,12 +73,14 @@ public class MainRobot {
 						book.assignCategory(book.createCategoryList(new File("src/main/resources/Keywords/Categories.txt")));
 						//add category to book, filename is a bookstore, book has all fields to be put in DB
 					} catch (Exception e) {
+						e.printStackTrace();
 						logger.error(e.getClass() + " in MainRobot, problems with category assignment");
 					} 
 					
 					
 					FileBookHandler fileBookHandler = new FileBookHandler(fileName);
-					
+				
+					//writing books to database
 					try {
 						FileBookHandler.writeBookToDatabase(book);
 					} catch (FileNotFoundException e) {
@@ -84,9 +92,12 @@ public class MainRobot {
 				//Creating map of categories and libraries
 				CategoryUtil.generateLibrariesMapfromLibrary(library);
 				
+				
 				logger.info("Finished searching titles by Tag");
 			
 		}
+		logger.info("Robot has finished his work");
+		
 	}
 
 

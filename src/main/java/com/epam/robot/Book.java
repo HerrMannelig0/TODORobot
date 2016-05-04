@@ -23,7 +23,7 @@ public class Book {
 	private URL url;
 	String bookCategory;
 
-	Book(String title, String author, String price, Keywords keywords, URL url){
+	public Book(String title, String author, String price, Keywords keywords, URL url){
 		this.title = title;
 		this.author = author;
 		this.price = price;
@@ -31,14 +31,14 @@ public class Book {
 		this.url = url;
 	}
 
-	Book(String title, String author, String price, URL url) {
+	public Book(String title, String author, String price, URL url) {
 		this.title = title;
 		this.author = author;
 		this.price = price;
 		this.url = url;
 	}
 	
-	Book(String title, String author, Keywords keywords){
+	public Book(String title, String author, Keywords keywords){
 		this.title = title;
 		this.author = author;
 		this.keywords = keywords;
@@ -69,6 +69,7 @@ public class Book {
 	 * @return Found category as string. If no category has been found it returns "No category".
 	 */
 	public String checkCategory(Category category){
+		if(keywords == null) return "No category";
 		if(keywords.contains(category.getKeywords())){ 
 				return category.getCategory();}
 		return "No category";

@@ -2,7 +2,12 @@ package com.epam.robot;
 
 import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.assertThat;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
+import java.net.URL;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -108,7 +113,11 @@ public class BookSearchingTest {
 		assertThat(library.size()).isGreaterThan(0);	
 	}
 
-	
+	@Test
+	public void testParsingHTMLToDoc() throws Exception {
+		String address = "https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go";
+		Document doc = Jsoup.parse(new URL(address), 100000);
+	}
 	
 	
 }

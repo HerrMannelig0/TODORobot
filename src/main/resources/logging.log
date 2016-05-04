@@ -19024,3 +19024,1780 @@ Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
 2016-05-02 15:08:13 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
 2016-05-02 15:08:13 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
 2016-05-02 15:08:13 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 10:06:12 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 10:06:12 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 10:06:12 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 10:06:12 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 10:06:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 10:06:12 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 10:06:12 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 10:06:12 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 10:06:12 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 10:06:12 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 10:06:13 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-04 10:06:13 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-04 10:06:13 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-04 10:06:13 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-04 10:06:13 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-04 10:06:13 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-05-04 10:06:13 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 10:06:18 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-05-04 10:06:21 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 10:06:26 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 10:06:26 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 10:06:26 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 10:06:26 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:16:46 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:16:46 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:16:46 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:16:46 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 11:16:46 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:16:46 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:16:46 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:16:46 INFO  MainRobot:41 - Started Main Robot
+2016-05-04 11:16:46 INFO  MainRobot:44 - Iterating over links by file
+2016-05-04 11:16:46 INFO  MainRobot:48 - Started Searching titles by Tag
+2016-05-04 11:16:46 INFO  MainRobot:87 - Finished searching titles by Tag
+2016-05-04 11:16:46 INFO  MainRobot:44 - Iterating over links by file
+2016-05-04 11:16:46 INFO  MainRobot:48 - Started Searching titles by Tag
+2016-05-04 11:16:46 INFO  MainRobot:87 - Finished searching titles by Tag
+2016-05-04 11:16:46 INFO  MainRobot:44 - Iterating over links by file
+2016-05-04 11:16:46 INFO  MainRobot:48 - Started Searching titles by Tag
+2016-05-04 11:16:46 INFO  MainRobot:87 - Finished searching titles by Tag
+2016-05-04 11:21:02 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-05-04 11:21:11 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:21:15 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:21:51 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-05-04 11:21:55 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:21:59 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:22:37 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-05-04 11:22:40 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:22:45 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:27:48 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:27:48 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:27:48 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:27:48 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 11:27:48 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:27:48 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:27:48 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:27:48 INFO  MainRobot:42 - Started Main Robot
+2016-05-04 11:27:48 INFO  MainRobot:45 - Iterating over links by file
+2016-05-04 11:27:48 INFO  MainRobot:49 - Started Searching titles by Tag
+2016-05-04 11:27:48 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 11:27:52 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:27:55 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:27:55 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 11:27:55 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 11:27:55 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 11:27:55 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 11:27:55 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 11:27:55 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 11:27:55 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 11:27:55 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 11:27:55 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 11:27:55 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 11:30:21 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:30:21 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:30:21 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:30:21 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 11:30:21 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:30:21 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:30:21 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:30:21 INFO  MainRobot:42 - Started Main Robot
+2016-05-04 11:30:21 INFO  MainRobot:45 - Iterating over links by file
+2016-05-04 11:30:21 INFO  MainRobot:49 - Started Searching titles by Tag
+2016-05-04 11:30:21 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 11:30:25 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:30:28 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:30:28 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 11:30:28 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 11:30:28 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 11:30:28 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 11:30:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 11:30:28 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 11:30:28 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 11:30:28 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 11:30:28 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 11:30:28 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 11:30:28 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-04 11:30:29 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists books]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists books]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:82)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 11:30:29 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists bookstoreDB]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists bookstoreDB]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:82)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 11:30:29 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists category]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists category]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:82)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 11:30:29 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:82)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 11:30:29 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table bookstoreDB (id integer not null auto_increment, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table bookstoreDB (id integer not null auto_increment, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:82)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 11:30:29 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:82)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 11:30:29 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:82)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 11:30:29 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6175619b'
+2016-05-04 11:30:29 WARN  SqlExceptionHelper:129 - SQL Error: 1146, SQLState: 42S02
+2016-05-04 11:30:29 ERROR SqlExceptionHelper:131 - Table 'books.bookstoreDB' doesn't exist
+2016-05-04 11:31:18 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:31:18 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:31:18 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:31:18 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 11:31:18 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:31:18 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:31:18 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:31:18 INFO  MainRobot:42 - Started Main Robot
+2016-05-04 11:31:18 INFO  MainRobot:45 - Iterating over links by file
+2016-05-04 11:31:18 INFO  MainRobot:49 - Started Searching titles by Tag
+2016-05-04 11:31:18 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 11:31:28 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:31:32 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:31:32 INFO  MainRobot:93 - Finished searching titles by Tag
+2016-05-04 11:31:32 INFO  MainRobot:45 - Iterating over links by file
+2016-05-04 11:31:32 INFO  MainRobot:49 - Started Searching titles by Tag
+2016-05-04 11:31:32 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 11:31:34 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:31:34 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:31:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:23 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:43:23 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:43:23 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:43:23 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 11:43:23 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:43:23 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:43:23 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:43:23 INFO  MainRobot:42 - Started Main Robot
+2016-05-04 11:43:23 INFO  MainRobot:45 - Iterating over links by file
+2016-05-04 11:43:23 INFO  MainRobot:49 - Started Searching titles by Tag
+2016-05-04 11:43:23 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 11:43:33 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:43:37 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:43:37 INFO  MainRobot:93 - Finished searching titles by Tag
+2016-05-04 11:43:37 INFO  MainRobot:45 - Iterating over links by file
+2016-05-04 11:43:37 INFO  MainRobot:49 - Started Searching titles by Tag
+2016-05-04 11:43:37 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 11:43:39 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:43:40 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:43:40 INFO  MainRobot:93 - Finished searching titles by Tag
+2016-05-04 11:43:40 INFO  MainRobot:45 - Iterating over links by file
+2016-05-04 11:43:40 INFO  MainRobot:49 - Started Searching titles by Tag
+2016-05-04 11:43:40 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 11:44:12 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:44:38 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:44:38 INFO  MainRobot:93 - Finished searching titles by Tag
+2016-05-04 11:44:38 INFO  MainRobot:96 - Robot has finished his work
+2016-05-04 11:53:34 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:53:34 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:53:34 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:53:34 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 11:53:34 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:53:34 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:53:34 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:53:34 INFO  MainRobot:42 - Started Main Robot
+2016-05-04 11:53:34 INFO  MainRobot:45 - Iterating over links by file
+2016-05-04 11:53:34 INFO  MainRobot:49 - Started Searching titles by Tag
+2016-05-04 11:53:34 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 11:53:37 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:53:39 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:53:39 INFO  MainRobot:93 - Finished searching titles by Tag
+2016-05-04 11:53:39 INFO  MainRobot:45 - Iterating over links by file
+2016-05-04 11:53:39 INFO  MainRobot:49 - Started Searching titles by Tag
+2016-05-04 11:53:39 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 11:53:41 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:53:42 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:53:42 INFO  MainRobot:93 - Finished searching titles by Tag
+2016-05-04 11:53:42 INFO  MainRobot:45 - Iterating over links by file
+2016-05-04 11:53:42 INFO  MainRobot:49 - Started Searching titles by Tag
+2016-05-04 11:53:42 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 11:54:08 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:54:34 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 ERROR MainRobot:75 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:54:34 INFO  MainRobot:93 - Finished searching titles by Tag
+2016-05-04 11:54:34 INFO  MainRobot:96 - Robot has finished his work
+2016-05-04 11:58:41 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:58:41 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:58:41 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:58:41 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 11:58:41 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 11:58:41 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 11:58:41 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 11:58:41 INFO  MainRobot:44 - Started Main Robot
+2016-05-04 11:58:41 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 11:58:41 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 11:58:41 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 11:58:45 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:58:49 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:58:49 INFO  MainRobot:95 - Finished searching titles by Tag
+2016-05-04 11:58:49 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 11:58:49 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 11:58:49 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 11:58:50 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:58:50 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:58:50 INFO  MainRobot:95 - Finished searching titles by Tag
+2016-05-04 11:58:50 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 11:58:50 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 11:58:50 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 11:59:17 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 11:59:43 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 ERROR MainRobot:77 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 11:59:43 INFO  MainRobot:95 - Finished searching titles by Tag
+2016-05-04 11:59:43 INFO  MainRobot:98 - Robot has finished his work
+2016-05-04 12:00:18 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:00:18 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:00:18 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:00:18 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:00:18 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:00:18 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:00:18 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:00:18 INFO  MainRobot:44 - Started Main Robot
+2016-05-04 12:00:18 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:00:18 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:00:18 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:00:26 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:00:30 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:00:30 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:00:30 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:00:30 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:00:30 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:00:31 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:00:32 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:00:32 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:00:32 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:00:32 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:00:32 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 12:01:00 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:01:29 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:01:29 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:01:29 INFO  MainRobot:99 - Robot has finished his work
+2016-05-04 12:01:43 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:01:43 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:01:43 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:01:43 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:01:43 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:01:43 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:01:43 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:01:43 INFO  MainRobot:44 - Started Main Robot
+2016-05-04 12:01:43 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:01:43 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:01:43 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:01:52 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:01:56 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:01:56 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:01:56 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:01:56 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:01:56 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:01:57 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:01:58 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:01:58 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:01:58 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:01:58 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:01:58 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 12:02:23 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:02:50 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:02:50 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:02:50 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:02:50 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:02:50 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:02:50 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:02:50 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:02:50 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:02:50 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:02:50 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:02:50 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:02:50 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:02:50 INFO  MainRobot:99 - Robot has finished his work
+2016-05-04 12:03:24 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:03:24 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:03:24 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:03:24 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:03:24 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:03:24 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:03:24 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:03:24 INFO  MainRobot:44 - Started Main Robot
+2016-05-04 12:03:24 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:03:24 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:03:24 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:03:27 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:03:30 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:03:30 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:03:30 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:03:30 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:03:30 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:03:32 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:03:33 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:03:33 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:03:33 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:03:33 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:03:33 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 12:03:58 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:04:12 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:04:12 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:04:12 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:04:12 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:04:12 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:04:12 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:04:12 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:04:12 INFO  MainRobot:44 - Started Main Robot
+2016-05-04 12:04:12 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:04:12 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:04:12 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:04:15 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:04:19 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:04:19 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:04:19 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:04:19 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:04:19 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:04:20 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:04:21 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:04:21 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:04:21 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:04:21 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:04:21 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 12:04:48 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:05:16 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:05:16 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:05:16 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:05:16 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:05:16 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:05:16 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:05:16 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:05:16 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:05:16 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:05:16 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:05:16 ERROR MainRobot:78 - class java.lang.NullPointerException in MainRobot, problems with category assignment
+2016-05-04 12:05:16 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:05:16 INFO  MainRobot:99 - Robot has finished his work
+2016-05-04 12:06:42 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:06:42 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:06:42 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:06:42 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:06:42 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:06:42 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:06:42 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:06:42 INFO  MainRobot:44 - Started Main Robot
+2016-05-04 12:06:42 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:06:42 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:06:42 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:06:45 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:06:48 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:06:48 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:06:48 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:06:48 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:06:48 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:06:50 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:06:51 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:06:51 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:06:51 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:06:51 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:06:51 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 12:07:17 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:07:46 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:07:46 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:07:46 INFO  MainRobot:99 - Robot has finished his work
+2016-05-04 12:08:25 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:08:25 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:08:25 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:08:25 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:08:25 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:08:25 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:08:25 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:08:25 INFO  MainRobot:44 - Started Main Robot
+2016-05-04 12:08:25 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:08:25 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:08:25 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:08:33 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:08:36 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:08:36 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:08:36 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:08:36 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:08:36 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:08:38 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:08:39 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:08:39 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:08:39 INFO  MainRobot:47 - Iterating over links by file
+2016-05-04 12:08:39 INFO  MainRobot:51 - Started Searching titles by Tag
+2016-05-04 12:08:39 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 12:09:06 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:09:34 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:09:34 INFO  MainRobot:96 - Finished searching titles by Tag
+2016-05-04 12:09:34 INFO  MainRobot:99 - Robot has finished his work
+2016-05-04 12:12:00 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:12:00 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:12:00 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:12:00 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:12:00 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:12:00 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:12:00 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:12:00 INFO  MainRobot:46 - Started Main Robot
+2016-05-04 12:12:00 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:12:00 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:12:00 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:12:03 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:12:06 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:12:06 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:12:06 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:12:06 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:12:06 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:12:08 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:12:09 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:12:09 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:12:09 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:12:09 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:12:09 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 12:12:36 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:13:03 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:13:03 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:13:03 INFO  MainRobot:101 - Robot has finished his work
+2016-05-04 12:14:52 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:14:52 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:14:52 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:14:52 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:14:52 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:14:52 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:14:52 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:14:52 INFO  MainRobot:46 - Started Main Robot
+2016-05-04 12:14:52 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:14:52 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:14:52 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:14:52 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:14:52 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:14:52 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:14:52 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:14:52 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:14:52 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:14:52 INFO  MainRobot:101 - Robot has finished his work
+2016-05-04 12:15:17 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:15:17 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:15:17 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:15:17 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:15:17 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:15:17 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:15:17 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:15:17 INFO  MainRobot:46 - Started Main Robot
+2016-05-04 12:15:17 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:15:17 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:15:17 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:15:20 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:15:23 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:15:23 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:15:23 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:15:23 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:15:23 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:15:24 ERROR BookTitleSearch:45 - Cannot select link from site: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:15:24 ERROR BookTitleSearch:56 - Other exception while site parsing: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:15:24 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:15:25 ERROR BookTitleSearch:121 - class java.lang.NullPointerException https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:15:25 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:15:25 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:15:25 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:15:25 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:15:25 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 12:15:52 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:16:19 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:16:19 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:16:19 INFO  MainRobot:101 - Robot has finished his work
+2016-05-04 12:25:56 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:25:56 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:25:56 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org booklink title subtitle - -
+2016-05-04 12:25:56 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:25:56 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:25:56 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:25:56 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:25:56 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org booklink title subtitle - -
+2016-05-04 12:25:56 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:25:56 INFO  MainRobot:46 - Started Main Robot
+2016-05-04 12:25:56 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:25:56 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:25:56 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:26:00 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:26:05 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:26:05 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 12:26:05 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 12:26:05 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 12:26:05 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 12:26:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 12:26:05 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 12:26:05 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 12:26:05 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 12:26:05 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 12:26:05 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 12:26:05 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-04 12:26:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists books]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists books]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:26:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists bookstoreDB]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists bookstoreDB]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:26:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists category]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists category]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:26:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:26:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table bookstoreDB (id integer not null auto_increment, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table bookstoreDB (id integer not null auto_increment, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:26:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:26:06 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:26:06 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2f058b8a'
+2016-05-04 12:26:06 WARN  SqlExceptionHelper:129 - SQL Error: 1146, SQLState: 42S02
+2016-05-04 12:26:06 ERROR SqlExceptionHelper:131 - Table 'books.bookstoreDB' doesn't exist
+2016-05-04 12:26:24 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:26:24 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:26:24 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org booklink title subtitle - -
+2016-05-04 12:26:24 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:26:24 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:26:24 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:26:24 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:26:24 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org booklink title subtitle - -
+2016-05-04 12:26:24 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:26:24 INFO  MainRobot:46 - Started Main Robot
+2016-05-04 12:26:24 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:26:24 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:26:24 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:26:27 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:26:30 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:26:30 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:26:30 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:26:30 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:26:30 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:26:31 ERROR BookTitleSearch:45 - Cannot select link from site: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:26:31 ERROR BookTitleSearch:56 - Other exception while site parsing: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:26:31 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:26:32 ERROR BookTitleSearch:121 - class java.lang.NullPointerException https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:26:32 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:26:32 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:26:32 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:26:32 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:26:32 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 12:26:58 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-04 12:27:26 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-04 12:27:26 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:27:26 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:27:26 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:33:04 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:33:04 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:33:04 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org booklink title subtitle - -
+2016-05-04 12:33:04 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:33:04 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:33:04 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:33:04 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:33:04 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org booklink title subtitle - -
+2016-05-04 12:33:04 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:33:04 INFO  MainRobot:46 - Started Main Robot
+2016-05-04 12:33:04 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:33:04 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:33:04 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:33:08 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 12:33:11 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-04 12:33:11 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:33:11 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:33:11 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:33:11 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:33:13 ERROR BookTitleSearch:204 - class org.jsoup.HttpStatusException HTTP error fetching URL. Status=403 on site: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:33:13 ERROR BookTitleSearch:50 - Cannot select link from site: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:33:13 ERROR BookTitleSearch:61 - Other exception while site parsing: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:33:13 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 12:33:13 ERROR BookTitleSearch:204 - class org.jsoup.HttpStatusException HTTP error fetching URL. Status=403 on site: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:33:13 ERROR BookTitleSearch:126 - class java.lang.NullPointerException https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:33:13 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-04 12:33:13 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:33:13 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:33:13 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:33:13 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 12:33:39 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 12:34:05 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-04 12:34:05 INFO  MainRobot:? - Finished searching titles by Tag
+2016-05-04 12:34:05 INFO  MainRobot:? - Iterating over links by file
+2016-05-04 12:34:05 INFO  MainRobot:? - Started Searching titles by Tag
+2016-05-04 12:35:15 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:35:15 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:35:15 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:35:15 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:35:15 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:35:15 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:35:15 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:35:15 INFO  MainRobot:46 - Started Main Robot
+2016-05-04 12:35:15 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:35:15 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:35:15 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:35:24 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 12:35:27 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-04 12:35:27 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:35:27 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:35:27 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:35:27 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:35:28 ERROR BookTitleSearch:204 - class org.jsoup.HttpStatusException HTTP error fetching URL. Status=403 on site: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:35:28 ERROR BookTitleSearch:50 - Cannot select link from site: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:35:28 ERROR BookTitleSearch:61 - Other exception while site parsing: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:35:28 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 12:35:29 ERROR BookTitleSearch:204 - class org.jsoup.HttpStatusException HTTP error fetching URL. Status=403 on site: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:35:29 ERROR BookTitleSearch:126 - class java.lang.NullPointerException https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go
+2016-05-04 12:35:29 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-04 12:35:29 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:35:29 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:35:29 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:35:29 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-04 12:35:55 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 12:36:23 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-04 12:36:23 INFO  MainRobot:98 - Finished searching titles by Tag
+2016-05-04 12:36:23 INFO  MainRobot:101 - Robot has finished his work
+2016-05-04 12:37:10 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:37:10 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:37:10 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:37:10 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-04 12:37:10 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-04 12:37:10 INFO  FileLinkHandler:83 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-04 12:37:10 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-04 12:37:10 INFO  MainRobot:46 - Started Main Robot
+2016-05-04 12:37:10 INFO  MainRobot:49 - Iterating over links by file
+2016-05-04 12:37:10 INFO  MainRobot:53 - Started Searching titles by Tag
+2016-05-04 12:37:10 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-04 12:37:13 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-04 12:37:17 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-04 12:37:17 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-04 12:37:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-04 12:37:17 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-04 12:37:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-04 12:37:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-04 12:37:17 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-04 12:37:17 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-04 12:37:17 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-04 12:37:17 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-04 12:37:17 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-04 12:37:17 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-04 12:37:18 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists books]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists books]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:37:18 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists bookstoreDB]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists bookstoreDB]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:37:18 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [drop table if exists category]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop table if exists category]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:240)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:37:18 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table books (id integer not null auto_increment, Author varchar(255), BookstoreDB tinyblob, CategoryDB varchar(255), Title varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:37:18 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table bookstoreDB (id integer not null auto_increment, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table bookstoreDB (id integer not null auto_increment, bookstoreDB varchar(255), address varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:37:18 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [create table category (id integer not null auto_increment, books tinyblob, category varchar(255), primary key (id))]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:310)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:37:18 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table category add constraint UK_oo4xayr0g0mkbajn7n2m3918u unique (category)]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:408)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:165)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:134)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:148)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.file.FileBookHandler.writeBookToDatabase(FileBookHandler.java:72)
+	at com.epam.robot.MainRobot.main(MainRobot.java:87)
+Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:638)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:606)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:624)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:620)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2720)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2687)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:805)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:785)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 more
+Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:695)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:663)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:653)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:108)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2061)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2014)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1424)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:2710)
+	... 20 more
+2016-05-04 12:37:18 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6175619b'
+2016-05-04 12:37:18 WARN  SqlExceptionHelper:129 - SQL Error: 1146, SQLState: 42S02
+2016-05-04 12:37:18 ERROR SqlExceptionHelper:131 - Table 'books.bookstoreDB' doesn't exist

@@ -132,6 +132,12 @@ public class Library implements List<Book> {
 		return library.subList(fromIndex, toIndex);
 	}
 
+	@Override
+	public String toString() {
+		return "Library [library=" + library + "]";
+	}
+
+	
 	
 	
 }

@@ -20,7 +20,7 @@ public class FileBookHandlerTest {
 
 	/**
 	 * Writing to database test
-	 */
+	 *//*
 	@Test
 	public void testWritingToDatabase() throws Exception {
 
@@ -39,6 +39,6 @@ public class FileBookHandlerTest {
 		session.getTransaction().commit();
 		session.close();
 		
-	}
+	}*/
 	
 }
