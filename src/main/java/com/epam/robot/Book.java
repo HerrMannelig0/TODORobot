@@ -12,8 +12,9 @@ import com.epam.DB.entities.BookstoreDB;
 import com.epam.file.Category;
 
 /**
- * Class contains book definition. 
- * Contains title, author, price, keywords and url of bookstore. 
+ * Class contains book definition. Contains title, author, price, keywords and
+ * url of bookstore.
+ * 
  * @see Keywords
  */
 public class Book {
@@ -23,7 +24,7 @@ public class Book {
 	private URL url;
 	Category bookCategory;
 
-	public Book(String title, String author, String price, Keywords keywords, URL url){
+	public Book(String title, String author, String price, Keywords keywords, URL url) {
 		this.title = title;
 		this.author = author;
 		this.price = price;
@@ -37,27 +38,33 @@ public class Book {
 		this.price = price;
 		this.url = url;
 	}
-	
-	public Book(String title, String author, Keywords keywords){
+
+	public Book(String title, String author, Keywords keywords) {
 		this.title = title;
 		this.author = author;
 		this.keywords = keywords;
 	}
-	
+
 	/**
 	 * Assigning category from table with keywords.
-	 * @param categories to assing to keywords.
-	 * @return Assigned category as string. If no category has been found it returns "No category".
+	 * 
+	 * @param categories
+	 *            to assing to keywords.
+	 * @return Assigned category as string. If no category has been found it
+	 *         returns "No category".
 	 * 
 	 * @see Category
 	 */
 	public Category assignCategory(List<Category> categories) {
+		Category nullCategory = new Category("No category");
+		if (keywords == null)
+			return nullCategory;
 		Category resultCategory = new Category("No category");
 		for (Category category : categories) {
-			if(resultCategory.equals("No category")){
+			if (resultCategory.equals(nullCategory)) {
 				resultCategory = checkCategory(category);
-			}
-			else break;
+			} else
+				break;
 		}
 		bookCategory = resultCategory;
 		return resultCategory;
@@ -65,27 +72,33 @@ public class Book {
 
 	/**
 	 * Checking if given category match to keywords.
-	 * @param category to check
-	 * @return Found category as string. If no category has been found it returns "No category".
+	 * 
+	 * @param category
+	 *            to check
+	 * @return Found category as string. If no category has been found it
+	 *         returns "No category".
 	 */
-	public Category checkCategory(Category category){
-		if(keywords.contains(category.getKeywords())){
-				return category;}
+	public Category checkCategory(Category category) {
+		if (keywords.contains(category.getKeywords())) {
+			return category;
+		}
 		return new Category("No category");
-	}	
-	
+	}
+
 	/**
 	 * Create list of categories, reads them from given file.
-	 * @param file contains list of categories
+	 * 
+	 * @param file
+	 *            contains list of categories
 	 * @return List of categories
 	 * @throws IOException
 	 */
-	List<Category> createCategoryList(File file) throws IOException{
+	List<Category> createCategoryList(File file) throws IOException {
 		Scanner scanner = new Scanner(file);
 		List<Category> categories = new ArrayList<>();
-		while(scanner.hasNextLine()){
+		while (scanner.hasNextLine()) {
 			String nextCategory = scanner.nextLine();
-			String filepath = "src/main/resources/Keywords/" + nextCategory +".txt";
+			String filepath = "src/main/resources/Keywords/" + nextCategory + ".txt";
 			Category category = new Category(nextCategory, filepath);
 			category.create();
 			categories.add(category);
@@ -93,58 +106,114 @@ public class Book {
 		scanner.close();
 		return categories;
 	}
-	
+
 	/**
 	 * This method converts Book object into BookDB
+	 * 
 	 * @return BookDB
 	 */
-	public BookDB convertToBookDB(){
+	public BookDB convertToBookDB() {
 		BookDB bookDB = new BookDB();
 		bookDB.setTitle(title);
 		bookDB.setAuthor(author);
 		bookDB.setCategory(bookCategory.convertToDbCategory());
 		return bookDB;
 	}
-	
+
 	/**
 	 * Extracting BookstoreDB from book's URL.
+	 * 
 	 * @return BookstoreDB
 	 */
-	public BookstoreDB extractBookstoreFromURL(){
+	public BookstoreDB extractBookstoreFromURL() {
 		String urlPath = url.toString();
 		int indexOFFirstDotAppearance = urlPath.indexOf('.');
-		String bookstoreName = urlPath.substring(indexOFFirstDotAppearance+1, urlPath.indexOf('.', indexOFFirstDotAppearance+1));
+		String bookstoreName = urlPath.substring(indexOFFirstDotAppearance + 1,
+				urlPath.indexOf('.', indexOFFirstDotAppearance + 1));
 		return new BookstoreDB(bookstoreName);
 	}
-	
-	@Override
-	public String toString() {
-		if(url == null)
-			return "[" + author + "; " + title + " (price: " + price + ") "  + keywords + " : " + bookCategory +"]" ;
-		return "[" + author + ";" + title + " (price: " + price + ") "  + keywords + " " + url.toString() + " : " + bookCategory + "]" ;	
-	}	
-	
-	
-	
+
 	public String getTitle() {
 		return title;
 	}
-	
+
 	public String getAuthor() {
 		return author;
 	}
-	
+
 	public URL getUrl() {
 		return url;
 	}
-	
+
 	public Category getBookCategory() {
 		return bookCategory;
 	}
-	
+
 	public void setBookCategory(Category category) {
 		this.bookCategory = category;
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((author == null) ? 0 : author.hashCode());
+		result = prime * result + ((bookCategory == null) ? 0 : bookCategory.hashCode());
+		result = prime * result + ((keywords == null) ? 0 : keywords.hashCode());
+		result = prime * result + ((price == null) ? 0 : price.hashCode());
+		result = prime * result + ((title == null) ? 0 : title.hashCode());
+		result = prime * result + ((url == null) ? 0 : url.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Book other = (Book) obj;
+		if (author == null) {
+			if (other.author != null)
+				return false;
+		} else if (!author.equals(other.author))
+			return false;
+		if (bookCategory == null) {
+			if (other.bookCategory != null)
+				return false;
+		} else if (!bookCategory.equals(other.bookCategory))
+			return false;
+		if (keywords == null) {
+			if (other.keywords != null)
+				return false;
+		} else if (!keywords.equals(other.keywords))
+			return false;
+		if (price == null) {
+			if (other.price != null)
+				return false;
+		} else if (!price.equals(other.price))
+			return false;
+		if (title == null) {
+			if (other.title != null)
+				return false;
+		} else if (!title.equals(other.title))
+			return false;
+		if (url == null) {
+			if (other.url != null)
+				return false;
+		} else if (!url.equals(other.url))
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		if (url == null)
+			return "[" + author + "; " + title + " (price: " + price + ") " + keywords + " : " + bookCategory + "]";
+		return "[" + author + ";" + title + " (price: " + price + ") " + keywords + " " + url.toString() + " : "
+				+ bookCategory + "]";
+	}
 
 }

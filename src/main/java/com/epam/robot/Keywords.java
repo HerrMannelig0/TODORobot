@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Wrapper class to set of strings, which can be interpreted as book's keywords.
@@ -47,7 +48,6 @@ public class Keywords extends AbstractSet<String>{
 		return keywords.size();
 	}
 
-	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -58,20 +58,21 @@ public class Keywords extends AbstractSet<String>{
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (!super.equals(obj))
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Keywords other = (Keywords) obj;
-		if (keywords == null) {
-			if (other.keywords != null)
-				return false;
-		} else if (!keywords.equals(other.keywords))
-			return false;
+		Keywords otherKeywords = (Keywords) obj;
+		TreeSet<String> thisTree = new TreeSet<>(this);
+		TreeSet<String> otherTree = new TreeSet<>(otherKeywords);
+		
+		Iterator<String> first = thisTree.iterator();
+		Iterator<String> second = otherTree.iterator();
+		
+		while(first.hasNext() && second.hasNext()){
+			if(!(first.next().equals(second.next()))) return false;
+		}
 		return true;
 	}
+
+	
+
 	
 	
 	

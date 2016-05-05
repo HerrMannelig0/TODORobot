@@ -6,6 +6,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -163,13 +164,15 @@ public class BookTest {
 	
 	/**
 	 * Test of assigning category from list to a book
+	 * @throws IOException 
 	 */
 	@Test
-	public void testAssignCategoryToBook() throws Exception {
+	public void testAssignCategoryToBook() throws IOException{
 		Book book = new Book("anyTile", "anyAuthor", new Keywords(new String[]{"vampire"}));
 		File file = new File("src/main/resources/Keywords/Categories.txt");
-		Category category = book.assignCategory(book.createCategoryList(file));
-		assertThat(category).isEqualTo("Fantasy");
+		List<Category> list = book.createCategoryList(file);
+		Category category = book.assignCategory(list);
+		assertThat(category).isEqualTo(new Category("Fantasy"));
 	}
 	
 	/**

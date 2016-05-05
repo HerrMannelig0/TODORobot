@@ -16,7 +16,15 @@ public class CategoryUtil {
 	}
 
 	static Map<Category, List<Book>> generateMapFromAllBooksLibrary(Library library) {
-		Map<Category, List<Book>> map = library.stream().collect(Collectors.groupingBy(Book::getBookCategory));
+		
+		Library properLib = new Library();
+		for (Book book : library) {
+			if(book.getBookCategory() != null) properLib.add(book);
+		}
+		
+		Map<Category, List<Book>> map = properLib.stream().collect(Collectors.groupingBy(Book::getBookCategory));
+		
+		
 		return map;
 	}
 }

@@ -21804,3 +21804,466 @@ Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
 2016-05-05 08:25:48 INFO  connections:141 - HHH10001003: Autocommit mode: false
 2016-05-05 08:25:48 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
 2016-05-05 08:25:48 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-05 10:41:04 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-05-05 10:41:07 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 10:41:11 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 10:41:11 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 10:41:11 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 10:41:11 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 10:41:11 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 10:41:11 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-05 10:41:11 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-05 10:41:12 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-05 10:41:12 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-05 10:41:12 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-05 10:41:12 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-05-05 10:44:52 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 10:44:52 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 10:44:52 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 10:44:52 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 10:44:52 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-05 10:44:52 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 10:44:52 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 10:44:52 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 10:44:52 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 10:44:52 INFO  MainRobot:38 - Started Main Robot
+2016-05-05 10:44:52 INFO  MainRobot:40 - Iterating over links by file
+2016-05-05 10:44:52 INFO  MainRobot:44 - Started Searching titles by Tag
+2016-05-05 10:44:52 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-05-05 12:12:54 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f9d02cb: startup date [Thu May 05 12:12:54 CEST 2016]; root of context hierarchy
+2016-05-05 12:12:54 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 12:12:54 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 12:12:54 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 12:12:54 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 12:30:56 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f9d02cb: startup date [Thu May 05 12:30:56 CEST 2016]; root of context hierarchy
+2016-05-05 12:30:56 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 12:30:56 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 12:30:56 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 12:30:56 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 12:32:23 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f9d02cb: startup date [Thu May 05 12:32:23 CEST 2016]; root of context hierarchy
+2016-05-05 12:32:23 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 12:32:23 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 12:32:23 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 12:32:23 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 12:33:33 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f9d02cb: startup date [Thu May 05 12:33:33 CEST 2016]; root of context hierarchy
+2016-05-05 12:33:33 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 12:33:33 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 12:33:33 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 12:33:33 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 12:36:33 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@765d7657: startup date [Thu May 05 12:36:33 CEST 2016]; root of context hierarchy
+2016-05-05 12:36:34 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 12:36:34 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 12:36:34 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 12:36:34 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 12:37:26 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3b22cdd0: startup date [Thu May 05 12:37:26 CEST 2016]; root of context hierarchy
+2016-05-05 12:37:26 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 12:37:26 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 12:37:26 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 12:37:26 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:31:23 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f9d02cb: startup date [Thu May 05 13:31:23 CEST 2016]; root of context hierarchy
+2016-05-05 13:31:24 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 13:31:24 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 13:31:24 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 13:31:24 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:31:24 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-05 13:31:24 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 13:31:24 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 13:31:24 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 13:31:24 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:43:45 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 13:43:45 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 13:43:45 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 13:43:45 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:43:45 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-05 13:43:45 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 13:43:45 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 13:43:45 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 13:43:45 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:43:45 INFO  MainRobot:37 - Started Main Robot
+2016-05-05 13:43:45 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 13:43:45 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 13:43:45 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-05-05 13:43:52 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 13:43:54 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 13:43:54 INFO  MainRobot:71 - Finished searching titles by Tag
+2016-05-05 13:43:54 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 13:43:54 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 13:43:54 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-05 13:44:20 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 13:44:47 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 13:45:44 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 13:45:44 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 13:45:44 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 13:45:44 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:45:44 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-05 13:45:44 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 13:45:44 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 13:45:44 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 13:45:44 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:45:44 INFO  MainRobot:37 - Started Main Robot
+2016-05-05 13:45:44 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 13:45:44 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 13:45:44 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-05-05 13:45:49 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 13:45:54 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 13:45:54 INFO  MainRobot:71 - Finished searching titles by Tag
+2016-05-05 13:45:54 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 13:45:54 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 13:45:54 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-05 13:46:20 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 13:46:46 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 13:49:18 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 13:49:18 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 13:49:18 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 13:49:18 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:49:18 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-05 13:49:18 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 13:49:18 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 13:49:18 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 13:49:18 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:49:18 INFO  MainRobot:37 - Started Main Robot
+2016-05-05 13:49:18 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 13:49:18 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 13:49:18 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-05-05 13:49:26 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 13:49:31 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 13:49:31 INFO  MainRobot:71 - Finished searching titles by Tag
+2016-05-05 13:49:31 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 13:49:31 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 13:49:31 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-05 13:50:00 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 13:50:26 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 13:53:08 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 13:53:08 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 13:53:08 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 13:53:08 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:53:08 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-05 13:53:08 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 13:53:08 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 13:53:08 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 13:53:08 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:53:08 INFO  MainRobot:37 - Started Main Robot
+2016-05-05 13:53:08 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 13:53:08 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 13:53:08 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-05-05 13:53:12 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 13:53:14 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 13:53:14 INFO  MainRobot:71 - Finished searching titles by Tag
+2016-05-05 13:53:14 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 13:53:14 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 13:53:14 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-05 13:53:43 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 13:54:12 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 13:54:12 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-05 13:54:12 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-05 13:54:12 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-05 13:54:12 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-05 13:54:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-05 13:54:12 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-05 13:54:12 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-05 13:54:12 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-05 13:54:12 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-05 13:54:12 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-05 13:57:21 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 13:57:21 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 13:57:21 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 13:57:21 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:57:21 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-05 13:57:21 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 13:57:21 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 13:57:21 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 13:57:21 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 13:57:21 INFO  MainRobot:37 - Started Main Robot
+2016-05-05 13:57:21 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 13:57:21 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 13:57:21 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-05-05 13:57:26 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 13:57:28 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 13:57:28 INFO  MainRobot:71 - Finished searching titles by Tag
+2016-05-05 13:57:28 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 13:57:28 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 13:57:28 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-05 13:57:55 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 13:58:21 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 13:58:21 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-05 13:58:21 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-05 13:58:21 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-05 13:58:21 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-05 13:58:21 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-05 13:58:21 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-05 13:58:21 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-05 13:58:21 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-05 13:58:21 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-05 13:58:21 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-05 13:58:21 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-05 14:05:14 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 14:05:14 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 14:05:14 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 14:05:14 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 14:05:14 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-05 14:05:14 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 14:05:14 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 14:05:14 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 14:05:14 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 14:05:14 INFO  MainRobot:37 - Started Main Robot
+2016-05-05 14:05:14 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 14:05:14 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 14:05:14 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-05-05 14:05:18 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 14:05:20 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 14:05:20 INFO  MainRobot:71 - Finished searching titles by Tag
+2016-05-05 14:05:20 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 14:05:20 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 14:05:20 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-05 14:05:46 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 14:06:15 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 14:06:15 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-05 14:06:15 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-05 14:06:15 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-05 14:06:15 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-05 14:06:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-05 14:06:16 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-05 14:06:16 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-05 14:06:16 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-05 14:06:16 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-05 14:06:16 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-05 14:06:16 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-05 14:14:55 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 14:14:55 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 14:14:55 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 14:14:55 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 14:14:55 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-05 14:14:55 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 14:14:55 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 14:14:55 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 14:14:55 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 14:14:55 INFO  MainRobot:37 - Started Main Robot
+2016-05-05 14:14:55 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 14:14:55 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 14:14:55 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-05-05 14:14:58 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 14:15:00 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 14:15:00 INFO  MainRobot:71 - Finished searching titles by Tag
+2016-05-05 14:15:00 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 14:15:00 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 14:15:00 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-05 14:15:28 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 14:16:00 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 14:16:00 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-05 14:16:00 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-05 14:16:00 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-05 14:16:00 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-05 14:16:00 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-05 14:16:00 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-05 14:16:00 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-05 14:16:00 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-05 14:16:00 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-05 14:16:00 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-05 14:16:01 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-05 14:22:13 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 14:22:13 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 14:22:13 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 14:22:13 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 14:22:13 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-05 14:22:13 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 14:22:13 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 14:22:13 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 14:22:13 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 14:22:13 INFO  MainRobot:37 - Started Main Robot
+2016-05-05 14:22:13 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 14:22:13 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 14:22:13 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-05-05 14:22:27 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 14:22:29 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 14:22:30 INFO  MainRobot:71 - Finished searching titles by Tag
+2016-05-05 14:22:30 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 14:22:30 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 14:22:30 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-05 14:23:00 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 14:23:30 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 14:23:30 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-05 14:23:30 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-05 14:23:30 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-05 14:23:30 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-05 14:23:30 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-05 14:23:30 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-05 14:23:30 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-05 14:23:30 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-05 14:23:30 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-05 14:23:30 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-05 14:23:31 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-05 14:23:31 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table category_books drop foreign key FKpod1unhu8uvytmd8bleq63gxu]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table category_books drop foreign key FKpod1unhu8uvytmd8bleq63gxu]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:43)
+	at com.epam.robot.MainRobot.main(MainRobot.java:67)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'finalRobot.category_books' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:840)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:740)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 17 more
+2016-05-05 14:23:31 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table category_books drop foreign key FKaausq9cnl5vdi969onvgeabmt]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table category_books drop foreign key FKaausq9cnl5vdi969onvgeabmt]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.epam.DB.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)
+	at com.epam.DB.HibernateUtil.<clinit>(HibernateUtil.java:8)
+	at com.epam.DB.ManageCategoriesAndBookstores.setDatabase(ManageCategoriesAndBookstores.java:43)
+	at com.epam.robot.MainRobot.main(MainRobot.java:67)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'finalRobot.category_books' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:840)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:740)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 17 more
+2016-05-05 14:23:31 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4acf72b6'
+2016-05-05 14:23:31 INFO  MainRobot:71 - Finished searching titles by Tag
+2016-05-05 14:23:31 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 14:23:31 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 14:23:31 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-05 14:23:39 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 14:23:42 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 14:23:42 ERROR SessionImpl:3166 - HHH000346: Error during managed flush [object references an unsaved transient instance - save the transient instance before flushing: com.epam.DB.entities.BookDB]
+2016-05-05 14:28:59 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 14:28:59 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 14:28:59 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 14:28:59 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 14:28:59 INFO  FileLinkHandler:24 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-05 14:28:59 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 14:28:59 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 14:28:59 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 14:28:59 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 14:28:59 INFO  MainRobot:37 - Started Main Robot
+2016-05-05 14:28:59 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 14:28:59 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 14:28:59 INFO  BookTitleSearch:111 - Started searching Titles for adress =  https://www.goodreads.com/genres/business
+2016-05-05 14:29:03 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 14:29:05 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 14:29:05 INFO  MainRobot:71 - Finished searching titles by Tag
+2016-05-05 14:29:05 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 14:29:05 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 14:29:05 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
+2016-05-05 14:29:32 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 14:29:58 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 14:29:58 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-05 14:29:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-05 14:29:58 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-05 14:29:58 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-05 14:29:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-05 14:29:59 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-05 14:29:59 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-05 14:29:59 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-05 14:29:59 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-05 14:29:59 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-05 14:29:59 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-05 14:30:00 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1716e8c5'
+2016-05-05 14:30:00 INFO  MainRobot:71 - Finished searching titles by Tag
+2016-05-05 14:30:00 INFO  MainRobot:39 - Iterating over links by file
+2016-05-05 14:30:00 INFO  MainRobot:43 - Started Searching titles by Tag
+2016-05-05 14:30:00 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-05 14:30:10 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 14:30:14 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 15:14:28 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5ab956d7: startup date [Thu May 05 15:14:28 CEST 2016]; root of context hierarchy
+2016-05-05 15:14:28 WARN  AnnotationConfigApplicationContext:546 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'list of categories' defined in com.epam.robot.CrawlerBeans: Unsatisfied dependency expressed through constructor argument with index 1 of type [java.io.File]: No qualifying bean of type [java.io.File] is defined: expected single matching bean but found 2: categoriesFile,addressFile; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [java.io.File] is defined: expected single matching bean but found 2: categoriesFile,addressFile
+2016-05-05 15:22:39 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5ab956d7: startup date [Thu May 05 15:22:39 CEST 2016]; root of context hierarchy
+2016-05-05 15:22:39 WARN  AnnotationConfigApplicationContext:546 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'listofcategories' defined in com.epam.robot.CrawlerBeans: Unsatisfied dependency expressed through constructor argument with index 1 of type [java.io.File]: No qualifying bean of type [java.io.File] is defined: expected single matching bean but found 2: categoriesFile,addressFile; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [java.io.File] is defined: expected single matching bean but found 2: categoriesFile,addressFile
+2016-05-05 15:25:08 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5ab956d7: startup date [Thu May 05 15:25:08 CEST 2016]; root of context hierarchy
+2016-05-05 15:25:08 WARN  AnnotationConfigApplicationContext:546 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'listofcategories' defined in com.epam.robot.LibraryBeans: Unsatisfied dependency expressed through constructor argument with index 1 of type [java.io.File]: No qualifying bean of type [java.io.File] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.io.File] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+2016-05-05 15:31:32 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5ab956d7: startup date [Thu May 05 15:31:32 CEST 2016]; root of context hierarchy
+2016-05-05 15:33:16 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5ab956d7: startup date [Thu May 05 15:33:16 CEST 2016]; root of context hierarchy
+2016-05-05 15:35:54 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5ab956d7: startup date [Thu May 05 15:35:54 CEST 2016]; root of context hierarchy
+2016-05-05 15:40:22 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5ab956d7: startup date [Thu May 05 15:40:22 CEST 2016]; root of context hierarchy
+2016-05-05 15:43:16 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@738dc9b: startup date [Thu May 05 15:43:16 CEST 2016]; root of context hierarchy
+2016-05-05 15:46:06 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@21282ed8: startup date [Thu May 05 15:46:06 CEST 2016]; root of context hierarchy
+2016-05-05 15:50:46 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2794eab6: startup date [Thu May 05 15:50:46 CEST 2016]; root of context hierarchy
+2016-05-05 15:51:45 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4f9a3314: startup date [Thu May 05 15:51:45 CEST 2016]; root of context hierarchy
+2016-05-05 15:57:24 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2794eab6: startup date [Thu May 05 15:57:24 CEST 2016]; root of context hierarchy
+2016-05-05 15:57:37 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4f9a3314: startup date [Thu May 05 15:57:37 CEST 2016]; root of context hierarchy
+2016-05-05 16:02:17 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7671cb68: startup date [Thu May 05 16:02:17 CEST 2016]; root of context hierarchy
+2016-05-05 16:02:17 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 16:02:17 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 16:02:17 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 16:02:17 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 16:02:19 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-05-05 16:02:23 INFO  BookTitleSearch:119 - Started iterating over links to search titles
+2016-05-05 16:02:28 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 16:02:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-05 16:02:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-05 16:02:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-05 16:02:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-05 16:02:28 INFO  FileLinkHandler:83 - New link get from file: kotek 1 2 3 4 5
+2016-05-05 16:02:28 INFO  FileLinkHandler:42 - Link list has been written into file
+2016-05-05 16:02:28 INFO  FileLinkHandler:83 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-05 16:02:28 INFO  FileLinkHandler:83 - New link get from file: https://www.goodreads.com/genres/business class bookTitle - - -
+2016-05-05 16:02:28 INFO  FileLinkHandler:83 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-05 16:02:28 INFO  FileLinkHandler:83 - New link get from file: http://www.nexto.pl/ebooki_c1015.xml?_order=2#filters class title - - -
+2016-05-05 16:02:28 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3aaf4f07: startup date [Thu May 05 16:02:28 CEST 2016]; root of context hierarchy
+2016-05-05 16:24:11 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c1a5b54: startup date [Thu May 05 16:24:11 CEST 2016]; root of context hierarchy
+2016-05-05 16:25:43 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c1a5b54: startup date [Thu May 05 16:25:43 CEST 2016]; root of context hierarchy
+2016-05-05 16:26:54 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2794eab6: startup date [Thu May 05 16:26:54 CEST 2016]; root of context hierarchy
+2016-05-05 16:27:19 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2794eab6: startup date [Thu May 05 16:27:19 CEST 2016]; root of context hierarchy
+2016-05-05 16:29:48 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4f9a3314: startup date [Thu May 05 16:29:48 CEST 2016]; root of context hierarchy
+2016-05-05 16:30:01 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2794eab6: startup date [Thu May 05 16:30:01 CEST 2016]; root of context hierarchy
+2016-05-05 16:30:34 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2794eab6: startup date [Thu May 05 16:30:34 CEST 2016]; root of context hierarchy
+2016-05-05 16:33:53 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2794eab6: startup date [Thu May 05 16:33:53 CEST 2016]; root of context hierarchy
+2016-05-05 16:33:53 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2794eab6: startup date [Thu May 05 16:33:53 CEST 2016]; root of context hierarchy
+2016-05-05 16:34:53 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2794eab6: startup date [Thu May 05 16:34:53 CEST 2016]; root of context hierarchy
+2016-05-05 16:34:53 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2794eab6: startup date [Thu May 05 16:34:53 CEST 2016]; root of context hierarchy
+2016-05-05 16:35:47 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2794eab6: startup date [Thu May 05 16:35:47 CEST 2016]; root of context hierarchy
+2016-05-05 16:35:47 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2794eab6: startup date [Thu May 05 16:35:47 CEST 2016]; root of context hierarchy
+2016-05-05 16:38:31 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4f9a3314: startup date [Thu May 05 16:38:31 CEST 2016]; root of context hierarchy
+2016-05-05 16:38:31 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4f9a3314: startup date [Thu May 05 16:38:31 CEST 2016]; root of context hierarchy
+2016-05-05 16:39:08 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c1a5b54: startup date [Thu May 05 16:39:08 CEST 2016]; root of context hierarchy
+2016-05-05 16:39:08 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c1a5b54: startup date [Thu May 05 16:39:08 CEST 2016]; root of context hierarchy

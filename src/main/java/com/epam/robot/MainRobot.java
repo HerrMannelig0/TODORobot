@@ -28,7 +28,6 @@ public class MainRobot {
 
     /**
      * Main method of crawler.
-     * @throws FileNotFoundException
      */
     public static void main(String[] args) {
 
@@ -75,6 +74,7 @@ public class MainRobot {
         logger.info("Robot has finished his work");
     }
 
+    
 
     private static List<Link> createListOfLinks() {
         try {
@@ -96,6 +96,7 @@ public class MainRobot {
         } catch (FileNotFoundException e) {
             logger.error("Cannot find file: " + fileName);
         }
+        
     }
 
 }

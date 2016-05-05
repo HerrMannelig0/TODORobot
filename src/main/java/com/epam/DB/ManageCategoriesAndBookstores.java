@@ -49,17 +49,17 @@ public class ManageCategoriesAndBookstores {
 
             CategoryDB categoryDB = new CategoryDB();
             categoryDB.setName(category.getName());
+            
             ArrayList<BookDB> bookDBList = (ArrayList<BookDB>) lib.convertToDBList();
             categoryDB.setListOfBooks(bookDBList);
-
             session.beginTransaction();
             session.save(categoryDB);
+            session.flush();
+    		session.clear();
             session.getTransaction().commit();
             logger.info("database entries: List<BookDAO> for Categories and Categories itself.");
-
-            session.close();
         }
-
+        session.close();
     }
 
     private static List<String> entriesFetcher(String fileName) {

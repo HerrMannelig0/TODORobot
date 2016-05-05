@@ -1,12 +1,17 @@
 package com.epam.robot;
 
 import com.epam.DB.entities.BookDB;
+import com.epam.file.Category;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Library implements List<Book> {
 	private List<Book> library;
@@ -145,6 +150,20 @@ public class Library implements List<Book> {
 	@Override
 	public String toString() {
 		return "Library [library=" + library + "]";
+	}
+
+	public void assignCategoryForAllBooks() {
+		if(library == null) throw new IllegalStateException();
+		
+		ApplicationContext context = new AnnotationConfigApplicationContext(LibraryBeans.class);
+		Book dumbBook = context.getBean(Book.class);
+		File categoriesFile = (File) context.getBean("categoriesFile");
+		
+		@SuppressWarnings("unchecked")
+		List<Category> categories = (List<Category>) context.getBean("listofcategories", dumbBook, categoriesFile); 
+		
+		library.stream().forEach(book -> book.assignCategory(categories));
+		((AnnotationConfigApplicationContext)context).close();
 	}
 
 	

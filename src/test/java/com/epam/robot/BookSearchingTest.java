@@ -113,11 +113,7 @@ public class BookSearchingTest {
 		assertThat(library.size()).isGreaterThan(0);	
 	}
 
-	@Test
-	public void testParsingHTMLToDoc() throws Exception {
-		String address = "https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go";
-		Document doc = Jsoup.parse(new URL(address), 100000);
-	}
+	
 	
 	
 }
