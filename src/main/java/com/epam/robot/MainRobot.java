@@ -1,7 +1,6 @@
 package com.epam.robot;
 
 import com.epam.DB.ManageCategoriesAndBookstores;
-import com.epam.file.FileBookHandler;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
 import com.epam.util.CategoryUtil;

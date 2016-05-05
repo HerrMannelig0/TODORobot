@@ -2,8 +2,11 @@ package com.epam.GUI.view;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
+import org.apache.commons.io.IOUtils;
+import sun.nio.ch.IOUtil;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
@@ -20,12 +23,10 @@ public class OpenLogFileController {
     private String readLogs() {
         String result = "";
         String fileName = "logging.log";
-
+        ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         //read file into stream, try-with-resources
-        try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
-
-            stream.forEach(e -> logFile.append(e + "\n"));
-            result = logFile.toString();
+        try (InputStream stream = classloader.getResourceAsStream(fileName)) {
+            result = IOUtils.toString(stream);
             return result;
 
         } catch (IOException e) {

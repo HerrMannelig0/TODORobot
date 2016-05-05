@@ -21793,3 +21793,14 @@ Caused by: java.sql.SQLException: Unknown system variable 'tx_read_only'
 2016-05-04 17:49:59 INFO  BookTitleSearch:111 - Started searching Titles for adress =  http://www.allitebooks.com/
 2016-05-04 17:50:28 INFO  BookTitleSearch:119 - Started iterating over links to search titles
 2016-05-04 17:50:55 INFO  BookTitleSearch:130 - Finished iterating over links to search titles
+2016-05-05 08:25:47 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-05 08:25:47 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-05 08:25:47 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-05 08:25:47 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-05 08:25:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-05 08:25:48 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-05 08:25:48 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/books??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-05 08:25:48 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-05 08:25:48 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-05 08:25:48 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-05 08:25:48 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect

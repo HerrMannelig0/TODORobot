@@ -2,8 +2,10 @@ package com.epam.GUI.view;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
+import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
@@ -23,16 +25,14 @@ public class ReadmeController {
      * It is not thrown at my home computer (Win7). Need to examine that.
      * @return
      */
-    @Deprecated
     private String readReadme() {
         String result = "";
         String fileName = "README.md";
 
-        //read file into stream, try-with-resources
-        try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
-
-            stream.forEach(e -> readmeFile.append(e + "\n"));
-            result = readmeFile.toString();
+        ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+        //InputStream and IOUtils used because files are in resources dir. Without that you get exception java.nio.file.NoSuchFileException
+        try (InputStream stream = classloader.getResourceAsStream(fileName)) {
+            result = IOUtils.toString(stream);
             return result;
 
         } catch (IOException e) {
@@ -41,16 +41,10 @@ public class ReadmeController {
         return result;
     }
 
-    private String readReadmeImper (){
-        String result = "kotek";
-
-        return result;
-    }
-
     @FXML
     void initialize() {
         ReadmeController initReadme = new ReadmeController();
-        String readmeContent = initReadme.readReadmeImper();
+        String readmeContent = initReadme.readReadme();
         readme.setWrapText(true);
         System.out.println(readmeFile);
         readme.setText(readmeContent);
