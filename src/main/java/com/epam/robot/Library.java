@@ -1,8 +1,5 @@
 package com.epam.robot;
 
-import com.epam.DB.entities.BookDB;
-import com.epam.file.Category;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,6 +9,11 @@ import java.util.ListIterator;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.epam.DAO.BookToDB;
+import com.epam.DAO.LibraryDB;
+import com.epam.DB.entities.BookDB;
+import com.epam.file.Category;
 
 public class Library implements List<Book> {
 	private List<Book> library;
@@ -166,6 +168,21 @@ public class Library implements List<Book> {
 		((AnnotationConfigApplicationContext)context).close();
 	}
 
+	public LibraryDB convertToLibraryDB(){
+		LibraryDB libraryDB = new LibraryDB();
+		for (Book book : library) {
+			libraryDB.add(book.toDB());
+		}
+		return libraryDB;
+	}
+	
+	public List<BookToDB> convertToListToDB(){
+		List<BookToDB> list = new ArrayList<>();
+		for (Book book : library) {
+			list.add(book.toDB());
+		}
+		return list;
+	}
 	
 	
 	

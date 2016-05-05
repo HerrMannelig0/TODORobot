@@ -2,14 +2,17 @@ package com.epam.robot;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.Writer;
 import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.epam.DAO.DBWriter;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
+import com.epam.util.CategoryUtil;
 
 public class NewRobot {
 
@@ -50,6 +53,11 @@ public class NewRobot {
 			library.assignCategoryForAllBooks();
 			
 			logger.info("Crawling finished");
+			
+			System.err.println(library);
+			LibrariesMap librariesMap = CategoryUtil.generateLibrariesMapfromLibrary(library);
+			DBWriter dbWriter = new DBWriter();
+			dbWriter.write(librariesMap.toDB());
 		}
 
 		private List<Link> generateListOfLinksFromDefaultAddressFile() {

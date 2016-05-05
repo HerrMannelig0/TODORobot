@@ -79,8 +79,8 @@ public class BookDB implements Serializable {
 		return category;
 	}
 
-	public void setCategory(CategoryDB category) {
-		this.category = category;
+	public void setCategory(CategoryDB categoryDB) {
+		this.category = categoryDB;
 	}
 
 

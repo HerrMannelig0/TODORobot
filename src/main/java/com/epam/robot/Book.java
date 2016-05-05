@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import com.epam.DAO.BookToDB;
 import com.epam.DB.entities.BookDB;
 import com.epam.DB.entities.BookstoreDB;
 import com.epam.file.Category;
@@ -119,6 +120,8 @@ public class Book {
 		bookDB.setCategory(bookCategory.convertToDbCategory());
 		return bookDB;
 	}
+	
+	
 
 	/**
 	 * Extracting BookstoreDB from book's URL.
@@ -214,6 +217,12 @@ public class Book {
 			return "[" + author + "; " + title + " (price: " + price + ") " + keywords + " : " + bookCategory + "]";
 		return "[" + author + ";" + title + " (price: " + price + ") " + keywords + " " + url.toString() + " : "
 				+ bookCategory + "]";
+	}
+
+	public BookToDB toDB() {
+		BookToDB bookToDB = new BookToDB(title, author);
+		return bookToDB;
+		
 	}
 
 }

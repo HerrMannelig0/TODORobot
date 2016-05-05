@@ -1,6 +1,6 @@
 package com.epam.file;
 
-import com.epam.DB.entities.CategoryDB;
+import com.epam.DAO.CategoryDB;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -89,14 +89,18 @@ public class Category  {
 	public void addKeyword(String... category) {
 		keywords.addAll(Arrays.asList(category));		
 	}
+	
+	public CategoryDB toDB(){
+		return new CategoryDB(name);
+	}
 
 	@Override
 	public String toString(){
 		return name;
 	}
 
-	public CategoryDB convertToDbCategory(){
-		CategoryDB categoryDB = new CategoryDB();
+	public com.epam.DB.entities.CategoryDB convertToDbCategory(){
+		com.epam.DB.entities.CategoryDB categoryDB = new com.epam.DB.entities.CategoryDB();
 		categoryDB.setName(name);
 		return categoryDB;
 	}

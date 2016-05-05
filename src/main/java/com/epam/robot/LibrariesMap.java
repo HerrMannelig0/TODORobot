@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import com.epam.DAO.CategoryDB;
+import com.epam.DAO.LibraryDB;
 import com.epam.file.Category;
 
 /*package com.epam.robot;
@@ -106,6 +108,14 @@ public class LibrariesMap implements Map<Category, Library> {
 	@Override
 	public Set<java.util.Map.Entry<Category, Library>> entrySet() {
 		return map.entrySet();
+	}
+	
+	public Map<CategoryDB, LibraryDB> toDB(){
+		Map<CategoryDB, LibraryDB> mapDB = new HashMap<>();
+		for (Map.Entry<Category, Library> entry : map.entrySet()) {
+			mapDB.put(entry.getKey().toDB(), entry.getValue().convertToLibraryDB());
+		}
+		return mapDB;
 	}
 
 }
