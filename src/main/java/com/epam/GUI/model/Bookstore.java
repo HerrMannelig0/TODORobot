@@ -1,7 +1,6 @@
 package com.epam.GUI.model;
 
-import com.epam.DB.DAO;
-import com.epam.DB.ManageCategoriesAndBookstores;
+import com.epam.DB.DBDAO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -25,7 +24,7 @@ public class Bookstore {
      * @return
      */
     ArrayList<String> initBookstores() {
-        DAO dao = new DAO();
+        DBDAO dao = new DBDAO();
         return (ArrayList<String>) dao.listOfBookstoresForGUI();
     }
 
