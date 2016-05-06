@@ -1,5 +1,7 @@
 package com.epam.DAO;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import org.hibernate.Session;
@@ -9,15 +11,26 @@ public class DBWriter {
 
 	public void write(Map<CategoryDB, LibraryDB> map) {
 
+		//CategoriesToDB categoriesToDB = new CategoriesToDB();
+		
+		List<CategoriesToDB> categoriesToDBList = new ArrayList<>();
+		
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
 
 		for (Map.Entry<CategoryDB, LibraryDB> entry : map.entrySet()) {
-			for (BookToDB book : entry.getValue()) {
+			LibraryDB libraryDB = entry.getValue();
+			CategoryDB categoryDB = entry.getKey();
+			
+			for (BookToDB book : libraryDB) {
 				session.save(book);
 			}
-			session.save(entry.getKey());
+			
+			CategoriesToDB categoriesToDB = new CategoriesToDB();
+			categoriesToDB.setLibrary(libraryDB);
+			categoriesToDB.setCategory(categoryDB.getName());
+			session.save(categoriesToDB);
 		}
 
 		session.getTransaction().commit();
