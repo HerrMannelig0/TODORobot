@@ -1,11 +1,12 @@
 package com.epam.util;
 
-import java.util.Arrays;
-import java.util.List;
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.util.Map;
+import java.util.Set;
 
 import org.testng.annotations.Test;
-import static org.assertj.core.api.Assertions.assertThat;
+
 import com.epam.file.Category;
 import com.epam.robot.Book;
 import com.epam.robot.Keywords;
@@ -30,7 +31,7 @@ public class TestCategoryUtil {
 		library.add(book2);
 		library.add(book3);
 		
-		Map<Category, List<Book>> map = CategoryUtil.generateMapFromAllBooksLibrary(library);
+		Map<Category, Set<Book>> map = CategoryUtil.generateMapFromAllBooksLibrary(library);
 		assertThat(map.size()).isEqualTo(2);
 	}
 	

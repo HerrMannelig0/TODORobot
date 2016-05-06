@@ -40,9 +40,9 @@ public class LibrariesMap implements Map<Category, Library> {
 	 * @param Map with String as key and List of Books as value
 	 * @return this
 	 */
-	public static LibrariesMap generateFrom(Map<Category, List<Book>> map) {
+	public static LibrariesMap generateFrom(Map<Category, Set<Book>> map) {
 		LibrariesMap librariesMap = new LibrariesMap();
-		for (Map.Entry<Category, List<Book>> entry : map.entrySet()) {
+		for (Map.Entry<Category, Set<Book>> entry : map.entrySet()) {
 			Category category = entry.getKey();
 			Library library = new Library(entry.getValue());
 			librariesMap.put(category, library);
@@ -113,6 +113,7 @@ public class LibrariesMap implements Map<Category, Library> {
 	public Map<CategoryDB, LibraryDB> toDB(){
 		Map<CategoryDB, LibraryDB> mapDB = new HashMap<>();
 		for (Map.Entry<Category, Library> entry : map.entrySet()) {
+			System.err.println(entry.getValue());
 			mapDB.put(entry.getKey().toDB(), entry.getValue().convertToLibraryDB());
 		}
 		return mapDB;

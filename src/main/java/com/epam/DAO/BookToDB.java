@@ -13,13 +13,15 @@ public class BookToDB {
 	private int id;
 	private String title;
 	private String author;
+	private String bookstore;
 	
 	public BookToDB() {
 	}
 
-	public BookToDB(String title, String author) {
+	public BookToDB(String title, String author, String bookstore) {
 		this.title = title;
 		this.author = author;
+		this.bookstore = bookstore;
 	}
 
 	public int getId() {
@@ -40,6 +42,20 @@ public class BookToDB {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
+
+	public String getBookstore() {
+		return bookstore;
+	}
+
+	public void setBookstore(String bookstore) {
+		this.bookstore = bookstore;
+	}
+
+	@Override
+	public String toString() {
+		return "BookToDB [id=" + id + ", title=" + title + ", author=" + author + ", bookstore=" + bookstore + "]";
+	}
+	
 	
 	
 	

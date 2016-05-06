@@ -121,19 +121,17 @@ public class Book {
 		return bookDB;
 	}
 	
-	
-
 	/**
 	 * Extracting BookstoreDB from book's URL.
 	 * 
 	 * @return BookstoreDB
 	 */
-	public BookstoreDB extractBookstoreFromURL() {
+	public String extractBookstoreFromURL() {
 		String urlPath = url.toString();
 		int indexOFFirstDotAppearance = urlPath.indexOf('.');
 		String bookstoreName = urlPath.substring(indexOFFirstDotAppearance + 1,
 				urlPath.indexOf('.', indexOFFirstDotAppearance + 1));
-		return new BookstoreDB(bookstoreName);
+		return bookstoreName;
 	}
 
 	public String getTitle() {
@@ -220,7 +218,7 @@ public class Book {
 	}
 
 	public BookToDB toDB() {
-		BookToDB bookToDB = new BookToDB(title, author);
+		BookToDB bookToDB = new BookToDB(title, author, extractBookstoreFromURL());
 		return bookToDB;
 		
 	}

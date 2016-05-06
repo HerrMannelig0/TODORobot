@@ -1,7 +1,5 @@
 package com.epam.DAO;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 import org.hibernate.Session;
@@ -10,10 +8,6 @@ import org.hibernate.SessionFactory;
 public class DBWriter {
 
 	public void write(Map<CategoryDB, LibraryDB> map) {
-
-		//CategoriesToDB categoriesToDB = new CategoriesToDB();
-		
-		List<CategoriesToDB> categoriesToDBList = new ArrayList<>();
 		
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();

@@ -108,6 +108,7 @@ public class BookTitleSearch {
 	public  Library searchTitlesInPageAndSubPages(String bookstoreAddressFromTextfile, String typeOfElement,
 			String titleTag, String authorTag, String priceTag, String keywordsTag) {
 		
+		System.err.println("ITERATION : " + bookstoreAddressFromTextfile);
 		logger.info("Started searching Titles for adress =  " + bookstoreAddressFromTextfile);
 
 		resetClassVariables();

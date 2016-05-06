@@ -9,9 +9,9 @@ import com.epam.robot.Library;
 public class DaoTesting {
 	public static void main(String[] args) {
 		
-		LibraryDB libraryDB = new LibraryDB();
+		/*LibraryDB libraryDB = new LibraryDB();
 		CategoryDB categoryDB = new CategoryDB("Fantasy");
-		BookToDB bookToDB = new BookToDB("Hobbit", "Tolkien");
+		BookToDB bookToDB = new BookToDB("Hobbit", "Tolkien", "EMPIK");
 		libraryDB.add(bookToDB);
 		CategoriesToDB categoriesToDB = new CategoriesToDB("Fantasy", libraryDB);
 		
@@ -26,5 +26,9 @@ public class DaoTesting {
 		
 		session.getTransaction().commit();
 		sessionFactory.close();
+		
+		DBReader dbReader = new DBReader(); 
+		dbReader.read();
+		*/
 	}
 }

@@ -60,7 +60,7 @@ public class FileBookHandler {
 	 */
 	public static void writeBookToDatabase(Book book) throws FileNotFoundException {
 
-		BookstoreDB bookstoreDB = book.extractBookstoreFromURL();
+		BookstoreDB bookstoreDB = new BookstoreDB(book.extractBookstoreFromURL());
 
 		BookDB bookToDB = book.convertToBookDB();
 		

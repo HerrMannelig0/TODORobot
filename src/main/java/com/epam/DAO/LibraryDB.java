@@ -136,4 +136,11 @@ public class LibraryDB implements List<BookToDB> {
 		return list.subList(fromIndex, toIndex);
 	}
 
+	@Override
+	public String toString() {
+		return "LibraryDB [list=" + list + "]";
+	}
+
+	
+	
 }
