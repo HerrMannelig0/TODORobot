@@ -8,6 +8,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.apache.log4j.Logger;
 
@@ -15,7 +16,7 @@ import org.apache.log4j.Logger;
 
 public class FileLinkHandler {
 
-	protected List<Link> linkList = new ArrayList<Link>();
+	protected List<Link> linkList = new CopyOnWriteArrayList<Link>();
 	protected List<String> urlList = new ArrayList<String>();
 	private static Logger logger = Logger.getLogger(FileLinkHandler.class);
 

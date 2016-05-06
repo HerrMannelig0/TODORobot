@@ -14,12 +14,12 @@ import com.epam.robot.Library;
 
 public class CategoryUtil {
 
-	public static LibrariesMap generateLibrariesMapfromLibrary(Library library){
+	public static LibrariesMap generateLibrariesMapfromLibrary(Set<Book> library){
 		
 		return LibrariesMap.generateFrom(generateMapFromAllBooksLibrary(library));
 	}
 
-	static Map<Category, Set<Book>> generateMapFromAllBooksLibrary(Library library) {
+	static Map<Category, Set<Book>> generateMapFromAllBooksLibrary(Set<Book> library) {
 		
 		Library properLib = new Library();
 		for (Book book : library) {

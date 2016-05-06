@@ -9,15 +9,14 @@ import org.hibernate.SessionFactory;
 
 public class DBReader {
 	
-	public void readCategory(String category){
+	public void readAll(){
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
 		
-		
-		
-		
-		//System.out.println(l);
+		Query query = session.createQuery("from BookToDB");
+		List<BookToDB> result = query.list();
+		System.out.println(result);
 		
 		sessionFactory.close();
 	}
