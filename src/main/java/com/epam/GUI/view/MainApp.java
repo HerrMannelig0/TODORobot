@@ -24,8 +24,7 @@ public class MainApp extends Application {
         this.primaryStage.setTitle("Bookstore Crawler");
 
         initRootLayout();
-//commented, because DB doesnt work properly
-     //   showBookstoreOverview();
+        showBookstoreOverview();
     }
 
     /**

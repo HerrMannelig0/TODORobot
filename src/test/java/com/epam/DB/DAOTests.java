@@ -10,8 +10,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.testng.annotations.Test;
 
-import static com.oracle.jrockit.jfr.DataType.UTF8;
-import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.File;
 import java.util.List;

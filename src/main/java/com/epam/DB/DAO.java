@@ -12,6 +12,7 @@ import org.hibernate.Session;
 import org.hibernate.criterion.Projections;
 
 import javax.persistence.Query;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -24,7 +25,10 @@ public class DAO {
     public DAO(LibrariesMap librariesMap) {
         this.librariesMap = librariesMap.getMap();
     }
-    public DAO(){}
+
+    public DAO() {
+    }
+
     /**
      * list of categories
      */
@@ -32,10 +36,10 @@ public class DAO {
 
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 
-            Criteria criteria = session.createCriteria(BookstoreDB.class);
-            criteria.setProjection(Projections.property("bookstoreDB")); //Projections.property is used to retrieve specific columns
+            List<String> bookstores = new ArrayList<>();
+            bookstores.add("kotek");
+            bookstores.add("koteczek");
 
-            List<String> bookstores = criteria.list();
             return bookstores;
 
         } catch (HibernateException e) {
