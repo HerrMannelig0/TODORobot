@@ -60,15 +60,9 @@ public class RootLayoutController {
         }
     }
 
-    @FXML
-    private void handleClose(final InputEvent event) {
-
-    }
-
 
     @FXML
     public void initialize(java.net.URL arg0, ResourceBundle arg1) {
-        //menuBar.setFocusTraversable(true);
     }
 
 }

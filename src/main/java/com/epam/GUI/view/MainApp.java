@@ -65,12 +65,6 @@ public class MainApp extends Application {
         }
     }
 
-    /**
-     * Returns the main stage.
-     *
-     * @return
-     */
-
     public static void main(String[] args) {
         launch(args);
     }

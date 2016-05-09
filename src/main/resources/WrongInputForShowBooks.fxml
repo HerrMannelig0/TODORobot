@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="51.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <Text layoutX="8.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Either you choosed no Category or no Bookstore." />
+            <Text layoutX="8.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You need to choose at least one of each type" />
+         </children>
+</AnchorPane>
