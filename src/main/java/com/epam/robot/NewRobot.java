@@ -66,9 +66,9 @@ public class NewRobot {
 			//ConList<Link> links = generateListOfLinksFromDefaultAddressFile();
 
 			// crawling through sites and appending founded books to library
-			/*links.stream().forEach(link -> library.addAll(context.getBean(BookTitleSearch.class)
+			links.stream().forEach(link -> library.addAll(context.getBean(BookTitleSearch.class)
 					.searchTitlesInPageAndSubPages(link.getLinkAdress(), link.getElementType(), link.getTitleTag(),
-							link.getAuthorTag(), link.getPriceTag(), link.getKeywordsTag())));*/
+							link.getAuthorTag(), link.getPriceTag(), link.getKeywordsTag())));
 
 			//links.stream().forEach(link -> new CrawlerCaller(link));
 			

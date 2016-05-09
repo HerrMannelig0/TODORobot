@@ -15,14 +15,13 @@ public class BookstoreDB implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
 
-    @Column(name = "bookstoreDB")
+    @Column(name = "bookstore_name")
     String name;
 
     @Column(name = "address")
     String urlAddress;
 
     @Column(name = "books")
-   // @ElementCollection
     ArrayList<BookDB> listOfBooks;
 
     public BookstoreDB(String bookstoreName) {
@@ -126,6 +125,7 @@ public class BookstoreDB implements Serializable {
 	public String toString() {
 		return "BookstoreDB [id=" + id + ", name=" + name + ", urlAddress=" + urlAddress +"]";
 	}
-    
+
+    public String toStringGUI() {return "Bookstore name: " + name + "\n";}
     
 }

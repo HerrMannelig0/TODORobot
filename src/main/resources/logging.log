@@ -23090,3 +23090,433 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'Boo
 2016-05-09 11:58:04 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
 2016-05-09 11:58:05 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
 2016-05-09 11:58:05 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2ff5a'
+2016-05-09 12:05:29 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c77c2e: startup date [Mon May 09 12:05:29 CEST 2016]; root of context hierarchy
+2016-05-09 12:05:30 INFO  Robot:53 - Start of crawling
+2016-05-09 12:05:30 INFO  FileLinkHandler:84 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-09 12:05:30 INFO  FileLinkHandler:84 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-09 12:05:30 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-09 12:05:30 INFO  FileLinkHandler:84 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-09 12:05:30 INFO  FileLinkHandler:84 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-09 12:05:30 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-09 12:05:30 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-09 12:05:34 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 12:05:34 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 12:05:41 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 12:05:41 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@17d2d88: startup date [Mon May 09 12:05:41 CEST 2016]; root of context hierarchy
+2016-05-09 12:05:41 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@17d2d88: startup date [Mon May 09 12:05:41 CEST 2016]; root of context hierarchy
+2016-05-09 12:05:42 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 12:05:42 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@18f976f: startup date [Mon May 09 12:05:42 CEST 2016]; root of context hierarchy
+2016-05-09 12:05:42 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@18f976f: startup date [Mon May 09 12:05:42 CEST 2016]; root of context hierarchy
+2016-05-09 12:05:42 INFO  Robot:92 - Crawling finished
+2016-05-09 12:05:42 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-09 12:05:42 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-09 12:05:42 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-09 12:05:42 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 12:05:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-09 12:05:42 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 12:05:42 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 12:05:42 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 12:05:42 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 12:05:42 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 12:05:42 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 12:05:43 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1542407'
+2016-05-09 12:05:43 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 12:05:44 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 12:05:44 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 12:05:44 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 12:05:44 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 12:05:44 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 12:05:44 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 12:05:44 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 12:05:44 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1542407'
+2016-05-09 13:09:06 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c77c2e: startup date [Mon May 09 13:09:06 CEST 2016]; root of context hierarchy
+2016-05-09 13:09:07 INFO  Robot:53 - Start of crawling
+2016-05-09 13:09:07 INFO  FileLinkHandler:84 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-09 13:09:07 INFO  FileLinkHandler:84 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-09 13:09:07 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-09 13:09:07 INFO  FileLinkHandler:84 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-09 13:09:07 INFO  FileLinkHandler:84 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-09 13:09:07 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-09 13:09:07 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-09 13:09:10 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 13:09:10 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 13:09:17 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 13:09:17 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fa8101: startup date [Mon May 09 13:09:17 CEST 2016]; root of context hierarchy
+2016-05-09 13:09:17 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fa8101: startup date [Mon May 09 13:09:17 CEST 2016]; root of context hierarchy
+2016-05-09 13:09:17 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 13:09:17 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1f5d3e2: startup date [Mon May 09 13:09:17 CEST 2016]; root of context hierarchy
+2016-05-09 13:09:17 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1f5d3e2: startup date [Mon May 09 13:09:17 CEST 2016]; root of context hierarchy
+2016-05-09 13:09:17 INFO  Robot:92 - Crawling finished
+2016-05-09 13:09:17 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-09 13:09:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-09 13:09:17 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-09 13:09:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 13:09:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-09 13:09:17 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 13:09:17 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:09:17 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 13:09:17 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 13:09:17 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 13:09:18 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 13:09:18 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@147317'
+2016-05-09 13:09:18 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:09:19 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 13:09:19 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 13:09:19 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:09:19 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 13:09:19 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 13:09:19 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 13:09:19 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 13:09:19 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@147317'
+2016-05-09 13:15:27 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c77c2e: startup date [Mon May 09 13:15:27 CEST 2016]; root of context hierarchy
+2016-05-09 13:15:27 INFO  Robot:53 - Start of crawling
+2016-05-09 13:15:27 INFO  FileLinkHandler:84 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-09 13:15:27 INFO  FileLinkHandler:84 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-09 13:15:27 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-09 13:15:27 INFO  FileLinkHandler:84 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-09 13:15:27 INFO  FileLinkHandler:84 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-09 13:15:27 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-09 13:15:27 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-09 13:15:31 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 13:15:32 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 13:15:38 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 13:15:38 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fff6c8: startup date [Mon May 09 13:15:38 CEST 2016]; root of context hierarchy
+2016-05-09 13:15:38 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fff6c8: startup date [Mon May 09 13:15:38 CEST 2016]; root of context hierarchy
+2016-05-09 13:15:38 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 13:15:38 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@21df29: startup date [Mon May 09 13:15:38 CEST 2016]; root of context hierarchy
+2016-05-09 13:15:38 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@21df29: startup date [Mon May 09 13:15:38 CEST 2016]; root of context hierarchy
+2016-05-09 13:15:38 INFO  Robot:92 - Crawling finished
+2016-05-09 13:15:38 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-09 13:15:38 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-09 13:15:38 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-09 13:15:39 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 13:15:39 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-09 13:15:39 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 13:15:39 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:15:39 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 13:15:39 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 13:15:39 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 13:15:39 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 13:15:40 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@147317'
+2016-05-09 13:15:40 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:15:41 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 13:15:41 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 13:15:41 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:15:41 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 13:15:41 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 13:15:41 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 13:15:41 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 13:15:41 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@147317'
+2016-05-09 13:16:59 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c77c2e: startup date [Mon May 09 13:16:59 CEST 2016]; root of context hierarchy
+2016-05-09 13:17:00 INFO  Robot:53 - Start of crawling
+2016-05-09 13:17:00 INFO  FileLinkHandler:84 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-09 13:17:00 INFO  FileLinkHandler:84 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-09 13:17:00 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-09 13:17:00 INFO  FileLinkHandler:84 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-09 13:17:00 INFO  FileLinkHandler:84 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-09 13:17:00 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-09 13:17:00 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-09 13:17:10 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 13:17:12 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 13:17:20 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 13:17:20 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@8221af: startup date [Mon May 09 13:17:20 CEST 2016]; root of context hierarchy
+2016-05-09 13:17:20 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@8221af: startup date [Mon May 09 13:17:20 CEST 2016]; root of context hierarchy
+2016-05-09 13:17:23 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 13:17:23 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@a93d76: startup date [Mon May 09 13:17:23 CEST 2016]; root of context hierarchy
+2016-05-09 13:17:23 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@a93d76: startup date [Mon May 09 13:17:23 CEST 2016]; root of context hierarchy
+2016-05-09 13:17:23 INFO  Robot:92 - Crawling finished
+2016-05-09 13:17:23 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-09 13:17:23 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-09 13:17:23 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-09 13:17:23 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 13:17:23 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-09 13:17:23 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 13:17:23 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:17:23 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 13:17:23 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 13:17:23 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 13:17:23 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 13:17:24 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1542407'
+2016-05-09 13:17:24 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:17:25 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 13:17:25 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 13:17:25 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:17:25 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 13:17:25 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 13:17:25 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 13:17:25 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 13:17:25 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1542407'
+2016-05-09 13:19:03 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c77c2e: startup date [Mon May 09 13:19:03 CEST 2016]; root of context hierarchy
+2016-05-09 13:19:04 INFO  Robot:53 - Start of crawling
+2016-05-09 13:19:04 INFO  FileLinkHandler:84 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-09 13:19:04 INFO  FileLinkHandler:84 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-09 13:19:04 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-09 13:19:04 INFO  FileLinkHandler:84 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-09 13:19:04 INFO  FileLinkHandler:84 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-09 13:19:04 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-09 13:19:04 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-09 13:19:07 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 13:19:08 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 13:19:13 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 13:19:13 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1415b97: startup date [Mon May 09 13:19:13 CEST 2016]; root of context hierarchy
+2016-05-09 13:19:13 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1415b97: startup date [Mon May 09 13:19:13 CEST 2016]; root of context hierarchy
+2016-05-09 13:19:13 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 13:19:13 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@107fe77: startup date [Mon May 09 13:19:13 CEST 2016]; root of context hierarchy
+2016-05-09 13:19:13 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@107fe77: startup date [Mon May 09 13:19:13 CEST 2016]; root of context hierarchy
+2016-05-09 13:19:13 INFO  Robot:92 - Crawling finished
+2016-05-09 13:19:13 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-09 13:19:13 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-09 13:19:13 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-09 13:19:13 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 13:19:14 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-09 13:19:14 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 13:19:14 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:19:14 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 13:19:14 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 13:19:14 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 13:19:14 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 13:19:15 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1542407'
+2016-05-09 13:19:15 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:19:15 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 13:19:15 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 13:19:15 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:19:15 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 13:19:15 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 13:19:15 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 13:19:15 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 13:19:16 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1542407'
+2016-05-09 13:19:43 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c77c2e: startup date [Mon May 09 13:19:43 CEST 2016]; root of context hierarchy
+2016-05-09 13:19:44 INFO  Robot:53 - Start of crawling
+2016-05-09 13:19:44 INFO  FileLinkHandler:84 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-09 13:19:44 INFO  FileLinkHandler:84 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-09 13:19:44 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-09 13:19:44 INFO  FileLinkHandler:84 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-09 13:19:44 INFO  FileLinkHandler:84 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-09 13:19:44 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-09 13:19:44 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books.html
+2016-05-09 13:19:47 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 13:19:48 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 13:19:50 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 13:19:50 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ff0c39: startup date [Mon May 09 13:19:50 CEST 2016]; root of context hierarchy
+2016-05-09 13:19:51 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@ff0c39: startup date [Mon May 09 13:19:50 CEST 2016]; root of context hierarchy
+2016-05-09 13:19:51 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 13:19:51 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@178a7a7: startup date [Mon May 09 13:19:51 CEST 2016]; root of context hierarchy
+2016-05-09 13:19:51 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@178a7a7: startup date [Mon May 09 13:19:51 CEST 2016]; root of context hierarchy
+2016-05-09 13:19:51 INFO  Robot:92 - Crawling finished
+2016-05-09 13:19:51 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-09 13:19:51 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-09 13:19:51 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-09 13:19:51 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 13:19:52 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-09 13:19:52 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 13:19:52 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:19:52 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 13:19:52 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 13:19:52 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 13:19:52 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 13:19:53 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@147317'
+2016-05-09 13:19:53 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:19:53 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 13:19:54 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 13:19:54 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:19:54 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 13:19:54 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 13:19:54 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 13:19:54 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 13:19:54 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@147317'
+2016-05-09 13:47:49 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c77c2e: startup date [Mon May 09 13:47:49 CEST 2016]; root of context hierarchy
+2016-05-09 13:47:50 INFO  Robot:53 - Start of crawling
+2016-05-09 13:47:50 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-09 13:47:50 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-09 13:47:50 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-09 13:47:50 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-09 13:47:50 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-09 13:47:50 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-09 13:47:50 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-09 13:47:50 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: http:www.allitebooks.com
+2016-05-09 13:47:50 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.allitebooks.com
+2016-05-09 13:47:50 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-09 13:47:50 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 13:47:50 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-09 13:47:50 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 13:47:50 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: http:www.allitebooks.com
+2016-05-09 13:47:50 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.allitebooks.com
+2016-05-09 13:47:50 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-09 13:47:50 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 13:47:50 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-09 13:47:50 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 13:47:50 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4f3623: startup date [Mon May 09 13:47:50 CEST 2016]; root of context hierarchy
+2016-05-09 13:47:50 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@9f97d7: startup date [Mon May 09 13:47:50 CEST 2016]; root of context hierarchy
+2016-05-09 13:47:50 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@9f97d7: startup date [Mon May 09 13:47:50 CEST 2016]; root of context hierarchy
+2016-05-09 13:47:50 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4f3623: startup date [Mon May 09 13:47:50 CEST 2016]; root of context hierarchy
+2016-05-09 13:47:50 INFO  Robot:92 - Crawling finished
+2016-05-09 13:47:51 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-09 13:47:51 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-09 13:47:51 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-09 13:47:51 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 13:47:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-09 13:47:51 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 13:47:51 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:47:51 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 13:47:51 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 13:47:51 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 13:47:52 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 13:47:52 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@174a715'
+2016-05-09 13:47:52 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:47:53 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 13:47:53 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 13:47:53 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 13:47:53 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 13:47:53 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 13:47:53 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 13:47:53 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 13:47:53 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@174a715'
+2016-05-09 14:24:14 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c77c2e: startup date [Mon May 09 14:24:14 CEST 2016]; root of context hierarchy
+2016-05-09 14:24:15 INFO  Robot:53 - Start of crawling
+2016-05-09 14:24:15 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-09 14:24:15 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-09 14:24:15 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-09 14:24:15 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-09 14:24:15 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-09 14:24:15 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-09 14:24:15 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-09 14:24:15 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: http:www.allitebooks.com
+2016-05-09 14:24:15 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.allitebooks.com
+2016-05-09 14:24:15 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: http:www.allitebooks.com
+2016-05-09 14:24:15 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.allitebooks.com
+2016-05-09 14:24:15 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-09 14:24:15 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 14:24:15 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-09 14:24:15 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 14:24:15 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-09 14:24:15 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 14:24:15 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-09 14:24:15 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 14:24:15 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1cdc52e: startup date [Mon May 09 14:24:15 CEST 2016]; root of context hierarchy
+2016-05-09 14:24:15 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d83080: startup date [Mon May 09 14:24:15 CEST 2016]; root of context hierarchy
+2016-05-09 14:24:15 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1cdc52e: startup date [Mon May 09 14:24:15 CEST 2016]; root of context hierarchy
+2016-05-09 14:24:15 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d83080: startup date [Mon May 09 14:24:15 CEST 2016]; root of context hierarchy
+2016-05-09 14:24:15 INFO  Robot:92 - Crawling finished
+2016-05-09 14:24:15 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-09 14:24:16 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-09 14:24:16 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-09 14:24:16 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 14:24:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-09 14:24:16 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 14:24:16 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 14:24:16 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 14:24:16 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 14:24:16 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 14:24:17 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 14:24:17 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@174a715'
+2016-05-09 14:24:17 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 14:24:18 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 14:24:18 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 14:24:18 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 14:24:18 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 14:24:18 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 14:24:18 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 14:24:18 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 14:24:18 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@174a715'
+2016-05-09 14:24:19 WARN  SqlExceptionHelper:129 - SQL Error: 1054, SQLState: 42S22
+2016-05-09 14:24:19 ERROR SqlExceptionHelper:131 - Unknown column 'bookstores' in 'field list'
+2016-05-09 14:27:43 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c77c2e: startup date [Mon May 09 14:27:43 CEST 2016]; root of context hierarchy
+2016-05-09 14:27:44 INFO  Robot:53 - Start of crawling
+2016-05-09 14:27:44 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-09 14:27:44 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-09 14:27:44 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-09 14:27:44 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-09 14:27:44 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-09 14:27:44 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-09 14:27:44 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-09 14:27:44 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: http:www.allitebooks.com
+2016-05-09 14:27:44 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.allitebooks.com
+2016-05-09 14:27:44 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-09 14:27:44 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 14:27:44 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-09 14:27:44 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 14:27:44 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: http:www.allitebooks.com
+2016-05-09 14:27:44 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.allitebooks.com
+2016-05-09 14:27:44 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-09 14:27:44 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 14:27:44 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-09 14:27:44 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 14:27:44 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@19aac51: startup date [Mon May 09 14:27:44 CEST 2016]; root of context hierarchy
+2016-05-09 14:27:44 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3cde8b: startup date [Mon May 09 14:27:44 CEST 2016]; root of context hierarchy
+2016-05-09 14:27:44 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3cde8b: startup date [Mon May 09 14:27:44 CEST 2016]; root of context hierarchy
+2016-05-09 14:27:44 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@19aac51: startup date [Mon May 09 14:27:44 CEST 2016]; root of context hierarchy
+2016-05-09 14:27:44 INFO  Robot:92 - Crawling finished
+2016-05-09 14:27:45 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-09 14:27:45 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-09 14:27:45 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-09 14:27:45 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 14:27:45 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-09 14:27:45 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 14:27:45 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 14:27:45 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 14:27:45 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 14:27:45 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 14:27:46 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 14:27:46 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@174a715'
+2016-05-09 14:27:47 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 14:27:47 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 14:27:47 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 14:27:47 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 14:27:47 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 14:27:47 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 14:27:47 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 14:27:47 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 14:27:48 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@174a715'
+2016-05-09 15:47:33 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1192d32: startup date [Mon May 09 15:47:33 CEST 2016]; root of context hierarchy
+2016-05-09 15:47:34 INFO  Robot:53 - Start of crawling
+2016-05-09 15:47:34 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-09 15:47:34 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-09 15:47:34 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-09 15:47:34 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-09 15:47:34 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-09 15:47:34 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http:www.bookrix.combooks.html
+2016-05-09 15:47:34 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: http:www.bookrix.combooks.html
+2016-05-09 15:47:34 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.bookrix.combooks.html
+2016-05-09 15:47:34 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.bookrix.combooks.html
+2016-05-09 15:47:34 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 15:47:34 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException http:www.bookrix.combooks.html
+2016-05-09 15:47:34 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 15:47:34 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-09 15:47:34 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: http:www.allitebooks.com
+2016-05-09 15:47:34 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.allitebooks.com
+2016-05-09 15:47:34 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-09 15:47:34 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 15:47:34 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-09 15:47:34 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 15:47:34 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-09 15:47:34 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: http:www.allitebooks.com
+2016-05-09 15:47:34 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.allitebooks.com
+2016-05-09 15:47:34 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-09 15:47:34 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 15:47:34 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-09 15:47:34 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 15:47:34 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-09 15:47:34 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: http:www.allitebooks.com
+2016-05-09 15:47:34 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.allitebooks.com
+2016-05-09 15:47:34 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-09 15:47:34 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-09 15:47:34 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-09 15:47:34 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-09 15:47:34 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@b23d86: startup date [Mon May 09 15:47:34 CEST 2016]; root of context hierarchy
+2016-05-09 15:47:34 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@112baf1: startup date [Mon May 09 15:47:34 CEST 2016]; root of context hierarchy
+2016-05-09 15:47:34 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@b23d86: startup date [Mon May 09 15:47:34 CEST 2016]; root of context hierarchy
+2016-05-09 15:47:34 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@112baf1: startup date [Mon May 09 15:47:34 CEST 2016]; root of context hierarchy
+2016-05-09 15:47:34 INFO  Robot:92 - Crawling finished
+2016-05-09 15:47:35 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-09 15:47:35 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-09 15:47:35 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-09 15:47:35 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-09 15:47:35 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-09 15:47:35 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 15:47:35 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-09 15:47:35 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-09 15:47:35 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-09 15:47:35 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-09 15:47:35 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-09 15:47:36 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@31ce0f'
+2016-05-09 15:47:36 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]

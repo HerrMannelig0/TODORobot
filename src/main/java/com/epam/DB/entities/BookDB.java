@@ -1,6 +1,7 @@
 package com.epam.DB.entities;
 
 import com.epam.file.Category;
+import org.hibernate.engine.FetchStrategy;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -63,7 +64,7 @@ public class BookDB implements Serializable {
 		this.author = author;
 	}
 
-	@ManyToOne
+	@ManyToOne (fetch=FetchType.EAGER)
 	@Column(name = "books_store")
 	public BookstoreDB getBookstoreDB() {
 		return bookstoreDB;
@@ -73,7 +74,7 @@ public class BookDB implements Serializable {
 		this.bookstoreDB = bookstoreDB;
 	}
 
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.EAGER)
 	@Column(name = "books_cat")
 	public CategoryDB getCategory() {
 		return category;

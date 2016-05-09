@@ -1,5 +1,6 @@
 package com.epam.GUI.view;
 
+import com.epam.DB.DAO;
 import com.epam.GUI.model.Bookstore;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -81,7 +82,7 @@ public class BookstoreOverviewController {
     @FXML
     private void addButtonAction(ActionEvent action) {
         String typedURL = libraryURL.getText();
-        if (typedURL.isEmpty() || typedURL != null) {
+        if (typedURL.isEmpty()) {
             loadErrorWindow("/WrongInputForURLAdding.fxml");
         } else {
             listViewBookstores.add(typedURL);
@@ -134,29 +135,27 @@ public class BookstoreOverviewController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
 
     /**
      * Method for writing queries to take from DB books from bookstores listed in listViewActiveBookstores and with category listed in categories to show.
-     *
      * @param listViewActiveBookstores
      * @param categoriesToShow
      */
     @FXML
     private String setText(ObservableList<String> listViewActiveBookstores, Set<String> categoriesToShow) {
         String result = "";
-
+        String books;
+        DAO dao = new DAO();
         for (String bookstore : listViewActiveBookstores) {
-            result = result.concat(bookstore) + "\n";
+            result = result.concat(bookstore) + "\n\n";
             for (String category : categoriesToShow) {
                 result = result.concat(category) + "\n";
-
+                books = dao.listOfBooksForGUI(bookstore, category);
+                result = (books.isEmpty() ? result.concat("No books to be showed.") : result.concat(books));
             }
         }
-
-
         return result;
     }
 

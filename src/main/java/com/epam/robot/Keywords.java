@@ -58,6 +58,8 @@ public class Keywords extends AbstractSet<String>{
 
 	@Override
 	public boolean equals(Object obj) {
+		if (obj == null) return false;
+		if (!obj.getClass().isInstance(this)) return false;
 		Keywords otherKeywords = (Keywords) obj;
 		TreeSet<String> thisTree = new TreeSet<>(this);
 		TreeSet<String> otherTree = new TreeSet<>(otherKeywords);

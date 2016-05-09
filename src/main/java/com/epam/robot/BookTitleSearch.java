@@ -174,12 +174,13 @@ public class BookTitleSearch {
 	 * @return extracted element as a string
 	 */
 	 String extractElementFromSite(Element item, String tag){
-		Elements elements = null;
+		Elements elements;
 		try{
 			elements = item.getElementsByClass(tag);
+			if (!elements.isEmpty()) return elements.text();
 		} catch(IllegalArgumentException e){}
-		return elements.text();
-	}
+		return null;
+	 }
 
 	/**
 	 * Adding link to HashSet
