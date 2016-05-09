@@ -99,11 +99,7 @@ public class Category  {
 		return name;
 	}
 
-	public com.epam.DB.entities.CategoryDB convertToDbCategory(){
-		com.epam.DB.entities.CategoryDB categoryDB = new com.epam.DB.entities.CategoryDB();
-		categoryDB.setName(name);
-		return categoryDB;
-	}
+	
 
 	@Override
 	public int hashCode() {

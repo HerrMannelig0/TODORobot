@@ -7,37 +7,21 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-import com.epam.DB.entities.BookstoreDB;
 import org.apache.log4j.Logger;
 
+import com.epam.DAO.BookstoreToDB;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
 
-public class Bookstores extends AbstractSet<BookstoreDB> {
-	public Set<BookstoreDB> bookstores;
+public class Bookstores extends AbstractSet<BookstoreToDB> {
+	public Set<BookstoreToDB> bookstores;
 
 	public Bookstores() {
 		bookstores = new HashSet<>();
 	}
 
 	private static Logger logger = Logger.getLogger("Bookstores");
-
-	/**
-	 * Adds Book to bookstoreDBs' list.
-	 * 
-	 * @param url
-	 *            to bookstore
-	 * @param book
-	 */
-	void addBookToBookstoreInBookstoresList(String url, Book book) {
-		String bookstoreName = extractBookstoreName(url);
-		BookstoreDB bookstoreDB = getBookstoreFromSet(bookstoreName, bookstores);
-		if (bookstoreDB == null)
-			logger.error("There is no such BookstoreDB: " + bookstoreName);
-		else
-			bookstoreDB.addBook(book.convertToBookDB());
-	}
-
+	
 	/**
 	 * Searching BookstoreDB in given set.
 	 * 
@@ -47,8 +31,8 @@ public class Bookstores extends AbstractSet<BookstoreDB> {
 	 *            of Bookstores
 	 * @return BookstoreDB
 	 */
-	public BookstoreDB getBookstoreFromSet(String bookstoreName, Set<BookstoreDB> set) {
-		for (BookstoreDB bookstoreDB : set) {
+	public BookstoreToDB getBookstoreFromSet(String bookstoreName, Set<BookstoreToDB> set) {
+		for (BookstoreToDB bookstoreDB : set) {
 			if (bookstoreName.equals(bookstoreDB.getName()))
 				return bookstoreDB;
 		}
@@ -77,7 +61,7 @@ public class Bookstores extends AbstractSet<BookstoreDB> {
 	}
 
 	@Override
-	public Iterator<BookstoreDB> iterator() {
+	public Iterator<BookstoreToDB> iterator() {
 		return bookstores.iterator();
 	}
 
@@ -87,7 +71,7 @@ public class Bookstores extends AbstractSet<BookstoreDB> {
 	}
 
 	@Override
-	public boolean add(BookstoreDB bookstoreDB) {
+	public boolean add(BookstoreToDB bookstoreDB) {
 		return bookstores.add(bookstoreDB);
 	}
 
@@ -99,16 +83,15 @@ public class Bookstores extends AbstractSet<BookstoreDB> {
 	 * @return Set of Bookstores
 	 * @throws FileNotFoundException
 	 */
-	public Set<BookstoreDB> generateBookstoreSet(File file) throws FileNotFoundException {
+	public Set<BookstoreToDB> generateBookstoreSet(File file) throws FileNotFoundException {
 
-		Set<BookstoreDB> resultBokstores = new HashSet<>();
+		Set<BookstoreToDB> resultBokstores = new HashSet<>();
 		FileLinkHandler fileLinkHandler = new FileLinkHandler();
 		Set<Link> linksWithTags = fileLinkHandler.readLinksFromFile(file);
 
 		for (Link link : linksWithTags) {
 			String address = link.getLinkAdress();
-			BookstoreDB bookstore = new BookstoreDB(extractBookstoreName(address));
-			bookstore.init();
+			BookstoreToDB bookstore = new BookstoreToDB(extractBookstoreName(address), null);
 			resultBokstores.add(bookstore);
 		}
 		bookstores = resultBokstores;

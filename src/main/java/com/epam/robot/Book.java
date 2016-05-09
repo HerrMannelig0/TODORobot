@@ -8,8 +8,6 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.epam.DAO.BookToDB;
-import com.epam.DB.entities.BookDB;
-import com.epam.DB.entities.BookstoreDB;
 import com.epam.file.Category;
 
 /**
@@ -107,19 +105,6 @@ public class Book {
 		}
 		scanner.close();
 		return categories;
-	}
-
-	/**
-	 * This method converts Book object into BookDB
-	 * 
-	 * @return BookDB
-	 */
-	public BookDB convertToBookDB() {
-		BookDB bookDB = new BookDB();
-		bookDB.setTitle(title);
-		bookDB.setAuthor(author);
-		bookDB.setCategory(bookCategory.convertToDbCategory());
-		return bookDB;
 	}
 	
 	/**

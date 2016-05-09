@@ -6,7 +6,6 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Set;
 
 import org.springframework.context.ApplicationContext;
@@ -14,7 +13,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.epam.DAO.BookToDB;
 import com.epam.DAO.LibraryDB;
-import com.epam.DB.entities.BookDB;
 import com.epam.file.Category;
 
 public class Library implements Set<Book> {
@@ -30,14 +28,6 @@ public class Library implements Set<Book> {
 	
 	public Library(Library otherLibrary){
 			library.addAll(otherLibrary);
-	}
-
-	public List<BookDB> convertToDBList(){
-		List<BookDB> dbList = new ArrayList<>();
-		for(Book book : library){
-			dbList.add(book.convertToBookDB());
-		}
-		return dbList;
 	}
 
 	@Override

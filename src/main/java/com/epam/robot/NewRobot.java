@@ -91,13 +91,7 @@ public class NewRobot {
 
 			logger.info("Crawling finished");
 
-			for (Book book : concurrentLibrary) {
-				System.out.println("$$$ " + book + " " + book.extractBookstoreFromURL());
-			}
-			
-			System.err.println("&&&&&& " + concurrentLibrary);
 			library.addAll(concurrentLibrary);
-			System.err.println("****** " + library);
 			
 			executorService.shutdown();
 			
