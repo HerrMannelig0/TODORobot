@@ -128,6 +128,7 @@ public class Book {
 	 * @return BookstoreDB
 	 */
 	public String extractBookstoreFromURL() {
+		if(url == null) return "";
 		String urlPath = url.toString();
 		int indexOFFirstDotAppearance = urlPath.indexOf('.');
 		String bookstoreName = urlPath.substring(indexOFFirstDotAppearance + 1,

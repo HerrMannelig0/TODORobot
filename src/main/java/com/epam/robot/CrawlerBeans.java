@@ -1,16 +1,11 @@
 package com.epam.robot;
 import java.io.File;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.epam.file.Category;
 import com.epam.file.FileLinkHandler;
 
 @Configuration
@@ -52,4 +47,8 @@ public class CrawlerBeans {
 		return new File("src/main/resources/Keywords/Categories.txt");
 	}
 	
+	@Bean(name = "concurrent library")
+	public ConcurrentLibrary concurrentLibrary(){
+		return new ConcurrentLibrary();
+	}
 }

@@ -27,25 +27,25 @@ public class BookTest {
 	 * Test of category checking. It should returns a proper category because a proper keyword is passing
 	 */
 	@Test
-	public void testCategoryCheckingGivesRealCategory() throws Exception {
+	public void testCategoryCheckingGivesRealCategory() {
 		Book book = new Book("title", "author", new Keywords(new String[]{"love"}));
 		HashSet<String> set = new HashSet<>();
 		set.add("love");
-		Category romanceCategory = mock(Category.class);
 		
-		when(romanceCategory.getKeywords()).thenReturn(set);
-		when(romanceCategory.getName()).thenReturn("Romance");
+		Category romanceCategory = new Category("Romance");
+		romanceCategory.addKeyword("love");
+		
 		Category realCategory = book.checkCategory(romanceCategory);
 		
-		verify(romanceCategory).getName();
-		assertThat(realCategory).isEqualTo("Romance");
+		//verify(romanceCategory).getName();
+		assertThat(realCategory).isEqualTo(new Category("Romance"));
 	}
 	
 	/**
 	 * Test of category checking. It should returns a proper category because a proper keyword is passing
 	 */
 	@Test
-	public void testCategoryCheckingGivesFalseCategory() throws Exception {
+	public void testCategoryCheckingGivesFalseCategory() {
 		Book book = new Book("title", "author", new Keywords(new String[]{"love"}));
 		HashSet<String> set = new HashSet<>();
 		set.add("hate");

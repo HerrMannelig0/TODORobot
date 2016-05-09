@@ -12,7 +12,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 import org.apache.log4j.Logger;
-import org.eclipse.jetty.util.ConcurrentHashSet;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -39,11 +38,14 @@ public class Robot {
 		
 		Robot robot = new Robot();
 		crawler = robot.new Crawler();
+		
 		try {
 			crawler.crawl();
 		} catch (InterruptedException | ExecutionException e) {
 			logger.error(e.getClass() + "Crawling interrupted.");
 		}
+		
+		((AnnotationConfigApplicationContext)context).close();
 	}
 
 	/**
@@ -60,37 +62,46 @@ public class Robot {
 			logger.info("Start of crawling");
 
 			Library library = context.getBean(Library.class);
-
-			ConcurrentHashSet<Book> concurrentLibrary = new ConcurrentHashSet<>();
-
+			ConcurrentLibrary concurrentLibrary = context.getBean(ConcurrentLibrary.class);
 			List<Link> links = generateListOfLinksFromDefaultAddressFile();
-
-			ConcurrentHashSet<Link> concurrentLinks = new ConcurrentHashSet<>();
-			concurrentLinks.addAll(links);
 			
-			ExecutorService executorService = Executors.newFixedThreadPool(3);
-			Set<Future<ConcurrentHashSet<Book>>> set = new HashSet<>();
+			Set<Future<ConcurrentLibrary>> set = executeSearching(links);
 
-			
-
-			for (Link link : concurrentLinks) {
-				Callable<ConcurrentHashSet<Book>> callable = new CrawlerCaller();
-				((CrawlerCaller) callable).setLink(link);
-				Future<ConcurrentHashSet<Book>> future = executorService.submit(callable);
-				set.add(future);
-			}
-
-			for (Future<ConcurrentHashSet<Book>> next : set) {
-				/*ConcurrentHashSet<Book> n = next.get();
-				System.err.println(n)*/;
+			for (Future<ConcurrentLibrary> next : set) {
 				concurrentLibrary.addAll(next.get());
 			}
 
 			logger.info("Crawling finished");
 
 			library.addAll(concurrentLibrary);
-			executorService.shutdown();
+			writeLibraryToDB(library);
+		}
 
+		/**
+		 * This method 
+		 * @param links to searching books on it
+		 * @return Set<Future<ConcurrentLibrary>> set of results
+		 */
+		private Set<Future<ConcurrentLibrary>> executeSearching(List<Link> links) {
+			
+			ExecutorService executorService = Executors.newFixedThreadPool(3);
+			Set<Future<ConcurrentLibrary>> set = new HashSet<>();
+			
+			for (Link link : links) {
+				Callable<ConcurrentLibrary> callable = new CrawlerCaller();
+				((CrawlerCaller) callable).setLink(link);
+				Future<ConcurrentLibrary> future = executorService.submit(callable);
+				set.add(future);
+			}
+			executorService.shutdown();
+			return set;
+		}
+
+		/**
+		 * This method adds all books in library to database.
+		 * @param library of founded books
+		 */
+		private void writeLibraryToDB(Library library) {
 			LibrariesMap librariesMap = CategoryUtil.generateLibrariesMapfromLibrary(library);
 			DBWriter dbWriter = new DBWriter();
 
@@ -111,13 +122,13 @@ public class Robot {
 			}
 			return fileLinkHandler.getLinksList();
 		}
-
+		
 		/**
 		 * This private inner class implements Callable interface and in call() method 
 		 * returns concurrent library of books that has been found
 		 * during crawling.
 		 */
-		private class CrawlerCaller implements Callable<ConcurrentHashSet<Book>> {
+		private class CrawlerCaller implements Callable<ConcurrentLibrary> {
 
 			private Link link;
 
@@ -136,7 +147,7 @@ public class Robot {
 			 * @see java.util.concurrent.Callable#call()
 			 */
 			@Override
-			public ConcurrentHashSet<Book> call() throws Exception {
+			public ConcurrentLibrary call() throws Exception {
 				Library library = context.getBean(Library.class);
 				
 				// crawling through sites and appending founded books to library
@@ -145,7 +156,7 @@ public class Robot {
 						link.getPriceTag(), link.getKeywordsTag()));
 
 				library.assignCategoryForAllBooks();
-				ConcurrentHashSet<Book> concurrentLibrary = new ConcurrentHashSet<>();
+				ConcurrentLibrary concurrentLibrary = new ConcurrentLibrary();
 				concurrentLibrary.addAll(library);
 				return concurrentLibrary;
 			}

@@ -17,16 +17,12 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.sun.corba.se.pept.transport.Connection;
-
 
 public class BookTitleSearch {
 	static private Set<String> addressHashSet = new HashSet<>();
 	
 	private static Logger logger = Logger.getLogger("BookTitleSearch");
 	
-	private  StringBuilder titleBookContainer = new StringBuilder();
-
 	/**
 	 * Parsing website and searching for links there.
 	 * @param bookstoreAddressFromTextfile
@@ -217,7 +213,7 @@ public class BookTitleSearch {
 	 * Set private variables to new objects.
 	 */
 	private void resetClassVariables() {
-		titleBookContainer = new StringBuilder();
+		new StringBuilder();
 		addressHashSet = new HashSet<>();
 	}
 	
