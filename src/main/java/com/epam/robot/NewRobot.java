@@ -6,14 +6,12 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.Callable;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 import org.apache.log4j.Logger;
-import org.eclipse.jetty.util.ConcurrentArrayQueue;
 import org.eclipse.jetty.util.ConcurrentHashSet;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -28,12 +26,14 @@ public class NewRobot {
 	static Crawler crawler;
 
 	public static void main(String[] args) {
+		ApplicationContext context = new AnnotationConfigApplicationContext(CrawlerBeans.class);
+		Logger logger = (Logger) context.getBean("logger");
 		NewRobot robot = new NewRobot();
 		crawler = robot.new Crawler();
 		try {
 			crawler.crawl();
 		} catch (InterruptedException | ExecutionException e) {
-			e.printStackTrace();
+			logger.error(e.getClass() + " Crawling interrupted");
 		}
 	}
 
@@ -53,58 +53,41 @@ public class NewRobot {
 			logger.info("Start of crawling");
 
 			Library library = context.getBean(Library.class);
-
-			ConcurrentHashSet<Book> concurrentLibrary = new ConcurrentHashSet<>();
+			ConcurrentLibrary concurrentLibrary = new ConcurrentLibrary();
 			
-			Bookstores bookstores = safeInitializationOfBookstores();
-
-			List<Link> links1 = generateListOfLinksFromDefaultAddressFile();
+			List<Link> links = generateListOfLinksFromDefaultAddressFile();
 			
-			ConcurrentHashSet<Link> links = new ConcurrentHashSet<>();
- 			links.addAll(links1);
+			Set<Future<ConcurrentLibrary>> set = executeCrawling(links);
 			
-			//ConList<Link> links = generateListOfLinksFromDefaultAddressFile();
-
-			// crawling through sites and appending founded books to library
-			/*links.stream().forEach(link -> library.addAll(context.getBean(BookTitleSearch.class)
-					.searchTitlesInPageAndSubPages(link.getLinkAdress(), link.getElementType(), link.getTitleTag(),
-							link.getAuthorTag(), link.getPriceTag(), link.getKeywordsTag())));*/
-
-			//links.stream().forEach(link -> new CrawlerCaller(link));
-			
-			ExecutorService executorService = Executors.newFixedThreadPool(3); //newCachedThreadPool()
-			Set<Future<ConcurrentHashSet<Book>>> set = new HashSet<>();
-			
-			Callable<ConcurrentHashSet<Book>> callable = new CrawlerCaller();
-			
-			for (Link link : links) {
-				((CrawlerCaller)callable).setLink(link);
-				Future<ConcurrentHashSet<Book>> future = executorService.submit(callable);
-				set.add(future);
-			}
-			
-			for (Future<ConcurrentHashSet<Book>> next : set){
-				ConcurrentHashSet<Book> n = next.get();
-				System.err.println(n);
-				concurrentLibrary.addAll(n);
+			for (Future<ConcurrentLibrary> next : set){
+				concurrentLibrary.addAll(next.get());
 			}
 
 			logger.info("Crawling finished");
 
-			for (Book book : concurrentLibrary) {
-				System.out.println("$$$ " + book + " " + book.extractBookstoreFromURL());
-			}
-			
-			System.err.println("&&&&&& " + concurrentLibrary);
 			library.addAll(concurrentLibrary);
-			System.err.println("****** " + library);
-			
-			executorService.shutdown();
 			
 			LibrariesMap librariesMap = CategoryUtil.generateLibrariesMapfromLibrary(library);
 			DBWriter dbWriter = new DBWriter();
 
 			dbWriter.write(librariesMap.toDB());
+		}
+
+		private Set<Future<ConcurrentLibrary>> executeCrawling(List<Link> links) {
+			ExecutorService executorService = Executors.newFixedThreadPool(3);
+			Set<Future<ConcurrentLibrary>> set = new HashSet<>();
+			
+			
+			for (Link link : links) {
+				Callable<ConcurrentLibrary> callable = new CrawlerCaller();
+				((CrawlerCaller)callable).setLink(link);
+				Future<ConcurrentLibrary> future = executorService.submit(callable);
+				set.add(future);
+			}
+			
+			executorService.shutdown();
+			
+			return set;
 		}
 
 		private List<Link> generateListOfLinksFromDefaultAddressFile() {
@@ -139,15 +122,11 @@ public class NewRobot {
 			return bookstores;
 		}
 
-		private class CrawlerCaller implements Callable<ConcurrentHashSet<Book> > {
+		private class CrawlerCaller implements Callable<ConcurrentLibrary> {
 
 			private Link link;
 			
 			public CrawlerCaller() {
-			}
-			
-			public CrawlerCaller(Link link) {
-				this.link = link;
 			}
 			
 			public void setLink(Link link) {
@@ -155,7 +134,7 @@ public class NewRobot {
 			}
 
 			@Override
-			public ConcurrentHashSet<Book>  call() throws Exception {
+			public ConcurrentLibrary call() throws Exception {
 				//Library library = context.getBean(Library.class);
 				Library library = new Library();
 				//crawling through sites and appending founded books to library
@@ -164,10 +143,9 @@ public class NewRobot {
 								link.getAuthorTag(), link.getPriceTag(), link.getKeywordsTag()));
 				
 				library.assignCategoryForAllBooks();
-				ConcurrentHashSet<Book> chs = new ConcurrentHashSet<>();
-				chs.addAll(library);
-				System.err.println("INSIDE CALLER: " + library + "///" + link);
-				return chs;
+				ConcurrentLibrary concurrentLibrary = new ConcurrentLibrary();
+				concurrentLibrary.addAll(library);
+				return concurrentLibrary;
 			}
 
 		}
