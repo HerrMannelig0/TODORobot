@@ -7,7 +7,6 @@ import com.epam.file.Category;
 import com.epam.robot.Bookstores;
 import com.epam.robot.LibrariesMap;
 import com.epam.robot.Library;
-import com.epam.robot.MainRobot;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 

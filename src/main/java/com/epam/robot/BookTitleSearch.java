@@ -73,7 +73,7 @@ public class BookTitleSearch {
 	 * @param tag for keywords
 	 * @throws MalformedURLException
 	 */
-	public  Library searchTitles(String bookstoreAddressFromTextfile, String typeOfElement,
+	public Library searchTitles(String bookstoreAddressFromTextfile, String typeOfElement,
 			String titleTag, String authorTag, String priceTag, String keywordsTag) throws MalformedURLException {
 			
 			Document document = parseHTMLtoDoc(bookstoreAddressFromTextfile);
@@ -105,7 +105,7 @@ public class BookTitleSearch {
 	 * 
 	 * @return String object with book titles and keywords (if they exist)
 	 */
-	public  Library searchTitlesInPageAndSubPages(String bookstoreAddressFromTextfile, String typeOfElement,
+	public synchronized Library searchTitlesInPageAndSubPages(String bookstoreAddressFromTextfile, String typeOfElement,
 			String titleTag, String authorTag, String priceTag, String keywordsTag) {
 		
 		System.err.println("ITERATION : " + bookstoreAddressFromTextfile);
