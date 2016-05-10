@@ -71,7 +71,7 @@ public class MainApp extends Application {
      * Returns the main stage.
      */
     public static void main(String[] args) {
-    	Robot.main(args);
+    	//Robot.main(args);
         launch(args);
     }
 

@@ -12,7 +12,7 @@ import javafx.collections.ObservableList;
  */
 public class Bookstore {
     private static ArrayList<String> bookstores = new ArrayList<>();
-    public static ObservableList<String> initBookstoreList = FXCollections.observableList(bookstores);
+    public ObservableList<String> initBookstoreList = FXCollections.observableList(bookstores);
 
 
     public Bookstore() {

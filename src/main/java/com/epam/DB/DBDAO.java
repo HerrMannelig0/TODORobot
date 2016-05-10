@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
+import org.hibernate.Query;
 import org.hibernate.Session;
 
 import com.epam.DAO.HibernateUtil;
+import com.epam.DB.entities.BookToDB;
 import com.epam.DB.entities.BookstoreToDB;
 import com.epam.file.Category;
 import com.epam.library.LibrariesMap;
@@ -32,12 +35,13 @@ public class DBDAO {
     @SuppressWarnings("unchecked")
 	public List<String> listOfBookstoresForGUI() {
 
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            List<String> bookstoresForGUI = null;
-            List<BookstoreToDB> bookstores;
-            bookstores = session.createSQLQuery("SELECT bookstore_name FROM bookstoreDB")
-                    .addEntity(BookstoreToDB.class)
-                    .list();
+        try (Session session = HibernateUtil.getSession()) {
+            List<String> bookstoresForGUI = new ArrayList<>();
+            List<Object> bookstores;
+            
+            Query query = session.createSQLQuery("SELECT DISTINCT bookstore FROM BookToDB;");
+            
+            bookstores = query.list();
             bookstores.forEach(e -> bookstoresForGUI.add(e.toString()));
             return bookstoresForGUI;
 
