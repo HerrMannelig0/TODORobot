@@ -38,7 +38,8 @@ public class BookTitleSearch {
             try {
                 websiteContent = parseHTMLtoDoc(bookstoreAddressFromTextfile);
             } catch (Exception e) {
-                logger.error("Cannot parse HTMP to DOC: " + bookstoreAddressFromTextfile);
+                logger.fatal(e.getMessage());
+                e.getStackTrace();
             }
 
             addressHashSet.add(bookstoreAddressFromTextfile);
@@ -65,12 +66,6 @@ public class BookTitleSearch {
     /**
      * Searches for book titles and tags, if available
      *
-     * @param Bookstore address
-     * @param type of element
-     * @param tag for title
-     * @param tag for author
-     * @param tag for price
-     * @param tag for keywords
      * @throws MalformedURLException
      */
     public Library searchTitles(String bookstoreAddressFromTextfile, String typeOfElement,
@@ -136,7 +131,7 @@ public class BookTitleSearch {
 
     /**
      * Finds out if given string starts with "Keywords: " phrase.
-     * @param String, that should contains keywords of book.
+     * @param valueFromSite, that should contains keywords of book.
      * @return True if given string starts with "Keywords: ", else otherwise.
      */
     public  boolean areKeywords(String valueFromSite) {
@@ -145,7 +140,7 @@ public class BookTitleSearch {
 
     /**
      * Parse string from site to array of keywords.
-     * @param keywords as a string
+     * @param valueFromSite as a string
      * @return Array of keywords
      */
     protected Keywords extractKeywords(String valueFromSite) {
@@ -183,7 +178,6 @@ public class BookTitleSearch {
 
     /**
      * Adding link to HashSet
-     * @param link to Sub-page
      */
     private void addLinkToSetAndSearchInLinkForPages(String linkToSubPage) {
         addressHashSet.add(linkToSubPage);
@@ -191,9 +185,7 @@ public class BookTitleSearch {
     }
 
     /**
-     * Parsing site to document.
-     * @param Site address as a string.
-     * @return Document parsed from site.
+     * @return Document parsed from site (by give address).
      */
     private Document parseHTMLtoDoc(String address) {
         Document document = null;
@@ -223,7 +215,6 @@ public class BookTitleSearch {
 
     /**
      * Finds out if given tag contains number.
-     * @param Element to check
      * @return True, if tag contains number, false otherwise.
      */
     private boolean tagContainsNumberAndWasNotFoundBefore(Element element) {

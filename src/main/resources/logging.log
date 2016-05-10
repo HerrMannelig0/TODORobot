@@ -25342,3 +25342,401 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'Boo
 2016-05-10 18:37:19 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
 2016-05-10 18:37:20 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/robot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
 2016-05-10 18:37:20 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1192d32: startup date [Tue May 10 18:37:16 CEST 2016]; root of context hierarchy
+2016-05-10 19:16:45 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http://www.bookrix.com/books;page:28.html
+2016-05-10 19:16:48 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-10 19:16:51 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-10 19:16:51 INFO  FileLinkHandler:84 - New link get from file: https:www.gutenberg.orgebookssearch?query=free+book&go=Go booklink title subtitle - -
+2016-05-10 19:16:51 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-10 19:16:51 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-10 19:16:51 INFO  FileLinkHandler:84 - New link get from file: https:www.gutenberg.orgebookssearch?query=free+book&go=Go booklink title subtitle - -
+2016-05-10 19:16:51 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-10 19:16:51 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-10 19:16:51 INFO  FileLinkHandler:84 - New link get from file: kotek 1 2 3 4 5
+2016-05-10 19:16:51 INFO  FileLinkHandler:84 - New link get from file: kotek 1 2 3 4 5
+2016-05-10 19:16:51 INFO  FileLinkHandler:84 - New link get from file: kotek 1 2 3 4 5
+2016-05-10 19:16:51 INFO  FileLinkHandler:84 - New link get from file: kotek 1 2 3 4 5
+2016-05-10 19:16:51 INFO  FileLinkHandler:84 - New link get from file: kotek 1 2 3 4 5
+2016-05-10 19:16:51 INFO  FileLinkHandler:43 - Link list has been written into file
+2016-05-10 19:16:51 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1ccb269: startup date [Tue May 10 19:16:51 CEST 2016]; root of context hierarchy
+2016-05-10 19:16:52 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1ccb269: startup date [Tue May 10 19:16:51 CEST 2016]; root of context hierarchy
+2016-05-10 19:21:08 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@14ddd49: startup date [Tue May 10 19:21:08 CEST 2016]; root of context hierarchy
+2016-05-10 19:21:08 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@32714f: startup date [Tue May 10 19:21:08 CEST 2016]; root of context hierarchy
+2016-05-10 19:21:08 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-10 19:21:08 INFO  FileLinkHandler:84 - New link get from file: https:www.gutenberg.orgebookssearch?query=free+book&go=Go booklink title subtitle - -
+2016-05-10 19:21:08 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-10 19:21:08 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-10 19:21:09 INFO  BookTitleSearch:112 - Started searching Titles for adress =  https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:21:41 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:21:41 ERROR BookTitleSearch:50 - Cannot select link from site: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:21:41 ERROR BookTitleSearch:61 - Other exception while site parsing: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:21:41 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-10 19:21:41 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:21:41 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-10 19:21:41 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-10 19:21:41 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: http:www.allitebooks.com
+2016-05-10 19:21:41 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.allitebooks.com
+2016-05-10 19:21:41 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-10 19:21:41 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-10 19:21:41 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-10 19:21:41 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-10 19:21:41 INFO  BookTitleSearch:112 - Started searching Titles for adress =  http:www.bookrix.combooks.html
+2016-05-10 19:21:41 ERROR BookTitleSearch:41 - Cannot parse HTMP to DOC: http:www.bookrix.combooks.html
+2016-05-10 19:21:41 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.bookrix.combooks.html
+2016-05-10 19:21:41 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.bookrix.combooks.html
+2016-05-10 19:21:41 INFO  BookTitleSearch:120 - Started iterating over links to search titles
+2016-05-10 19:21:41 ERROR BookTitleSearch:127 - class java.lang.IllegalArgumentException http:www.bookrix.combooks.html
+2016-05-10 19:21:41 INFO  BookTitleSearch:131 - Finished iterating over links to search titles
+2016-05-10 19:21:41 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@17615c: startup date [Tue May 10 19:21:41 CEST 2016]; root of context hierarchy
+2016-05-10 19:21:41 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@15a1849: startup date [Tue May 10 19:21:41 CEST 2016]; root of context hierarchy
+2016-05-10 19:21:41 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4182ca: startup date [Tue May 10 19:21:41 CEST 2016]; root of context hierarchy
+2016-05-10 19:21:41 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4182ca: startup date [Tue May 10 19:21:41 CEST 2016]; root of context hierarchy
+2016-05-10 19:21:41 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@17615c: startup date [Tue May 10 19:21:41 CEST 2016]; root of context hierarchy
+2016-05-10 19:21:41 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@15a1849: startup date [Tue May 10 19:21:41 CEST 2016]; root of context hierarchy
+2016-05-10 19:31:18 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@707e36: startup date [Tue May 10 19:31:18 CEST 2016]; root of context hierarchy
+2016-05-10 19:31:19 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@32714f: startup date [Tue May 10 19:31:19 CEST 2016]; root of context hierarchy
+2016-05-10 19:31:19 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-10 19:31:19 INFO  FileLinkHandler:84 - New link get from file: https:www.gutenberg.orgebookssearch?query=free+book&go=Go booklink title subtitle - -
+2016-05-10 19:31:19 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-10 19:31:19 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-10 19:31:19 INFO  BookTitleSearch:102 - Started searching Titles for adress =  https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:31:22 INFO  BookTitleSearch:102 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-10 19:31:22 INFO  BookTitleSearch:102 - Started searching Titles for adress =  http:www.bookrix.combooks.html
+2016-05-10 19:31:33 ERROR Robot:49 - class java.util.concurrent.ExecutionExceptionCrawling interrupted, cause java.lang.IllegalArgumentException: protocol = https host = null
+2016-05-10 19:38:05 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@707e36: startup date [Tue May 10 19:31:18 CEST 2016]; root of context hierarchy
+2016-05-10 19:40:14 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@707e36: startup date [Tue May 10 19:40:14 CEST 2016]; root of context hierarchy
+2016-05-10 19:40:15 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@32714f: startup date [Tue May 10 19:40:15 CEST 2016]; root of context hierarchy
+2016-05-10 19:40:15 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-10 19:40:15 INFO  FileLinkHandler:84 - New link get from file: https:www.gutenberg.orgebookssearch?query=free+book&go=Go booklink title subtitle - -
+2016-05-10 19:40:15 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-10 19:40:15 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-10 19:40:15 INFO  BookTitleSearch:106 - Started searching Titles for adress =  https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:40:49 FATAL BookTitleSearch:41 - protocol = https host = null
+2016-05-10 19:40:49 ERROR BookTitleSearch:50 - Cannot select link from site: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:40:49 ERROR BookTitleSearch:61 - Other exception while site parsing: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:40:49 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-10 19:40:49 ERROR BookTitleSearch:121 - class java.lang.IllegalArgumentException https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:40:49 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-10 19:40:49 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-10 19:40:49 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:40:49 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.allitebooks.com
+2016-05-10 19:40:49 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-10 19:40:49 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-10 19:40:49 ERROR BookTitleSearch:121 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-10 19:40:49 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-10 19:40:49 INFO  BookTitleSearch:106 - Started searching Titles for adress =  http:www.bookrix.combooks.html
+2016-05-10 19:40:49 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:40:49 ERROR BookTitleSearch:50 - Cannot select link from site: http:www.bookrix.combooks.html
+2016-05-10 19:40:49 ERROR BookTitleSearch:61 - Other exception while site parsing: http:www.bookrix.combooks.html
+2016-05-10 19:40:49 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-10 19:40:49 ERROR BookTitleSearch:121 - class java.lang.IllegalArgumentException http:www.bookrix.combooks.html
+2016-05-10 19:40:49 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-10 19:40:49 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1f96901: startup date [Tue May 10 19:40:49 CEST 2016]; root of context hierarchy
+2016-05-10 19:40:49 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d7deef: startup date [Tue May 10 19:40:49 CEST 2016]; root of context hierarchy
+2016-05-10 19:40:49 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@19af65: startup date [Tue May 10 19:40:49 CEST 2016]; root of context hierarchy
+2016-05-10 19:40:49 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d7deef: startup date [Tue May 10 19:40:49 CEST 2016]; root of context hierarchy
+2016-05-10 19:40:49 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1f96901: startup date [Tue May 10 19:40:49 CEST 2016]; root of context hierarchy
+2016-05-10 19:40:49 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@19af65: startup date [Tue May 10 19:40:49 CEST 2016]; root of context hierarchy
+2016-05-10 19:41:54 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@707e36: startup date [Tue May 10 19:41:54 CEST 2016]; root of context hierarchy
+2016-05-10 19:41:54 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@32714f: startup date [Tue May 10 19:41:54 CEST 2016]; root of context hierarchy
+2016-05-10 19:41:54 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-10 19:41:54 INFO  FileLinkHandler:84 - New link get from file: https:www.gutenberg.orgebookssearch?query=free+book&go=Go booklink title subtitle - -
+2016-05-10 19:41:54 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-10 19:41:54 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-10 19:41:54 INFO  BookTitleSearch:107 - Started searching Titles for adress =  https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:41:57 FATAL BookTitleSearch:41 - protocol = https host = null
+2016-05-10 19:41:57 FATAL BookTitleSearch:42 - [Ljava.lang.StackTraceElement;@1081978
+2016-05-10 19:41:57 ERROR BookTitleSearch:51 - Cannot select link from site: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:41:57 ERROR BookTitleSearch:62 - Other exception while site parsing: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:41:57 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:41:57 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:41:57 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:41:57 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-10 19:41:57 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:41:57 FATAL BookTitleSearch:42 - [Ljava.lang.StackTraceElement;@1f96901
+2016-05-10 19:41:57 ERROR BookTitleSearch:51 - Cannot select link from site: http:www.allitebooks.com
+2016-05-10 19:41:57 ERROR BookTitleSearch:62 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-10 19:41:57 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:41:57 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-10 19:41:57 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:41:57 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http:www.bookrix.combooks.html
+2016-05-10 19:41:57 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:41:57 FATAL BookTitleSearch:42 - [Ljava.lang.StackTraceElement;@1d7deef
+2016-05-10 19:41:57 ERROR BookTitleSearch:51 - Cannot select link from site: http:www.bookrix.combooks.html
+2016-05-10 19:41:57 ERROR BookTitleSearch:62 - Other exception while site parsing: http:www.bookrix.combooks.html
+2016-05-10 19:41:57 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:41:57 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException http:www.bookrix.combooks.html
+2016-05-10 19:41:57 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:41:57 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1102025: startup date [Tue May 10 19:41:57 CEST 2016]; root of context hierarchy
+2016-05-10 19:41:57 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c2ccdf: startup date [Tue May 10 19:41:57 CEST 2016]; root of context hierarchy
+2016-05-10 19:41:57 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@328ccd: startup date [Tue May 10 19:41:57 CEST 2016]; root of context hierarchy
+2016-05-10 19:41:57 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@328ccd: startup date [Tue May 10 19:41:57 CEST 2016]; root of context hierarchy
+2016-05-10 19:41:57 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1102025: startup date [Tue May 10 19:41:57 CEST 2016]; root of context hierarchy
+2016-05-10 19:41:57 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@c2ccdf: startup date [Tue May 10 19:41:57 CEST 2016]; root of context hierarchy
+2016-05-10 19:42:35 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1192d32: startup date [Tue May 10 19:42:35 CEST 2016]; root of context hierarchy
+2016-05-10 19:42:35 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@16a4e4b: startup date [Tue May 10 19:42:35 CEST 2016]; root of context hierarchy
+2016-05-10 19:42:35 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-10 19:42:35 INFO  FileLinkHandler:84 - New link get from file: https:www.gutenberg.orgebookssearch?query=free+book&go=Go booklink title subtitle - -
+2016-05-10 19:42:35 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-10 19:42:35 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-10 19:42:35 INFO  BookTitleSearch:107 - Started searching Titles for adress =  https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:42:36 FATAL BookTitleSearch:41 - protocol = https host = null
+2016-05-10 19:42:36 ERROR BookTitleSearch:51 - Cannot select link from site: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:42:36 ERROR BookTitleSearch:62 - Other exception while site parsing: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:42:36 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:42:36 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:42:36 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:42:36 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-10 19:42:36 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:42:36 ERROR BookTitleSearch:51 - Cannot select link from site: http:www.allitebooks.com
+2016-05-10 19:42:36 ERROR BookTitleSearch:62 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-10 19:42:36 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:42:36 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-10 19:42:36 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:42:36 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http:www.bookrix.combooks.html
+2016-05-10 19:42:36 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:42:36 ERROR BookTitleSearch:51 - Cannot select link from site: http:www.bookrix.combooks.html
+2016-05-10 19:42:36 ERROR BookTitleSearch:62 - Other exception while site parsing: http:www.bookrix.combooks.html
+2016-05-10 19:42:36 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:42:36 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException http:www.bookrix.combooks.html
+2016-05-10 19:42:36 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:42:36 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c093b: startup date [Tue May 10 19:42:36 CEST 2016]; root of context hierarchy
+2016-05-10 19:42:36 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@8f7118: startup date [Tue May 10 19:42:36 CEST 2016]; root of context hierarchy
+2016-05-10 19:42:36 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fc8ecb: startup date [Tue May 10 19:42:36 CEST 2016]; root of context hierarchy
+2016-05-10 19:42:36 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c093b: startup date [Tue May 10 19:42:36 CEST 2016]; root of context hierarchy
+2016-05-10 19:42:36 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@8f7118: startup date [Tue May 10 19:42:36 CEST 2016]; root of context hierarchy
+2016-05-10 19:42:36 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fc8ecb: startup date [Tue May 10 19:42:36 CEST 2016]; root of context hierarchy
+2016-05-10 19:42:36 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-10 19:42:36 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-10 19:42:36 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-10 19:42:36 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-10 19:42:37 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-10 19:42:37 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-10 19:42:37 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-10 19:42:37 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-10 19:42:37 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-10 19:42:37 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-10 19:42:37 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-10 19:42:37 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
+2016-05-10 19:42:38 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@129425f'
+2016-05-10 19:42:38 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-10 19:42:38 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-10 19:42:38 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-10 19:42:38 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-10 19:42:38 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-10 19:42:38 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-10 19:42:38 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-10 19:42:38 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
+2016-05-10 19:42:38 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@129425f'
+2016-05-10 19:42:38 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-10 19:42:38 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1192d32: startup date [Tue May 10 19:42:35 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:11 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@707e36: startup date [Tue May 10 19:43:11 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:12 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@32714f: startup date [Tue May 10 19:43:12 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:12 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-10 19:43:12 INFO  FileLinkHandler:84 - New link get from file: https:www.gutenberg.orgebookssearch?query=free+book&go=Go booklink title subtitle - -
+2016-05-10 19:43:12 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-10 19:43:12 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-10 19:43:12 INFO  BookTitleSearch:107 - Started searching Titles for adress =  https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:43:13 FATAL BookTitleSearch:41 - protocol = https host = null
+2016-05-10 19:43:13 ERROR BookTitleSearch:51 - Cannot select link from site: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:43:13 ERROR BookTitleSearch:62 - Other exception while site parsing: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:43:13 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:43:13 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:43:13 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:43:13 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-10 19:43:13 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:43:13 ERROR BookTitleSearch:51 - Cannot select link from site: http:www.allitebooks.com
+2016-05-10 19:43:13 ERROR BookTitleSearch:62 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-10 19:43:13 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:43:13 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-10 19:43:13 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:43:13 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http:www.bookrix.combooks.html
+2016-05-10 19:43:13 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:43:13 ERROR BookTitleSearch:51 - Cannot select link from site: http:www.bookrix.combooks.html
+2016-05-10 19:43:13 ERROR BookTitleSearch:62 - Other exception while site parsing: http:www.bookrix.combooks.html
+2016-05-10 19:43:13 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:43:13 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException http:www.bookrix.combooks.html
+2016-05-10 19:43:13 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:43:13 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d7deef: startup date [Tue May 10 19:43:13 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:13 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2fb398: startup date [Tue May 10 19:43:13 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:13 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@19af65: startup date [Tue May 10 19:43:13 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:13 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2fb398: startup date [Tue May 10 19:43:13 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:13 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@19af65: startup date [Tue May 10 19:43:13 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:13 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d7deef: startup date [Tue May 10 19:43:13 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:35 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@707e36: startup date [Tue May 10 19:43:35 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:36 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@32714f: startup date [Tue May 10 19:43:36 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:36 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-10 19:43:36 INFO  FileLinkHandler:84 - New link get from file: https:www.gutenberg.orgebookssearch?query=free+book&go=Go booklink title subtitle - -
+2016-05-10 19:43:36 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-10 19:43:36 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-10 19:43:36 INFO  BookTitleSearch:107 - Started searching Titles for adress =  https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:43:41 FATAL BookTitleSearch:41 - protocol = https host = null
+2016-05-10 19:43:41 ERROR BookTitleSearch:51 - Cannot select link from site: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:43:41 ERROR BookTitleSearch:62 - Other exception while site parsing: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:43:41 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:43:41 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:43:41 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:43:41 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-10 19:43:41 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:43:41 ERROR BookTitleSearch:51 - Cannot select link from site: http:www.allitebooks.com
+2016-05-10 19:43:41 ERROR BookTitleSearch:62 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-10 19:43:41 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:43:41 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-10 19:43:41 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:43:41 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http:www.bookrix.combooks.html
+2016-05-10 19:43:41 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:43:41 ERROR BookTitleSearch:51 - Cannot select link from site: http:www.bookrix.combooks.html
+2016-05-10 19:43:41 ERROR BookTitleSearch:62 - Other exception while site parsing: http:www.bookrix.combooks.html
+2016-05-10 19:43:41 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:43:41 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException http:www.bookrix.combooks.html
+2016-05-10 19:43:41 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:43:41 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1499bff: startup date [Tue May 10 19:43:41 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:41 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@14fc7a8: startup date [Tue May 10 19:43:41 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:41 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d5bc78: startup date [Tue May 10 19:43:41 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:41 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d5bc78: startup date [Tue May 10 19:43:41 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:41 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1499bff: startup date [Tue May 10 19:43:41 CEST 2016]; root of context hierarchy
+2016-05-10 19:43:41 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@14fc7a8: startup date [Tue May 10 19:43:41 CEST 2016]; root of context hierarchy
+2016-05-10 19:44:01 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-10 19:44:01 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-10 19:44:01 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-10 19:44:01 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-10 19:44:03 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-10 19:44:03 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-10 19:44:03 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-10 19:44:03 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-10 19:44:03 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-10 19:44:03 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-10 19:44:03 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-10 19:44:04 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
+2016-05-10 19:44:06 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1d71b20'
+2016-05-10 19:44:06 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-10 19:44:06 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-10 19:44:06 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-10 19:44:06 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-10 19:44:06 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-10 19:44:06 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-10 19:44:06 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-10 19:44:06 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
+2016-05-10 19:44:07 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1d71b20'
+2016-05-10 19:44:07 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-10 19:44:22 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@707e36: startup date [Tue May 10 19:43:35 CEST 2016]; root of context hierarchy
+2016-05-10 19:44:31 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@707e36: startup date [Tue May 10 19:44:31 CEST 2016]; root of context hierarchy
+2016-05-10 19:44:32 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@32714f: startup date [Tue May 10 19:44:32 CEST 2016]; root of context hierarchy
+2016-05-10 19:44:32 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-10 19:44:32 INFO  FileLinkHandler:84 - New link get from file: https:www.gutenberg.orgebookssearch?query=free+book&go=Go booklink title subtitle - -
+2016-05-10 19:44:32 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-10 19:44:32 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-10 19:44:32 INFO  BookTitleSearch:107 - Started searching Titles for adress =  https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:44:37 FATAL BookTitleSearch:41 - protocol = https host = null
+2016-05-10 19:44:37 ERROR BookTitleSearch:51 - Cannot select link from site: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:44:37 ERROR BookTitleSearch:62 - Other exception while site parsing: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:44:37 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:44:37 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:44:37 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:44:37 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-10 19:44:37 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:44:37 ERROR BookTitleSearch:51 - Cannot select link from site: http:www.allitebooks.com
+2016-05-10 19:44:37 ERROR BookTitleSearch:62 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-10 19:44:37 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:44:37 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-10 19:44:37 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:44:37 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http:www.bookrix.combooks.html
+2016-05-10 19:44:37 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:44:37 ERROR BookTitleSearch:51 - Cannot select link from site: http:www.bookrix.combooks.html
+2016-05-10 19:44:37 ERROR BookTitleSearch:62 - Other exception while site parsing: http:www.bookrix.combooks.html
+2016-05-10 19:44:37 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:44:37 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException http:www.bookrix.combooks.html
+2016-05-10 19:44:37 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:44:37 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1499bff: startup date [Tue May 10 19:44:37 CEST 2016]; root of context hierarchy
+2016-05-10 19:44:37 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@14fc7a8: startup date [Tue May 10 19:44:37 CEST 2016]; root of context hierarchy
+2016-05-10 19:44:37 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d5bc78: startup date [Tue May 10 19:44:37 CEST 2016]; root of context hierarchy
+2016-05-10 19:44:37 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1499bff: startup date [Tue May 10 19:44:37 CEST 2016]; root of context hierarchy
+2016-05-10 19:44:37 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@14fc7a8: startup date [Tue May 10 19:44:37 CEST 2016]; root of context hierarchy
+2016-05-10 19:44:37 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d5bc78: startup date [Tue May 10 19:44:37 CEST 2016]; root of context hierarchy
+2016-05-10 19:45:28 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-10 19:45:28 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-10 19:45:28 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-10 19:45:28 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-10 19:45:30 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-10 19:45:30 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-10 19:45:30 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-10 19:45:30 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-10 19:45:30 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-10 19:45:30 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-10 19:45:30 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-10 19:45:31 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
+2016-05-10 19:45:33 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@bebef3'
+2016-05-10 19:45:33 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-10 19:45:33 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-10 19:45:33 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-10 19:45:33 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-10 19:45:33 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-10 19:45:33 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-10 19:45:33 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-10 19:45:33 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
+2016-05-10 19:45:34 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@bebef3'
+2016-05-10 19:45:34 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-10 19:45:50 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@707e36: startup date [Tue May 10 19:44:31 CEST 2016]; root of context hierarchy
+2016-05-10 19:50:07 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@707e36: startup date [Tue May 10 19:50:07 CEST 2016]; root of context hierarchy
+2016-05-10 19:50:08 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@13d1baf: startup date [Tue May 10 19:50:08 CEST 2016]; root of context hierarchy
+2016-05-10 19:50:08 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-10 19:50:08 INFO  FileLinkHandler:84 - New link get from file: https:www.gutenberg.orgebookssearch?query=free+book&go=Go booklink title subtitle - -
+2016-05-10 19:50:08 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-10 19:50:08 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-10 19:50:08 INFO  BookTitleSearch:107 - Started searching Titles for adress =  https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:50:16 FATAL BookTitleSearch:41 - protocol = https host = null
+2016-05-10 19:50:16 ERROR BookTitleSearch:51 - Cannot select link from site: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:50:16 ERROR BookTitleSearch:62 - Other exception while site parsing: https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:50:16 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:50:16 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-10 19:50:16 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:50:16 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http:www.allitebooks.com
+2016-05-10 19:50:16 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:50:16 ERROR BookTitleSearch:51 - Cannot select link from site: http:www.allitebooks.com
+2016-05-10 19:50:16 ERROR BookTitleSearch:62 - Other exception while site parsing: http:www.allitebooks.com
+2016-05-10 19:50:16 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:50:16 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException http:www.allitebooks.com
+2016-05-10 19:50:16 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:50:16 INFO  BookTitleSearch:107 - Started searching Titles for adress =  http:www.bookrix.combooks.html
+2016-05-10 19:50:16 FATAL BookTitleSearch:41 - protocol = http host = null
+2016-05-10 19:50:16 ERROR BookTitleSearch:51 - Cannot select link from site: http:www.bookrix.combooks.html
+2016-05-10 19:50:16 ERROR BookTitleSearch:62 - Other exception while site parsing: http:www.bookrix.combooks.html
+2016-05-10 19:50:16 INFO  BookTitleSearch:115 - Started iterating over links to search titles
+2016-05-10 19:50:16 ERROR BookTitleSearch:122 - class java.lang.IllegalArgumentException http:www.bookrix.combooks.html
+2016-05-10 19:50:16 INFO  BookTitleSearch:126 - Finished iterating over links to search titles
+2016-05-10 19:50:16 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@14fc7a8: startup date [Tue May 10 19:50:16 CEST 2016]; root of context hierarchy
+2016-05-10 19:50:16 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1499bff: startup date [Tue May 10 19:50:16 CEST 2016]; root of context hierarchy
+2016-05-10 19:50:16 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d5bc78: startup date [Tue May 10 19:50:16 CEST 2016]; root of context hierarchy
+2016-05-10 19:50:16 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@14fc7a8: startup date [Tue May 10 19:50:16 CEST 2016]; root of context hierarchy
+2016-05-10 19:50:16 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1499bff: startup date [Tue May 10 19:50:16 CEST 2016]; root of context hierarchy
+2016-05-10 19:50:16 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d5bc78: startup date [Tue May 10 19:50:16 CEST 2016]; root of context hierarchy
+2016-05-10 19:50:16 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-10 19:50:16 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-10 19:50:16 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-10 19:50:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-10 19:50:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-10 19:50:18 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-10 19:50:18 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-10 19:50:18 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-10 19:50:18 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-10 19:50:18 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-10 19:50:19 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-10 19:50:20 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
+2016-05-10 19:50:21 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1c17ba4'
+2016-05-10 19:50:21 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-10 19:50:22 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-10 19:50:22 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-10 19:50:22 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-10 19:50:22 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-10 19:50:22 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-10 19:50:22 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-10 19:50:22 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
+2016-05-10 19:50:22 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1c17ba4'
+2016-05-10 19:50:22 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-10 19:51:21 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@707e36: startup date [Tue May 10 19:50:07 CEST 2016]; root of context hierarchy
+2016-05-10 19:52:03 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@707e36: startup date [Tue May 10 19:52:03 CEST 2016]; root of context hierarchy
+2016-05-10 19:52:03 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@13d1baf: startup date [Tue May 10 19:52:03 CEST 2016]; root of context hierarchy
+2016-05-10 19:52:03 INFO  FileLinkHandler:25 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-10 19:52:04 INFO  FileLinkHandler:84 - New link get from file: https:www.gutenberg.orgebookssearch?query=free+book&go=Go booklink title subtitle - -
+2016-05-10 19:52:04 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
+2016-05-10 19:52:04 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
+2016-05-10 19:52:04 INFO  BookTitleSearch:107 - Started searching Titles for adress =  https:www.gutenberg.orgebookssearch?query=free+book&go=Go

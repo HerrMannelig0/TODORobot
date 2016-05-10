@@ -36,7 +36,7 @@ public class FileLinkHandler {
 			}
 			printWriter.flush();
 		} catch (FileNotFoundException e) {
-			logger.error("Exception occured during writing file to file (File not Found): "
+			logger.error("Exception occurred during writing file to file (File not Found): "
 					+ fileWithLinksToBookstores.getPath());
 			e.printStackTrace();
 		}

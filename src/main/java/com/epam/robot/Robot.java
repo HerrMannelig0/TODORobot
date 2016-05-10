@@ -46,7 +46,7 @@ public class Robot {
 		try {
 			crawler.crawl();
 		} catch (InterruptedException | ExecutionException e) {
-			logger.error(e.getClass() + "Crawling interrupted.");
+			logger.error(e.getClass() + "Crawling interrupted, cause " + e.getMessage());
 		}
 		
 		((AnnotationConfigApplicationContext)context).close();
@@ -63,7 +63,7 @@ public class Robot {
 		
 		public void crawl() throws InterruptedException, ExecutionException {
 
-			logger.info("Start of crawling");
+			logger.trace("Start of crawling");
 
 			Library library = context.getBean(Library.class);
 			ConcurrentLibrary concurrentLibrary = context.getBean(ConcurrentLibrary.class);
@@ -75,7 +75,7 @@ public class Robot {
 				concurrentLibrary.addAll(next.get());
 			}
 
-			logger.info("Crawling finished");
+			logger.trace("Crawling finished");
 
 			library.addAll(concurrentLibrary);
 			writeLibraryToDB(library);
@@ -83,7 +83,7 @@ public class Robot {
 		}
 
 		/**
-		 * This method 
+		 * This method is not the method you are looking for ;-P
 		 * @param links to searching books on it
 		 * @return Set<Future<ConcurrentLibrary>> set of results
 		 */
