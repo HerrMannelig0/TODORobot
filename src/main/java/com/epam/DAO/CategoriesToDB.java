@@ -8,9 +8,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.Transient;
-
-import com.epam.file.Category;
 
 @Entity
 public class CategoriesToDB {
@@ -21,6 +18,7 @@ public class CategoriesToDB {
 	private String category;
 	
 	@OneToMany(cascade=CascadeType.ALL)
+	//@OnDelete(action = OnDeleteAction.CASCADE)
 	private List<BookToDB> library;
 	
 	public CategoriesToDB() {

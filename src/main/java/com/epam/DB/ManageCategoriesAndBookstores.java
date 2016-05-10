@@ -1,5 +1,6 @@
 package com.epam.DB;
 
+import com.epam.DAO.BookToDB;
 import com.epam.DB.entities.BookDB;
 import com.epam.DB.entities.BookstoreDB;
 import com.epam.DB.entities.CategoryDB;

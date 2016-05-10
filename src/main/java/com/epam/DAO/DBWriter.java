@@ -28,6 +28,7 @@ public class DBWriter {
 		}
 
 		session.getTransaction().commit();
+		session.close();
 		sessionFactory.close();
 	}
 

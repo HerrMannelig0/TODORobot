@@ -9,7 +9,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 @Entity
+@OnDelete(action=OnDeleteAction.CASCADE)
 public class BookstoreToDB {
 
 	@Id
@@ -23,7 +27,6 @@ public class BookstoreToDB {
 	}
 	
 	public BookstoreToDB(String name, List<BookToDB> booksList) {
-		super();
 		this.name = name;
 		this.booksList = booksList;
 	}

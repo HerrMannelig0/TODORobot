@@ -15,6 +15,7 @@ import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.epam.DAO.DBDropper;
 import com.epam.DAO.DBWriter;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
@@ -29,12 +30,16 @@ public class Robot {
 	static Crawler crawler;
 	
 	/**
-	 * Method, that starts the program.
+	 * Main method that starts the program.
 	 */
 	public static void main(String[] args) {
 		
 		ApplicationContext context = new AnnotationConfigApplicationContext(CrawlerBeans.class);
 		Logger logger = (Logger) context.getBean("logger");
+		
+		DBDropper dbDropper = context.getBean(DBDropper.class);
+		dbDropper.drop();
+		logger.info("Tables has been dropped");
 		
 		Robot robot = new Robot();
 		crawler = robot.new Crawler();

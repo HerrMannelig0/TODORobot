@@ -126,6 +126,10 @@ public class BookstoreDB implements Serializable {
 	public String toString() {
 		return "BookstoreDB [id=" + id + ", name=" + name + ", urlAddress=" + urlAddress +"]";
 	}
+
+	public String toStringGUI() {
+		return toString();
+	}
     
     
 }

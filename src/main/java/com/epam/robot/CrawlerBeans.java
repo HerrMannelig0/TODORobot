@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.epam.DAO.DBDropper;
 import com.epam.file.FileLinkHandler;
 
 @Configuration
@@ -50,5 +51,10 @@ public class CrawlerBeans {
 	@Bean(name = "concurrent library")
 	public ConcurrentLibrary concurrentLibrary(){
 		return new ConcurrentLibrary();
+	}
+	
+	@Bean
+	public DBDropper dropper(){
+		return new DBDropper();
 	}
 }
