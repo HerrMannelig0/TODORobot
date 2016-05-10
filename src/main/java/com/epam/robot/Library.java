@@ -6,7 +6,6 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Set;
 
 import org.springframework.context.ApplicationContext;
@@ -14,7 +13,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.epam.DAO.BookToDB;
 import com.epam.DAO.LibraryDB;
-import com.epam.DB.entities.BookDB;
 import com.epam.file.Category;
 
 public class Library implements Set<Book> {
@@ -39,6 +37,7 @@ public class Library implements Set<Book> {
 		}
 		return dbList;
 	}
+
 
 	@Override
 	public boolean add(Book book) {

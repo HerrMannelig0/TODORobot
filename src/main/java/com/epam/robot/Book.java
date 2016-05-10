@@ -8,8 +8,6 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.epam.DAO.BookToDB;
-import com.epam.DB.entities.BookDB;
-import com.epam.DB.entities.BookstoreDB;
 import com.epam.file.Category;
 
 /**
@@ -120,6 +118,7 @@ public class Book {
 		bookDB.setAuthor(author);
 		return bookDB;
 	}
+
 	
 	/**
 	 * Extracting BookstoreDB from book's URL.

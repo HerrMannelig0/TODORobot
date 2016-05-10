@@ -26,7 +26,7 @@ public class BookstoreToDB {
 	public BookstoreToDB() {
 	}
 	
-	public BookstoreToDB(String name){
+	public BookstoreToDB(String name) {
 		this.name = name;
 	}
 	

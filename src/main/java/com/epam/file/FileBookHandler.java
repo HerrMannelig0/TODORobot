@@ -2,16 +2,7 @@ package com.epam.file;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-
-import com.epam.DB.entities.BookstoreDB;
-import org.hibernate.Session;
-
-import com.epam.DB.entities.BookDB;
-import com.epam.DB.HibernateUtil;
-import com.epam.robot.Book;
 
 public class FileBookHandler {
 

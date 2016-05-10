@@ -39,15 +39,6 @@ public class Robot {
 		ApplicationContext context = new AnnotationConfigApplicationContext(CrawlerBeans.class);
 		Logger logger = (Logger) context.getBean("logger");
 		
-		DBDropper dbDropper = context.getBean(DBDropper.class);
-		dbDropper.drop();
-		logger.info("Tables has been dropped");
-		
-		DBCreator dbCreator = new DBCreator();
-		dbCreator.create();
-		logger.info("New tables has been created");
-		
-		
 		Robot robot = new Robot();
 		crawler = robot.new Crawler();
 		

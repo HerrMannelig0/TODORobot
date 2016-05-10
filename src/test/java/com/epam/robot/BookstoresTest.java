@@ -6,16 +6,12 @@ import static org.mockito.Mockito.when;
 
 import java.io.File;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
-import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.Test;
 
 import com.epam.DAO.BookstoreToDB;
-import com.epam.DB.entities.BookstoreDB;
 
 public class BookstoresTest {
 
@@ -32,19 +28,18 @@ public class BookstoresTest {
 	
 	@Test
 	public void testGettingBookstoreFrmBookstoresSet() throws Exception {
-		Set<BookstoreDB> set = new HashSet<>();
-		set.add(new BookstoreDB("other"));
-		set.add(new BookstoreDB("gutenberg"));
-		set.add(new BookstoreDB("different"));
-		BookstoreDB result = bookstores.getBookstoreFromSet("gutenberg", set);
+		Set<BookstoreToDB> set = new HashSet<>();
+		set.add(new BookstoreToDB("other"));
+		set.add(new BookstoreToDB("gutenberg"));
+		set.add(new BookstoreToDB("different"));
+		BookstoreToDB result = bookstores.getBookstoreFromSet("gutenberg", set);
 		assertThat(result.getName()).isEqualTo("gutenberg");
 	}
-	
 	@Test
 	public void testGeneratingBookstoreListFromFile() throws Exception {
 		File file = new File("src/main/resources/FreeBooksAdressSite.txt");
-		Set<BookstoreDB> set = bookstores.generateBookstoreSet(file);
-		for (BookstoreDB bookstoreDB : set) {
+		Set<BookstoreToDB> set = bookstores.generateBookstoreSet(file);
+		for (BookstoreToDB bookstoreDB : set) {
 			System.out.println(bookstoreDB.getName());
 		}
 		assertThat(set.size()).isGreaterThan(0);
