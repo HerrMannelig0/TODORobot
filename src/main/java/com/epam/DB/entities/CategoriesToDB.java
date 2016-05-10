@@ -1,4 +1,4 @@
-package com.epam.DAO;
+package com.epam.DB.entities;
 
 import java.util.List;
 
@@ -8,9 +8,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.Transient;
-
-import com.epam.file.Category;
 
 @Entity
 public class CategoriesToDB {
@@ -29,6 +26,10 @@ public class CategoriesToDB {
 	public CategoriesToDB(String category, List<BookToDB> library) {
 		this.category = category;
 		this.library = library;
+	}
+
+	public CategoriesToDB(String category) {
+		this.category = category;
 	}
 
 	public int getId() {

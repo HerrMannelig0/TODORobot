@@ -1,9 +1,11 @@
-package com.epam.robot;
+package com.epam.library;
 
 import java.util.HashSet;
 import java.util.Set;
 import static org.assertj.core.api.Assertions.*;
 import org.testng.annotations.Test;
+
+import com.epam.library.Keywords;
 
 /**
  * Tests of utilities connected with Keywords

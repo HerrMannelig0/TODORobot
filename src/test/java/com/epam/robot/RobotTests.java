@@ -7,11 +7,6 @@ import static org.mockito.Mockito.when;
 
 public class RobotTests {
 
-	@Test
-	public void testInitializatingBookstores(){
-		NewRobot robot = new NewRobot();
-		Bookstores bookstores = robot.bookstores();
-		assertThat(bookstores.size()).isGreaterThan(0);
-	}
+	
 	
 }

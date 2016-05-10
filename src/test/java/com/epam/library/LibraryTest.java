@@ -1,4 +1,4 @@
-package com.epam.robot;
+package com.epam.library;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -15,6 +15,9 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.epam.file.Category;
+import com.epam.library.Book;
+import com.epam.library.Keywords;
+import com.epam.library.Library;
 
 public class LibraryTest {
 

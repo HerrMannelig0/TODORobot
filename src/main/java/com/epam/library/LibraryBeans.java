@@ -1,4 +1,4 @@
-package com.epam.robot;
+package com.epam.library;
 
 import java.io.File;
 import java.io.IOException;

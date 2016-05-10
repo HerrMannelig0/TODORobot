@@ -1,6 +1,5 @@
 package com.epam.GUI.view;
 
-import com.epam.robot.NewRobot;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,7 +9,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import com.epam.robot.Robot;
 
+/**
+ * Created by aga on 25.04.16.
+ */
 public class MainApp extends Application {
 
 
@@ -64,8 +67,10 @@ public class MainApp extends Application {
         }
     }
 
+    /**
+     * Returns the main stage.
+     */
     public static void main(String[] args) {
-        NewRobot.main(args);
         launch(args);
     }
 

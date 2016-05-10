@@ -6,7 +6,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-import com.epam.robot.Library;
+import com.epam.DB.entities.BookToDB;
+import com.epam.library.Library;
 
 public class LibraryDB implements List<BookToDB> {
 

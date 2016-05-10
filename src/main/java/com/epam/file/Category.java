@@ -1,13 +1,13 @@
 package com.epam.file;
 
-import com.epam.DAO.CategoryDB;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
+
+import com.epam.DB.entities.CategoriesToDB;
 
 /**
  * Class {@code CategoryDB} represents category of the book.
@@ -19,7 +19,7 @@ public class Category  {
 	protected HashSet<String> keywords;
 	private String name;
 	private String filePath;
-	//private Category category;
+	public static final Category NULL_CATEGORY = new Category("No category");
 		
 	public Category(String name) {
 		this.name = name;
@@ -90,8 +90,8 @@ public class Category  {
 		keywords.addAll(Arrays.asList(category));		
 	}
 	
-	public CategoryDB toDB(){
-		return new CategoryDB(name);
+	public CategoriesToDB toDB(){
+		return new CategoriesToDB(name);
 	}
 
 	@Override
@@ -99,11 +99,7 @@ public class Category  {
 		return name;
 	}
 
-	public com.epam.DB.entities.CategoryDB convertToDbCategory(){
-		com.epam.DB.entities.CategoryDB categoryDB = new com.epam.DB.entities.CategoryDB();
-		categoryDB.setName(name);
-		return categoryDB;
-	}
+	
 
 	@Override
 	public int hashCode() {
@@ -115,19 +111,7 @@ public class Category  {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Category other = (Category) obj;
-		if (name == null) {
-			if (other.name != null)
-				return false;
-		} else if (!name.equals(other.name))
-			return false;
-		return true;
+		return name.equals(((Category)obj).name);
 	}
 	
 	

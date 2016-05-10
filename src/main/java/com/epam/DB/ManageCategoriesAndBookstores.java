@@ -1,27 +1,23 @@
 package com.epam.DB;
 
-import com.epam.DB.entities.BookDB;
-import com.epam.DB.entities.BookstoreDB;
-import com.epam.DB.entities.CategoryDB;
-import com.epam.file.Category;
-import com.epam.robot.Bookstores;
-import com.epam.robot.LibrariesMap;
-import com.epam.robot.Library;
-import com.epam.robot.MainRobot;
-import org.apache.log4j.Logger;
-import org.hibernate.Session;
-
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import org.apache.log4j.Logger;
+import org.hibernate.Session;
+
+import com.epam.DAO.HibernateUtil;
+import com.epam.DB.entities.BookToDB;
+import com.epam.DB.entities.CategoriesToDB;
+import com.epam.file.Category;
+import com.epam.library.LibrariesMap;
+import com.epam.library.Library;
 
 /**
  * Created by aga on 27.04.16.
@@ -47,11 +43,11 @@ public class ManageCategoriesAndBookstores {
             Category category = entry.getKey();
             Library lib = entry.getValue();
 
-            CategoryDB categoryDB = new CategoryDB();
-            categoryDB.setName(category.getName());
+            CategoriesToDB categoryDB = new CategoriesToDB();
+            categoryDB.setCategory(category.getName());
             
-            ArrayList<BookDB> bookDBList = (ArrayList<BookDB>) lib.convertToDBList();
-            categoryDB.setListOfBooks(bookDBList);
+            ArrayList<BookToDB> bookDBList = (ArrayList<BookToDB>) lib.convertToDBList();
+            categoryDB.setLibrary(bookDBList);
             session.beginTransaction();
             session.save(categoryDB);
             session.flush();

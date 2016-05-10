@@ -1,6 +1,10 @@
 package com.epam.robot;
 
 import org.testng.annotations.Test;
+
+import com.epam.library.Keywords;
+import com.epam.library.Library;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

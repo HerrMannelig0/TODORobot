@@ -8,10 +8,10 @@ import java.util.Set;
 import org.testng.annotations.Test;
 
 import com.epam.file.Category;
-import com.epam.robot.Book;
-import com.epam.robot.Keywords;
-import com.epam.robot.LibrariesMap;
-import com.epam.robot.Library;
+import com.epam.library.Book;
+import com.epam.library.Keywords;
+import com.epam.library.LibrariesMap;
+import com.epam.library.Library;
 
 public class TestCategoryUtil {
 

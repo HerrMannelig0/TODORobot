@@ -1,18 +1,19 @@
-package com.epam.robot;
+package com.epam.library;
 
-import com.epam.DB.entities.BookstoreToDB;
-import com.epam.library.Book;
-import com.epam.library.Bookstores;
-import org.testng.annotations.Test;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import java.io.File;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import org.testng.annotations.Test;
+
+import com.epam.DB.entities.BookstoreToDB;
+import com.epam.library.Book;
+import com.epam.library.Bookstores;
 
 public class BookstoresTest {
 

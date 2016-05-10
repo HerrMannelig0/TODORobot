@@ -1,9 +1,12 @@
-package com.epam.DAO;
+package com.epam.DB.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 public class BookToDB {
@@ -55,8 +58,6 @@ public class BookToDB {
 	public String toString() {
 		return "BookToDB [id=" + id + ", title=" + title + ", author=" + author + ", bookstore=" + bookstore + "]";
 	}
-	
-	
 	
 	
 }

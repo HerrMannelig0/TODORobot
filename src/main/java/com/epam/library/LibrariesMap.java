@@ -1,13 +1,12 @@
-package com.epam.robot;
+package com.epam.library;
 
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.epam.DAO.CategoryDB;
 import com.epam.DAO.LibraryDB;
+import com.epam.DB.entities.CategoriesToDB;
 import com.epam.file.Category;
 
 /*package com.epam.robot;
@@ -110,10 +109,9 @@ public class LibrariesMap implements Map<Category, Library> {
 		return map.entrySet();
 	}
 	
-	public Map<CategoryDB, LibraryDB> toDB(){
-		Map<CategoryDB, LibraryDB> mapDB = new HashMap<>();
+	public Map<CategoriesToDB, LibraryDB> toDB(){
+		Map<CategoriesToDB, LibraryDB> mapDB = new HashMap<>();
 		for (Map.Entry<Category, Library> entry : map.entrySet()) {
-			System.err.println(entry.getValue());
 			mapDB.put(entry.getKey().toDB(), entry.getValue().convertToLibraryDB());
 		}
 		return mapDB;
