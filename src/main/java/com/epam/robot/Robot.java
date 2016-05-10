@@ -16,11 +16,12 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.epam.DAO.HibernateUtil;
-import com.epam.DAO.DBmanagment.DBCreator;
-import com.epam.DAO.DBmanagment.DBDropper;
 import com.epam.DAO.DBmanagment.DBWriter;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
+import com.epam.library.ConcurrentLibrary;
+import com.epam.library.LibrariesMap;
+import com.epam.library.Library;
 import com.epam.util.CategoryUtil;
 
 /**

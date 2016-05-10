@@ -9,7 +9,7 @@ import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.hibernate.transform.Transformers;
 
-import com.epam.DB.entities.BookDB;
+import com.epam.DB.entities.BookToDB;
 
 /**
  * Class for performing operation on DB regarding to books
@@ -23,9 +23,9 @@ public class BookDAOimpl {
         this.sessionFactory = sessionFactory;
     }
 
-    public void addAllBooks(List <BookDB> books) {
+    public void addAllBooks(List <BookToDB> books) {
         startTransactions();
-        for (BookDB book: books){
+        for (BookToDB book: books){
             session.save(book);
         }
         session.flush(); //read why those two are needed
@@ -34,33 +34,33 @@ public class BookDAOimpl {
 
     }
 
-    public BookDB getBookByID(int id) {
+    public BookToDB getBookByID(int id) {
         startTransactions();
         criteria.add(Restrictions.eq("id", id));
-        BookDB book = (BookDB) criteria.list();
+        BookToDB book = (BookToDB) criteria.list();
         endTransactions();
         return book;
     }
 
-    public List<BookDB> listByCategory (String category){
+    public List<BookToDB> listByCategory (String category){
         		startTransactions();
 		criteria.setProjection(Projections.distinct(Projections.projectionList()
 				.add(Projections.property("title"), "title").add(Projections.property("author"), "author")
 				.add(Projections.property("bookstore"), "bookstore"))).add(Restrictions.eq("category.name", category))
-				.setResultTransformer(Transformers.aliasToBean(BookDB.class));
-		List<BookDB> books = criteria.list();
+				.setResultTransformer(Transformers.aliasToBean(BookToDB.class));
+		List<BookToDB> books = criteria.list();
 		endTransactions();
 		return books;
 
     }
 
-    public void deleteBook(BookDB book) {
+    public void deleteBook(BookToDB book) {
         startTransactions();
         session.delete(book);
         endTransactions();
     }
 
-    public void addBook(BookDB book) {
+    public void addBook(BookToDB book) {
         startTransactions();
         session.save(book);
         endTransactions();
@@ -69,7 +69,7 @@ public class BookDAOimpl {
     private void startTransactions() {
         session = sessionFactory.openSession();
         session.beginTransaction();
-        criteria = session.createCriteria(BookDB.class);
+        criteria = session.createCriteria(BookToDB.class);
     }
 
     private void endTransactions() {

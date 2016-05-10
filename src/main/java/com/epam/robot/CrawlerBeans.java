@@ -8,6 +8,9 @@ import org.springframework.context.annotation.Configuration;
 
 import com.epam.DAO.DBmanagment.DBDropper;
 import com.epam.file.FileLinkHandler;
+import com.epam.library.Bookstores;
+import com.epam.library.ConcurrentLibrary;
+import com.epam.library.Library;
 
 @Configuration
 public class CrawlerBeans {

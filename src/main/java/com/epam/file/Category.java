@@ -1,13 +1,13 @@
 package com.epam.file;
 
-import com.epam.DAO.CategoryDB;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
+
+import com.epam.DB.entities.CategoriesToDB;
 
 /**
  * Class {@code CategoryDB} represents category of the book.
@@ -90,8 +90,8 @@ public class Category  {
 		keywords.addAll(Arrays.asList(category));		
 	}
 	
-	public CategoryDB toDB(){
-		return new CategoryDB(name);
+	public CategoriesToDB toDB(){
+		return new CategoriesToDB(name);
 	}
 
 	@Override

@@ -2,15 +2,15 @@ package com.epam.DB;
 
 import org.dbunit.DBTestCase;
 import org.dbunit.PropertiesBasedJdbcDatabaseTester;
-import org.dbunit.dataset.IDataSet;
 import org.dbunit.operation.DatabaseOperation;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.junit.After;
 import org.junit.Before;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.epam.DAO.HibernateUtil;
 
 /**
  * Created by aga on 04.05.16.

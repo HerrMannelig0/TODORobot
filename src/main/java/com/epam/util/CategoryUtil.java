@@ -8,9 +8,9 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import com.epam.file.Category;
-import com.epam.robot.Book;
-import com.epam.robot.LibrariesMap;
-import com.epam.robot.Library;
+import com.epam.library.Book;
+import com.epam.library.LibrariesMap;
+import com.epam.library.Library;
 
 public class CategoryUtil {
 

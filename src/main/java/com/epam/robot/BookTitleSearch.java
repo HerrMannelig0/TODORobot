@@ -17,6 +17,10 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.epam.library.Book;
+import com.epam.library.Keywords;
+import com.epam.library.Library;
+
 
 public class BookTitleSearch {
 	static private Set<String> addressHashSet = new HashSet<>();

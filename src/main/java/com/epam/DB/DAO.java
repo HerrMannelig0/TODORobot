@@ -1,20 +1,16 @@
 package com.epam.DB;
 
-import com.epam.DB.entities.BookstoreDB;
-import com.epam.DB.entities.CategoryDB;
-import com.epam.GUI.model.Bookstore;
-import com.epam.file.Category;
-import com.epam.robot.LibrariesMap;
-import com.epam.robot.Library;
-import org.hibernate.Criteria;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.criterion.Projections;
-
-import javax.persistence.Query;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+
+import com.epam.DAO.HibernateUtil;
+import com.epam.file.Category;
+import com.epam.library.LibrariesMap;
+import com.epam.library.Library;
 
 /**
  * Created by aga on 02.05.16.

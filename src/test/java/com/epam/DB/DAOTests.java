@@ -1,18 +1,14 @@
 package com.epam.DB;
 
-import com.epam.DB.entities.BookstoreDB;
+import java.io.File;
+
 import org.dbunit.IDatabaseTester;
 import org.dbunit.JdbcDatabaseTester;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSetBuilder;
 import org.dbunit.operation.DatabaseOperation;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.testng.annotations.Test;
-
-
-import java.io.File;
-import java.util.List;
 
 /**
  * Testing DB requires having some records, tests won't pass if there is no database.

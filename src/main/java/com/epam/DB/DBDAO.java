@@ -7,10 +7,11 @@ import java.util.Map;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 
-import com.epam.DB.entities.BookstoreDB;
+import com.epam.DAO.HibernateUtil;
+import com.epam.DB.entities.BookstoreToDB;
 import com.epam.file.Category;
-import com.epam.robot.LibrariesMap;
-import com.epam.robot.Library;
+import com.epam.library.LibrariesMap;
+import com.epam.library.Library;
 
 /**
  * Created by aga on 02.05.16.
@@ -33,11 +34,11 @@ public class DBDAO {
 
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             List<String> bookstoresForGUI = null;
-            List<BookstoreDB> bookstores;
+            List<BookstoreToDB> bookstores;
             bookstores = session.createSQLQuery("SELECT bookstore_name FROM bookstoreDB")
-                    .addEntity(BookstoreDB.class)
+                    .addEntity(BookstoreToDB.class)
                     .list();
-            bookstores.forEach(e -> bookstoresForGUI.add(e.toStringGUI()));
+            bookstores.forEach(e -> bookstoresForGUI.add(e.toString()));
             return bookstoresForGUI;
 
         } catch (HibernateException e) {

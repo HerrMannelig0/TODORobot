@@ -7,17 +7,21 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-import com.epam.DAO.BookToDB;
 import com.epam.DAO.HibernateUtil;
+import com.epam.DB.entities.BookToDB;
 
 public class DBReader {
 	
 	public void readAll(){
-		Session session = HibernateUtil.getSession();
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		Session session = sessionFactory.openSession();
 		session.beginTransaction();
 		
 		Query query = session.createQuery("from BookToDB");
 		List<BookToDB> result = query.list();
 		System.out.println(result);
+		
+		session.close();
+		sessionFactory.close();
 	}
 }
