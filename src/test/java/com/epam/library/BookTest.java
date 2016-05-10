@@ -37,7 +37,6 @@ public class BookTest {
 		
 		Category realCategory = book.checkCategory(romanceCategory);
 		
-		verify(romanceCategory).getName();
 		assertThat(realCategory).isEqualTo(new Category("Romance"));
 	}
 	
@@ -65,40 +64,15 @@ public class BookTest {
 	@Test
 	public void testAssigningProperCategory() {
 		Book book = new Book("title", "author", new Keywords(new String[]{"love"}));
-		HashSet<String> romanceSet = new HashSet<>();
-		romanceSet.add("love");
 		
-		HashSet<String> itSet = new HashSet<>();
-		itSet.add("computer");
-		
-		HashSet<String> comedySet = new HashSet<>();
-		comedySet.add("fun");
-		
-		HashSet<String> horrorSet = new HashSet<>();
-		horrorSet.add("scary");
-		
-		String[] names = {"IT", "Comedy", "Romance", "Horror"};
-		
-		Category[] categories = new Category[4];
-		
-		for(int i=0; i<names.length; i++){
-			categories[i] = mock(Category.class);
-		}
-					
-		when(categories[0].getKeywords()).thenReturn(itSet);
-		when(categories[0].getName()).thenReturn("IT");
-		
-		when(categories[1].getKeywords()).thenReturn(comedySet);
-		when(categories[1].getName()).thenReturn("Comedy");
-		
-		when(categories[2].getKeywords()).thenReturn(romanceSet);
-		when(categories[2].getName()).thenReturn("Romance");
-		
-		when(categories[3].getKeywords()).thenReturn(horrorSet);
-		when(categories[3].getName()).thenReturn("Horror");
+		Category[] categories = new Category[]{new Category("IT"), new Category("Comedy"), new Category("Romance"), new Category("Horror")};
+		categories[0].addKeyword("computer");
+		categories[1].addKeyword("clown");
+		categories[2].addKeyword("love");
+		categories[3].addKeyword("zombie");
 		
 		Category resultCategory = book.assignCategory(Arrays.asList(categories));
-		String expectedCategory = "Romance";
+		Category expectedCategory = new Category("Romance");
 		
 		assertThat(resultCategory).isEqualTo(expectedCategory);
 	}
