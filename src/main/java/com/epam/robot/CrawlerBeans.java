@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.epam.DAO.DBDropper;
+import com.epam.DAO.DBmanagment.DBDropper;
 import com.epam.file.FileLinkHandler;
 
 @Configuration

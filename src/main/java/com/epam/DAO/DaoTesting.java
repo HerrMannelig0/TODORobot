@@ -1,5 +1,7 @@
 package com.epam.DAO;
 
+import com.epam.DAO.DBmanagment.DBReader;
+
 public class DaoTesting {
 	public static void main(String[] args) {
 		

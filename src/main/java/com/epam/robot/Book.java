@@ -57,13 +57,13 @@ public class Book {
 	 * @see Category
 	 */
 	public Category assignCategory(List<Category> categories) {
-		Category nullCategory = new Category("Other");
+		//final Category otherCategory = new Category("Other");
 		if (extractBookstoreFromURL() == "allitebooks") return new Category("IT");
 		if (keywords == null)
-			return new Category("No category");
-		Category resultCategory = new Category("Other");
+			return Category.NULL_CATEGORY;
+		Category resultCategory = Category.NULL_CATEGORY;
 		for (Category category : categories) {
-			if (resultCategory.equals(nullCategory)) {
+			if (resultCategory.equals(Category.NULL_CATEGORY)) {
 				resultCategory = checkCategory(category);
 			} else
 				break;
@@ -84,7 +84,7 @@ public class Book {
 		if (keywords.contains(category.getKeywords())) {
 			return category;
 		}
-		return new Category("No category");
+		return Category.NULL_CATEGORY;
 	}
 
 	/**
@@ -114,11 +114,10 @@ public class Book {
 	 * 
 	 * @return BookDB
 	 */
-	public BookDB convertToBookDB() {
-		BookDB bookDB = new BookDB();
+	public BookToDB convertToBookDB() {
+		BookToDB bookDB = new BookToDB();
 		bookDB.setTitle(title);
 		bookDB.setAuthor(author);
-		bookDB.setCategory(bookCategory.convertToDbCategory());
 		return bookDB;
 	}
 	

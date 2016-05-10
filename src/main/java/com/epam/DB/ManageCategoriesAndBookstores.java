@@ -50,7 +50,7 @@ public class ManageCategoriesAndBookstores {
             CategoryDB categoryDB = new CategoryDB();
             categoryDB.setName(category.getName());
             
-            ArrayList<BookDB> bookDBList = (ArrayList<BookDB>) lib.convertToDBList();
+            ArrayList<BookToDB> bookDBList = (ArrayList<BookToDB>) lib.convertToDBList();
             categoryDB.setListOfBooks(bookDBList);
             session.beginTransaction();
             session.save(categoryDB);

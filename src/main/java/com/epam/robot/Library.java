@@ -32,10 +32,10 @@ public class Library implements Set<Book> {
 			library.addAll(otherLibrary);
 	}
 
-	public List<BookDB> convertToDBList(){
-		List<BookDB> dbList = new ArrayList<>();
+	public List<BookToDB> convertToDBList(){
+		List<BookToDB> dbList = new ArrayList<>();
 		for(Book book : library){
-			dbList.add(book.convertToBookDB());
+			dbList.add(book.toDB());
 		}
 		return dbList;
 	}

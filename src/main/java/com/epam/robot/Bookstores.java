@@ -23,22 +23,6 @@ public class Bookstores extends AbstractSet<BookstoreDB> {
 	private static Logger logger = Logger.getLogger("Bookstores");
 
 	/**
-	 * Adds Book to bookstoreDBs' list.
-	 * 
-	 * @param url
-	 *            to bookstore
-	 * @param book
-	 */
-	void addBookToBookstoreInBookstoresList(String url, Book book) {
-		String bookstoreName = extractBookstoreName(url);
-		BookstoreDB bookstoreDB = getBookstoreFromSet(bookstoreName, bookstores);
-		if (bookstoreDB == null)
-			logger.error("There is no such BookstoreDB: " + bookstoreName);
-		else
-			bookstoreDB.addBook(book.convertToBookDB());
-	}
-
-	/**
 	 * Searching BookstoreDB in given set.
 	 * 
 	 * @param bookstoreName

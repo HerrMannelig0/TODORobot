@@ -19,7 +19,7 @@ public class Category  {
 	protected HashSet<String> keywords;
 	private String name;
 	private String filePath;
-	//private Category category;
+	public static final Category NULL_CATEGORY = new Category("No category");
 		
 	public Category(String name) {
 		this.name = name;
@@ -115,7 +115,7 @@ public class Category  {
 
 	@Override
 	public boolean equals(Object obj) {
-		return name == ((Category)obj).name;
+		return name.equals(((Category)obj).name);
 	}
 	
 	

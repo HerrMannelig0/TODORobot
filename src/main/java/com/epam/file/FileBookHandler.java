@@ -51,34 +51,6 @@ public class FileBookHandler {
 		}
 		return bookTitles.toString();
 	}
-
-	/**
-	 * Puts book into database.
-	 * 
-	 * @param book
-	 * @throws FileNotFoundException 
-	 */
-	public static void writeBookToDatabase(Book book) throws FileNotFoundException {
-
-		BookstoreDB bookstoreDB = new BookstoreDB(book.extractBookstoreFromURL());
-
-		BookDB bookToDB = book.convertToBookDB();
-		
-		ArrayList<BookDB> booksInBookstore = new ArrayList<>();
-		booksInBookstore.add(bookToDB);
-		
-		bookstoreDB.setListOfBooks(booksInBookstore);
-
-		Session session = HibernateUtil.getSessionFactory().openSession();
-		session.beginTransaction();
-
-		session.save(bookstoreDB); // saving bookstoreDB
-		session.save(bookToDB); // three below: saving books
-
-		session.getTransaction().commit();
-		session.close();
-	}
-
 	
 
 }

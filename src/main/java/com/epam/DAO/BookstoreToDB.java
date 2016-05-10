@@ -26,6 +26,10 @@ public class BookstoreToDB {
 	public BookstoreToDB() {
 	}
 	
+	public BookstoreToDB(String name){
+		this.name = name;
+	}
+	
 	public BookstoreToDB(String name, List<BookToDB> booksList) {
 		this.name = name;
 		this.booksList = booksList;

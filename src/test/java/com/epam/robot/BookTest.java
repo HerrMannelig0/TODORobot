@@ -14,6 +14,7 @@ import java.util.List;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.epam.DAO.BookToDB;
 import com.epam.DB.entities.BookDB;
 import com.epam.file.Category;
 
@@ -56,7 +57,7 @@ public class BookTest {
 		Category realCategory = book.checkCategory(romanceCategory);
 		
 		verify(romanceCategory, times(0)).getName();
-		assertThat(realCategory).isEqualTo("No category");
+		assertThat(realCategory).isEqualTo(Category.NULL_CATEGORY);
 	}
 	
 	/**
@@ -184,12 +185,10 @@ public class BookTest {
 		String author = "anyAuthor";
 		Book book = new Book(title, author, new Keywords(new String[]{"vampire"}));
 		File file = new File("src/main/resources/Keywords/Categories.txt");
-		Category category = book.assignCategory(book.createCategoryList(file));
-		BookDB bookDB = book.convertToBookDB();
+		BookToDB bookDB = book.toDB();
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals(bookDB.getTitle(), title);
 		softAssert.assertEquals(bookDB.getAuthor(), author);
-		softAssert.assertEquals(bookDB.getCategory(), category);
 		softAssert.assertAll();
 	}
 	

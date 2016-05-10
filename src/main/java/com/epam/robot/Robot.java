@@ -15,8 +15,10 @@ import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.epam.DAO.DBDropper;
-import com.epam.DAO.DBWriter;
+import com.epam.DAO.HibernateUtil;
+import com.epam.DAO.DBmanagment.DBCreator;
+import com.epam.DAO.DBmanagment.DBDropper;
+import com.epam.DAO.DBmanagment.DBWriter;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
 import com.epam.util.CategoryUtil;
@@ -40,6 +42,11 @@ public class Robot {
 		DBDropper dbDropper = context.getBean(DBDropper.class);
 		dbDropper.drop();
 		logger.info("Tables has been dropped");
+		
+		DBCreator dbCreator = new DBCreator();
+		dbCreator.create();
+		logger.info("New tables has been created");
+		
 		
 		Robot robot = new Robot();
 		crawler = robot.new Crawler();
@@ -80,6 +87,7 @@ public class Robot {
 
 			library.addAll(concurrentLibrary);
 			writeLibraryToDB(library);
+			HibernateUtil.closeSession();
 		}
 
 		/**
@@ -104,7 +112,7 @@ public class Robot {
 
 		/**
 		 * This method adds all books in library to database.
-		 * @param library of founded books
+		 * @param library of found books
 		 */
 		private void writeLibraryToDB(Library library) {
 			LibrariesMap librariesMap = CategoryUtil.generateLibrariesMapfromLibrary(library);

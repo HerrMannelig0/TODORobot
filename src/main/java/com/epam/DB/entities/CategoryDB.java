@@ -1,6 +1,9 @@
 package com.epam.DB.entities;
 
 import javax.persistence.*;
+
+import com.epam.DAO.BookToDB;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +24,7 @@ public class CategoryDB implements Serializable {
 
 	@Column (name = "books")
 	@ElementCollection
-	List<BookDB> listOfBooks;
+	List<BookToDB> listOfBooks;
 
 	public CategoryDB(String name) {
 		this.name = name;
@@ -46,11 +49,11 @@ public class CategoryDB implements Serializable {
 
 	@OneToMany
 	@JoinColumn (name = "books_cat")
-	public List<BookDB> getListOfBooks() {
+	public List<BookToDB> getListOfBooks() {
 		return listOfBooks;
 	}
 
-	public void setListOfBooks(List<BookDB> listOfBooks) {
+	public void setListOfBooks(List<BookToDB> listOfBooks) {
 		this.listOfBooks = listOfBooks;
 	}
 }
