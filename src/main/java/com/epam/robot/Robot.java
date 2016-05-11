@@ -56,7 +56,7 @@ public class Robot {
 	 * Private inner class, that is responsible for crawling through sites.
 	 *
 	 */
-	private class Crawler {
+    private class Crawler {
 
 		ApplicationContext context = new AnnotationConfigApplicationContext(CrawlerBeans.class);
 		Logger logger = (Logger) context.getBean("logger");

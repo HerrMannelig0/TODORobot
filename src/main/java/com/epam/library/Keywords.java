@@ -21,7 +21,7 @@ public class Keywords extends AbstractSet<String>{
 	
 	/**
 	 * Check if given set of strings contains one or more keywords stored in this object.
-	 * @param Keywords to check
+	 * @param keywordsToCheck
 	 * @return True if keywords contains one or more keywords from given set.
 	 */
 	public boolean contains(Set<String> keywordsToCheck){
@@ -58,6 +58,7 @@ public class Keywords extends AbstractSet<String>{
 
 	@Override
 	public boolean equals(Object obj) {
+		if (obj == null) return false;
 		Keywords otherKeywords = (Keywords) obj;
 		TreeSet<String> thisTree = new TreeSet<>(this);
 		TreeSet<String> otherTree = new TreeSet<>(otherKeywords);

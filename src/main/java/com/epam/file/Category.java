@@ -1,9 +1,7 @@
 package com.epam.file;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.HashSet;
 
@@ -11,7 +9,6 @@ import com.epam.DB.entities.CategoriesToDB;
 
 /**
  * Class {@code CategoryDB} represents category of the book.
- * @see BookDAO
  * @see Keywords
  */
 public class Category  {
@@ -44,7 +41,7 @@ public class Category  {
 		BufferedReader reader = new BufferedReader(new FileReader(file));
 		
 		name = reader.readLine();
-		
+
 		HashSet<String> set = new HashSet<>();
 		
 		String nextKeyword = null;
@@ -111,6 +108,7 @@ public class Category  {
 
 	@Override
 	public boolean equals(Object obj) {
+        if (obj == null) return false;
 		return name.equals(((Category)obj).name);
 	}
 	

@@ -39,7 +39,6 @@ public class BookTitleSearch {
                 websiteContent = parseHTMLtoDoc(bookstoreAddressFromTextfile);
             } catch (Exception e) {
                 logger.fatal(e.getMessage());
-                e.getStackTrace();
             }
 
             addressHashSet.add(bookstoreAddressFromTextfile);
@@ -209,7 +208,6 @@ public class BookTitleSearch {
      * Set private variables to new objects.
      */
     private void resetClassVariables() {
-        new StringBuilder();
         addressHashSet = new HashSet<>();
     }
 
