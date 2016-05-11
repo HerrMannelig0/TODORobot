@@ -28,7 +28,6 @@ public class Link {
         this.authorTag = authorTag;
         this.priceTag = priceTag;
         this.keywordsTag = keywordsTag;
-        this.linkAdress = createFileName();
     }
 
     public String getElementType() {

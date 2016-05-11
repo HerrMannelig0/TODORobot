@@ -6,6 +6,8 @@ import com.epam.library.Keywords;
 import com.epam.library.Library;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.*;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -116,6 +118,8 @@ public class BookSearchingTest {
 		Library library = bookTitleSearch.searchTitlesInPageAndSubPages(urlString, tags[0], tags[1], tags[2], tags[3], tags[4]);
 		assertThat(library.size()).isGreaterThan(0);	
 	}
+		
+	
 
 	
 	
