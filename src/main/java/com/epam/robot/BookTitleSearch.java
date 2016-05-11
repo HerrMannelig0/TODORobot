@@ -103,8 +103,8 @@ public class BookTitleSearch {
     public synchronized Library searchTitlesInPageAndSubPages(String bookstoreAddressFromTextfile, String typeOfElement,
                                                               String titleTag, String authorTag, String priceTag, String keywordsTag) {
 
-        System.err.println("ITERATION : " + bookstoreAddressFromTextfile);
-        logger.info("Started searching Titles for adress =  " + bookstoreAddressFromTextfile);
+        logger.trace("ITERATION : " + bookstoreAddressFromTextfile);
+        logger.trace("Started searching Titles for adress =  " + bookstoreAddressFromTextfile);
 
         resetClassVariables();
 

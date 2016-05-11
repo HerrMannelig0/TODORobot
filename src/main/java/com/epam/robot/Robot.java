@@ -68,7 +68,6 @@ public class Robot {
 			Library library = context.getBean(Library.class);
 			ConcurrentLibrary concurrentLibrary = context.getBean(ConcurrentLibrary.class);
 			List<Link> links = generateListOfLinksFromDefaultAddressFile();
-			
 			Set<Future<ConcurrentLibrary>> set = executeSearching(links);
 
 			for (Future<ConcurrentLibrary> next : set) {

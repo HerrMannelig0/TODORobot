@@ -62,6 +62,20 @@ public class FileLinkHandlerTest {
        Set<Link> links = fileLinkHandler.readLinksFromFile(file);
        assertThat(links.size()).isEqualTo(one);
     }
+    
+    @Test
+	public void testReadingURLWithSlashes() throws FileNotFoundException{
+		File file = new File("src/test/resources/ReadingFromFileTest.txt");
+		FileLinkHandler fileLinkHandler = new FileLinkHandler();
+		Set<Link> links = fileLinkHandler.readLinksFromFile(file);
+		String url = null;
+		for (Link link : links) {
+			url = link.getLinkAdress();
+		}
+		String expectedUrl = "http://www.bookrix.com/books.html";
+		assertThat(url).isEqualTo(expectedUrl);
+		
+	}
  
     /**
      * Test of putting new item from file to LinkList

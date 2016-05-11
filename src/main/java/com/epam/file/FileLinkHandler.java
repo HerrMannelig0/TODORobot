@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
@@ -70,12 +71,13 @@ public class FileLinkHandler {
 	}
 
 	public Set<Link> readLinksFromFile(File fileWithLinksToBookstores) throws FileNotFoundException {
-		Scanner scanner = new Scanner(fileWithLinksToBookstores);
+		Scanner scanner = new Scanner(fileWithLinksToBookstores, "UTF-8");
 		Set<Link> links = new HashSet<>();
 
 		while (scanner.hasNextLine()) {
 			String[] partsOfRowFromFileWithBookstores = scanner.nextLine().split(" ");
 			if (doesLinkContainsSixParts(partsOfRowFromFileWithBookstores)) {
+				
 				Link link = new Link(partsOfRowFromFileWithBookstores[0], partsOfRowFromFileWithBookstores[1],
 						partsOfRowFromFileWithBookstores[2], partsOfRowFromFileWithBookstores[3], 
 						partsOfRowFromFileWithBookstores[4], partsOfRowFromFileWithBookstores[5]);
@@ -83,10 +85,16 @@ public class FileLinkHandler {
 
 				logger.info("New link get from file: " + link.toString());
 			}
+			
 		}
 		scanner.close();
 		return links;
 
+	}
+
+	private String addSlashesToUrl(String url) {
+		int index = url.indexOf(':')+1;
+		return url.substring(0,index) + "//" + url.substring(index);
 	}
 
 	protected static boolean doesLinkContainsSixParts(String[] partsOfRowFromFileWithBookstores) {
