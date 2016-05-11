@@ -11,7 +11,6 @@ import java.util.ArrayList;
 public class Category {
 
     private ArrayList<String> categories = new ArrayList<>();
-    public ObservableList<String> initCategories = FXCollections.observableList(categories);
 
     public Category(){
         categories.add("IT");

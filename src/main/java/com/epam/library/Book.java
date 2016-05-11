@@ -94,7 +94,7 @@ public class Book {
 	 * @throws IOException
 	 */
 	List<Category> createCategoryList(File file) throws IOException {
-		Scanner scanner = new Scanner(file);
+		Scanner scanner = new Scanner(file, "UTF-8");
 		List<Category> categories = new ArrayList<>();
 		while (scanner.hasNextLine()) {
 			String nextCategory = scanner.nextLine();

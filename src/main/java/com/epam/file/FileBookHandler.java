@@ -31,7 +31,7 @@ public class FileBookHandler {
 	 * @return title of book
 	 */
 	public String readBookTitlesFromFile() {
-		try (Scanner scanner = new Scanner(freeBooksTitlesUrl)) {
+		try (Scanner scanner = new Scanner(freeBooksTitlesUrl, "UTF-8")) {
 
 			while (scanner.hasNextLine()) {
 				bookTitles.append(scanner.nextLine() + "\n");

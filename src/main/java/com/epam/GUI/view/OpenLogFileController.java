@@ -18,8 +18,6 @@ public class OpenLogFileController {
     @FXML
     private TextArea logFileArea;
 
-    private StringBuilder logFile = new StringBuilder();
-
     private String readLogs() {
         String result = "";
         String fileName = "logging.log";

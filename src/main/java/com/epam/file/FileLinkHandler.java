@@ -1,8 +1,10 @@
 package com.epam.file;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.io.*;
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetDecoder;
+import java.nio.charset.CharsetEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -12,7 +14,6 @@ import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.apache.log4j.Logger;
-
 
 
 public class FileLinkHandler {
@@ -31,6 +32,8 @@ public class FileLinkHandler {
 	// not used anywhere (for now, important method, update list of bookstoreDBs
 	// in file)
 	public void writeLinksToFile(List<Link> linkList, File fileWithLinksToBookstores) {
+
+
 		try (PrintWriter printWriter = new PrintWriter(fileWithLinksToBookstores)) {
 			for (int i = 0; i < linkList.size(); i++) {
 				printWriter.println(linkList.get(i).toString());

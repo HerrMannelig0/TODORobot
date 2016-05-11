@@ -25740,3 +25740,65 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'Boo
 2016-05-10 19:52:04 INFO  FileLinkHandler:84 - New link get from file: http:www.allitebooks.com post entry-title entry-author - -
 2016-05-10 19:52:04 INFO  FileLinkHandler:84 - New link get from file: http:www.bookrix.combooks.html item item-title item-author item-price item-keywords
 2016-05-10 19:52:04 INFO  BookTitleSearch:107 - Started searching Titles for adress =  https:www.gutenberg.orgebookssearch?query=free+book&go=Go
+2016-05-11 14:05:46 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1192d32: startup date [Wed May 11 14:05:46 CEST 2016]; root of context hierarchy
+2016-05-11 14:05:46 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@16a4e4b: startup date [Wed May 11 14:05:46 CEST 2016]; root of context hierarchy
+2016-05-11 14:05:46 INFO  FileLinkHandler:27 - Start of creating List from File: src/main/resources/FreeBooksAdressSite.txt
+2016-05-11 14:05:46 INFO  FileLinkHandler:89 - New link get from file: https://www.gutenberg.org/ebooks/search/?query=free+book&go=Go booklink title subtitle - -
+2016-05-11 14:05:46 INFO  FileLinkHandler:89 - New link get from file: http://www.allitebooks.com/ post entry-title entry-author - -
+2016-05-11 14:05:46 INFO  FileLinkHandler:89 - New link get from file: http://www.bookrix.com/books.html item item-title item-author item-price item-keywords
+2016-05-11 14:05:48 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-11 14:05:49 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-11 14:05:49 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@13cde01: startup date [Wed May 11 14:05:49 CEST 2016]; root of context hierarchy
+2016-05-11 14:05:49 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@13cde01: startup date [Wed May 11 14:05:49 CEST 2016]; root of context hierarchy
+2016-05-11 14:05:52 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-11 14:05:56 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-11 14:05:56 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d396f3: startup date [Wed May 11 14:05:56 CEST 2016]; root of context hierarchy
+2016-05-11 14:05:56 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d396f3: startup date [Wed May 11 14:05:56 CEST 2016]; root of context hierarchy
+2016-05-11 14:06:23 INFO  BookTitleSearch:114 - Started iterating over links to search titles
+2016-05-11 14:06:50 INFO  BookTitleSearch:125 - Finished iterating over links to search titles
+2016-05-11 14:06:50 INFO  AnnotationConfigApplicationContext:578 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1998cee: startup date [Wed May 11 14:06:50 CEST 2016]; root of context hierarchy
+2016-05-11 14:06:50 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1998cee: startup date [Wed May 11 14:06:50 CEST 2016]; root of context hierarchy
+2016-05-11 14:06:50 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-11 14:06:50 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-11 14:06:50 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-11 14:06:50 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-11 14:06:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-11 14:06:51 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-11 14:06:51 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-11 14:06:51 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-11 14:06:51 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-11 14:06:51 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-11 14:06:51 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-11 14:06:51 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
+2016-05-11 14:06:51 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@110455d'
+2016-05-11 14:06:51 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-11 14:06:52 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-11 14:06:52 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-11 14:06:52 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-11 14:06:52 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-11 14:06:52 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-11 14:06:52 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-11 14:06:52 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
+2016-05-11 14:06:52 INFO  SchemaCreatorImpl:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@110455d'
+2016-05-11 14:06:52 INFO  connections:235 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-11 14:06:52 INFO  AnnotationConfigApplicationContext:960 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1192d32: startup date [Wed May 11 14:05:46 CEST 2016]; root of context hierarchy
+2016-05-11 14:07:43 INFO  Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+2016-05-11 14:07:43 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-05-11 14:07:43 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-05-11 14:07:43 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-11 14:07:44 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-05-11 14:07:44 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-11 14:07:44 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-11 14:07:44 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-11 14:07:44 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-11 14:07:44 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-11 14:07:44 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-11 14:07:44 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
+2016-05-11 14:07:44 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-05-11 14:07:45 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2016-05-11 14:07:45 INFO  connections:127 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/BookRobot??useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2016-05-11 14:07:45 INFO  connections:136 - HHH10001001: Connection properties: {useUnicode=yes, user=root, password=****, characterEncoding=UTF-8}
+2016-05-11 14:07:45 INFO  connections:141 - HHH10001003: Autocommit mode: false
+2016-05-11 14:07:45 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-11 14:07:45 INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-11 14:07:45 WARN  AnnotationBinder:705 - HHH000136: Inapropriate use of @OnDelete on entity, annotation ignored: com.epam.DB.entities.BookstoreToDB
