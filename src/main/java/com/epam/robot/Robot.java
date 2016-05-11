@@ -31,7 +31,7 @@ import com.epam.util.CategoryUtil;
 public class Robot {
 
 	static Crawler crawler;
-	
+
 	/**
 	 * Main method that starts the program.
 	 */
@@ -135,6 +135,7 @@ public class Robot {
 		private class CrawlerCaller implements Callable<ConcurrentLibrary> {
 
 			private Link link;
+
 
 			public CrawlerCaller() {
 			}

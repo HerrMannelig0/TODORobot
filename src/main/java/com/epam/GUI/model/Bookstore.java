@@ -14,7 +14,6 @@ public class Bookstore {
     private static ArrayList<String> bookstores = new ArrayList<>();
     public ObservableList<String> initBookstoreList = FXCollections.observableList(bookstores);
 
-
     public Bookstore() {
         bookstores.addAll(initBookstores());
     }

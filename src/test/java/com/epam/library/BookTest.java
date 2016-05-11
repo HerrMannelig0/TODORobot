@@ -11,6 +11,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -164,6 +165,25 @@ public class BookTest {
 		softAssert.assertEquals(bookDB.getTitle(), title);
 		softAssert.assertEquals(bookDB.getAuthor(), author);
 		softAssert.assertAll();
+	}
+
+	@DataProvider(name="books")
+	public Object[][] books(){
+		Book bookA = new Book("any other title", "author", new Keywords(new String[]{"vampire"}));
+		Book bookB = new Book("", "author", new Keywords(new String[]{""}));
+		Book bookC = new Book("other title", "author", new Keywords(new String[]{"love"}));
+		Book bookD = new Book(null, null, new Keywords(new String[]{"vampire"}));
+		Book bookE = null;
+
+		return new Object[][]{
+				{bookA}, {bookB}, {bookC}, {bookD}, {bookE}
+		};
+	}
+
+	@Test(dataProvider = "books")
+	public void testBookInEquality(Book book){
+		Book thisBook = new Book("title", "author", new Keywords(new String[]{"keyword"}));
+		assertThat(thisBook).isNotEqualTo(book);
 	}
 	
 }

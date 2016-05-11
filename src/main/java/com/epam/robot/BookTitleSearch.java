@@ -187,10 +187,8 @@ public class BookTitleSearch {
     /**
      * @return Document parsed from site (by give address).
      */
-    private Document parseHTMLtoDoc(String address) {
+    Document parseHTMLtoDoc(String address) {
         Document document = null;
-
-
         try {
             document = Jsoup.parse(new URL(address), 100000);
         } catch(HttpStatusException e){

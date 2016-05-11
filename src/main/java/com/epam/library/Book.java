@@ -163,7 +163,6 @@ public class Book {
 		result = prime * result + ((keywords == null) ? 0 : keywords.hashCode());
 		result = prime * result + ((price == null) ? 0 : price.hashCode());
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
-		result = prime * result + ((url == null) ? 0 : url.hashCode());
 		return result;
 	}
 
@@ -186,25 +185,10 @@ public class Book {
 				return false;
 		} else if (!bookCategory.equals(other.bookCategory))
 			return false;
-		if (keywords == null) {
-			if (other.keywords != null)
-				return false;
-		} else if (!keywords.equals(other.keywords))
-			return false;
-		if (price == null) {
-			if (other.price != null)
-				return false;
-		} else if (!price.equals(other.price))
-			return false;
 		if (title == null) {
 			if (other.title != null)
 				return false;
 		} else if (!title.equals(other.title))
-			return false;
-		if (url == null) {
-			if (other.url != null)
-				return false;
-		} else if (!url.equals(other.url))
 			return false;
 		return true;
 	}
