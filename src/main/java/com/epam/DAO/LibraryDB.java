@@ -43,8 +43,7 @@ public class LibraryDB implements List<BookToDB> {
 
 	@Override
 	public Object[] toArray() {
-		// TODO Auto-generated method stub
-		return null;
+		return list.toArray();
 	}
 
 	@Override
@@ -62,6 +61,7 @@ public class LibraryDB implements List<BookToDB> {
 		return list.remove(o);
 	}
 
+	@edu.umd.cs.findbugs.annotations.SuppressFBWarnings("GC_UNRELATED_TYPES")
 	@Override
 	public boolean containsAll(Collection<?> c) {
 		return list.contains(c);
@@ -141,6 +141,7 @@ public class LibraryDB implements List<BookToDB> {
 	public String toString() {
 		return "LibraryDB [list=" + list + "]";
 	}
+
 
 	
 	

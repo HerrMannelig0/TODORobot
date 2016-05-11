@@ -57,8 +57,13 @@ public class CategoriesToDB {
 		this.library = library;
 	}
 
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "CategoriesToDB{" +
+				"id=" + id +
+				", category='" + category + '\'' +
+				", library=" + library +
+				'}';
+	}
 }

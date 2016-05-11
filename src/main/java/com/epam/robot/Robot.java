@@ -56,12 +56,12 @@ public class Robot {
 	 * Private inner class, that is responsible for crawling through sites.
 	 *
 	 */
-    private class Crawler {
+    private  class Crawler {
 
 		ApplicationContext context = new AnnotationConfigApplicationContext(CrawlerBeans.class);
 		Logger logger = (Logger) context.getBean("logger");
-		
-		public void crawl() throws InterruptedException, ExecutionException {
+
+		public  void crawl() throws InterruptedException, ExecutionException {
 
 			logger.trace("Start of crawling");
 

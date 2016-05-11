@@ -17,12 +17,15 @@ public class DBWriter {
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
+		int category_id = 1;
 
 		for (Map.Entry<CategoriesToDB, LibraryDB> entry : map.entrySet()) {
 			LibraryDB libraryDB = entry.getValue();
 			CategoriesToDB categoryDB = entry.getKey();
-			
+			categoryDB.setId(category_id++);
+			System.out.println(categoryDB + " " + categoryDB.getId());
 			for (BookToDB book : libraryDB) {
+				book.setCategory_id(categoryDB.getId());
 				session.save(book);
 			}
 			

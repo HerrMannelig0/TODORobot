@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import com.epam.DB.entities.CategoriesToDB;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 /**
  * Class {@code CategoryDB} represents category of the book.
@@ -106,10 +107,22 @@ public class Category  {
 		return result;
 	}
 
+	@SuppressFBWarnings("BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS")
 	@Override
 	public boolean equals(Object obj) {
-        if (obj == null) return false;
-		return name.equals(((Category)obj).name);
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Category c = (Category)obj;
+		if (name == null) {
+			if (c.name != null)
+				return false;
+		} else if (!name.equals(c.name))
+			return false;
+		return true;
 	}
 	
 	

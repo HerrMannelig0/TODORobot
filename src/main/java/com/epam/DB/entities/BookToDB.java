@@ -11,53 +11,71 @@ import org.hibernate.annotations.OnDeleteAction;
 @Entity
 public class BookToDB {
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
-	private String title;
-	private String author;
-	private String bookstore;
-	
-	public BookToDB() {
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String title;
+    private String author;
+    private String bookstore;
 
-	public BookToDB(String title, String author, String bookstore) {
-		this.title = title;
-		this.author = author;
-		this.bookstore = bookstore;
-	}
+    private int category_id;
 
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	public String getAuthor() {
-		return author;
-	}
-	public void setAuthor(String author) {
-		this.author = author;
-	}
+    public BookToDB() {
+    }
 
-	public String getBookstore() {
-		return bookstore;
-	}
+    public BookToDB(String title, String author, String bookstore) {
+        this.title = title;
+        this.author = author;
+        this.bookstore = bookstore;
+    }
 
-	public void setBookstore(String bookstore) {
-		this.bookstore = bookstore;
-	}
+    public int getId() {
+        return id;
+    }
 
-	@Override
-	public String toString() {
-		return "BookToDB [id=" + id + ", title=" + title + ", author=" + author + ", bookstore=" + bookstore + "]";
-	}
-	
-	
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getBookstore() {
+        return bookstore;
+    }
+
+    public void setBookstore(String bookstore) {
+        this.bookstore = bookstore;
+    }
+
+    public int getCategory_id() {
+        return category_id;
+    }
+
+    public void setCategory_id(int category_id) {
+        this.category_id = category_id;
+    }
+
+    @Override
+    public String toString() {
+        return "BookToDB [id=" + id + ", title=" + title + ", author=" + author + ", bookstore=" + bookstore + "]";
+    }
+
+    public String toStringGUI() {
+        return "Author: " + author + " Title: " + title;
+    }
+
 }
