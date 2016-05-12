@@ -1,7 +1,5 @@
 package com.epam.library;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-
 import java.util.AbstractSet;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -58,7 +56,6 @@ public class Keywords extends AbstractSet<String>{
 		return result;
 	}
 
-	@SuppressFBWarnings("BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS")
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -68,6 +65,13 @@ public class Keywords extends AbstractSet<String>{
 		if (getClass() != obj.getClass())
 			return false;
 		Keywords otherKeywords = (Keywords) obj;
+		if(keywords == null && otherKeywords.keywords != null){
+			return false;
+		} 
+		if(keywords == null && otherKeywords.keywords == null){
+			return true;
+		} 
+		if(keywords.size() != otherKeywords.keywords.size()) return false;
 		TreeSet<String> thisTree = new TreeSet<>(this);
 		TreeSet<String> otherTree = new TreeSet<>(otherKeywords);
 		

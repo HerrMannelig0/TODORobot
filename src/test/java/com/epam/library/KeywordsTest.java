@@ -3,6 +3,8 @@ package com.epam.library;
 import java.util.HashSet;
 import java.util.Set;
 import static org.assertj.core.api.Assertions.*;
+
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.epam.library.Keywords;
@@ -39,5 +41,31 @@ public class KeywordsTest {
 		
 		boolean keywordsContainLove = keywords.contains(keywordsToCheck);
 		assertThat(keywordsContainLove).isFalse();
+	}
+	
+	
+	@DataProvider(name = "keywords")
+	public Object[][] keywords(){
+		Keywords k1 = new Keywords(new String[]{"uno", "dos", "three"});
+		Keywords k2 = new Keywords(new String[]{"", "", ""});
+		Keywords k3 = new Keywords(new String[]{});
+		return new Object[][]{
+			{k1}, {k2}, {k3}
+		};
+	}
+	
+	@Test(dataProvider = "keywords")
+	public void testIneqality(Keywords otherKeywords){
+		Keywords keywords = new Keywords(new String[]{"uno", "dos", "quatro"});
+		assertThat(keywords).isNotEqualTo(otherKeywords);
+		
+	}
+	
+	@Test
+	public void testEquality() {
+		Keywords keywords1 = new Keywords(new String[]{"uno", "dos", "quatro"});
+		Keywords keywords2 = new Keywords(new String[]{"uno", "dos", "quatro"});
+		
+		assertThat(keywords1).isEqualTo(keywords2);
 	}
 }

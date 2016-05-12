@@ -1,12 +1,13 @@
 package com.epam.file;
 
-import java.io.*;
-import java.nio.charset.StandardCharsets;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
 
 import com.epam.DB.entities.CategoriesToDB;
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 /**
  * Class {@code CategoryDB} represents category of the book.
@@ -107,7 +108,6 @@ public class Category  {
 		return result;
 	}
 
-	@SuppressFBWarnings("BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS")
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
