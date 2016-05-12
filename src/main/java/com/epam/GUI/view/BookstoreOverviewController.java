@@ -152,7 +152,7 @@ public class BookstoreOverviewController {
         DBDAO dbdao = new DBDAO();
         for (String bookstore: listViewActiveBookstores) {
             List<String> booksFromBookstore = dbdao.prepareBooksAfterClickButton(bookstore, categoriesToShow);
-            result = bookstore + "\n" + booksFromBookstore;
+            result = result +"\n"+ bookstore + "\n" + booksFromBookstore;
         }
             return result;
     }

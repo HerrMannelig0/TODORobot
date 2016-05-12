@@ -106,7 +106,7 @@ public class DBDAO {
         }
 
         private DBDAOLibrary addBookToList(Object[] book) {
-            list.add("\n"+(String) book[0] + " " + (String) book[1] + " (category: "+(String) book[3]+")");
+            list.add("\n"+(String) book[0] + " - " + (String) book[1] + " (category: "+(String) book[3]+")");
             return this;
         }
 
