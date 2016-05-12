@@ -119,7 +119,7 @@ public class BookTest {
 		
 		
 		Category resultCategory = book.assignCategory(Arrays.asList(categories));
-		Category expectedCategory = new Category("No category");
+		Category expectedCategory = new Category("Other");
 		
 		assertThat(resultCategory).isEqualTo(expectedCategory);
 	}

@@ -18,7 +18,7 @@ public class Category  {
 	protected HashSet<String> keywords;
 	private String name;
 	private String filePath;
-	public static final Category NULL_CATEGORY = new Category("No category");
+	public static final Category NULL_CATEGORY = new Category("Other");
 		
 	public Category(String name) {
 		this.name = name;

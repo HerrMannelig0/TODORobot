@@ -2,17 +2,6 @@ package com.epam.robot;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.net.URL;
-import java.util.List;
-
-import com.epam.file.Category;
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.testng.annotations.Test;
-
-import com.epam.DB.HibernateUtil;
-import com.epam.file.FileBookHandler;
-
 /**
  * Test of {@code FileBookHandler} class
  *

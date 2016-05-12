@@ -25,10 +25,6 @@ public class Library implements Set<Book> {
 	public Library(Set<Book> library){
 		this.library = library;
 	}
-	
-	public Library(Library otherLibrary){
-			library.addAll(otherLibrary);
-	}
 
 	public List<BookToDB> convertToDBList(){
 		List<BookToDB> dbList = new ArrayList<>();

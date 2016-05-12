@@ -55,10 +55,9 @@ public class Book {
 	 * @see Category
 	 */
 	public Category assignCategory(List<Category> categories) {
-		//final Category otherCategory = new Category("Other");
 		if (extractBookstoreFromURL() == "allitebooks") return new Category("IT");
 		if (keywords == null)
-			return Category.NULL_CATEGORY;
+			return new Category("No category");
 		Category resultCategory = Category.NULL_CATEGORY;
 		for (Category category : categories) {
 			if (resultCategory.equals(Category.NULL_CATEGORY)) {
