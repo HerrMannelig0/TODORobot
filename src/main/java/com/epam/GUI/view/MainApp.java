@@ -9,7 +9,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import com.epam.robot.Robot;
 
 
 public class MainApp extends Application {

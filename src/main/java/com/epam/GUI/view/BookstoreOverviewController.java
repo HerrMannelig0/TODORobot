@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -49,7 +50,7 @@ public class BookstoreOverviewController {
     @FXML // fx:id="libraryURL"
     private TextField libraryURL;
 
-   @FXML // fx:id="like hell i should know"
+   @FXML
    private Button showBooks;
 
 
@@ -119,6 +120,8 @@ public class BookstoreOverviewController {
         if (listViewActiveBookstores.isEmpty() || categoriesToShow.isEmpty()){
             loadErrorWindow("/WrongInputForShowBooks.fxml");
         }
+        System.out.println("bookstores:  "+listViewActiveBookstores+" categories: "+categoriesToShow);
+        System.out.println(setText(listViewActiveBookstores, categoriesToShow));
         listOfBooks.setText(setText(listViewActiveBookstores, categoriesToShow));
     }
 
@@ -146,8 +149,12 @@ public class BookstoreOverviewController {
     @FXML
     private String setText(ObservableList<String> listViewActiveBookstores, Set<String> categoriesToShow) {
         String result = "";
-
-        return result;
+        DBDAO dbdao = new DBDAO();
+        for (String bookstore: listViewActiveBookstores) {
+            List<String> booksFromBookstore = dbdao.prepareBooksAfterClickButton(bookstore, categoriesToShow);
+            result = bookstore + "\n" + booksFromBookstore;
+        }
+            return result;
     }
 
 

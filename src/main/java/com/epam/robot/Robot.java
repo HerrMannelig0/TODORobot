@@ -78,7 +78,7 @@ public class Robot {
 
 			library.addAll(concurrentLibrary);
 			writeLibraryToDB(library);
-			HibernateUtil.closeSession();
+		//	HibernateUtil.closeSession();
 		}
 
 		/**
