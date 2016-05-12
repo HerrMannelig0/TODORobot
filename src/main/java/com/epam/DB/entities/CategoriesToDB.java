@@ -9,6 +9,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+/**
+ * This class represents category as DB entity.
+ */
 @Entity
 public class CategoriesToDB {
 

@@ -8,6 +8,9 @@ import javax.persistence.Id;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
+/**
+ * This class represents books as DB entity.
+ */
 @Entity
 public class BookToDB {
 

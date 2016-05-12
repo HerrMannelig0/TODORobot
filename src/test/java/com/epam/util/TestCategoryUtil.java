@@ -13,6 +13,9 @@ import com.epam.library.Keywords;
 import com.epam.library.LibrariesMap;
 import com.epam.library.Library;
 
+/**
+ * Testing categories.
+ */
 public class TestCategoryUtil {
 
 	@Test

@@ -4,6 +4,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+/**
+ * Utilities for Hibernate usage.
+ */
 public class HibernateUtil {
 
 	private static final SessionFactory SESSION_FACTORY = buildSessionFactory();
@@ -16,18 +19,6 @@ public class HibernateUtil {
 	
 	public static void closeSession(){
 		SESSION.close();
-	}
-
-	private static SessionFactory buildSessionFactory() {
-
-		// For XML mapping
-		// return new Configuration().configure().buildSessionFactory();
-
-		// For Annotation - wczesniej bylo to AnnotationConfiguration, ale
-		// od Hibernate 3.6 jest deprecated i funkcjonalnosci przeniesione
-		// do Configuration
-		return new Configuration().configure().buildSessionFactory();
-
 	}
 
 	public static SessionFactory getSessionFactory() {
@@ -46,9 +37,25 @@ public class HibernateUtil {
 		return hibernateConfiguration.buildSessionFactory();
 	}
 
+	/**
+	 * Close caches and connection pools
+	 */
 	public static void shutdown() {
-		// Close caches and connection pools
 		getSessionFactory().close();
 	}
+
+	private static SessionFactory buildSessionFactory() {
+
+		// For XML mapping
+		// return new Configuration().configure().buildSessionFactory();
+
+		// For Annotation - wczesniej bylo to AnnotationConfiguration, ale
+		// od Hibernate 3.6 jest deprecated i funkcjonalnosci przeniesione
+		// do Configuration
+		return new Configuration().configure().buildSessionFactory();
+
+	}
+
+
 
 }

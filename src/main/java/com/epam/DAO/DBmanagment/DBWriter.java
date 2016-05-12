@@ -10,8 +10,15 @@ import com.epam.DAO.LibraryDB;
 import com.epam.DB.entities.BookToDB;
 import com.epam.DB.entities.CategoriesToDB;
 
+/**
+ * Class to write data to database.
+ */
 public class DBWriter {
 
+	/**
+	 *
+	 * @param map that holds categories as keys and libraries as values.
+     */
 	public void write(Map<CategoriesToDB, LibraryDB> map) {
 		
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();

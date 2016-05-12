@@ -7,6 +7,9 @@ import static org.mockito.Mockito.when;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -77,7 +80,17 @@ public class BookTest {
 		
 		assertThat(resultCategory).isEqualTo(expectedCategory);
 	}
-	
+
+	@Test
+	public void testAssignITCategory() throws MalformedURLException {
+		Book book = new Book("title", "author", "Free", new URL("http://www.allitebooks.com/"));
+		List<Category> list = new ArrayList<>();
+		list.add(new Category("IT"));
+		list.add(new Category("Romance"));
+		book.assignCategory(new ArrayList<>());
+		assertThat(book.getBookCategory()).isEqualTo(new Category("IT"));
+	}
+
 	/**
 	 * Test of assigning no category to a book
 	 */

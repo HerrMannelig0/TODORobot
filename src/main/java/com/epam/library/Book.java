@@ -55,9 +55,16 @@ public class Book {
 	 * @see Category
 	 */
 	public Category assignCategory(List<Category> categories) {
-		if (extractBookstoreFromURL() == "allitebooks") return new Category("IT");
-		if (keywords == null)
-			return new Category("No category");
+		String itBooks = "allitebooks";
+		System.out.println(extractBookstoreFromURL() + " " + itBooks + " " + extractBookstoreFromURL().equals(itBooks));
+		if (extractBookstoreFromURL().equals(itBooks)){
+			bookCategory = new Category("IT");
+			return bookCategory;
+		};
+		if (keywords == null) {
+			bookCategory = new Category("No category");
+			return bookCategory;
+		}
 		Category resultCategory = Category.NULL_CATEGORY;
 		for (Category category : categories) {
 			if (resultCategory.equals(Category.NULL_CATEGORY)) {
@@ -66,7 +73,7 @@ public class Book {
 				break;
 		}
 		bookCategory = resultCategory;
-		return resultCategory;
+		return bookCategory;
 	}
 
 	/**
