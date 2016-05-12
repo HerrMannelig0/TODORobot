@@ -120,8 +120,6 @@ public class BookstoreOverviewController {
         if (listViewActiveBookstores.isEmpty() || categoriesToShow.isEmpty()){
             loadErrorWindow("/WrongInputForShowBooks.fxml");
         }
-        System.out.println("bookstores:  "+listViewActiveBookstores+" categories: "+categoriesToShow);
-        System.out.println(setText(listViewActiveBookstores, categoriesToShow));
         listOfBooks.setText(setText(listViewActiveBookstores, categoriesToShow));
     }
 
@@ -131,6 +129,7 @@ public class BookstoreOverviewController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(path));
             Parent root = (Parent) loader.load();
             Stage stage = new Stage();
+            stage.setResizable(false);
             stage.setTitle("Error");
             stage.setScene(new Scene(root));
             stage.show();
