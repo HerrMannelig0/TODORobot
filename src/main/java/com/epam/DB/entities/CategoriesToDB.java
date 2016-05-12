@@ -1,5 +1,6 @@
 package com.epam.DB.entities;
 
+import javax.persistence.*;
 import java.util.List;
 
 import javax.persistence.CascadeType;

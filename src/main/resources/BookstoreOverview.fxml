@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
@@ -10,7 +14,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epam.GUI.view.BookstoreOverviewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epam.GUI.view.BookstoreOverviewController">
     <children>
         <ListView fx:id="bookstores" editable="true" layoutX="13.0" layoutY="62.0" prefHeight="136.0" prefWidth="215.0" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="62.0" />
         <ListView fx:id="activeLibraries" layoutX="336.0" layoutY="62.0" prefHeight="136.0" prefWidth="215.0" AnchorPane.leftAnchor="336.0" AnchorPane.topAnchor="62.0" />
@@ -32,7 +36,7 @@
         <CheckBox fx:id="fantasyCat" layoutX="372.0" layoutY="266.0" mnemonicParsing="false" onAction="#handleCheckBox" text="Fantasy" />
         <CheckBox fx:id="itCat" layoutX="372.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleCheckBox" text="IT" />
         <CheckBox fx:id="otherCat" layoutX="476.0" layoutY="266.0" mnemonicParsing="false" onAction="#handleCheckBox" text="Other" />
-        <CheckBox fx:id="undefinedCat" layoutX="432.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleCheckBox" text="No Category" />
+        <CheckBox fx:id="undefinedCat" layoutX="432.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleCheckBox" text="No category" />
         <Button fx:id="showBooks" layoutX="388.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#showBooksButtonAction" prefHeight="26.0" prefWidth="142.0" text="Show Books" />
         <Separator layoutY="345.0" prefHeight="3.0" prefWidth="562.0" />
         <Label layoutX="17.0" layoutY="14.0" text="SETTINGS" textFill="#30939a">
