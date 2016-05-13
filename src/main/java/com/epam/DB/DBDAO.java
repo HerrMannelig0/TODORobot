@@ -2,6 +2,7 @@ package com.epam.DB;
 
 import java.util.*;
 
+import com.epam.GUI.view.NoBooksOfGivenCategoryException;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -57,27 +58,41 @@ public class DBDAO {
     public List<String> prepareBooksAfterClickButton(String bookstore, Set<String> categoriesToShow) {
 
         DBDAOLibrary library = this.new DBDAOLibrary();
+        library.initialize();
+        Session session = HibernateUtil.getSession();
+        if (!session.isOpen()) session = HibernateUtil.getSessionFactory().openSession();
+        Query query = session.createSQLQuery("SELECT title, author, bookstore, CategoriesToDB.category from BookToDB left join CategoriesToDB ON BookToDB.category_id=CategoriesToDB.id;");
 
-       Session session = HibernateUtil.getSession();
-           if(!session.isOpen()) session = HibernateUtil.getSessionFactory().openSession();
-           Query query = session.createSQLQuery("SELECT title, author, bookstore, CategoriesToDB.category from BookToDB left join CategoriesToDB ON BookToDB.category_id=CategoriesToDB.id;");
+        List<Object[]> dataFromQuery = query.list();
 
-           List<Object[]> dataFromQuery = query.list();
+        for (Object[] book : dataFromQuery) {
+            library.addBookIfConditionsAreFulfill(bookstore, categoriesToShow, book);
+        }
 
-           for (Object[] book : dataFromQuery) {
-               library.addBookIfConditionsAreFulfill(bookstore, categoriesToShow, book);
-           }
-           return library;
-
-
+        for(String category : categoriesToShow){
+            if(library.numberOfBooksInCategory(category) == 0)
+                library.add("There is no books in category " + category +
+                        " in bookstore " + bookstore);
+        }
+        return library;
     }
 
     /**
-     * private class for filtering results according to given bookstores name and categories
+     * private inner class for filtering results according to given bookstores name and categories
      */
     private class DBDAOLibrary extends AbstractList<String> {
 
-        List<String> list = new ArrayList<>();
+        List<String> list;
+        private Map<String, Integer> categoriesCounter;
+
+        DBDAOLibrary() {
+
+        }
+
+        public void initialize(){
+            list = new ArrayList<>();
+            categoriesCounter = new HashMap<>();
+        }
 
         @Override
         public String get(int index) {
@@ -89,8 +104,20 @@ public class DBDAO {
             return list.size();
         }
 
+        @Override
+        public boolean add(String message) {
+            return list.add(message);
+        }
+
+        public int numberOfBooksInCategory(String category){
+            System.out.println("!!!! " + categoriesCounter);
+            if(categoriesCounter.containsKey(category))
+                return categoriesCounter.get(category);
+            return 0;
+        }
+
         /**
-         * Lord Imperator of coding... :(
+         * Adding new book to library.
          *
          * @param bookstore
          * @param categoriesToShow
@@ -98,20 +125,28 @@ public class DBDAO {
          */
         private void addBookIfConditionsAreFulfill(String bookstore, Set<String> categoriesToShow, Object[] book) {
             if (((String) (book[2])).equals(bookstore)) {
-                if (categoriesToShow.contains((String) book[3])) {
-                    this.addBookToList(book);
-                }
-
+                this.addBookToList(book);
+                incrementCategoriesCounter(book);
             }
         }
 
+        private void incrementCategoriesCounter(Object[] book) {
+            String category = (String) book[3];
+            if (categoriesCounter.containsKey(category)) {
+                int actualCounterState = categoriesCounter.get(category);
+                categoriesCounter.replace(category, ++actualCounterState);
+            }
+        }
+
+
+
         private DBDAOLibrary addBookToList(Object[] book) {
-            list.add((String) book[0] + " - " + (String) book[1] + " (category: "+(String) book[3]+")");
+            list.add((String) book[0] + " - " + (String) book[1] + " (category: " + (String) book[3] + ")");
             return this;
         }
 
 
     }
-
-
 }
+
+

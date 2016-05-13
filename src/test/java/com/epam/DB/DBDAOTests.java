@@ -1,5 +1,6 @@
 package com.epam.DB;
 
+import com.epam.GUI.view.NoBooksOfGivenCategoryException;
 import org.testng.annotations.Test;
 
 import java.util.HashSet;
@@ -13,13 +14,13 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class DBDAOTests {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoBooksOfGivenCategoryException {
         DBDAO dbdao = new DBDAO();
         String bookstore = "bookrix";
         Set<String> set = new HashSet<>();
         set.add("Romance");
         set.add("Other");
-        List<String> list = dbdao.prepareBooksAfterClickButton(bookstore, set);
+        List<String> list = dbdao.prepareBooksAfterClickButton (bookstore, set);
         System.out.println(list);
     }
 
