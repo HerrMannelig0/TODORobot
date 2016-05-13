@@ -46,16 +46,6 @@ public class FileLinkHandler {
         } catch (IOException e) {
             logger.trace("New link " + link + " has been written");
         }
-
-
-        /*try (PrintWriter printWriter = new PrintWriter(fileWithLinksToBookstores)) {
-            printWriter.println(link);
-            printWriter.flush();
-        } catch (FileNotFoundException e) {
-            logger.error("Exception occurred during writing file to file (File not Found): "
-                    + fileWithLinksToBookstores.getPath());
-            e.printStackTrace();
-        }*/
         logger.info("Link list has been written into file");
     }
 
@@ -68,7 +58,7 @@ public class FileLinkHandler {
     }
 
     /**
-     * Adding all read
+     * Adding all liks from given file.
      *
      * @param fileWithLinksToBookstores
      * @throws FileNotFoundException
@@ -77,6 +67,9 @@ public class FileLinkHandler {
         linkList.addAll(readLinksFromFile(fileWithLinksToBookstores));
     }
 
+    /**
+     * Adding addresses to address list.
+     */
     protected void updateURLList() {
         for (Link link : linkList) {
             urlList.add(link.getLinkAdress());
@@ -91,6 +84,12 @@ public class FileLinkHandler {
         urlList.clear();
     }
 
+    /**
+     * Reading links and tags from a given file.
+     * @param fileWithLinksToBookstores
+     * @return set of links
+     * @throws FileNotFoundException
+     */
     public Set<Link> readLinksFromFile(File fileWithLinksToBookstores) throws FileNotFoundException {
         Scanner scanner = new Scanner(fileWithLinksToBookstores, "UTF-8");
         Set<Link> links = new HashSet<>();
