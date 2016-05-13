@@ -13,6 +13,9 @@ import com.epam.DB.entities.BookstoreToDB;
 import com.epam.file.FileLinkHandler;
 import com.epam.file.Link;
 
+/**
+ * Wrapper class on the set of bookstores as DB entities.
+ */
 public class Bookstores extends AbstractSet<BookstoreToDB> {
 	public Set<BookstoreToDB> bookstores;
 

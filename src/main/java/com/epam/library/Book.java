@@ -56,7 +56,6 @@ public class Book {
 	 */
 	public Category assignCategory(List<Category> categories) {
 		String itBooks = "allitebooks";
-		System.out.println(extractBookstoreFromURL() + " " + itBooks + " " + extractBookstoreFromURL().equals(itBooks));
 		if (extractBookstoreFromURL().equals(itBooks)){
 			bookCategory = new Category("IT");
 			return bookCategory;
@@ -207,6 +206,10 @@ public class Book {
 				+ bookCategory + "]";
 	}
 
+	/**
+	 * Converting book to BookToDB
+	 * @return book as DB entity
+     */
 	public BookToDB toDB() {
 		BookToDB bookToDB = new BookToDB(title, author, extractBookstoreFromURL());
 		return bookToDB;

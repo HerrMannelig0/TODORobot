@@ -11,6 +11,9 @@ import org.springframework.context.annotation.Configuration;
 
 import com.epam.file.Category;
 
+/**
+ * Container for beans for Library class.
+ */
 @Configuration
 public class LibraryBeans {
 

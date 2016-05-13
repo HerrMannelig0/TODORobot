@@ -36,10 +36,13 @@ public class Robot {
 	 * Main method that starts the program.
 	 */
 	public static void main(String[] args) {
-		
+
 		ApplicationContext context = new AnnotationConfigApplicationContext(CrawlerBeans.class);
 		Logger logger = (Logger) context.getBean("logger");
-		
+
+		logger.fatal("fatal");
+		logger.trace("trace");
+		logger.error("error");
 		Robot robot = new Robot();
 		crawler = robot.new Crawler();
 		

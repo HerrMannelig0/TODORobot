@@ -15,6 +15,9 @@ import com.epam.DAO.LibraryDB;
 import com.epam.DB.entities.BookToDB;
 import com.epam.file.Category;
 
+/**
+ * Collection of books.
+ */
 public class Library implements Set<Book> {
 	private Set<Book> library;
 
@@ -26,6 +29,10 @@ public class Library implements Set<Book> {
 		this.library = library;
 	}
 
+	/**
+	 * Converting this library to list of BookToDB.
+	 * @return list of books as antities
+     */
 	public List<BookToDB> convertToDBList(){
 		List<BookToDB> dbList = new ArrayList<>();
 		for(Book book : library){
@@ -105,6 +112,9 @@ public class Library implements Set<Book> {
 		return "Library [library=" + library + "]";
 	}
 
+	/**
+	 * Assingnig categories to all books in library.
+	 */
 	public void assignCategoryForAllBooks() {
 		if(library == null) throw new IllegalStateException();
 		
@@ -119,9 +129,10 @@ public class Library implements Set<Book> {
 		((AnnotationConfigApplicationContext)context).close();
 	}
 
-
-
-
+	/**
+	 * Converting this library to LibraryDB
+	 * @return libraryDB
+     */
 	public LibraryDB convertToLibraryDB(){
 		LibraryDB libraryDB = new LibraryDB();
 		for (Book book : library) {
@@ -129,7 +140,11 @@ public class Library implements Set<Book> {
 		}
 		return libraryDB;
 	}
-	
+
+	/**
+	 * Convaering this library to list of BookToDB
+	 * @return list of BookToDB
+     */
 	public List<BookToDB> convertToListToDB(){
 		List<BookToDB> list = new ArrayList<>();
 		for (Book book : library) {

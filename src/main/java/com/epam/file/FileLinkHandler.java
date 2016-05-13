@@ -15,7 +15,9 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.apache.log4j.Logger;
 
-
+/**
+ * Handling crawling through pages.
+ */
 public class FileLinkHandler {
 
 	protected List<Link> linkList = new CopyOnWriteArrayList<Link>();
@@ -24,13 +26,16 @@ public class FileLinkHandler {
 
 	public void createListsFromFile(File fileWithLinksToBookstores) throws FileNotFoundException {
 		
-		logger.info("Start of creating List from File: " + fileWithLinksToBookstores.getPath());
+		logger.trace("Start of creating List from File: " + fileWithLinksToBookstores.getPath());
 		updateLinkList(fileWithLinksToBookstores);
 		updateURLList();
 	}
 
-	// not used anywhere (for now, important method, update list of bookstoreDBs
-	// in file)
+	/**
+	 * Writing links into File
+	 * @param linkList to write
+	 * @param fileWithLinksToBookstores
+     */
 	public void writeLinksToFile(List<Link> linkList, File fileWithLinksToBookstores) {
 
 
@@ -55,6 +60,11 @@ public class FileLinkHandler {
 		return urlList;
 	}
 
+	/**
+	 * Adding all read
+	 * @param fileWithLinksToBookstores
+	 * @throws FileNotFoundException
+     */
 	protected void updateLinkList(File fileWithLinksToBookstores) throws FileNotFoundException {
 		linkList.addAll(readLinksFromFile(fileWithLinksToBookstores));
 	}
