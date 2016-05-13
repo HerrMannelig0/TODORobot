@@ -50,8 +50,8 @@ public class BookstoreOverviewController {
     @FXML // fx:id="libraryURL"
     private TextField libraryURL;
 
-   @FXML
-   private Button showBooks;
+    @FXML
+    private Button showBooks;
 
 
     @FXML
@@ -117,7 +117,7 @@ public class BookstoreOverviewController {
 
     @FXML
     private void showBooksButtonAction(MouseEvent mouseEvent) {
-        if (listViewActiveBookstores.isEmpty() || categoriesToShow.isEmpty()){
+        if (listViewActiveBookstores.isEmpty() || categoriesToShow.isEmpty()) {
             loadErrorWindow("/WrongInputForShowBooks.fxml");
         }
         listOfBooks.setText(setText(listViewActiveBookstores, categoriesToShow));
@@ -142,18 +142,22 @@ public class BookstoreOverviewController {
 
     /**
      * Method for writing queries to take from DB books from bookstores listed in listViewActiveBookstores and with category listed in categories to show.
+     *
      * @param listViewActiveBookstores
      * @param categoriesToShow
      */
     @FXML
     private String setText(ObservableList<String> listViewActiveBookstores, Set<String> categoriesToShow) {
         String result = "";
+
         DBDAO dbdao = new DBDAO();
-        for (String bookstore: listViewActiveBookstores) {
-            List<String> booksFromBookstore = dbdao.prepareBooksAfterClickButton(bookstore, categoriesToShow);
-            result = result +"\n"+ bookstore + "\n" + booksFromBookstore;
+        for (String bookstore : listViewActiveBookstores) {
+            List<String> booksFromBookstore = null;
+            booksFromBookstore = dbdao.prepareBooksAfterClickButton(bookstore, categoriesToShow);
+            result = result + "\n" + bookstore + "\n" + booksFromBookstore;
         }
-            return result;
+
+        return result;
     }
 
 
