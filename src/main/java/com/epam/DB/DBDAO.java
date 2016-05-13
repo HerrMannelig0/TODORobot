@@ -71,8 +71,8 @@ public class DBDAO {
 
         for(String category : categoriesToShow){
             if(library.numberOfBooksInCategory(category) == 0)
-                library.add("There is no books in category " + category +
-                        " in bookstore " + bookstore);
+                library.add("\n\nThere is no books in category " + category +
+                        " in bookstore " + bookstore + "\n");
         }
         return library;
     }
@@ -110,7 +110,8 @@ public class DBDAO {
         }
 
         public int numberOfBooksInCategory(String category){
-            System.out.println("!!!! " + categoriesCounter);
+            for(Map.Entry<String, Integer> entry : categoriesCounter.entrySet()){
+            }
             if(categoriesCounter.containsKey(category))
                 return categoriesCounter.get(category);
             return 0;
@@ -124,9 +125,12 @@ public class DBDAO {
          * @param book
          */
         private void addBookIfConditionsAreFulfill(String bookstore, Set<String> categoriesToShow, Object[] book) {
+
             if (((String) (book[2])).equals(bookstore)) {
-                this.addBookToList(book);
-                incrementCategoriesCounter(book);
+                if(categoriesToShow.contains((String) book[3])) {
+                    this.addBookToList(book);
+                    incrementCategoriesCounter(book);
+                }
             }
         }
 
@@ -136,12 +140,13 @@ public class DBDAO {
                 int actualCounterState = categoriesCounter.get(category);
                 categoriesCounter.replace(category, ++actualCounterState);
             }
+            else categoriesCounter.put(category, 1);
         }
 
 
 
         private DBDAOLibrary addBookToList(Object[] book) {
-            list.add((String) book[0] + " - " + (String) book[1] + " (category: " + (String) book[3] + ")");
+            list.add("\n" + (String) book[0] + " - " + (String) book[1] + " (category: " + (String) book[3] + ")");
             return this;
         }
 
