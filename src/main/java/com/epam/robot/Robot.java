@@ -40,9 +40,6 @@ public class Robot {
 		ApplicationContext context = new AnnotationConfigApplicationContext(CrawlerBeans.class);
 		Logger logger = (Logger) context.getBean("logger");
 
-		logger.fatal("fatal");
-		logger.trace("trace");
-		logger.error("error");
 		Robot robot = new Robot();
 		crawler = robot.new Crawler();
 		
@@ -81,7 +78,7 @@ public class Robot {
 
 			library.addAll(concurrentLibrary);
 			writeLibraryToDB(library);
-		//	HibernateUtil.closeSession();
+			HibernateUtil.closeSession();
 		}
 
 		/**

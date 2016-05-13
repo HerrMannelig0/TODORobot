@@ -25,8 +25,10 @@ public class HibernateUtil {
 		return SESSION_FACTORY;
 	}
 
+	/**
+	 * Close caches and connection pools
+	 */
 	public static void shutdown() {
-		// Close caches and connection pools
 		getSessionFactory().close();
 	}
 	

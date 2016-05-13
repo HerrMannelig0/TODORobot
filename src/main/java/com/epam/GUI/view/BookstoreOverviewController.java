@@ -2,6 +2,7 @@ package com.epam.GUI.view;
 
 import com.epam.DB.DBDAO;
 import com.epam.GUI.model.Bookstore;
+import com.epam.file.FileLinkHandler;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -13,6 +14,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.List;
@@ -87,6 +89,8 @@ public class BookstoreOverviewController {
             loadErrorWindow("/WrongInputForURLAdding.fxml");
         } else {
             listViewBookstores.add(typedURL);
+            FileLinkHandler fileLinkHandler = new FileLinkHandler();
+            fileLinkHandler.writeLinksToFile(typedURL, new File("src/main/resources/FreeBooksAdressSite.txt"));
             libraryURL.clear();
         }
     }
@@ -123,6 +127,10 @@ public class BookstoreOverviewController {
         listOfBooks.setText(setText(listViewActiveBookstores, categoriesToShow));
     }
 
+    /**
+     * Loading window with error message.
+     * @param path to resource
+     */
     private void loadErrorWindow(String path) {
         try {
             // Load root layout from fxml file.
@@ -154,7 +162,9 @@ public class BookstoreOverviewController {
         for (String bookstore : listViewActiveBookstores) {
             List<String> booksFromBookstore = null;
             booksFromBookstore = dbdao.prepareBooksAfterClickButton(bookstore, categoriesToShow);
-            result = result + "\n" + bookstore + "\n" + booksFromBookstore;
+            for(String book : booksFromBookstore)
+                if(book.contains("There is no books in category")) result += "\n" + book;
+                else result += book +  " :: " + bookstore + "\n" ;
         }
 
         return result;

@@ -20,98 +20,101 @@ import org.apache.log4j.Logger;
  */
 public class FileLinkHandler {
 
-	protected List<Link> linkList = new CopyOnWriteArrayList<Link>();
-	protected List<String> urlList = new ArrayList<String>();
-	private static Logger logger = Logger.getLogger(FileLinkHandler.class);
+    protected List<Link> linkList = new CopyOnWriteArrayList<Link>();
+    protected List<String> urlList = new ArrayList<String>();
+    private static Logger logger = Logger.getLogger(FileLinkHandler.class);
 
-	public void createListsFromFile(File fileWithLinksToBookstores) throws FileNotFoundException {
-		
-		logger.trace("Start of creating List from File: " + fileWithLinksToBookstores.getPath());
-		updateLinkList(fileWithLinksToBookstores);
-		updateURLList();
-	}
+    public void createListsFromFile(File fileWithLinksToBookstores) throws FileNotFoundException {
 
-	/**
-	 * Writing links into File
-	 * @param linkList to write
-	 * @param fileWithLinksToBookstores
+        logger.trace("Start of creating List from File: " + fileWithLinksToBookstores.getPath());
+        updateLinkList(fileWithLinksToBookstores);
+        updateURLList();
+    }
+
+    /**
+     * Writing links into File
+     * @param link to write
+     * @param fileWithLinksToBookstores
      */
-	public void writeLinksToFile(List<Link> linkList, File fileWithLinksToBookstores) {
+    public void writeLinksToFile(String link, File fileWithLinksToBookstores) {
+
+        FileWriter writer = null;
+        try {
+            writer = new FileWriter(fileWithLinksToBookstores, true);
+            writer.write("\n" + link);
+            writer.close();
+        } catch (IOException e) {
+            logger.trace("New link " + link + " has been written");
+        }
 
 
-		try (PrintWriter printWriter = new PrintWriter(fileWithLinksToBookstores)) {
-			for (int i = 0; i < linkList.size(); i++) {
-				printWriter.println(linkList.get(i).toString());
-			}
-			printWriter.flush();
-		} catch (FileNotFoundException e) {
-			logger.error("Exception occurred during writing file to file (File not Found): "
-					+ fileWithLinksToBookstores.getPath());
-			e.printStackTrace();
-		}
-		logger.info("Link list has been written into file");
-	}
+        /*try (PrintWriter printWriter = new PrintWriter(fileWithLinksToBookstores)) {
+            printWriter.println(link);
+            printWriter.flush();
+        } catch (FileNotFoundException e) {
+            logger.error("Exception occurred during writing file to file (File not Found): "
+                    + fileWithLinksToBookstores.getPath());
+            e.printStackTrace();
+        }*/
+        logger.info("Link list has been written into file");
+    }
 
-	public List<Link> getLinksList() {
-		return linkList;
-	}
+    public List<Link> getLinksList() {
+        return linkList;
+    }
 
-	public List<String> getUrlList() {
-		return urlList;
-	}
+    public List<String> getUrlList() {
+        return urlList;
+    }
 
-	/**
-	 * Adding all read
-	 * @param fileWithLinksToBookstores
-	 * @throws FileNotFoundException
+    /**
+     * Adding all read
+     *
+     * @param fileWithLinksToBookstores
+     * @throws FileNotFoundException
      */
-	protected void updateLinkList(File fileWithLinksToBookstores) throws FileNotFoundException {
-		linkList.addAll(readLinksFromFile(fileWithLinksToBookstores));
-	}
+    protected void updateLinkList(File fileWithLinksToBookstores) throws FileNotFoundException {
+        linkList.addAll(readLinksFromFile(fileWithLinksToBookstores));
+    }
 
-	protected void updateURLList() {
-		for (Link link : linkList) {
-			urlList.add(link.getLinkAdress());
-		}
-	}
+    protected void updateURLList() {
+        for (Link link : linkList) {
+            urlList.add(link.getLinkAdress());
+        }
+    }
 
-	protected void clearLinkList() {
-		linkList.clear();
-	}
+    protected void clearLinkList() {
+        linkList.clear();
+    }
 
-	protected void clearURLList() {
-		urlList.clear();
-	}
+    protected void clearURLList() {
+        urlList.clear();
+    }
 
-	public Set<Link> readLinksFromFile(File fileWithLinksToBookstores) throws FileNotFoundException {
-		Scanner scanner = new Scanner(fileWithLinksToBookstores, "UTF-8");
-		Set<Link> links = new HashSet<>();
+    public Set<Link> readLinksFromFile(File fileWithLinksToBookstores) throws FileNotFoundException {
+        Scanner scanner = new Scanner(fileWithLinksToBookstores, "UTF-8");
+        Set<Link> links = new HashSet<>();
 
-		while (scanner.hasNextLine()) {
-			String[] partsOfRowFromFileWithBookstores = scanner.nextLine().split(" ");
-			if (doesLinkContainsSixParts(partsOfRowFromFileWithBookstores)) {
-				
-				Link link = new Link(partsOfRowFromFileWithBookstores[0], partsOfRowFromFileWithBookstores[1],
-						partsOfRowFromFileWithBookstores[2], partsOfRowFromFileWithBookstores[3], 
-						partsOfRowFromFileWithBookstores[4], partsOfRowFromFileWithBookstores[5]);
-				links.add(link);
+        while (scanner.hasNextLine()) {
+            String[] partsOfRowFromFileWithBookstores = scanner.nextLine().split(" ");
+            if (doesLinkContainsSixParts(partsOfRowFromFileWithBookstores)) {
 
-				logger.info("New link get from file: " + link.toString());
-			}
-			
-		}
-		scanner.close();
-		return links;
+                Link link = new Link(partsOfRowFromFileWithBookstores[0], partsOfRowFromFileWithBookstores[1],
+                        partsOfRowFromFileWithBookstores[2], partsOfRowFromFileWithBookstores[3],
+                        partsOfRowFromFileWithBookstores[4], partsOfRowFromFileWithBookstores[5]);
+                links.add(link);
 
-	}
+                logger.info("New link get from file: " + link.toString());
+            }
 
-	private String addSlashesToUrl(String url) {
-		int index = url.indexOf(':')+1;
-		return url.substring(0,index) + "//" + url.substring(index);
-	}
+        }
+        scanner.close();
+        return links;
 
-	protected static boolean doesLinkContainsSixParts(String[] partsOfRowFromFileWithBookstores) {
-		return partsOfRowFromFileWithBookstores.length == 6;
-	}
+    }
+
+    protected static boolean doesLinkContainsSixParts(String[] partsOfRowFromFileWithBookstores) {
+        return partsOfRowFromFileWithBookstores.length == 6;
+    }
 
 }

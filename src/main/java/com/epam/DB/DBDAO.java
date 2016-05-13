@@ -17,7 +17,6 @@ import com.epam.library.Library;
  */
 public class DBDAO {
     private Map<Category, Library> librariesMap;
-
     public DBDAO() {
     }
 
@@ -71,7 +70,7 @@ public class DBDAO {
 
         for(String category : categoriesToShow){
             if(library.numberOfBooksInCategory(category) == 0)
-                library.add("\n\nThere is no books in category " + category +
+                library.add("There is no books in category " + category +
                         " in bookstore " + bookstore + "\n");
         }
         return library;
