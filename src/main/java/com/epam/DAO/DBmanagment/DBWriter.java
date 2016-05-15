@@ -11,12 +11,11 @@ import com.epam.DB.entities.BookToDB;
 import com.epam.DB.entities.CategoriesToDB;
 
 /**
- * Class to write data to database.
+ * Class to write initial data to database.
  */
 public class DBWriter {
 
 	/**
-	 *
 	 * @param map that holds categories as keys and libraries as values.
      */
 	public void write(Map<CategoriesToDB, LibraryDB> map) {
@@ -28,16 +27,16 @@ public class DBWriter {
 
 		for (Map.Entry<CategoriesToDB, LibraryDB> entry : map.entrySet()) {
 			LibraryDB libraryDB = entry.getValue();
-			CategoriesToDB categoryDB = entry.getKey();
-			categoryDB.setId(category_id++);
-			System.out.println(categoryDB + " " + categoryDB.getId());
+			CategoriesToDB categoriesToDB = entry.getKey();
+			categoriesToDB.setId(category_id++);
+			System.out.println(categoriesToDB + " " + categoriesToDB.getId());
 			for (BookToDB book : libraryDB) {
-				book.setCategory_id(categoryDB.getId());
+				book.setCategory_id(categoriesToDB.getId());
 				session.save(book);
 			}
 			
-			categoryDB.setLibrary(libraryDB);
-			session.save(categoryDB);
+			categoriesToDB.setLibrary(libraryDB);
+			session.save(categoriesToDB);
 		}
 
 		session.getTransaction().commit();

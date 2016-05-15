@@ -59,7 +59,7 @@ public class Book {
 		if (extractBookstoreFromURL().equals(itBooks)){
 			bookCategory = new Category("IT");
 			return bookCategory;
-		};
+		}
 		if (keywords == null) {
 			bookCategory = new Category("No category");
 			return bookCategory;

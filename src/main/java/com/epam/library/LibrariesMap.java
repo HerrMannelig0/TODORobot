@@ -1,24 +1,15 @@
 package com.epam.library;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-
 import com.epam.DAO.LibraryDB;
 import com.epam.DB.entities.CategoriesToDB;
 import com.epam.file.Category;
 
-/*package com.epam.robot;
-
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import com.epam.file.CategoryDB;
 
-*//**
+/**
  * This map contains category as key and library of books, that should match to
  * that category, as value.
  */
@@ -36,7 +27,7 @@ public class LibrariesMap implements Map<Category, Library> {
 
 	/**
 	 * This static factory method converts Map<String, List<Book>> map into LibraryiesMap.
-	 * @param Map with String as key and List of Books as value
+	 * @param map with String as key and List of Books as value
 	 * @return this
 	 */
 	public static LibrariesMap generateFrom(Map<Category, Set<Book>> map) {

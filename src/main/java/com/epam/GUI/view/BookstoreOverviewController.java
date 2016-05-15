@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Created by aga on 25.04.16.
+ * Controller of parent layout loaded inside RootLayout providing main functionalities of GUI.
  */
 public class BookstoreOverviewController {
     Bookstore data = new Bookstore();

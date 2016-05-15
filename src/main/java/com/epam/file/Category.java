@@ -10,7 +10,7 @@ import java.util.HashSet;
 import com.epam.DB.entities.CategoriesToDB;
 
 /**
- * Class {@code CategoryDB} represents category of the book.
+ * Class {@code CategoriesToDB} represents category of the book.
  * @see Keywords
  */
 public class Category  {
@@ -66,7 +66,7 @@ public class Category  {
 	}
 	
 	/**
-	 * CategoryDB's name getter.
+	 * CategoriesToDB's name getter.
 	 * @return category
 	 */
 	public String getName() {

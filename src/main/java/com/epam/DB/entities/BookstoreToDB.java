@@ -47,11 +47,5 @@ public class BookstoreToDB {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public List<BookToDB> getBooksList() {
-		return booksList;
-	}
-	public void setBooksList(List<BookToDB> booksList) {
-		this.booksList = booksList;
-	}
-	
+
 }

@@ -8,7 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 /**
- * Created by aga on 20.04.16.
+ * Used in @{@link com.epam.GUI.view.BookstoreOverviewController} to create list of bookstores listed in GUI
  */
 public class Bookstore {
     private static ArrayList<String> bookstores = new ArrayList<>();

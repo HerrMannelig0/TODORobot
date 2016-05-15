@@ -1,5 +1,6 @@
 package com.epam.GUI.view;
 
+import com.epam.robot.Robot;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,7 +11,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 
-
+/**
+ * Main class initializing GUI and crawling for books.
+ */
 public class MainApp extends Application {
 
 
@@ -66,7 +69,7 @@ public class MainApp extends Application {
     }
 
     /**
-     * Returns the main stage.
+     * Returns the main stage and runs Robot.main() method.
      */
     public static void main(String[] args) {
         launch(args);

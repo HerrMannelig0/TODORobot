@@ -64,10 +64,6 @@ public class BookToDB {
         this.bookstore = bookstore;
     }
 
-    public int getCategory_id() {
-        return category_id;
-    }
-
     public void setCategory_id(int category_id) {
         this.category_id = category_id;
     }
@@ -75,10 +71,6 @@ public class BookToDB {
     @Override
     public String toString() {
         return "BookToDB [id=" + id + ", title=" + title + ", author=" + author + ", bookstore=" + bookstore + "]";
-    }
-
-    public String toStringGUI() {
-        return "Author: " + author + " Title: " + title;
     }
 
 }

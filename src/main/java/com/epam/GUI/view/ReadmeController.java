@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 /**
- * Created by aga on 25.04.16.
+ * Controller for showing README.md file from GUI.
  */
 public class ReadmeController {
     @FXML
@@ -19,12 +19,7 @@ public class ReadmeController {
 
     private StringBuilder readmeFile = new StringBuilder();
 
-    /**
-     * Maybe not Deprecated, but I wanted to keep that method. It results with weird exception:
-     * java.nio.file.NoSuchFileException: README.md
-     * It is not thrown at my home computer (Win7). Need to examine that.
-     * @return
-     */
+
     private String readReadme() {
         String result = "";
         String fileName = "README.md";

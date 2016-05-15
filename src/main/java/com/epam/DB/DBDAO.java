@@ -20,10 +20,6 @@ public class DBDAO {
     public DBDAO() {
     }
 
-    public DBDAO(LibrariesMap librariesMap) {
-        this.librariesMap = librariesMap.getMap();
-    }
-
     /**
      * @return List of avaiable bookstores which would be listed in GUI
      */

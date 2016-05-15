@@ -21,7 +21,9 @@ import com.epam.library.Book;
 import com.epam.library.Keywords;
 import com.epam.library.Library;
 
-
+/**
+ * Responsible for fetching book titles within websites.
+ */
 public class BookTitleSearch {
     static private Set<String> addressHashSet = new HashSet<>();
 

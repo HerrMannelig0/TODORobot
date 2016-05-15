@@ -34,14 +34,6 @@ public class Link {
         return typeForSearch;
     }
 
-    public void setTypeForSearch(String typeForSearch) {
-        this.typeForSearch = typeForSearch;
-    }
-
-    public void setNameForSearch(String nameForSearch) {
-        this.titleTag = nameForSearch;
-    }
-
     public String getLinkAdress() {
         return linkAdress;
     }

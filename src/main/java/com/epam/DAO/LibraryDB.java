@@ -9,16 +9,15 @@ import java.util.ListIterator;
 import com.epam.DB.entities.BookToDB;
 import com.epam.library.Library;
 
+/**
+ * used to create and manage list of Books from database.
+ */
 public class LibraryDB implements List<BookToDB> {
 
 	List<BookToDB> list;
 
 	public LibraryDB() {
 		list = new ArrayList<>();
-	}
-	
-	public LibraryDB(Library library){
-		list = library.convertToListToDB();
 	}
 	
 	@Override

@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.ResourceBundle;
 
 /**
- * Created by aga on 25.04.16.
+ * Controller of root layout loaded in {@link MainApp}
  */
 public class RootLayoutController {
     @FXML

@@ -53,7 +53,7 @@ public class Robot {
 	}
 
 	/**
-	 * Private inner class, that is responsible for crawling through sites.
+	 * Private inner class that is responsible for crawling through sites.
 	 *
 	 */
     private  class Crawler {
@@ -82,7 +82,7 @@ public class Robot {
 		}
 
 		/**
-		 * This method is not the method you are looking for ;-P
+		 *
 		 * @param links to searching books on it
 		 * @return Set<Future<ConcurrentLibrary>> set of results
 		 */
@@ -148,9 +148,6 @@ public class Robot {
 				this.link = link;
 			}
 
-			/* (non-Javadoc)
-			 * @see java.util.concurrent.Callable#call()
-			 */
 			@Override
 			public ConcurrentLibrary call() throws Exception {
 				Library library = context.getBean(Library.class);

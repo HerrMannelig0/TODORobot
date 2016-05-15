@@ -6,6 +6,9 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Own thread-safe collection based on Set keeping objects of Book type.
+ */
 public class ConcurrentLibrary implements Set<Book> {
 
 	private ConcurrentHashMap<Book, Object> map;
