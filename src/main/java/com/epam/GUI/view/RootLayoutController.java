@@ -21,7 +21,6 @@ public class RootLayoutController {
 
     /**
      * Handle action related to "Readme" menu item.
-     *
      * @param event Event on "Readme" menu item.
      */
 
