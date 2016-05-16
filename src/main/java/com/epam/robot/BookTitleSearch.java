@@ -86,7 +86,6 @@ public class BookTitleSearch {
 
             Keywords keywords = extractKeywords(keywordsAsStringFromSite);
             Book book = new Book(title, author, price, keywords, new URL(bookstoreAddressFromTextfile));
-
             library.add(book);
         }
         return library;

@@ -105,6 +105,7 @@ public class Library implements Set<Book> {
         @SuppressWarnings("unchecked")
         List<Category> categories = (List<Category>) context.getBean("listofcategories", dumbBook, categoriesFile);
 
+
         library.stream().forEach(book -> book.assignCategory(categories));
         ((AnnotationConfigApplicationContext) context).close();
     }

@@ -113,19 +113,6 @@ public class Book {
 	}
 
 	/**
-	 * This method converts Book object into BookDB
-	 * 
-	 * @return BookDB
-	 */
-	public BookToDB convertToBookDB() {
-		BookToDB bookDB = new BookToDB();
-		bookDB.setTitle(title);
-		bookDB.setAuthor(author);
-		return bookDB;
-	}
-
-	
-	/**
 	 * Extracting BookstoreDB from book's URL.
 	 * 
 	 * @return BookstoreDB

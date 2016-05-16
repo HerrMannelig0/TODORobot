@@ -170,7 +170,6 @@ public class BookstoreOverviewController {
         return result;
     }
 
-
     @FXML
     void initialize() {
         bookstores.setItems(listViewBookstores);

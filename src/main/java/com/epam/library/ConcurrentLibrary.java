@@ -1,15 +1,15 @@
 package com.epam.library;
 
+import java.util.AbstractSet;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Objects;
-import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Own thread-safe collection based on Set keeping objects of Book type.
  */
-public class ConcurrentLibrary implements Set<Book> {
+public class ConcurrentLibrary extends AbstractSet<Book> {
 
 	private ConcurrentHashMap<Book, Object> map;
 	private final static Object DUMB_OBJECT = new Object();
@@ -38,15 +38,6 @@ public class ConcurrentLibrary implements Set<Book> {
 		return map.keySet().iterator();
 	}
 
-	@Override
-	public Object[] toArray() {
-		return map.entrySet().toArray();
-	}
-
-	@Override
-	public <T> T[] toArray(T[] a) {
-		return map.entrySet().toArray(a);
-	}
 
 	@Override
 	public boolean add(Book e) {
@@ -72,39 +63,6 @@ public class ConcurrentLibrary implements Set<Book> {
 		for (Book e : c)
 			if (add(e))
 				modified = true;
-		return modified;
-	}
-
-	@Override
-	public boolean retainAll(Collection<?> c) {
-		Objects.requireNonNull(c);
-		boolean modified = false;
-		Iterator<Book> it = iterator();
-		while (it.hasNext()) {
-			if (!c.contains(it.next())) {
-				it.remove();
-				modified = true;
-			}
-		}
-		return modified;
-	}
-
-	@Override
-	public boolean removeAll(Collection<?> c) {
-		Objects.requireNonNull(c);
-		boolean modified = false;
-
-		if (size() > c.size()) {
-			for (Iterator<?> i = c.iterator(); i.hasNext();)
-				modified |= remove(i.next());
-		} else {
-			for (Iterator<?> i = iterator(); i.hasNext();) {
-				if (c.contains(i.next())) {
-					i.remove();
-					modified = true;
-				}
-			}
-		}
 		return modified;
 	}
 
