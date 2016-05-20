@@ -68,6 +68,10 @@ public class BookToDB {
         this.category_id = category_id;
     }
 
+    public int getCategory_id() {
+        return category_id;
+    }
+
     @Override
     public String toString() {
         return "BookToDB [id=" + id + ", title=" + title + ", author=" + author + ", bookstore=" + bookstore + "]";

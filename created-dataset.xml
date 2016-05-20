@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <BookToDB id="1" author="Aasha Hassan" bookstore="bookrix" category_id="1" title="X Rated"/>
+  <BookToDB id="2" author="John Stormm" bookstore="bookrix" category_id="1" title="Practical Witchery!"/>
+  <BookToDB id="3" author="D.E. brown" bookstore="bookrix" category_id="1" title="The Glass Slipper"/>
+  <BookToDB id="4" author="Ruby Marsannay" bookstore="bookrix" category_id="1" title="Wine Porn"/>
+  <BookToDB id="5" author="Jemma Grey" bookstore="bookrix" category_id="1" title="I Want My Baby Back"/>
+
+  <CategoriesToDB id="1" category="Romance" />
+  <CategoriesToDB id="2" category="Horror" />
+</dataset>

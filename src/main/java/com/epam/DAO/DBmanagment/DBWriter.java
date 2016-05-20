@@ -5,7 +5,6 @@ import java.util.Map;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-import com.epam.DAO.HibernateUtil;
 import com.epam.DAO.LibraryDB;
 import com.epam.DB.entities.BookToDB;
 import com.epam.DB.entities.CategoriesToDB;
@@ -18,10 +17,9 @@ public class DBWriter {
 	/**
 	 * @param map that holds categories as keys and libraries as values.
      */
-	public void write(Map<CategoriesToDB, LibraryDB> map) {
+	public void write(Map<CategoriesToDB, LibraryDB> map, DBUtilities dbUtilities) {
 		
-		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-		Session session = sessionFactory.openSession();
+		Session session = dbUtilities.getSessionFactory().openSession();
 		session.beginTransaction();
 		int category_id = 1;
 
@@ -41,7 +39,6 @@ public class DBWriter {
 
 		session.getTransaction().commit();
 		session.close();
-		sessionFactory.close();
 	}
 
 }

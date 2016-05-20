@@ -1,6 +1,7 @@
 package com.epam.GUI.view;
 
-import com.epam.DB.DBDAO;
+import com.epam.DAO.HibernateUtil;
+import com.epam.DAO.DBDAO;
 import com.epam.GUI.model.Bookstore;
 import com.epam.file.FileLinkHandler;
 import javafx.collections.FXCollections;
@@ -161,7 +162,7 @@ public class BookstoreOverviewController {
         DBDAO dbdao = new DBDAO();
         for (String bookstore : listViewActiveBookstores) {
             List<String> booksFromBookstore = null;
-            booksFromBookstore = dbdao.prepareBooksAfterClickButton(bookstore, categoriesToShow);
+            booksFromBookstore = dbdao.prepareBooksAfterClickButton(bookstore, categoriesToShow, new HibernateUtil());
             for(String book : booksFromBookstore)
                 if(book.contains("There is no books in category")) result += "\n" + book;
                 else result += book +  " :: " + bookstore + "\n" ;

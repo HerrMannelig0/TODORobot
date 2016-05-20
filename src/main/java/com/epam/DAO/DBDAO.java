@@ -1,45 +1,40 @@
-package com.epam.DB;
+package com.epam.DAO;
 
 import java.util.*;
 
-import com.epam.GUI.view.NoBooksOfGivenCategoryException;
-import org.hibernate.HibernateException;
+import com.epam.DAO.DBmanagment.DBUtilities;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
 import com.epam.DAO.HibernateUtil;
 import com.epam.file.Category;
-import com.epam.library.LibrariesMap;
 import com.epam.library.Library;
+import org.hibernate.SessionFactory;
 
 /**
  * Class responsible for fetching results according to user preferences and send them to GUI.
  */
 public class DBDAO {
     private Map<Category, Library> librariesMap;
+
     public DBDAO() {
     }
 
     /**
      * @return List of avaiable bookstores which would be listed in GUI
      */
-    public List<String> listOfBookstoresForGUI() {
+    public List<String> listOfBookstoresForGUI(DBUtilities dbUtilities) {
 
-        try (Session session = HibernateUtil.getSession()) {
-            List<String> bookstoresForGUI = new ArrayList<>();
-            List<Object> bookstores;
+        Session session = dbUtilities.getSessionFactory().openSession();
+        List<String> bookstoresForGUI = new ArrayList<>();
+        List<Object> bookstores;
 
-            Query query = session.createSQLQuery("SELECT DISTINCT bookstore FROM BookToDB;");
+        Query query = session.createSQLQuery("SELECT DISTINCT bookstore FROM BookToDB;");
 
-            bookstores = query.list();
-            bookstores.forEach(e -> bookstoresForGUI.add(e.toString()));
-            return bookstoresForGUI;
+        bookstores = query.list();
+        bookstores.forEach(e -> bookstoresForGUI.add(e.toString()));
+        return bookstoresForGUI;
 
-        } catch (HibernateException e) {
-            System.err.print("Cannot make query for bookstores.");
-            e.printStackTrace();
-        }
-        return null;
     }
 
     /**
@@ -50,12 +45,11 @@ public class DBDAO {
      * @param categoriesToShow list of categories from which books would be taken
      * @return list of books with given properties (bookstore, categories)
      */
-    public List<String> prepareBooksAfterClickButton(String bookstore, Set<String> categoriesToShow) {
+    public List<String> prepareBooksAfterClickButton(String bookstore, Set<String> categoriesToShow, DBUtilities dbUtilities) {
 
         DBDAOLibrary library = this.new DBDAOLibrary();
         library.initialize();
-        Session session = HibernateUtil.getSession();
-        if (!session.isOpen()) session = HibernateUtil.getSessionFactory().openSession();
+        Session session = dbUtilities.getSessionFactory().openSession();
         Query query = session.createSQLQuery("SELECT title, author, bookstore, CategoriesToDB.category from BookToDB left join CategoriesToDB ON BookToDB.category_id=CategoriesToDB.id;");
 
         List<Object[]> dataFromQuery = query.list();
@@ -64,11 +58,12 @@ public class DBDAO {
             library.addBookIfConditionsAreFulfill(bookstore, categoriesToShow, book);
         }
 
-        for(String category : categoriesToShow){
-            if(library.numberOfBooksInCategory(category) == 0)
+        for (String category : categoriesToShow) {
+            if (library.numberOfBooksInCategory(category) == 0)
                 library.add("There is no books in category " + category +
                         " in bookstore " + bookstore + "\n");
         }
+        session.close();
         return library;
     }
 
@@ -84,7 +79,7 @@ public class DBDAO {
 
         }
 
-        public void initialize(){
+        public void initialize() {
             list = new ArrayList<>();
             categoriesCounter = new HashMap<>();
         }
@@ -104,10 +99,10 @@ public class DBDAO {
             return list.add(message);
         }
 
-        public int numberOfBooksInCategory(String category){
-            for(Map.Entry<String, Integer> entry : categoriesCounter.entrySet()){
+        public int numberOfBooksInCategory(String category) {
+            for (Map.Entry<String, Integer> entry : categoriesCounter.entrySet()) {
             }
-            if(categoriesCounter.containsKey(category))
+            if (categoriesCounter.containsKey(category))
                 return categoriesCounter.get(category);
             return 0;
         }
@@ -122,7 +117,7 @@ public class DBDAO {
         private void addBookIfConditionsAreFulfill(String bookstore, Set<String> categoriesToShow, Object[] book) {
 
             if (((String) (book[2])).equals(bookstore)) {
-                if(categoriesToShow.contains((String) book[3])) {
+                if (categoriesToShow.contains((String) book[3])) {
                     this.addBookToList(book);
                     incrementCategoriesCounter(book);
                 }
@@ -134,10 +129,8 @@ public class DBDAO {
             if (categoriesCounter.containsKey(category)) {
                 int actualCounterState = categoriesCounter.get(category);
                 categoriesCounter.replace(category, ++actualCounterState);
-            }
-            else categoriesCounter.put(category, 1);
+            } else categoriesCounter.put(category, 1);
         }
-
 
 
         private DBDAOLibrary addBookToList(Object[] book) {

@@ -1,7 +1,8 @@
 package com.epam.DB;
 
+import com.epam.DAO.DBDAO;
+import com.epam.DAO.HibernateUtil;
 import com.epam.GUI.view.NoBooksOfGivenCategoryException;
-import org.testng.annotations.Test;
 
 import java.util.HashSet;
 import java.util.List;
@@ -20,7 +21,7 @@ public class DBDAOTests {
         Set<String> set = new HashSet<>();
         set.add("Romance");
         set.add("Other");
-        List<String> list = dbdao.prepareBooksAfterClickButton (bookstore, set);
+        List<String> list = dbdao.prepareBooksAfterClickButton (bookstore, set, new HibernateUtil());
         System.out.println(list);
     }
 

@@ -1,50 +1,104 @@
 package com.epam.DB;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
+import com.epam.DAO.DBDAO;
 import org.dbunit.IDatabaseTester;
 import org.dbunit.JdbcDatabaseTester;
+import org.dbunit.database.DatabaseSequenceFilter;
+import org.dbunit.database.IDatabaseConnection;
+import org.dbunit.dataset.DataSetException;
+import org.dbunit.dataset.FilteredDataSet;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSetBuilder;
 import org.dbunit.operation.DatabaseOperation;
-import org.junit.Before;
+import org.hibernate.Session;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.mock;
+
 /**
- * Testing DB requires having some records, tests won't pass if there is no database.
+ * Tests of DBDAO class.
  */
 public class DAOTests {
 
-	private static final String JDBC_DRIVER = com.mysql.jdbc.Driver.class.getName();
-	private static final String JDBC_URL = "jdbc:mysql://localhost:3306/tests;DB_CLOSE_DELAY=-1";
-	private static final String USER = "root";
-	private static final String PASSWORD = "";
+    //creating settings from BD
+    /*public static void main(String[] args) throws Exception {
 
 
-    private IDataSet readDataSet() throws Exception {
-        return new FlatXmlDataSetBuilder().build(new File("dataCategoriesAndBookstores.xml"));
+        Class driverClass = Class.forName("com.mysql.jdbc.Driver");
+        Connection jdbcConnection = DriverManager.getConnection("jdbc:mysql://localhost/TEST", "root", "your_new_password");
+        IDatabaseConnection connection = new DatabaseConnection(jdbcConnection);
+        // partial database export
+
+        QueryDataSet partialDataSet = new QueryDataSet(connection);
+        partialDataSet.addTable("BookToDB");
+        FlatXmlDataSet.write(partialDataSet, new FileOutputStream("created-dataset.xml"));
+    }*/
+
+    public static void main(String[] args) {
+        Session session = new DBTestsUtil().getSessionFactory().openSession();
+        session.beginTransaction();
+        session.createSQLQuery("drop table CategoriesToDB_BookToDB;").executeUpdate();
+        session.createSQLQuery("drop table CategoriesToDB;").executeUpdate();
+        session.createSQLQuery("drop table BookToDB;").executeUpdate();
+        session.close();
+    }
+
+
+    private IDataSet createDataSet() throws MalformedURLException, DataSetException {
+        return new FlatXmlDataSetBuilder().build(new File("created-dataset.xml"));
     }
 
     private void cleanlyInsertDataset(IDataSet dataSet) throws Exception {
-        IDatabaseTester databaseTester = new JdbcDatabaseTester(
-                "org.h2.Driver", "jdbc:h2:mem:test;DB_CLOSE_DELAY=-1", "sa", "");
+        IDatabaseTester databaseTester = new JdbcDatabaseTester("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/NTest", "root", "your_new_password");
         databaseTester.setSetUpOperation(DatabaseOperation.CLEAN_INSERT);
         databaseTester.setDataSet(dataSet);
         databaseTester.onSetup();
     }
 
-    @Before
+    @BeforeTest
     public void importDataSet() throws Exception {
-        IDataSet dataSet = readDataSet();
+
+        IDataSet dataSet = createDataSet();
         cleanlyInsertDataset(dataSet);
     }
 
+    /**
+     * Test of {@code istOfBookstoresForGUI()} method.
+     */
     @Test
-    public void ifBookstoresListInitHave3Bookshops() {
+    public void testGettingListOfBooks() {
+        DBDAO dbdao = new DBDAO();
+        List<String> list = dbdao.listOfBookstoresForGUI((new DBTestsUtil()));
+        assertTrue(list.contains("bookrix"));
+    }
 
+    /**
+     * Test of getting the list of books when the mouse is clicked.
+     */
+    @Test
+    public void testPreparingBookList(){
+        DBDAO dbdao = new DBDAO();
+        String bookstore = "bookrix";
+        Set<String> categories = new HashSet<>();
+        categories.add("Horror");
+        categories.add("Romance");
 
+        List<String> list = dbdao.prepareBooksAfterClickButton(bookstore, categories, new DBTestsUtil());
 
+        assertTrue(list.get(1).contains("Practical Witchery! - John Stormm (category: Romance)"));
 
     }
 
+
+
 }
+

@@ -109,7 +109,7 @@ public class Robot {
 			LibrariesMap librariesMap = CategoryUtil.generateLibrariesMapfromLibrary(library);
 			DBWriter dbWriter = new DBWriter();
 
-			dbWriter.write(librariesMap.toDB());
+			dbWriter.write(librariesMap.toDB(), new HibernateUtil());
 		}
 
 		/**
@@ -135,10 +135,6 @@ public class Robot {
 		private class CrawlerCaller implements Callable<ConcurrentLibrary> {
 
 			private Link link;
-
-
-			public CrawlerCaller() {
-			}
 
 			/**
 			 * Link setter.

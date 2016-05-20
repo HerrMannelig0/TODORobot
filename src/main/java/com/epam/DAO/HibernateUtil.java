@@ -1,11 +1,12 @@
 package com.epam.DAO;
 
+import com.epam.DAO.DBmanagment.DBUtilities;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 
-public class HibernateUtil {
+public class HibernateUtil implements DBUtilities{
 
 	private static final SessionFactory SESSION_FACTORY = buildSessionFactory();
 	private static final Session SESSION = new Configuration().configure().buildSessionFactory().openSession();
@@ -21,14 +22,15 @@ public class HibernateUtil {
 		}
 	}
 
-	public static SessionFactory getSessionFactory() {
+	@Override
+	public SessionFactory getSessionFactory() {
 		return SESSION_FACTORY;
 	}
 
 	/**
 	 * Close caches and connection pools
 	 */
-	public static void shutdown() {
+	public void shutdown() {
 		getSessionFactory().close();
 	}
 	
